@@ -1,0 +1,9 @@
+base_locale: vn
+input_directory: i18n
+input_file_pattern: .json
+output_directory: lib/generated
+output_file_name: translations.g.dart
+output_format: single_file
+translate_var: texts
+string_interpolation: double_braces
+namespaces: true
