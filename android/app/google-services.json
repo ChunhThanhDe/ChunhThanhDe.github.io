@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "1085560411698",
+    "firebase_url": "https://personal-profile-project-be477-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "personal-profile-project-be477",
+    "storage_bucket": "personal-profile-project-be477.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1085560411698:android:3a20c1b00c230d7cca0e2b",
+        "android_client_info": {
+          "package_name": "com.example.profile"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCvoZbwwQY9fwxRqIiAkVZF41AbsBzSTOI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
