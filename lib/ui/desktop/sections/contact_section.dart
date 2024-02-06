@@ -89,7 +89,7 @@ class _ContactSectionState extends State<ContactSection> {
                               ),
                             ),
                             Column(
-                              children: const [
+                              children:  [
                                 ContactCard(
                                   icon: Icons.location_pin,
                                   content: location,

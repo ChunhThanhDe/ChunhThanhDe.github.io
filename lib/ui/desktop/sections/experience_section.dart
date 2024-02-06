@@ -95,7 +95,7 @@ class ExperienceSection extends StatelessWidget {
                                         ),
                                         Container(
                                           padding: const EdgeInsets.symmetric(horizontal: 6.0),
-                                          child: const Icon(
+                                          child: Icon(
                                             MdiIcons.circle,
                                             color: kPrimaryColor,
                                             size: 8,
@@ -108,7 +108,7 @@ class ExperienceSection extends StatelessWidget {
                                           ),
                                         ),
                                         const SizedBox(width: 12),
-                                        const Icon(
+                                         Icon(
                                           MdiIcons.mapMarker,
                                           color: kPrimaryColor,
                                           size: 16,

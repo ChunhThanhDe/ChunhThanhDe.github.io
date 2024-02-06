@@ -118,7 +118,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                               ),
                             ),
                           ),
-                          const Icon(
+                           Icon(
                             MdiIcons.chevronLeft,
                             color: kPrimaryColor,
                           ),
@@ -128,7 +128,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                               fontSize: 15,
                             ),
                           ),
-                          const Icon(
+                           Icon(
                             MdiIcons.chevronRight,
                             color: kPrimaryColor,
                           ),

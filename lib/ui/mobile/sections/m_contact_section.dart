@@ -85,7 +85,7 @@ class _MContactSectionState extends State<MContactSection> {
                       ),
                     ),
                     Column(
-                      children: const [
+                      children: [
                         ContactCard(
                           icon: Icons.location_pin,
                           content: location,
