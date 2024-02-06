@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
+import 'package:profile/utils/constants.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class FooterSection extends StatefulWidget {
@@ -12,6 +12,7 @@ class FooterSection extends StatefulWidget {
 
 class _FooterSectionState extends State<FooterSection> {
   bool _isHovered = false;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -35,12 +36,10 @@ class _FooterSectionState extends State<FooterSection> {
             },
             child: GestureDetector(
               onTap: () async {
-                await launch(
-                  'https://www.linkedin.com/in/erick-namukolo-a49482202/',
-                );
+                await launch(link_linkedin);
               },
               child: Text(
-                'Designed & Built by Erick Namukolo',
+                'Designed & Built by ChunhThanhDe',
                 style: kNormalTextStyleGrey.copyWith(
                   color: _isHovered ? kPrimaryColor : const Color(0xffB3A595),
                   fontWeight: _isHovered ? FontWeight.bold : null,
@@ -49,7 +48,13 @@ class _FooterSectionState extends State<FooterSection> {
             ),
           ),
           Text(
-            '© 2021 - ${DateTime.now().year} Erick Namukolo. All rights reserved.',
+            '© 2023 - ${DateTime.now().year} Chung Nguyen Thanh.',
+            style: kNormalTextStyleGrey.copyWith(
+              fontSize: 13,
+            ),
+          ),
+          Text(
+            'All rights reserved.',
             style: kNormalTextStyleGrey.copyWith(
               fontSize: 13,
             ),

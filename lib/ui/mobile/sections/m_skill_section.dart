@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:profile/controller/skills_controller.dart';
+import 'package:profile/generated/translations.g.dart';
 import 'package:profile/ui/mobile/widgets/m_skill_card.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/widgets/section_title.dart';
-
-import '../../../controller/skills_controller.dart';
 
 class MSkillSection extends StatelessWidget {
   const MSkillSection({Key? key}) : super(key: key);
@@ -17,7 +17,7 @@ class MSkillSection extends StatelessWidget {
       color: kdarkColor,
       child: Column(
         children: [
-          SectionTitle(title: 'Skills'),
+          SectionTitle(title: texts.general.title_skill_section),
           ListView.builder(
             itemBuilder: (context, index) => MSkillCard(
               skill: skillsController.skills[index],

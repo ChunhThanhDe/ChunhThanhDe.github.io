@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
+import 'package:profile/utils/constants.dart';
 
 class AnimatedTexttt extends StatefulWidget {
   final String text;
   final Function()? click;
   final double width;
+
   const AnimatedTexttt({
     Key? key,
     required this.text,
@@ -21,6 +22,7 @@ class _AnimatedTextttState extends State<AnimatedTexttt> {
   Color color = Colors.white;
   FontWeight? bold;
   double width = 0;
+
   @override
   Widget build(BuildContext context) {
     return MouseRegion(

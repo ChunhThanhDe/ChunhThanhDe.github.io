@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:profile/controller/project_controller.dart';
+import 'package:profile/generated/translations.g.dart';
+import 'package:profile/models/tab_btn.dart';
+import 'package:profile/ui/desktop/projects_desktop_screen.dart';
+import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/ui/desktop/widgets/project_card.dart';
+import 'package:profile/ui/mobile/widgets/tab_btn.dart';
 import 'package:profile/utils/colors.dart';
-
-import '../../../controller/project_controller.dart';
-import '../../../models/tab_btn.dart';
-import '../../../widgets/custom_loading_widget.dart';
-import '../../../widgets/section_title.dart';
-import '../../mobile/widgets/tab_btn.dart';
-import '../projects_desktop_screen.dart';
-import '../widgets/mordern_button.dart';
+import 'package:profile/widgets/custom_loading_widget.dart';
+import 'package:profile/widgets/section_title.dart';
 
 class ProjectsAndDesigns extends StatefulWidget {
   const ProjectsAndDesigns({Key? key}) : super(key: key);
@@ -20,8 +20,8 @@ class ProjectsAndDesigns extends StatefulWidget {
 
 class _ProjectsAndDesignsState extends State<ProjectsAndDesigns> {
   List<TabButton> tabs = [
-    TabButton(title: 'Personal Projects', icon: Icons.folder, isSelected: true),
-    TabButton(title: 'Work/Client Projects', icon: Icons.laptop_mac_rounded),
+    TabButton(title: texts.general.title_personal_projects_project_section, icon: Icons.folder, isSelected: true),
+    TabButton(title: texts.general.title_client_projects_project_section, icon: Icons.laptop_mac_rounded),
   ];
 
   @override
@@ -36,7 +36,7 @@ class _ProjectsAndDesignsState extends State<ProjectsAndDesigns> {
       color: kdarkColor,
       child: Column(
         children: [
-          SectionTitle(title: 'Projects'),
+          SectionTitle(title: texts.general.title_project_section),
           Container(
             padding: EdgeInsets.all(12),
             width: _screenWidth * .35,
@@ -80,12 +80,12 @@ class _ProjectsAndDesignsState extends State<ProjectsAndDesigns> {
           const SizedBox(
             height: 20,
           ),
-          MordernButton(
+          modernButton(
             icon: MdiIcons.folder,
             click: () {
               Navigator.of(context).push(MaterialPageRoute(builder: (context) => const ProjectsDesktopScreen()));
             },
-            text: 'All Projects',
+            text: texts.general.title_all_projects_project_section,
           ),
         ],
       ),

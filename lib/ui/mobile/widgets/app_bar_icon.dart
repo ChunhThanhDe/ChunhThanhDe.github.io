@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_glow/flutter_glow.dart';
-import '../../../utils/colors.dart';
+import 'package:profile/utils/colors.dart';
 
 class AppBarIcon extends StatelessWidget {
   final IconData icon;
   final Function() click;
+
   const AppBarIcon({
     Key? key,
     required this.icon,

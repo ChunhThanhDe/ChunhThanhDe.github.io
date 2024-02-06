@@ -2,11 +2,11 @@ import 'dart:ui';
 
 import 'package:get/get.dart';
 import 'package:intl/intl.dart';
+import 'package:profile/generated/translations.g.dart';
 
-import '../../../../generated/translations.g.dart';
 
 class NavigationController {
-  AppLocale get vn => AppLocale.vn;
+  AppLocale get vi => AppLocale.vi;
 
   AppLocale get en => AppLocale.en;
 

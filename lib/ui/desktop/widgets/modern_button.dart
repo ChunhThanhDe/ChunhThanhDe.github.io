@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_glow/flutter_glow.dart';
+import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
 
-import '../../../utils/colors.dart';
-
-class MordernButton extends StatelessWidget {
+class modernButton extends StatelessWidget {
   final String text;
   final IconData icon;
   final VoidCallback click;
   final bool isLoading;
-  const MordernButton({
+
+  const modernButton({
     Key? key,
     required this.text,
     required this.icon,

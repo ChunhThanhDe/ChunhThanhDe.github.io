@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
 import 'package:profile/models/skill.dart';
+import 'package:profile/utils/colors.dart';
+import 'package:profile/utils/constants.dart';
 
 class SkillCard extends StatefulWidget {
   final Skill skill;

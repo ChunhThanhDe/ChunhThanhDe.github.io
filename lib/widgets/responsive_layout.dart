@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:profile/utils/responsive_breakpoints.dart';
-import 'package:profile/providers/analytics.dart';
-
-import '../services/notification.dart';
 
 class ResponsiveLayout extends StatefulWidget {
   final Widget mobileBody;
@@ -23,7 +20,6 @@ class ResponsiveLayout extends StatefulWidget {
 class _ResponsiveLayoutState extends State<ResponsiveLayout> {
   @override
   void initState() {
-    Analytics.trackVisit(NotificationType.visit);
     super.initState();
   }
 

@@ -5,6 +5,7 @@ class IconHover extends StatefulWidget {
   final Color color;
   final Function() click;
   final double? padding;
+
   const IconHover({
     Key? key,
     required this.icon,
@@ -19,6 +20,7 @@ class IconHover extends StatefulWidget {
 
 class _IconHoverState extends State<IconHover> {
   Color initialColor = const Color(0xffB3A595);
+
   @override
   Widget build(BuildContext context) {
     return MouseRegion(

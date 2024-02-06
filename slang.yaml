@@ -1,4 +1,4 @@
-base_locale: vn
+base_locale: vi
 input_directory: i18n
 input_file_pattern: .json
 output_directory: lib/generated

@@ -9,7 +9,7 @@ import 'package:profile/ui/desktop/widgets/contact_card.dart';
 import 'package:profile/ui/desktop/widgets/input_field.dart';
 import 'package:profile/widgets/basic_button.dart';
 
-import '../../../providers/send_message.dart';
+import '../../../services/send_message.dart';
 import '../../../widgets/section_title.dart';
 import '../../desktop/widgets/home_icon_hover.dart';
 
@@ -97,20 +97,19 @@ class _TContactSectionState extends State<TContactSection> {
                                     children: const [
                                       ContactCard(
                                         icon: Icons.location_pin,
-                                        content: 'Lusaka, Zambia',
+                                        content: location,
                                       ),
                                       ContactCard(
                                         icon: Icons.email,
-                                        content: 'erickmndev@gmail.com',
+                                        content: gmail,
                                       ),
                                       ContactCard(
                                         icon: Icons.phone,
-                                        content: '+260 962 885743',
+                                        content: phone_work,
                                       ),
                                       ContactCard(
-                                        icon: MdiIcons.whatsapp,
-                                        content:
-                                            '+260 973 520052 / +260 962 885743',
+                                        icon: MdiIcons.linkedin,
+                                        content: skype,
                                       ),
                                     ],
                                   ),
@@ -121,9 +120,9 @@ class _TContactSectionState extends State<TContactSection> {
                                     mainAxisAlignment: MainAxisAlignment.center,
                                     children: [
                                       HomeIconHover(
+                                        isMobile: true,
                                         icon: MdiIcons.linkedin,
                                         color: const Color(0xff0A66C2),
-                                        isMobile: true,
                                       ),
                                       HomeIconHover(
                                         isMobile: true,
@@ -132,13 +131,18 @@ class _TContactSectionState extends State<TContactSection> {
                                       ),
                                       HomeIconHover(
                                         isMobile: true,
-                                        icon: MdiIcons.whatsapp,
-                                        color: const Color(0xff075e54),
+                                        icon: MdiIcons.skype,
+                                        color: const Color(0xff00aff0),
                                       ),
                                       HomeIconHover(
                                         isMobile: true,
                                         icon: MdiIcons.facebook,
                                         color: const Color(0xff4267B2),
+                                      ),
+                                      HomeIconHover(
+                                        isMobile: true,
+                                        icon: MdiIcons.youtube,
+                                        color: const Color(0xffff0000),
                                       ),
                                       HomeIconHover(
                                         isMobile: true,
@@ -239,20 +243,19 @@ class _TContactSectionState extends State<TContactSection> {
                                   children: const [
                                     ContactCard(
                                       icon: Icons.location_pin,
-                                      content: 'Lusaka, Zambia',
+                                      content: location,
                                     ),
                                     ContactCard(
                                       icon: Icons.email,
-                                      content: 'erickmndev@gmail.com',
+                                      content: gmail,
                                     ),
                                     ContactCard(
                                       icon: Icons.phone,
-                                      content: '+260 962 885743',
+                                      content: phone_work,
                                     ),
                                     ContactCard(
-                                      icon: MdiIcons.whatsapp,
-                                      content:
-                                          '+260 973 520052 / +260 962 885743',
+                                      icon: MdiIcons.linkedin,
+                                      content: skype,
                                     ),
                                   ],
                                 ),

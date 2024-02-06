@@ -57,11 +57,4 @@ class ProjectsController {
       throw e;
     }
   }
-
-   static downloadCV() {
-    String url = 'https://drive.google.com/uc?id=1egQA4dMBeMb8SQIx4aX6coryumbxsBXX&export=download';
-    AnchorElement anchorElement = AnchorElement(href: url);
-    anchorElement.download = url;
-    anchorElement.click();
-  }
 }

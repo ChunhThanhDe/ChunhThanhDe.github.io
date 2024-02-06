@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:profile/controller/project_controller.dart';
+import 'package:profile/services/send_message.dart';
 import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
+import 'package:profile/utils/constants.dart';
 
 class CVButton extends StatelessWidget {
   const CVButton({
@@ -12,7 +12,7 @@ class CVButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: () {
-        ProjectsController.downloadCV();
+        downloadCV();
       },
       child: MouseRegion(
         cursor: SystemMouseCursors.click,

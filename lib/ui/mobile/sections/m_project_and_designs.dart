@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:profile/controller/project_controller.dart';
+import 'package:profile/generated/translations.g.dart';
+import 'package:profile/models/tab_btn.dart';
 import 'package:profile/ui/mobile/widgets/single_project_card.dart';
+import 'package:profile/ui/mobile/widgets/tab_btn.dart';
 import 'package:profile/utils/colors.dart';
+import 'package:profile/widgets/custom_loading_widget.dart';
 import 'package:profile/widgets/section_title.dart';
-
-import '../../../models/tab_btn.dart';
-import '../../../widgets/custom_loading_widget.dart';
-import '../widgets/tab_btn.dart';
 
 class MProjectsAndDesigns extends StatefulWidget {
   const MProjectsAndDesigns({Key? key}) : super(key: key);
@@ -17,8 +17,8 @@ class MProjectsAndDesigns extends StatefulWidget {
 
 class _MProjectsAndDesignsState extends State<MProjectsAndDesigns> {
   List<TabButton> tabs = [
-    TabButton(title: 'Personal', icon: Icons.folder, isSelected: true),
-    TabButton(title: 'Work/Client', icon: Icons.laptop_mac_rounded),
+    TabButton(title: texts.general.m_title_personal_projects_project_section, icon: Icons.folder, isSelected: true),
+    TabButton(title: texts.general.m_title_client_projects_project_section, icon: Icons.laptop_mac_rounded),
   ];
 
   @override
@@ -30,7 +30,7 @@ class _MProjectsAndDesignsState extends State<MProjectsAndDesigns> {
       color: kdarkColor,
       child: Column(
         children: [
-          SectionTitle(title: 'Projects'),
+          SectionTitle(title: texts.general.title_project_section),
           Container(
             padding: EdgeInsets.all(12),
             width: double.infinity,

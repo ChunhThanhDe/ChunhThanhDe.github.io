@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:profile/controller/about_me_controller.dart';
+import 'package:profile/generated/translations.g.dart';
+import 'package:profile/ui/desktop/widgets/about_card.dart';
 import 'package:profile/utils/colors.dart';
 import  'package:profile/utils/constants.dart';
-import 'package:profile/controller/about_me_controller.dart';
-import 'package:profile/ui/desktop/widgets/about_card.dart';
 import 'package:profile/widgets/section_title.dart';
 
 class MAboutSection extends StatelessWidget {
@@ -39,17 +40,17 @@ class MAboutSection extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
-                            'Introduction',
+                           Text(
+                            texts.general.title_introduction_about_section,
                             style: kNormalTextStyleGrey,
                           ),
                           RichText(
                             text: TextSpan(
                               style: kTitleTextStyle.copyWith(fontSize: 40),
                               children: [
-                                const TextSpan(text: 'Hi there! I\'m '),
+                                TextSpan(text: texts.general.hi_about_section),
                                 TextSpan(
-                                  text: 'Nguyen Namukolo',
+                                  text: name,
                                   style: kTitleTextStyle.copyWith(
                                     color: kPrimaryColor,
                                     decoration: TextDecoration.underline,
@@ -78,9 +79,9 @@ class MAboutSection extends StatelessWidget {
                       text: TextSpan(
                         style: kTitleTextStyle.copyWith(fontSize: 40),
                         children: [
-                          const TextSpan(text: 'Hi there! I\'m '),
+                          TextSpan(text: texts.general.hi_about_section,),
                           TextSpan(
-                            text: 'Erick Namukolo',
+                            text: texts.general.name_about_section,
                             style: kTitleTextStyle.copyWith(
                               color: kPrimaryColor,
                               decoration: TextDecoration.underline,

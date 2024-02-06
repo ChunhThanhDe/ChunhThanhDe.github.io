@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:profile/models/project.dart';
 import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
-
-import '../../../models/project.dart';
-import '../../../widgets/project_icon_btn.dart';
+import 'package:profile/utils/constants.dart';
+import 'package:profile/widgets/project_icon_btn.dart';
 
 class TProjectCard extends StatefulWidget {
   final Project project;
+
   const TProjectCard({Key? key, required this.project}) : super(key: key);
 
   @override
@@ -16,6 +16,7 @@ class TProjectCard extends StatefulWidget {
 
 class _TProjectCardState extends State<TProjectCard> {
   bool _isHovered = false;
+
   @override
   Widget build(BuildContext context) {
     return MediaQuery.of(context).size.width >= 1020
@@ -86,8 +87,7 @@ class _TProjectCardState extends State<TProjectCard> {
                                   boxShadow: [
                                     BoxShadow(
                                       offset: const Offset(3, 5),
-                                      color: const Color(0xff000000)
-                                          .withOpacity(.1),
+                                      color: const Color(0xff000000).withOpacity(.1),
                                       blurRadius: 2.0,
                                       spreadRadius: 2.0,
                                     ),
@@ -101,12 +101,8 @@ class _TProjectCardState extends State<TProjectCard> {
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
-                                  ProjectIconBtn(
-                                      icon: MdiIcons.github,
-                                      link: widget.project.githubLink),
-                                  ProjectIconBtn(
-                                      icon: MdiIcons.link,
-                                      link: widget.project.externalLink),
+                                  ProjectIconBtn(icon: MdiIcons.github, link: widget.project.githubLink),
+                                  ProjectIconBtn(icon: MdiIcons.link, link: widget.project.externalLink),
                                 ],
                               ),
                             ],
@@ -150,8 +146,7 @@ class _TProjectCardState extends State<TProjectCard> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 10, right: 10),
-                      child: Text(widget.project.type,
-                          style: kMiniTitleTextStylePink),
+                      child: Text(widget.project.type, style: kMiniTitleTextStylePink),
                     ),
                     Padding(
                       padding: const EdgeInsets.only(right: 10),
@@ -179,12 +174,8 @@ class _TProjectCardState extends State<TProjectCard> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          ProjectIconBtn(
-                              icon: MdiIcons.github,
-                              link: widget.project.githubLink),
-                          ProjectIconBtn(
-                              icon: MdiIcons.link,
-                              link: widget.project.externalLink),
+                          ProjectIconBtn(icon: MdiIcons.github, link: widget.project.githubLink),
+                          ProjectIconBtn(icon: MdiIcons.link, link: widget.project.externalLink),
                         ],
                       ),
                     ),

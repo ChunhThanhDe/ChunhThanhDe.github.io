@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
 import 'package:profile/models/work.dart';
+import 'package:profile/utils/colors.dart';
+import 'package:profile/utils/constants.dart';
 
 class WorkTitleText extends StatelessWidget {
   final bool isMobile;
   final Work work;
+
   const WorkTitleText({
     Key? key,
     required this.work,

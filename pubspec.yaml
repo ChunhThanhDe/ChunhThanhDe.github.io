@@ -1,5 +1,5 @@
 name: profile
-description: A Passionate Software Engineer & UI/UX Designer from Lusaka, Zambia.
+description: A Passionate software engineer and flutter developer from Vietnam.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -15,7 +15,7 @@ publish_to: "none" # Remove this line if you wish to publish to pub.dev
 # In iOS, build-name is used as CFBundleShortVersionString while build-number used as CFBundleVersion.
 # Read more about iOS versioning at
 # https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-version: 1.0.0+1
+version: 2.0.0+1
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
@@ -35,9 +35,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   material_design_icons_flutter: ^6.0.7096
   animated_text_kit: ^4.2.1
-  provider: ^6.0.1
   url_launcher: ^6.0.12
-  firebase_core: ^2.4.1
   http: ^0.13.3
   cloud_firestore: ^4.3.1
   bot_toast: ^4.0.1
@@ -49,21 +47,21 @@ dependencies:
   sizer: ^2.0.15
   blurrycontainer: ^1.0.2
   flutter_glow: ^0.3.0
-  firebase_database: any
   platform_device_id_web: ^1.0.0
   time_machine: ^0.9.17
-  dart_ipify: ^1.1.1
   json_annotation: ^4.8.0
 
+  country_icons: ^2.0.0
   get: 4.6.6
   intl: ^0.18.1
   flutter_localizations:
     sdk: flutter
   slang: ^3.28.0
   slang_flutter: ^3.28.0
+  firebase_app_check: ^0.2.1+12
+  g_recaptcha_v3: ^0.0.5
 
 dev_dependencies:
-  json_serializable: ^6.6.1
   build_runner: ^2.3.3
   flutter_launcher_icons_maker: ^0.10.2
   flutter_test:

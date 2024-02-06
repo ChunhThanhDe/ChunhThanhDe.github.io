@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:profile/controller/skills_controller.dart';
+import 'package:profile/generated/translations.g.dart';
 import 'package:profile/ui/desktop/widgets/skill_card.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/widgets/section_title.dart';
@@ -20,7 +21,7 @@ class SkillsSection extends StatelessWidget {
       color: kdarkColor,
       child: Column(
         children: [
-          SectionTitle(title: 'Skills'),
+          SectionTitle(title: texts.general.title_skill_section),
           GridView.builder(
             padding: EdgeInsets.zero,
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

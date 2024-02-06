@@ -3,9 +3,9 @@
 import 'package:blurrycontainer/blurrycontainer.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
 import 'package:profile/controller/navigation_top_controller.dart';
+import 'package:profile/generated/translations.g.dart';
+import 'package:profile/services/send_message.dart';
 import 'package:profile/ui/desktop/sections/about_section.dart';
 import 'package:profile/ui/desktop/sections/contact_section.dart';
 import 'package:profile/ui/desktop/sections/experience_section.dart';
@@ -14,12 +14,10 @@ import 'package:profile/ui/desktop/sections/home_section.dart';
 import 'package:profile/ui/desktop/sections/projects_and_designs.dart';
 import 'package:profile/ui/desktop/sections/skills_section.dart';
 import 'package:profile/ui/desktop/widgets/animated_text.dart';
-import 'package:profile/ui/desktop/widgets/mordern_button.dart';
+import 'package:profile/ui/desktop/widgets/modern_button.dart';
+import 'package:profile/utils/colors.dart';
+import 'package:profile/utils/constants.dart';
 import 'package:web_smooth_scroll/web_smooth_scroll.dart';
-
-import '../../controller/project_controller.dart';
-import '../../generated/translations.g.dart';
-
 
 class DesktopBody extends StatefulWidget {
   const DesktopBody({Key? key}) : super(key: key);
@@ -172,9 +170,9 @@ class _DesktopBodyState extends State<DesktopBody> {
                             click: () => scrollToItem(contactKey),
                             width: contactWidth,
                           ),
-                          MordernButton(
+                          modernButton(
                             icon: Icons.download_rounded,
-                            click: () => ProjectsController.downloadCV(),
+                            click: () => downloadCV(),
                             text: navigationController.navigation(6),
                           ),
                           PopupMenuButton<AppLocale>(
@@ -189,7 +187,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                                   child: const Text("English"),
                                 ),
                                 PopupMenuItem(
-                                  value: navigationController.vn,
+                                  value: navigationController.vi,
                                   child: const Text("Việt Nam"),
                                 ),
                               ];
