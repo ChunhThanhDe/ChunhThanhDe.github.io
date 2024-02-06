@@ -2,15 +2,15 @@
 
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
 import 'package:profile/models/project.dart';
-
-import '../../../widgets/custom_chip.dart';
-import '../../../widgets/project_icon_btn.dart';
+import 'package:profile/utils/colors.dart';
+import 'package:profile/utils/constants.dart';
+import 'package:profile/widgets/custom_chip.dart';
+import 'package:profile/widgets/project_icon_btn.dart';
 
 class SingleProjectCard extends StatelessWidget {
   final Project project;
+
   const SingleProjectCard({
     Key? key,
     required this.project,
@@ -59,18 +59,9 @@ class SingleProjectCard extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      ProjectIconBtn(
-                          icon: MdiIcons.github,
-                          link: project.githubLink,
-                          padding: 4),
-                      ProjectIconBtn(
-                          icon: MdiIcons.link,
-                          link: project.externalLink,
-                          padding: 4),
-                      ProjectIconBtn(
-                          icon: MdiIcons.googlePlay,
-                          link: project.playstoreLink,
-                          padding: 4),
+                      ProjectIconBtn(icon: MdiIcons.github, link: project.githubLink, padding: 4),
+                      ProjectIconBtn(icon: MdiIcons.link, link: project.externalLink, padding: 4),
+                      ProjectIconBtn(icon: MdiIcons.googlePlay, link: project.playstoreLink, padding: 4),
                     ],
                   ),
                 ],
@@ -80,11 +71,7 @@ class SingleProjectCard extends StatelessWidget {
                 style: kNormalTextStyleGrey,
               ),
               const SizedBox(height: 10),
-              Wrap(
-                runSpacing: 10.0,
-                  children: project.tech
-                      .map((tech) => CustomChip(name: tech))
-                      .toList()),
+              Wrap(runSpacing: 10.0, children: project.tech.map((tech) => CustomChip(name: tech)).toList()),
             ],
           ),
         ],

@@ -95,12 +95,16 @@ class THomeSection extends StatelessWidget {
                       color: const Color(0xff171515),
                     ),
                     HomeIconHover(
-                      icon: MdiIcons.whatsapp,
-                      color: const Color(0xff075e54),
+                      icon: MdiIcons.skype,
+                      color: const Color(0xff00aff0),
                     ),
                     HomeIconHover(
                       icon: MdiIcons.facebook,
                       color: const Color(0xff4267B2),
+                    ),
+                    HomeIconHover(
+                      icon: MdiIcons.youtube,
+                      color: const Color(0xffff0000),
                     ),
                     HomeIconHover(
                       icon: MdiIcons.googlePlay,

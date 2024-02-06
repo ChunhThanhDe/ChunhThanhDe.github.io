@@ -1,16 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_glow/flutter_glow.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import  'package:profile/utils/constants.dart';
-import 'package:profile/providers/analytics.dart';
+import 'package:profile/utils/constants.dart';
 
-import '../../../services/notification.dart';
-
-// ignore: must_be_immutable
 class HomeIconHover extends StatefulWidget {
   final IconData icon;
   final Color color;
   bool isMobile;
+
   HomeIconHover({
     Key? key,
     required this.icon,
@@ -25,6 +22,7 @@ class HomeIconHover extends StatefulWidget {
 class _HomeIconHoverState extends State<HomeIconHover> {
   Color iconColor = const Color(0xffB3A595);
   bool _isHovered = false;
+
   @override
   Widget build(BuildContext context) {
     return MouseRegion(
@@ -44,28 +42,19 @@ class _HomeIconHoverState extends State<HomeIconHover> {
       child: GestureDetector(
         onTap: () async {
           if (widget.icon == MdiIcons.linkedin) {
-            Analytics.trackVisit(NotificationType.linkedIn);
-            AppData.goToLink('https://www.linkedin.com/in/chunhthanhde/');
+            AppData.goToLink(link_linkedin);
           } else if (widget.icon == MdiIcons.github) {
-            Analytics.trackVisit(NotificationType.github);
-            AppData.goToLink('https://github.com/chunhthanhde');
-          } else if (widget.icon == MdiIcons.whatsapp) {
-            Analytics.trackVisit(NotificationType.whatsApp);
-            var whatsappUrl = 'https://wa.me/260962885743?text=Hello';
-            AppData.goToLink(whatsappUrl);
+            AppData.goToLink(link_github);
+          } else if (widget.icon == MdiIcons.skype) {
+            AppData.goToLink(link_skype);
           } else if (widget.icon == MdiIcons.facebook) {
-            Analytics.trackVisit(NotificationType.fb);
-            AppData.goToLink('https://www.facebook.com/ericnamukolo/');
-          } else if (widget.icon == MdiIcons.googlePlay) {
-            Analytics.trackVisit(NotificationType.playStore);
-            AppData.goToLink(
-                'https://play.google.com/store/apps/dev?id=8203990443766365712');
+            AppData.goToLink(link_facebook);
+          } else if (widget.icon == MdiIcons.youtube) {
+            // AppData.goToLink('https://www.linkedin.com/in/chunhthanhde/');
           }
         },
         child: Padding(
-          padding: widget.isMobile
-              ? const EdgeInsets.symmetric(horizontal: 8)
-              : const EdgeInsets.only(right: 10),
+          padding: widget.isMobile ? const EdgeInsets.symmetric(horizontal: 8) : const EdgeInsets.only(right: 10),
           child: _isHovered
               ? GlowIcon(
                   widget.icon,

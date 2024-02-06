@@ -2,13 +2,11 @@
 
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:profile/models/project.dart';
 import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
-
-
-import '../../../models/project.dart';
-import '../../../widgets/custom_chip.dart';
-import '../../../widgets/project_icon_btn.dart';
+import 'package:profile/utils/constants.dart';
+import 'package:profile/widgets/custom_chip.dart';
+import 'package:profile/widgets/project_icon_btn.dart';
 
 class ProjectCard extends StatefulWidget {
   final Project project;
@@ -29,7 +27,6 @@ class _ProjectCardState extends State<ProjectCard> {
   Widget build(BuildContext context) {
     double _screenWidth = MediaQuery.of(context).size.width;
     double _screenHeight = MediaQuery.of(context).size.height;
-    print("ProjectCard screenHeight = " + _screenHeight.toString());
     if (_screenHeight < 700) _screenHeight = 700;
     return Column(
       children: [

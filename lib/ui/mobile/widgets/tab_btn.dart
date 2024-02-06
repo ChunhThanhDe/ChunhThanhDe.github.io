@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_glow/flutter_glow.dart';
+import 'package:profile/models/tab_btn.dart';
+import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
-import '../../../utils/colors.dart';
-import '../../../models/tab_btn.dart';
 
 class TabBtn extends StatelessWidget {
   final TabButton tab;
   final VoidCallback click;
+
   const TabBtn({Key? key, required this.tab, required this.click});
 
   @override
@@ -43,12 +44,7 @@ class TabBtn extends StatelessWidget {
                     : Icon(tab.icon, color: Color(0xff808080)),
                 SizedBox(width: 10),
                 FittedBox(
-                  child: Text(tab.title,
-                      style: kNormalTextStyleGrey.copyWith(
-                          fontSize: tab.title.contains('Projects') ? 14 : 12,
-                          color: tab.isSelected
-                              ? Colors.white
-                              : Color(0xff808080))),
+                  child: Text(tab.title, style: kNormalTextStyleGrey.copyWith(fontSize: tab.title.contains('Projects') ? 14 : 12, color: tab.isSelected ? Colors.white : Color(0xff808080))),
                 ),
               ],
             ),

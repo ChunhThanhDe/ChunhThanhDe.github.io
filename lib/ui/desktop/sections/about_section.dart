@@ -1,11 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:profile/controller/about_me_controller.dart';
+import 'package:profile/generated/translations.g.dart';
 import 'package:profile/ui/desktop/widgets/about_card.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
+import 'package:profile/widgets/section_title.dart';
 
-import '../../../controller/about_me_controller.dart';
-import '../../../widgets/section_title.dart';
 
 class AboutSection extends StatelessWidget {
   const AboutSection({Key? key}) : super(key: key);
@@ -22,7 +23,7 @@ class AboutSection extends StatelessWidget {
       width: double.infinity,
       child: Column(
         children: [
-          SectionTitle(title: 'About'),
+          SectionTitle(title: texts.general.title_about_section),
           const SizedBox(
             width: 10,
           ),

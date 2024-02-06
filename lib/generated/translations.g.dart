@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 2
-/// Strings: 410 (205 per locale)
+/// Strings: 434 (217 per locale)
 ///
-/// Built on 2024-02-02 at 08:34 UTC
+/// Built on 2024-02-05 at 08:47 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -16,16 +16,16 @@ import 'package:slang/builder/model/node.dart';
 import 'package:slang_flutter/slang_flutter.dart';
 export 'package:slang_flutter/slang_flutter.dart';
 
-const AppLocale _baseLocale = AppLocale.vn;
+const AppLocale _baseLocale = AppLocale.vi;
 
 /// Supported locales, see extension methods below.
 ///
 /// Usage:
-/// - LocaleSettings.setLocale(AppLocale.vn) // set locale
-/// - Locale locale = AppLocale.vn.flutterLocale // get flutter locale from enum
-/// - if (LocaleSettings.currentLocale == AppLocale.vn) // locale check
+/// - LocaleSettings.setLocale(AppLocale.vi) // set locale
+/// - Locale locale = AppLocale.vi.flutterLocale // get flutter locale from enum
+/// - if (LocaleSettings.currentLocale == AppLocale.vi) // locale check
 enum AppLocale with BaseAppLocale<AppLocale, Translations> {
-	vn(languageCode: 'vn', build: Translations.build),
+	vi(languageCode: 'vi', build: Translations.build),
 	en(languageCode: 'en', build: _TranslationsEn.build);
 
 	const AppLocale({required this.languageCode, this.scriptCode, this.countryCode, required this.build}); // ignore: unused_element
@@ -131,7 +131,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	Translations.build({Map<String, Node>? overrides, PluralResolver? cardinalResolver, PluralResolver? ordinalResolver})
 		: assert(overrides == null, 'Set "translation_overrides: true" in order to enable this feature.'),
 		  $meta = TranslationMetadata(
-		    locale: AppLocale.vn,
+		    locale: AppLocale.vi,
 		    overrides: overrides ?? {},
 		    cardinalResolver: cardinalResolver,
 		    ordinalResolver: ordinalResolver,
@@ -139,7 +139,7 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 		$meta.setFlatMapFunction(_flatMapFunction);
 	}
 
-	/// Metadata for the translations of <vn>.
+	/// Metadata for the translations of <vi>.
 	@override final TranslationMetadata<AppLocale, Translations> $meta;
 
 	/// Access flat map
@@ -148,28 +148,31 @@ class Translations implements BaseTranslations<AppLocale, Translations> {
 	late final Translations _root = this; // ignore: unused_field
 
 	// Translations
-	late final _TranslationsExperienceVn experience = _TranslationsExperienceVn._(_root);
-	late final _TranslationsTabsVn tabs = _TranslationsTabsVn._(_root);
-	late final _TranslationsAboutVn about = _TranslationsAboutVn._(_root);
-	late final _TranslationsProjectVn project = _TranslationsProjectVn._(_root);
-	late final _TranslationsSkillsVn skills = _TranslationsSkillsVn._(_root);
+	late final _TranslationsExperienceVi experience = _TranslationsExperienceVi._(_root);
+	late final _TranslationsTabsVi tabs = _TranslationsTabsVi._(_root);
+	late final _TranslationsAboutVi about = _TranslationsAboutVi._(_root);
+	late final _TranslationsGeneralVi general = _TranslationsGeneralVi._(_root);
+	late final _TranslationsProjectVi project = _TranslationsProjectVi._(_root);
+	late final _TranslationsSkillsVi skills = _TranslationsSkillsVi._(_root);
 }
 
 // Path: experience
-class _TranslationsExperienceVn {
-	_TranslationsExperienceVn._(this._root);
+class _TranslationsExperienceVi {
+	_TranslationsExperienceVi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	late final _TranslationsExperienceExperience1Vn experience1 = _TranslationsExperienceExperience1Vn._(_root);
-	late final _TranslationsExperienceExperience2Vn experience2 = _TranslationsExperienceExperience2Vn._(_root);
-	late final _TranslationsExperienceExperience3Vn experience3 = _TranslationsExperienceExperience3Vn._(_root);
+	List<dynamic> get experiences => [
+		_TranslationsExperience$experiences$0i0$Vi._(_root),
+		_TranslationsExperience$experiences$0i1$Vi._(_root),
+		_TranslationsExperience$experiences$0i2$Vi._(_root),
+	];
 }
 
 // Path: tabs
-class _TranslationsTabsVn {
-	_TranslationsTabsVn._(this._root);
+class _TranslationsTabsVi {
+	_TranslationsTabsVi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -186,66 +189,98 @@ class _TranslationsTabsVn {
 }
 
 // Path: about
-class _TranslationsAboutVn {
-	_TranslationsAboutVn._(this._root);
+class _TranslationsAboutVi {
+	_TranslationsAboutVi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
 	// Translations
 	String get name => 'Chung Nguyen Thanh';
 	String get aboutMe => 'As a software engineer and UI/UX designer with extensive experience in Flutter, Dart, Firebase, and design, I am passionate about developing innovative and engaging digital experiences that meet the needs of users.\n\nWith a strong foundation in software engineering and design principles, I am adept at crafting high-quality code and intuitive user interfaces. I have experience in designing and developing user-friendly, cross-platform mobile applications using Flutter and Dart.\n\nAs a skilled designer, I can create engaging visuals, intuitive layouts, and an exceptional user experience. I have experience in user research, wireframing, prototyping, and designing user interfaces for mobile apps and web-based applications.\n\nI am highly proficient in Firebase, including Firestore, Realtime Database, and Firebase Cloud Messaging. I have used these technologies to build real-time collaborative applications, messaging systems, and cloud-based applications.\n\nThroughout my career, I have demonstrated strong collaboration skills, working closely with product managers, designers, and other developers to ensure that projects are delivered on time and to a high standard.\n\nIn summary, I am a highly skilled software engineer and UI/UX designer with expertise in Flutter, Dart, Firebase, and design. I am passionate about building innovative and engaging digital experiences that meet the needs of users and strive to deliver high-quality code and intuitive user interfaces for all projects.';
-	late final _TranslationsAboutAboutCardVn aboutCard = _TranslationsAboutAboutCardVn._(_root);
-	List<dynamic> get aboutCard2 => [
-		_TranslationsAbout$aboutCard2$0i0$Vn._(_root),
-		_TranslationsAbout$aboutCard2$0i1$Vn._(_root),
-		_TranslationsAbout$aboutCard2$0i2$Vn._(_root),
-		_TranslationsAbout$aboutCard2$0i3$Vn._(_root),
+	List<dynamic> get aboutCard => [
+		_TranslationsAbout$aboutCard$0i0$Vi._(_root),
+		_TranslationsAbout$aboutCard$0i1$Vi._(_root),
+		_TranslationsAbout$aboutCard$0i2$Vi._(_root),
+		_TranslationsAbout$aboutCard$0i3$Vi._(_root),
 	];
 }
 
+// Path: general
+class _TranslationsGeneralVi {
+	_TranslationsGeneralVi._(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+	String get title_introduction_about_section => 'Introduction';
+	String get name_about_section => 'Chung Nguyen Thanh';
+	String get title_about_section => 'About';
+	String get title_contact_section => 'Contact';
+	String get title_contact_me_section => 'Contact Me';
+	String get get_in_touch_contact_section => 'Get in touch';
+	String get feel_free_contact_section => 'Feel free to get in touch';
+	String get hint_your_name_contact_section => 'Your name';
+	String get hint_your_email_contact_section => 'Your email';
+	String get hint_message_contact_section => 'Type your message';
+	String get btn_send_contact_section => 'Send';
+	String get title_experience_section => 'Work Experience';
+	String get title_project_section => 'Projects';
+	String get title_personal_projects_project_section => 'Personal Projects';
+	String get title_client_projects_project_section => 'Work/Client Projects';
+	String get m_title_personal_projects_project_section => 'Personal';
+	String get m_title_client_projects_project_section => 'Work/Client';
+	String get title_all_projects_project_section => 'All Projects';
+	String get title_skill_section => 'Skills';
+	String get hi_about_section => 'Hi there! I\'m ';
+	String get introduce_home_section1 => 'I am a Software Development Engineer for Consumer Product Line (Phone, Set-top Box,...) and a Flutter Developer.';
+	String get introduce_home_section2 => 'I build system applications for AOSP, ATV in the Consumer Product Line and build websites and interactive software applications that run on multiple platforms and devices.';
+	String get browse_projects_home_section => 'Browse Projects';
+	String get required_input_field => 'This field is required';
+}
+
 // Path: project
-class _TranslationsProjectVn {
-	_TranslationsProjectVn._(this._root);
+class _TranslationsProjectVi {
+	_TranslationsProjectVi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
 	// Translations
 	List<dynamic> get projects => [
-		_TranslationsProject$projects$0i0$Vn._(_root),
-		_TranslationsProject$projects$0i1$Vn._(_root),
-		_TranslationsProject$projects$0i2$Vn._(_root),
-		_TranslationsProject$projects$0i3$Vn._(_root),
-		_TranslationsProject$projects$0i4$Vn._(_root),
+		_TranslationsProject$projects$0i0$Vi._(_root),
+		_TranslationsProject$projects$0i1$Vi._(_root),
+		_TranslationsProject$projects$0i2$Vi._(_root),
+		_TranslationsProject$projects$0i3$Vi._(_root),
+		_TranslationsProject$projects$0i4$Vi._(_root),
 	];
 }
 
 // Path: skills
-class _TranslationsSkillsVn {
-	_TranslationsSkillsVn._(this._root);
+class _TranslationsSkillsVi {
+	_TranslationsSkillsVi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
 	// Translations
 	List<dynamic> get skills => [
-		_TranslationsSkills$skills$0i0$Vn._(_root),
-		_TranslationsSkills$skills$0i1$Vn._(_root),
-		_TranslationsSkills$skills$0i2$Vn._(_root),
-		_TranslationsSkills$skills$0i3$Vn._(_root),
-		_TranslationsSkills$skills$0i4$Vn._(_root),
-		_TranslationsSkills$skills$0i5$Vn._(_root),
-		_TranslationsSkills$skills$0i6$Vn._(_root),
-		_TranslationsSkills$skills$0i7$Vn._(_root),
-		_TranslationsSkills$skills$0i8$Vn._(_root),
-		_TranslationsSkills$skills$0i9$Vn._(_root),
-		_TranslationsSkills$skills$0i10$Vn._(_root),
-		_TranslationsSkills$skills$0i11$Vn._(_root),
-		_TranslationsSkills$skills$0i12$Vn._(_root),
+		_TranslationsSkills$skills$0i0$Vi._(_root),
+		_TranslationsSkills$skills$0i1$Vi._(_root),
+		_TranslationsSkills$skills$0i2$Vi._(_root),
+		_TranslationsSkills$skills$0i3$Vi._(_root),
+		_TranslationsSkills$skills$0i4$Vi._(_root),
+		_TranslationsSkills$skills$0i5$Vi._(_root),
+		_TranslationsSkills$skills$0i6$Vi._(_root),
+		_TranslationsSkills$skills$0i7$Vi._(_root),
+		_TranslationsSkills$skills$0i8$Vi._(_root),
+		_TranslationsSkills$skills$0i9$Vi._(_root),
+		_TranslationsSkills$skills$0i10$Vi._(_root),
+		_TranslationsSkills$skills$0i11$Vi._(_root),
+		_TranslationsSkills$skills$0i12$Vi._(_root),
 	];
 }
 
-// Path: experience.experience1
-class _TranslationsExperienceExperience1Vn {
-	_TranslationsExperienceExperience1Vn._(this._root);
+// Path: experience.experiences.0
+class _TranslationsExperience$experiences$0i0$Vi {
+	_TranslationsExperience$experiences$0i0$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -263,9 +298,9 @@ class _TranslationsExperienceExperience1Vn {
 	String get works_here => 'false';
 }
 
-// Path: experience.experience2
-class _TranslationsExperienceExperience2Vn {
-	_TranslationsExperienceExperience2Vn._(this._root);
+// Path: experience.experiences.1
+class _TranslationsExperience$experiences$0i1$Vi {
+	_TranslationsExperience$experiences$0i1$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -283,9 +318,9 @@ class _TranslationsExperienceExperience2Vn {
 	String get works_here => 'true';
 }
 
-// Path: experience.experience3
-class _TranslationsExperienceExperience3Vn {
-	_TranslationsExperienceExperience3Vn._(this._root);
+// Path: experience.experiences.2
+class _TranslationsExperience$experiences$0i2$Vi {
+	_TranslationsExperience$experiences$0i2$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -303,22 +338,9 @@ class _TranslationsExperienceExperience3Vn {
 	String get works_here => 'true';
 }
 
-// Path: about.aboutCard
-class _TranslationsAboutAboutCardVn {
-	_TranslationsAboutAboutCardVn._(this._root);
-
-	final Translations _root; // ignore: unused_field
-
-	// Translations
-	late final _TranslationsAboutAboutCardCard1Vn card1 = _TranslationsAboutAboutCardCard1Vn._(_root);
-	late final _TranslationsAboutAboutCardCard2Vn card2 = _TranslationsAboutAboutCardCard2Vn._(_root);
-	late final _TranslationsAboutAboutCardCard3Vn card3 = _TranslationsAboutAboutCardCard3Vn._(_root);
-	late final _TranslationsAboutAboutCardCard4Vn card4 = _TranslationsAboutAboutCardCard4Vn._(_root);
-}
-
-// Path: about.aboutCard2.0
-class _TranslationsAbout$aboutCard2$0i0$Vn {
-	_TranslationsAbout$aboutCard2$0i0$Vn._(this._root);
+// Path: about.aboutCard.0
+class _TranslationsAbout$aboutCard$0i0$Vi {
+	_TranslationsAbout$aboutCard$0i0$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -328,9 +350,9 @@ class _TranslationsAbout$aboutCard2$0i0$Vn {
 	String get title => 'UI/UX Design';
 }
 
-// Path: about.aboutCard2.1
-class _TranslationsAbout$aboutCard2$0i1$Vn {
-	_TranslationsAbout$aboutCard2$0i1$Vn._(this._root);
+// Path: about.aboutCard.1
+class _TranslationsAbout$aboutCard$0i1$Vi {
+	_TranslationsAbout$aboutCard$0i1$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -340,9 +362,9 @@ class _TranslationsAbout$aboutCard2$0i1$Vn {
 	String get title => 'Front-End Development';
 }
 
-// Path: about.aboutCard2.2
-class _TranslationsAbout$aboutCard2$0i2$Vn {
-	_TranslationsAbout$aboutCard2$0i2$Vn._(this._root);
+// Path: about.aboutCard.2
+class _TranslationsAbout$aboutCard$0i2$Vi {
+	_TranslationsAbout$aboutCard$0i2$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -352,9 +374,9 @@ class _TranslationsAbout$aboutCard2$0i2$Vn {
 	String get title => 'API Integration';
 }
 
-// Path: about.aboutCard2.3
-class _TranslationsAbout$aboutCard2$0i3$Vn {
-	_TranslationsAbout$aboutCard2$0i3$Vn._(this._root);
+// Path: about.aboutCard.3
+class _TranslationsAbout$aboutCard$0i3$Vi {
+	_TranslationsAbout$aboutCard$0i3$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -365,8 +387,8 @@ class _TranslationsAbout$aboutCard2$0i3$Vn {
 }
 
 // Path: project.projects.0
-class _TranslationsProject$projects$0i0$Vn {
-	_TranslationsProject$projects$0i0$Vn._(this._root);
+class _TranslationsProject$projects$0i0$Vi {
+	_TranslationsProject$projects$0i0$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -392,8 +414,8 @@ class _TranslationsProject$projects$0i0$Vn {
 }
 
 // Path: project.projects.1
-class _TranslationsProject$projects$0i1$Vn {
-	_TranslationsProject$projects$0i1$Vn._(this._root);
+class _TranslationsProject$projects$0i1$Vi {
+	_TranslationsProject$projects$0i1$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -422,8 +444,8 @@ class _TranslationsProject$projects$0i1$Vn {
 }
 
 // Path: project.projects.2
-class _TranslationsProject$projects$0i2$Vn {
-	_TranslationsProject$projects$0i2$Vn._(this._root);
+class _TranslationsProject$projects$0i2$Vi {
+	_TranslationsProject$projects$0i2$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -448,8 +470,8 @@ class _TranslationsProject$projects$0i2$Vn {
 }
 
 // Path: project.projects.3
-class _TranslationsProject$projects$0i3$Vn {
-	_TranslationsProject$projects$0i3$Vn._(this._root);
+class _TranslationsProject$projects$0i3$Vi {
+	_TranslationsProject$projects$0i3$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -476,8 +498,8 @@ class _TranslationsProject$projects$0i3$Vn {
 }
 
 // Path: project.projects.4
-class _TranslationsProject$projects$0i4$Vn {
-	_TranslationsProject$projects$0i4$Vn._(this._root);
+class _TranslationsProject$projects$0i4$Vi {
+	_TranslationsProject$projects$0i4$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -504,8 +526,8 @@ class _TranslationsProject$projects$0i4$Vn {
 }
 
 // Path: skills.skills.0
-class _TranslationsSkills$skills$0i0$Vn {
-	_TranslationsSkills$skills$0i0$Vn._(this._root);
+class _TranslationsSkills$skills$0i0$Vi {
+	_TranslationsSkills$skills$0i0$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -518,8 +540,8 @@ class _TranslationsSkills$skills$0i0$Vn {
 }
 
 // Path: skills.skills.1
-class _TranslationsSkills$skills$0i1$Vn {
-	_TranslationsSkills$skills$0i1$Vn._(this._root);
+class _TranslationsSkills$skills$0i1$Vi {
+	_TranslationsSkills$skills$0i1$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -532,8 +554,8 @@ class _TranslationsSkills$skills$0i1$Vn {
 }
 
 // Path: skills.skills.2
-class _TranslationsSkills$skills$0i2$Vn {
-	_TranslationsSkills$skills$0i2$Vn._(this._root);
+class _TranslationsSkills$skills$0i2$Vi {
+	_TranslationsSkills$skills$0i2$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -546,8 +568,8 @@ class _TranslationsSkills$skills$0i2$Vn {
 }
 
 // Path: skills.skills.3
-class _TranslationsSkills$skills$0i3$Vn {
-	_TranslationsSkills$skills$0i3$Vn._(this._root);
+class _TranslationsSkills$skills$0i3$Vi {
+	_TranslationsSkills$skills$0i3$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -560,8 +582,8 @@ class _TranslationsSkills$skills$0i3$Vn {
 }
 
 // Path: skills.skills.4
-class _TranslationsSkills$skills$0i4$Vn {
-	_TranslationsSkills$skills$0i4$Vn._(this._root);
+class _TranslationsSkills$skills$0i4$Vi {
+	_TranslationsSkills$skills$0i4$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -574,8 +596,8 @@ class _TranslationsSkills$skills$0i4$Vn {
 }
 
 // Path: skills.skills.5
-class _TranslationsSkills$skills$0i5$Vn {
-	_TranslationsSkills$skills$0i5$Vn._(this._root);
+class _TranslationsSkills$skills$0i5$Vi {
+	_TranslationsSkills$skills$0i5$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -588,8 +610,8 @@ class _TranslationsSkills$skills$0i5$Vn {
 }
 
 // Path: skills.skills.6
-class _TranslationsSkills$skills$0i6$Vn {
-	_TranslationsSkills$skills$0i6$Vn._(this._root);
+class _TranslationsSkills$skills$0i6$Vi {
+	_TranslationsSkills$skills$0i6$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -602,8 +624,8 @@ class _TranslationsSkills$skills$0i6$Vn {
 }
 
 // Path: skills.skills.7
-class _TranslationsSkills$skills$0i7$Vn {
-	_TranslationsSkills$skills$0i7$Vn._(this._root);
+class _TranslationsSkills$skills$0i7$Vi {
+	_TranslationsSkills$skills$0i7$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -616,8 +638,8 @@ class _TranslationsSkills$skills$0i7$Vn {
 }
 
 // Path: skills.skills.8
-class _TranslationsSkills$skills$0i8$Vn {
-	_TranslationsSkills$skills$0i8$Vn._(this._root);
+class _TranslationsSkills$skills$0i8$Vi {
+	_TranslationsSkills$skills$0i8$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -630,8 +652,8 @@ class _TranslationsSkills$skills$0i8$Vn {
 }
 
 // Path: skills.skills.9
-class _TranslationsSkills$skills$0i9$Vn {
-	_TranslationsSkills$skills$0i9$Vn._(this._root);
+class _TranslationsSkills$skills$0i9$Vi {
+	_TranslationsSkills$skills$0i9$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -644,8 +666,8 @@ class _TranslationsSkills$skills$0i9$Vn {
 }
 
 // Path: skills.skills.10
-class _TranslationsSkills$skills$0i10$Vn {
-	_TranslationsSkills$skills$0i10$Vn._(this._root);
+class _TranslationsSkills$skills$0i10$Vi {
+	_TranslationsSkills$skills$0i10$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -658,8 +680,8 @@ class _TranslationsSkills$skills$0i10$Vn {
 }
 
 // Path: skills.skills.11
-class _TranslationsSkills$skills$0i11$Vn {
-	_TranslationsSkills$skills$0i11$Vn._(this._root);
+class _TranslationsSkills$skills$0i11$Vi {
+	_TranslationsSkills$skills$0i11$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -672,8 +694,8 @@ class _TranslationsSkills$skills$0i11$Vn {
 }
 
 // Path: skills.skills.12
-class _TranslationsSkills$skills$0i12$Vn {
-	_TranslationsSkills$skills$0i12$Vn._(this._root);
+class _TranslationsSkills$skills$0i12$Vi {
+	_TranslationsSkills$skills$0i12$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -683,54 +705,6 @@ class _TranslationsSkills$skills$0i12$Vn {
 	String get hidden => 'false';
 	String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FCodemagic%20(CI%2FCD)?alt=media&token=4b1f2119-e086-4144-8c89-da990b5afff7';
 	String get name => 'Codemagic (CI/CD)';
-}
-
-// Path: about.aboutCard.card1
-class _TranslationsAboutAboutCardCard1Vn {
-	_TranslationsAboutAboutCardCard1Vn._(this._root);
-
-	final Translations _root; // ignore: unused_field
-
-	// Translations
-	String get content => 'I value simple, clean design patterns, and thoughtful interactions.';
-	String get iconPath => 'assets/vector.png';
-	String get title => 'UI/UX Design';
-}
-
-// Path: about.aboutCard.card2
-class _TranslationsAboutAboutCardCard2Vn {
-	_TranslationsAboutAboutCardCard2Vn._(this._root);
-
-	final Translations _root; // ignore: unused_field
-
-	// Translations
-	String get content => 'Using Flutter & Dart, I build fast, interactive apps & websites.';
-	String get iconPath => 'assets/programming-code-signs.png';
-	String get title => 'Front-End Development';
-}
-
-// Path: about.aboutCard.card3
-class _TranslationsAboutAboutCardCard3Vn {
-	_TranslationsAboutAboutCardCard3Vn._(this._root);
-
-	final Translations _root; // ignore: unused_field
-
-	// Translations
-	String get content => 'API integrations throughout a software to keep data in sync and enhance productivity.';
-	String get iconPath => 'assets/api.png';
-	String get title => 'API Integration';
-}
-
-// Path: about.aboutCard.card4
-class _TranslationsAboutAboutCardCard4Vn {
-	_TranslationsAboutAboutCardCard4Vn._(this._root);
-
-	final Translations _root; // ignore: unused_field
-
-	// Translations
-	String get content => 'I enjoy bringing ideas to life on the phone or in the browser.';
-	String get iconPath => 'assets/web-development.png';
-	String get title => 'Mobile/Web Development';
 }
 
 // Path: <root>
@@ -760,24 +734,27 @@ class _TranslationsEn implements Translations {
 	@override late final _TranslationsExperienceEn experience = _TranslationsExperienceEn._(_root);
 	@override late final _TranslationsTabsEn tabs = _TranslationsTabsEn._(_root);
 	@override late final _TranslationsAboutEn about = _TranslationsAboutEn._(_root);
+	@override late final _TranslationsGeneralEn general = _TranslationsGeneralEn._(_root);
 	@override late final _TranslationsProjectEn project = _TranslationsProjectEn._(_root);
 	@override late final _TranslationsSkillsEn skills = _TranslationsSkillsEn._(_root);
 }
 
 // Path: experience
-class _TranslationsExperienceEn implements _TranslationsExperienceVn {
+class _TranslationsExperienceEn implements _TranslationsExperienceVi {
 	_TranslationsExperienceEn._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override late final _TranslationsExperienceExperience1En experience1 = _TranslationsExperienceExperience1En._(_root);
-	@override late final _TranslationsExperienceExperience2En experience2 = _TranslationsExperienceExperience2En._(_root);
-	@override late final _TranslationsExperienceExperience3En experience3 = _TranslationsExperienceExperience3En._(_root);
+	@override List<dynamic> get experiences => [
+		_TranslationsExperience$experiences$0i0$En._(_root),
+		_TranslationsExperience$experiences$0i1$En._(_root),
+		_TranslationsExperience$experiences$0i2$En._(_root),
+	];
 }
 
 // Path: tabs
-class _TranslationsTabsEn implements _TranslationsTabsVn {
+class _TranslationsTabsEn implements _TranslationsTabsVi {
 	_TranslationsTabsEn._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -795,7 +772,7 @@ class _TranslationsTabsEn implements _TranslationsTabsVn {
 }
 
 // Path: about
-class _TranslationsAboutEn implements _TranslationsAboutVn {
+class _TranslationsAboutEn implements _TranslationsAboutVi {
 	_TranslationsAboutEn._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -803,17 +780,49 @@ class _TranslationsAboutEn implements _TranslationsAboutVn {
 	// Translations
 	@override String get name => 'Chung Nguyen Thanh';
 	@override String get aboutMe => 'As a software engineer and UI/UX designer with extensive experience in Flutter, Dart, Firebase, and design, I am passionate about developing innovative and engaging digital experiences that meet the needs of users.\n\nWith a strong foundation in software engineering and design principles, I am adept at crafting high-quality code and intuitive user interfaces. I have experience in designing and developing user-friendly, cross-platform mobile applications using Flutter and Dart.\n\nAs a skilled designer, I can create engaging visuals, intuitive layouts, and an exceptional user experience. I have experience in user research, wireframing, prototyping, and designing user interfaces for mobile apps and web-based applications.\n\nI am highly proficient in Firebase, including Firestore, Realtime Database, and Firebase Cloud Messaging. I have used these technologies to build real-time collaborative applications, messaging systems, and cloud-based applications.\n\nThroughout my career, I have demonstrated strong collaboration skills, working closely with product managers, designers, and other developers to ensure that projects are delivered on time and to a high standard.\n\nIn summary, I am a highly skilled software engineer and UI/UX designer with expertise in Flutter, Dart, Firebase, and design. I am passionate about building innovative and engaging digital experiences that meet the needs of users and strive to deliver high-quality code and intuitive user interfaces for all projects.';
-	@override late final _TranslationsAboutAboutCardEn aboutCard = _TranslationsAboutAboutCardEn._(_root);
-	@override List<dynamic> get aboutCard2 => [
-		_TranslationsAbout$aboutCard2$0i0$En._(_root),
-		_TranslationsAbout$aboutCard2$0i1$En._(_root),
-		_TranslationsAbout$aboutCard2$0i2$En._(_root),
-		_TranslationsAbout$aboutCard2$0i3$En._(_root),
+	@override List<dynamic> get aboutCard => [
+		_TranslationsAbout$aboutCard$0i0$En._(_root),
+		_TranslationsAbout$aboutCard$0i1$En._(_root),
+		_TranslationsAbout$aboutCard$0i2$En._(_root),
+		_TranslationsAbout$aboutCard$0i3$En._(_root),
 	];
 }
 
+// Path: general
+class _TranslationsGeneralEn implements _TranslationsGeneralVi {
+	_TranslationsGeneralEn._(this._root);
+
+	@override final _TranslationsEn _root; // ignore: unused_field
+
+	// Translations
+	@override String get title_introduction_about_section => 'Introduction';
+	@override String get name_about_section => 'Chung Nguyen Thanh';
+	@override String get title_about_section => 'About';
+	@override String get title_contact_section => 'Contact';
+	@override String get title_contact_me_section => 'Contact Me';
+	@override String get get_in_touch_contact_section => 'Get in touch';
+	@override String get feel_free_contact_section => 'Feel free to get in touch';
+	@override String get hint_your_name_contact_section => 'Your name';
+	@override String get hint_your_email_contact_section => 'Your email';
+	@override String get hint_message_contact_section => 'Type your message';
+	@override String get btn_send_contact_section => 'Send';
+	@override String get title_experience_section => 'Work Experience';
+	@override String get title_project_section => 'Projects';
+	@override String get title_personal_projects_project_section => 'Personal Projects';
+	@override String get title_client_projects_project_section => 'Work/Client Projects';
+	@override String get m_title_personal_projects_project_section => 'Personal';
+	@override String get m_title_client_projects_project_section => 'Work/Client';
+	@override String get title_all_projects_project_section => 'All Projects';
+	@override String get title_skill_section => 'Skills';
+	@override String get hi_about_section => 'Hi there! I\'m ';
+	@override String get introduce_home_section1 => 'I am a Software Development Engineer for Consumer Product Line (Phone, Set-top Box,...) and a Flutter Developer.';
+	@override String get introduce_home_section2 => 'I build system applications for AOSP, ATV in the Consumer Product Line and build websites and interactive software applications that run on multiple platforms and devices.';
+	@override String get browse_projects_home_section => 'Browse Projects';
+	@override String get required_input_field => 'This field is required';
+}
+
 // Path: project
-class _TranslationsProjectEn implements _TranslationsProjectVn {
+class _TranslationsProjectEn implements _TranslationsProjectVi {
 	_TranslationsProjectEn._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -829,7 +838,7 @@ class _TranslationsProjectEn implements _TranslationsProjectVn {
 }
 
 // Path: skills
-class _TranslationsSkillsEn implements _TranslationsSkillsVn {
+class _TranslationsSkillsEn implements _TranslationsSkillsVi {
 	_TranslationsSkillsEn._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -852,9 +861,9 @@ class _TranslationsSkillsEn implements _TranslationsSkillsVn {
 	];
 }
 
-// Path: experience.experience1
-class _TranslationsExperienceExperience1En implements _TranslationsExperienceExperience1Vn {
-	_TranslationsExperienceExperience1En._(this._root);
+// Path: experience.experiences.0
+class _TranslationsExperience$experiences$0i0$En implements _TranslationsExperience$experiences$0i0$Vi {
+	_TranslationsExperience$experiences$0i0$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
 
@@ -872,9 +881,9 @@ class _TranslationsExperienceExperience1En implements _TranslationsExperienceExp
 	@override String get works_here => 'false';
 }
 
-// Path: experience.experience2
-class _TranslationsExperienceExperience2En implements _TranslationsExperienceExperience2Vn {
-	_TranslationsExperienceExperience2En._(this._root);
+// Path: experience.experiences.1
+class _TranslationsExperience$experiences$0i1$En implements _TranslationsExperience$experiences$0i1$Vi {
+	_TranslationsExperience$experiences$0i1$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
 
@@ -892,9 +901,9 @@ class _TranslationsExperienceExperience2En implements _TranslationsExperienceExp
 	@override String get works_here => 'true';
 }
 
-// Path: experience.experience3
-class _TranslationsExperienceExperience3En implements _TranslationsExperienceExperience3Vn {
-	_TranslationsExperienceExperience3En._(this._root);
+// Path: experience.experiences.2
+class _TranslationsExperience$experiences$0i2$En implements _TranslationsExperience$experiences$0i2$Vi {
+	_TranslationsExperience$experiences$0i2$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
 
@@ -912,22 +921,9 @@ class _TranslationsExperienceExperience3En implements _TranslationsExperienceExp
 	@override String get works_here => 'true';
 }
 
-// Path: about.aboutCard
-class _TranslationsAboutAboutCardEn implements _TranslationsAboutAboutCardVn {
-	_TranslationsAboutAboutCardEn._(this._root);
-
-	@override final _TranslationsEn _root; // ignore: unused_field
-
-	// Translations
-	@override late final _TranslationsAboutAboutCardCard1En card1 = _TranslationsAboutAboutCardCard1En._(_root);
-	@override late final _TranslationsAboutAboutCardCard2En card2 = _TranslationsAboutAboutCardCard2En._(_root);
-	@override late final _TranslationsAboutAboutCardCard3En card3 = _TranslationsAboutAboutCardCard3En._(_root);
-	@override late final _TranslationsAboutAboutCardCard4En card4 = _TranslationsAboutAboutCardCard4En._(_root);
-}
-
-// Path: about.aboutCard2.0
-class _TranslationsAbout$aboutCard2$0i0$En implements _TranslationsAbout$aboutCard2$0i0$Vn {
-	_TranslationsAbout$aboutCard2$0i0$En._(this._root);
+// Path: about.aboutCard.0
+class _TranslationsAbout$aboutCard$0i0$En implements _TranslationsAbout$aboutCard$0i0$Vi {
+	_TranslationsAbout$aboutCard$0i0$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
 
@@ -937,9 +933,9 @@ class _TranslationsAbout$aboutCard2$0i0$En implements _TranslationsAbout$aboutCa
 	@override String get title => 'UI/UX Design';
 }
 
-// Path: about.aboutCard2.1
-class _TranslationsAbout$aboutCard2$0i1$En implements _TranslationsAbout$aboutCard2$0i1$Vn {
-	_TranslationsAbout$aboutCard2$0i1$En._(this._root);
+// Path: about.aboutCard.1
+class _TranslationsAbout$aboutCard$0i1$En implements _TranslationsAbout$aboutCard$0i1$Vi {
+	_TranslationsAbout$aboutCard$0i1$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
 
@@ -949,9 +945,9 @@ class _TranslationsAbout$aboutCard2$0i1$En implements _TranslationsAbout$aboutCa
 	@override String get title => 'Front-End Development';
 }
 
-// Path: about.aboutCard2.2
-class _TranslationsAbout$aboutCard2$0i2$En implements _TranslationsAbout$aboutCard2$0i2$Vn {
-	_TranslationsAbout$aboutCard2$0i2$En._(this._root);
+// Path: about.aboutCard.2
+class _TranslationsAbout$aboutCard$0i2$En implements _TranslationsAbout$aboutCard$0i2$Vi {
+	_TranslationsAbout$aboutCard$0i2$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
 
@@ -961,9 +957,9 @@ class _TranslationsAbout$aboutCard2$0i2$En implements _TranslationsAbout$aboutCa
 	@override String get title => 'API Integration';
 }
 
-// Path: about.aboutCard2.3
-class _TranslationsAbout$aboutCard2$0i3$En implements _TranslationsAbout$aboutCard2$0i3$Vn {
-	_TranslationsAbout$aboutCard2$0i3$En._(this._root);
+// Path: about.aboutCard.3
+class _TranslationsAbout$aboutCard$0i3$En implements _TranslationsAbout$aboutCard$0i3$Vi {
+	_TranslationsAbout$aboutCard$0i3$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
 
@@ -974,7 +970,7 @@ class _TranslationsAbout$aboutCard2$0i3$En implements _TranslationsAbout$aboutCa
 }
 
 // Path: project.projects.0
-class _TranslationsProject$projects$0i0$En implements _TranslationsProject$projects$0i0$Vn {
+class _TranslationsProject$projects$0i0$En implements _TranslationsProject$projects$0i0$Vi {
 	_TranslationsProject$projects$0i0$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1001,7 +997,7 @@ class _TranslationsProject$projects$0i0$En implements _TranslationsProject$proje
 }
 
 // Path: project.projects.1
-class _TranslationsProject$projects$0i1$En implements _TranslationsProject$projects$0i1$Vn {
+class _TranslationsProject$projects$0i1$En implements _TranslationsProject$projects$0i1$Vi {
 	_TranslationsProject$projects$0i1$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1031,7 +1027,7 @@ class _TranslationsProject$projects$0i1$En implements _TranslationsProject$proje
 }
 
 // Path: project.projects.2
-class _TranslationsProject$projects$0i2$En implements _TranslationsProject$projects$0i2$Vn {
+class _TranslationsProject$projects$0i2$En implements _TranslationsProject$projects$0i2$Vi {
 	_TranslationsProject$projects$0i2$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1057,7 +1053,7 @@ class _TranslationsProject$projects$0i2$En implements _TranslationsProject$proje
 }
 
 // Path: project.projects.3
-class _TranslationsProject$projects$0i3$En implements _TranslationsProject$projects$0i3$Vn {
+class _TranslationsProject$projects$0i3$En implements _TranslationsProject$projects$0i3$Vi {
 	_TranslationsProject$projects$0i3$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1085,7 +1081,7 @@ class _TranslationsProject$projects$0i3$En implements _TranslationsProject$proje
 }
 
 // Path: project.projects.4
-class _TranslationsProject$projects$0i4$En implements _TranslationsProject$projects$0i4$Vn {
+class _TranslationsProject$projects$0i4$En implements _TranslationsProject$projects$0i4$Vi {
 	_TranslationsProject$projects$0i4$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1113,7 +1109,7 @@ class _TranslationsProject$projects$0i4$En implements _TranslationsProject$proje
 }
 
 // Path: skills.skills.0
-class _TranslationsSkills$skills$0i0$En implements _TranslationsSkills$skills$0i0$Vn {
+class _TranslationsSkills$skills$0i0$En implements _TranslationsSkills$skills$0i0$Vi {
 	_TranslationsSkills$skills$0i0$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1127,7 +1123,7 @@ class _TranslationsSkills$skills$0i0$En implements _TranslationsSkills$skills$0i
 }
 
 // Path: skills.skills.1
-class _TranslationsSkills$skills$0i1$En implements _TranslationsSkills$skills$0i1$Vn {
+class _TranslationsSkills$skills$0i1$En implements _TranslationsSkills$skills$0i1$Vi {
 	_TranslationsSkills$skills$0i1$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1141,7 +1137,7 @@ class _TranslationsSkills$skills$0i1$En implements _TranslationsSkills$skills$0i
 }
 
 // Path: skills.skills.2
-class _TranslationsSkills$skills$0i2$En implements _TranslationsSkills$skills$0i2$Vn {
+class _TranslationsSkills$skills$0i2$En implements _TranslationsSkills$skills$0i2$Vi {
 	_TranslationsSkills$skills$0i2$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1155,7 +1151,7 @@ class _TranslationsSkills$skills$0i2$En implements _TranslationsSkills$skills$0i
 }
 
 // Path: skills.skills.3
-class _TranslationsSkills$skills$0i3$En implements _TranslationsSkills$skills$0i3$Vn {
+class _TranslationsSkills$skills$0i3$En implements _TranslationsSkills$skills$0i3$Vi {
 	_TranslationsSkills$skills$0i3$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1169,7 +1165,7 @@ class _TranslationsSkills$skills$0i3$En implements _TranslationsSkills$skills$0i
 }
 
 // Path: skills.skills.4
-class _TranslationsSkills$skills$0i4$En implements _TranslationsSkills$skills$0i4$Vn {
+class _TranslationsSkills$skills$0i4$En implements _TranslationsSkills$skills$0i4$Vi {
 	_TranslationsSkills$skills$0i4$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1183,7 +1179,7 @@ class _TranslationsSkills$skills$0i4$En implements _TranslationsSkills$skills$0i
 }
 
 // Path: skills.skills.5
-class _TranslationsSkills$skills$0i5$En implements _TranslationsSkills$skills$0i5$Vn {
+class _TranslationsSkills$skills$0i5$En implements _TranslationsSkills$skills$0i5$Vi {
 	_TranslationsSkills$skills$0i5$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1197,7 +1193,7 @@ class _TranslationsSkills$skills$0i5$En implements _TranslationsSkills$skills$0i
 }
 
 // Path: skills.skills.6
-class _TranslationsSkills$skills$0i6$En implements _TranslationsSkills$skills$0i6$Vn {
+class _TranslationsSkills$skills$0i6$En implements _TranslationsSkills$skills$0i6$Vi {
 	_TranslationsSkills$skills$0i6$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1211,7 +1207,7 @@ class _TranslationsSkills$skills$0i6$En implements _TranslationsSkills$skills$0i
 }
 
 // Path: skills.skills.7
-class _TranslationsSkills$skills$0i7$En implements _TranslationsSkills$skills$0i7$Vn {
+class _TranslationsSkills$skills$0i7$En implements _TranslationsSkills$skills$0i7$Vi {
 	_TranslationsSkills$skills$0i7$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1225,7 +1221,7 @@ class _TranslationsSkills$skills$0i7$En implements _TranslationsSkills$skills$0i
 }
 
 // Path: skills.skills.8
-class _TranslationsSkills$skills$0i8$En implements _TranslationsSkills$skills$0i8$Vn {
+class _TranslationsSkills$skills$0i8$En implements _TranslationsSkills$skills$0i8$Vi {
 	_TranslationsSkills$skills$0i8$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1239,7 +1235,7 @@ class _TranslationsSkills$skills$0i8$En implements _TranslationsSkills$skills$0i
 }
 
 // Path: skills.skills.9
-class _TranslationsSkills$skills$0i9$En implements _TranslationsSkills$skills$0i9$Vn {
+class _TranslationsSkills$skills$0i9$En implements _TranslationsSkills$skills$0i9$Vi {
 	_TranslationsSkills$skills$0i9$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1253,7 +1249,7 @@ class _TranslationsSkills$skills$0i9$En implements _TranslationsSkills$skills$0i
 }
 
 // Path: skills.skills.10
-class _TranslationsSkills$skills$0i10$En implements _TranslationsSkills$skills$0i10$Vn {
+class _TranslationsSkills$skills$0i10$En implements _TranslationsSkills$skills$0i10$Vi {
 	_TranslationsSkills$skills$0i10$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1267,7 +1263,7 @@ class _TranslationsSkills$skills$0i10$En implements _TranslationsSkills$skills$0
 }
 
 // Path: skills.skills.11
-class _TranslationsSkills$skills$0i11$En implements _TranslationsSkills$skills$0i11$Vn {
+class _TranslationsSkills$skills$0i11$En implements _TranslationsSkills$skills$0i11$Vi {
 	_TranslationsSkills$skills$0i11$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1281,7 +1277,7 @@ class _TranslationsSkills$skills$0i11$En implements _TranslationsSkills$skills$0
 }
 
 // Path: skills.skills.12
-class _TranslationsSkills$skills$0i12$En implements _TranslationsSkills$skills$0i12$Vn {
+class _TranslationsSkills$skills$0i12$En implements _TranslationsSkills$skills$0i12$Vi {
 	_TranslationsSkills$skills$0i12$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
@@ -1294,93 +1290,45 @@ class _TranslationsSkills$skills$0i12$En implements _TranslationsSkills$skills$0
 	@override String get name => 'Codemagic (CI/CD)';
 }
 
-// Path: about.aboutCard.card1
-class _TranslationsAboutAboutCardCard1En implements _TranslationsAboutAboutCardCard1Vn {
-	_TranslationsAboutAboutCardCard1En._(this._root);
-
-	@override final _TranslationsEn _root; // ignore: unused_field
-
-	// Translations
-	@override String get content => 'I value simple, clean design patterns, and thoughtful interactions.';
-	@override String get iconPath => 'assets/vector.png';
-	@override String get title => 'UI/UX Design';
-}
-
-// Path: about.aboutCard.card2
-class _TranslationsAboutAboutCardCard2En implements _TranslationsAboutAboutCardCard2Vn {
-	_TranslationsAboutAboutCardCard2En._(this._root);
-
-	@override final _TranslationsEn _root; // ignore: unused_field
-
-	// Translations
-	@override String get content => 'Using Flutter & Dart, I build fast, interactive apps & websites.';
-	@override String get iconPath => 'assets/programming-code-signs.png';
-	@override String get title => 'Front-End Development';
-}
-
-// Path: about.aboutCard.card3
-class _TranslationsAboutAboutCardCard3En implements _TranslationsAboutAboutCardCard3Vn {
-	_TranslationsAboutAboutCardCard3En._(this._root);
-
-	@override final _TranslationsEn _root; // ignore: unused_field
-
-	// Translations
-	@override String get content => 'API integrations throughout a software to keep data in sync and enhance productivity.';
-	@override String get iconPath => 'assets/api.png';
-	@override String get title => 'API Integration';
-}
-
-// Path: about.aboutCard.card4
-class _TranslationsAboutAboutCardCard4En implements _TranslationsAboutAboutCardCard4Vn {
-	_TranslationsAboutAboutCardCard4En._(this._root);
-
-	@override final _TranslationsEn _root; // ignore: unused_field
-
-	// Translations
-	@override String get content => 'I enjoy bringing ideas to life on the phone or in the browser.';
-	@override String get iconPath => 'assets/web-development.png';
-	@override String get title => 'Mobile/Web Development';
-}
-
 /// Flat map(s) containing all translations.
 /// Only for edge cases! For simple maps, use the map function of this library.
 
 extension on Translations {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
-			case 'experience.experience1.company': return 'Omnis Corporation';
-			case 'experience.experience1.country': return 'Zambia';
-			case 'experience.experience1.created_at': return '2022-12-31T14:23:43.877077';
-			case 'experience.experience1.emp_type': return 'Part - Time';
-			case 'experience.experience1.end_date': return '2022-03-07T00:00:00.000';
-			case 'experience.experience1.is_hidden': return 'false';
-			case 'experience.experience1.position': return 'UI / UX Designer & Flutter Developer';
-			case 'experience.experience1.start_date': return '2021-01-05T00:00:00.000';
-			case 'experience.experience1.state': return 'Lusaka';
-			case 'experience.experience1.work_done': return 'Designed clean & Simple yet thoughtful UI/UX design patterns for both mobile and web apps.#Built both mobile and web applications with interactive & responsive layouts.#API integrations throughout a software to keep data in sync and enhance productivity.';
-			case 'experience.experience1.works_here': return 'false';
-			case 'experience.experience2.company': return 'Lassod Consulting Limited';
-			case 'experience.experience2.country': return 'UK';
-			case 'experience.experience2.created_at': return '2022-12-31T14:28:07.703644';
-			case 'experience.experience2.emp_type': return 'Full - Time';
-			case 'experience.experience2.is_hidden': return 'false';
-			case 'experience.experience2.position': return 'Software Engineer (Remote)';
-			case 'experience.experience2.site_url': return 'lassod.com';
-			case 'experience.experience2.start_date': return '2022-03-07T00:00:00.000';
-			case 'experience.experience2.state': return 'England';
-			case 'experience.experience2.work_done': return 'Write modern, performant, maintainable code for a diverse array of client and internal projects with Flutter & Dart.#Communicate with multi-disciplinary teams of engineers, designers and clients on a daily basis.#Work with a variety of different languages, platforms, frameworks, and content management systems such as Dart, Flutter, Github, Gitlab, Jira and Time Management.';
-			case 'experience.experience2.works_here': return 'true';
-			case 'experience.experience3.company': return 'Pynch Technology';
-			case 'experience.experience3.country': return 'Zambia';
-			case 'experience.experience3.created_at': return '2023-01-01T14:51:02.923189';
-			case 'experience.experience3.emp_type': return 'Part - Time';
-			case 'experience.experience3.is_hidden': return 'false';
-			case 'experience.experience3.position': return 'Mobile Developer (Remote)';
-			case 'experience.experience3.site_url': return 'pynch.co.zm';
-			case 'experience.experience3.start_date': return '2022-11-07T00:00:00.000';
-			case 'experience.experience3.state': return 'Lusaka';
-			case 'experience.experience3.work_done': return 'Designing, developing, testing and implementing mobile applications using the Flutter framework.#Working closely with the backend engineer and UI/UX designer to ensure proper integration in mobile applications.';
-			case 'experience.experience3.works_here': return 'true';
+			case 'experience.experiences.0.company': return 'Omnis Corporation';
+			case 'experience.experiences.0.country': return 'Zambia';
+			case 'experience.experiences.0.created_at': return '2022-12-31T14:23:43.877077';
+			case 'experience.experiences.0.emp_type': return 'Part - Time';
+			case 'experience.experiences.0.end_date': return '2022-03-07T00:00:00.000';
+			case 'experience.experiences.0.is_hidden': return 'false';
+			case 'experience.experiences.0.position': return 'UI / UX Designer & Flutter Developer';
+			case 'experience.experiences.0.start_date': return '2021-01-05T00:00:00.000';
+			case 'experience.experiences.0.state': return 'Lusaka';
+			case 'experience.experiences.0.work_done': return 'Designed clean & Simple yet thoughtful UI/UX design patterns for both mobile and web apps.#Built both mobile and web applications with interactive & responsive layouts.#API integrations throughout a software to keep data in sync and enhance productivity.';
+			case 'experience.experiences.0.works_here': return 'false';
+			case 'experience.experiences.1.company': return 'Lassod Consulting Limited';
+			case 'experience.experiences.1.country': return 'UK';
+			case 'experience.experiences.1.created_at': return '2022-12-31T14:28:07.703644';
+			case 'experience.experiences.1.emp_type': return 'Full - Time';
+			case 'experience.experiences.1.is_hidden': return 'false';
+			case 'experience.experiences.1.position': return 'Software Engineer (Remote)';
+			case 'experience.experiences.1.site_url': return 'lassod.com';
+			case 'experience.experiences.1.start_date': return '2022-03-07T00:00:00.000';
+			case 'experience.experiences.1.state': return 'England';
+			case 'experience.experiences.1.work_done': return 'Write modern, performant, maintainable code for a diverse array of client and internal projects with Flutter & Dart.#Communicate with multi-disciplinary teams of engineers, designers and clients on a daily basis.#Work with a variety of different languages, platforms, frameworks, and content management systems such as Dart, Flutter, Github, Gitlab, Jira and Time Management.';
+			case 'experience.experiences.1.works_here': return 'true';
+			case 'experience.experiences.2.company': return 'Pynch Technology';
+			case 'experience.experiences.2.country': return 'Zambia';
+			case 'experience.experiences.2.created_at': return '2023-01-01T14:51:02.923189';
+			case 'experience.experiences.2.emp_type': return 'Part - Time';
+			case 'experience.experiences.2.is_hidden': return 'false';
+			case 'experience.experiences.2.position': return 'Mobile Developer (Remote)';
+			case 'experience.experiences.2.site_url': return 'pynch.co.zm';
+			case 'experience.experiences.2.start_date': return '2022-11-07T00:00:00.000';
+			case 'experience.experiences.2.state': return 'Lusaka';
+			case 'experience.experiences.2.work_done': return 'Designing, developing, testing and implementing mobile applications using the Flutter framework.#Working closely with the backend engineer and UI/UX designer to ensure proper integration in mobile applications.';
+			case 'experience.experiences.2.works_here': return 'true';
 			case 'tabs.tabs.0': return 'Home';
 			case 'tabs.tabs.1': return 'About';
 			case 'tabs.tabs.2': return 'Skills';
@@ -1390,30 +1338,42 @@ extension on Translations {
 			case 'tabs.tabs.6': return 'Download CV';
 			case 'about.name': return 'Chung Nguyen Thanh';
 			case 'about.aboutMe': return 'As a software engineer and UI/UX designer with extensive experience in Flutter, Dart, Firebase, and design, I am passionate about developing innovative and engaging digital experiences that meet the needs of users.\n\nWith a strong foundation in software engineering and design principles, I am adept at crafting high-quality code and intuitive user interfaces. I have experience in designing and developing user-friendly, cross-platform mobile applications using Flutter and Dart.\n\nAs a skilled designer, I can create engaging visuals, intuitive layouts, and an exceptional user experience. I have experience in user research, wireframing, prototyping, and designing user interfaces for mobile apps and web-based applications.\n\nI am highly proficient in Firebase, including Firestore, Realtime Database, and Firebase Cloud Messaging. I have used these technologies to build real-time collaborative applications, messaging systems, and cloud-based applications.\n\nThroughout my career, I have demonstrated strong collaboration skills, working closely with product managers, designers, and other developers to ensure that projects are delivered on time and to a high standard.\n\nIn summary, I am a highly skilled software engineer and UI/UX designer with expertise in Flutter, Dart, Firebase, and design. I am passionate about building innovative and engaging digital experiences that meet the needs of users and strive to deliver high-quality code and intuitive user interfaces for all projects.';
-			case 'about.aboutCard.card1.content': return 'I value simple, clean design patterns, and thoughtful interactions.';
-			case 'about.aboutCard.card1.iconPath': return 'assets/vector.png';
-			case 'about.aboutCard.card1.title': return 'UI/UX Design';
-			case 'about.aboutCard.card2.content': return 'Using Flutter & Dart, I build fast, interactive apps & websites.';
-			case 'about.aboutCard.card2.iconPath': return 'assets/programming-code-signs.png';
-			case 'about.aboutCard.card2.title': return 'Front-End Development';
-			case 'about.aboutCard.card3.content': return 'API integrations throughout a software to keep data in sync and enhance productivity.';
-			case 'about.aboutCard.card3.iconPath': return 'assets/api.png';
-			case 'about.aboutCard.card3.title': return 'API Integration';
-			case 'about.aboutCard.card4.content': return 'I enjoy bringing ideas to life on the phone or in the browser.';
-			case 'about.aboutCard.card4.iconPath': return 'assets/web-development.png';
-			case 'about.aboutCard.card4.title': return 'Mobile/Web Development';
-			case 'about.aboutCard2.0.content': return 'I value simple, clean design patterns, and thoughtful interactions.';
-			case 'about.aboutCard2.0.iconPath': return 'assets/vector.png';
-			case 'about.aboutCard2.0.title': return 'UI/UX Design';
-			case 'about.aboutCard2.1.content': return 'Using Flutter & Dart, I build fast, interactive apps & websites.';
-			case 'about.aboutCard2.1.iconPath': return 'assets/programming-code-signs.png';
-			case 'about.aboutCard2.1.title': return 'Front-End Development';
-			case 'about.aboutCard2.2.content': return 'API integrations throughout a software to keep data in sync and enhance productivity.';
-			case 'about.aboutCard2.2.iconPath': return 'assets/api.png';
-			case 'about.aboutCard2.2.title': return 'API Integration';
-			case 'about.aboutCard2.3.content': return 'I enjoy bringing ideas to life on the phone or in the browser.';
-			case 'about.aboutCard2.3.iconPath': return 'assets/web-development.png';
-			case 'about.aboutCard2.3.title': return 'Mobile/Web Development';
+			case 'about.aboutCard.0.content': return 'I value simple, clean design patterns, and thoughtful interactions.';
+			case 'about.aboutCard.0.iconPath': return 'assets/vector.png';
+			case 'about.aboutCard.0.title': return 'UI/UX Design';
+			case 'about.aboutCard.1.content': return 'Using Flutter & Dart, I build fast, interactive apps & websites.';
+			case 'about.aboutCard.1.iconPath': return 'assets/programming-code-signs.png';
+			case 'about.aboutCard.1.title': return 'Front-End Development';
+			case 'about.aboutCard.2.content': return 'API integrations throughout a software to keep data in sync and enhance productivity.';
+			case 'about.aboutCard.2.iconPath': return 'assets/api.png';
+			case 'about.aboutCard.2.title': return 'API Integration';
+			case 'about.aboutCard.3.content': return 'I enjoy bringing ideas to life on the phone or in the browser.';
+			case 'about.aboutCard.3.iconPath': return 'assets/web-development.png';
+			case 'about.aboutCard.3.title': return 'Mobile/Web Development';
+			case 'general.title_introduction_about_section': return 'Introduction';
+			case 'general.name_about_section': return 'Chung Nguyen Thanh';
+			case 'general.title_about_section': return 'About';
+			case 'general.title_contact_section': return 'Contact';
+			case 'general.title_contact_me_section': return 'Contact Me';
+			case 'general.get_in_touch_contact_section': return 'Get in touch';
+			case 'general.feel_free_contact_section': return 'Feel free to get in touch';
+			case 'general.hint_your_name_contact_section': return 'Your name';
+			case 'general.hint_your_email_contact_section': return 'Your email';
+			case 'general.hint_message_contact_section': return 'Type your message';
+			case 'general.btn_send_contact_section': return 'Send';
+			case 'general.title_experience_section': return 'Work Experience';
+			case 'general.title_project_section': return 'Projects';
+			case 'general.title_personal_projects_project_section': return 'Personal Projects';
+			case 'general.title_client_projects_project_section': return 'Work/Client Projects';
+			case 'general.m_title_personal_projects_project_section': return 'Personal';
+			case 'general.m_title_client_projects_project_section': return 'Work/Client';
+			case 'general.title_all_projects_project_section': return 'All Projects';
+			case 'general.title_skill_section': return 'Skills';
+			case 'general.hi_about_section': return 'Hi there! I\'m ';
+			case 'general.introduce_home_section1': return 'I am a Software Development Engineer for Consumer Product Line (Phone, Set-top Box,...) and a Flutter Developer.';
+			case 'general.introduce_home_section2': return 'I build system applications for AOSP, ATV in the Consumer Product Line and build websites and interactive software applications that run on multiple platforms and devices.';
+			case 'general.browse_projects_home_section': return 'Browse Projects';
+			case 'general.required_input_field': return 'This field is required';
 			case 'project.projects.0.cover_img': return 'https://i.ibb.co/3Fv9QRt/port.png';
 			case 'project.projects.0.created_at': return '2023-01-28T23:08:58.657311';
 			case 'project.projects.0.description': return 'Personal Portfolio Site showcases some of the projects I\'ve built so far.';
@@ -1561,39 +1521,39 @@ extension on Translations {
 extension on _TranslationsEn {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
-			case 'experience.experience1.company': return 'Omnis Corporation';
-			case 'experience.experience1.country': return 'Zambia';
-			case 'experience.experience1.created_at': return '2022-12-31T14:23:43.877077';
-			case 'experience.experience1.emp_type': return 'Part - Time';
-			case 'experience.experience1.end_date': return '2022-03-07T00:00:00.000';
-			case 'experience.experience1.is_hidden': return 'false';
-			case 'experience.experience1.position': return 'UI / UX Designer & Flutter Developer';
-			case 'experience.experience1.start_date': return '2021-01-05T00:00:00.000';
-			case 'experience.experience1.state': return 'Lusaka';
-			case 'experience.experience1.work_done': return 'Designed clean & Simple yet thoughtful UI/UX design patterns for both mobile and web apps.#Built both mobile and web applications with interactive & responsive layouts.#API integrations throughout a software to keep data in sync and enhance productivity.';
-			case 'experience.experience1.works_here': return 'false';
-			case 'experience.experience2.company': return 'Lassod Consulting Limited';
-			case 'experience.experience2.country': return 'UK';
-			case 'experience.experience2.created_at': return '2022-12-31T14:28:07.703644';
-			case 'experience.experience2.emp_type': return 'Full - Time';
-			case 'experience.experience2.is_hidden': return 'false';
-			case 'experience.experience2.position': return 'Software Engineer (Remote)';
-			case 'experience.experience2.site_url': return 'lassod.com';
-			case 'experience.experience2.start_date': return '2022-03-07T00:00:00.000';
-			case 'experience.experience2.state': return 'England';
-			case 'experience.experience2.work_done': return 'Write modern, performant, maintainable code for a diverse array of client and internal projects with Flutter & Dart.#Communicate with multi-disciplinary teams of engineers, designers and clients on a daily basis.#Work with a variety of different languages, platforms, frameworks, and content management systems such as Dart, Flutter, Github, Gitlab, Jira and Time Management.';
-			case 'experience.experience2.works_here': return 'true';
-			case 'experience.experience3.company': return 'Pynch Technology';
-			case 'experience.experience3.country': return 'Zambia';
-			case 'experience.experience3.created_at': return '2023-01-01T14:51:02.923189';
-			case 'experience.experience3.emp_type': return 'Part - Time';
-			case 'experience.experience3.is_hidden': return 'false';
-			case 'experience.experience3.position': return 'Mobile Developer (Remote)';
-			case 'experience.experience3.site_url': return 'pynch.co.zm';
-			case 'experience.experience3.start_date': return '2022-11-07T00:00:00.000';
-			case 'experience.experience3.state': return 'Lusaka';
-			case 'experience.experience3.work_done': return 'Designing, developing, testing and implementing mobile applications using the Flutter framework.#Working closely with the backend engineer and UI/UX designer to ensure proper integration in mobile applications.';
-			case 'experience.experience3.works_here': return 'true';
+			case 'experience.experiences.0.company': return 'Omnis Corporation';
+			case 'experience.experiences.0.country': return 'Zambia';
+			case 'experience.experiences.0.created_at': return '2022-12-31T14:23:43.877077';
+			case 'experience.experiences.0.emp_type': return 'Part - Time';
+			case 'experience.experiences.0.end_date': return '2022-03-07T00:00:00.000';
+			case 'experience.experiences.0.is_hidden': return 'false';
+			case 'experience.experiences.0.position': return 'UI / UX Designer & Flutter Developer';
+			case 'experience.experiences.0.start_date': return '2021-01-05T00:00:00.000';
+			case 'experience.experiences.0.state': return 'Lusaka';
+			case 'experience.experiences.0.work_done': return 'Designed clean & Simple yet thoughtful UI/UX design patterns for both mobile and web apps.#Built both mobile and web applications with interactive & responsive layouts.#API integrations throughout a software to keep data in sync and enhance productivity.';
+			case 'experience.experiences.0.works_here': return 'false';
+			case 'experience.experiences.1.company': return 'Lassod Consulting Limited';
+			case 'experience.experiences.1.country': return 'UK';
+			case 'experience.experiences.1.created_at': return '2022-12-31T14:28:07.703644';
+			case 'experience.experiences.1.emp_type': return 'Full - Time';
+			case 'experience.experiences.1.is_hidden': return 'false';
+			case 'experience.experiences.1.position': return 'Software Engineer (Remote)';
+			case 'experience.experiences.1.site_url': return 'lassod.com';
+			case 'experience.experiences.1.start_date': return '2022-03-07T00:00:00.000';
+			case 'experience.experiences.1.state': return 'England';
+			case 'experience.experiences.1.work_done': return 'Write modern, performant, maintainable code for a diverse array of client and internal projects with Flutter & Dart.#Communicate with multi-disciplinary teams of engineers, designers and clients on a daily basis.#Work with a variety of different languages, platforms, frameworks, and content management systems such as Dart, Flutter, Github, Gitlab, Jira and Time Management.';
+			case 'experience.experiences.1.works_here': return 'true';
+			case 'experience.experiences.2.company': return 'Pynch Technology';
+			case 'experience.experiences.2.country': return 'Zambia';
+			case 'experience.experiences.2.created_at': return '2023-01-01T14:51:02.923189';
+			case 'experience.experiences.2.emp_type': return 'Part - Time';
+			case 'experience.experiences.2.is_hidden': return 'false';
+			case 'experience.experiences.2.position': return 'Mobile Developer (Remote)';
+			case 'experience.experiences.2.site_url': return 'pynch.co.zm';
+			case 'experience.experiences.2.start_date': return '2022-11-07T00:00:00.000';
+			case 'experience.experiences.2.state': return 'Lusaka';
+			case 'experience.experiences.2.work_done': return 'Designing, developing, testing and implementing mobile applications using the Flutter framework.#Working closely with the backend engineer and UI/UX designer to ensure proper integration in mobile applications.';
+			case 'experience.experiences.2.works_here': return 'true';
 			case 'tabs.tabs.0': return 'Home';
 			case 'tabs.tabs.1': return 'About';
 			case 'tabs.tabs.2': return 'Skills';
@@ -1603,30 +1563,42 @@ extension on _TranslationsEn {
 			case 'tabs.tabs.6': return 'Download CV';
 			case 'about.name': return 'Chung Nguyen Thanh';
 			case 'about.aboutMe': return 'As a software engineer and UI/UX designer with extensive experience in Flutter, Dart, Firebase, and design, I am passionate about developing innovative and engaging digital experiences that meet the needs of users.\n\nWith a strong foundation in software engineering and design principles, I am adept at crafting high-quality code and intuitive user interfaces. I have experience in designing and developing user-friendly, cross-platform mobile applications using Flutter and Dart.\n\nAs a skilled designer, I can create engaging visuals, intuitive layouts, and an exceptional user experience. I have experience in user research, wireframing, prototyping, and designing user interfaces for mobile apps and web-based applications.\n\nI am highly proficient in Firebase, including Firestore, Realtime Database, and Firebase Cloud Messaging. I have used these technologies to build real-time collaborative applications, messaging systems, and cloud-based applications.\n\nThroughout my career, I have demonstrated strong collaboration skills, working closely with product managers, designers, and other developers to ensure that projects are delivered on time and to a high standard.\n\nIn summary, I am a highly skilled software engineer and UI/UX designer with expertise in Flutter, Dart, Firebase, and design. I am passionate about building innovative and engaging digital experiences that meet the needs of users and strive to deliver high-quality code and intuitive user interfaces for all projects.';
-			case 'about.aboutCard.card1.content': return 'I value simple, clean design patterns, and thoughtful interactions.';
-			case 'about.aboutCard.card1.iconPath': return 'assets/vector.png';
-			case 'about.aboutCard.card1.title': return 'UI/UX Design';
-			case 'about.aboutCard.card2.content': return 'Using Flutter & Dart, I build fast, interactive apps & websites.';
-			case 'about.aboutCard.card2.iconPath': return 'assets/programming-code-signs.png';
-			case 'about.aboutCard.card2.title': return 'Front-End Development';
-			case 'about.aboutCard.card3.content': return 'API integrations throughout a software to keep data in sync and enhance productivity.';
-			case 'about.aboutCard.card3.iconPath': return 'assets/api.png';
-			case 'about.aboutCard.card3.title': return 'API Integration';
-			case 'about.aboutCard.card4.content': return 'I enjoy bringing ideas to life on the phone or in the browser.';
-			case 'about.aboutCard.card4.iconPath': return 'assets/web-development.png';
-			case 'about.aboutCard.card4.title': return 'Mobile/Web Development';
-			case 'about.aboutCard2.0.content': return 'I value simple, clean design patterns, and thoughtful interactions.';
-			case 'about.aboutCard2.0.iconPath': return 'assets/vector.png';
-			case 'about.aboutCard2.0.title': return 'UI/UX Design';
-			case 'about.aboutCard2.1.content': return 'Using Flutter & Dart, I build fast, interactive apps & websites.';
-			case 'about.aboutCard2.1.iconPath': return 'assets/programming-code-signs.png';
-			case 'about.aboutCard2.1.title': return 'Front-End Development';
-			case 'about.aboutCard2.2.content': return 'API integrations throughout a software to keep data in sync and enhance productivity.';
-			case 'about.aboutCard2.2.iconPath': return 'assets/api.png';
-			case 'about.aboutCard2.2.title': return 'API Integration';
-			case 'about.aboutCard2.3.content': return 'I enjoy bringing ideas to life on the phone or in the browser.';
-			case 'about.aboutCard2.3.iconPath': return 'assets/web-development.png';
-			case 'about.aboutCard2.3.title': return 'Mobile/Web Development';
+			case 'about.aboutCard.0.content': return 'I value simple, clean design patterns, and thoughtful interactions.';
+			case 'about.aboutCard.0.iconPath': return 'assets/vector.png';
+			case 'about.aboutCard.0.title': return 'UI/UX Design';
+			case 'about.aboutCard.1.content': return 'Using Flutter & Dart, I build fast, interactive apps & websites.';
+			case 'about.aboutCard.1.iconPath': return 'assets/programming-code-signs.png';
+			case 'about.aboutCard.1.title': return 'Front-End Development';
+			case 'about.aboutCard.2.content': return 'API integrations throughout a software to keep data in sync and enhance productivity.';
+			case 'about.aboutCard.2.iconPath': return 'assets/api.png';
+			case 'about.aboutCard.2.title': return 'API Integration';
+			case 'about.aboutCard.3.content': return 'I enjoy bringing ideas to life on the phone or in the browser.';
+			case 'about.aboutCard.3.iconPath': return 'assets/web-development.png';
+			case 'about.aboutCard.3.title': return 'Mobile/Web Development';
+			case 'general.title_introduction_about_section': return 'Introduction';
+			case 'general.name_about_section': return 'Chung Nguyen Thanh';
+			case 'general.title_about_section': return 'About';
+			case 'general.title_contact_section': return 'Contact';
+			case 'general.title_contact_me_section': return 'Contact Me';
+			case 'general.get_in_touch_contact_section': return 'Get in touch';
+			case 'general.feel_free_contact_section': return 'Feel free to get in touch';
+			case 'general.hint_your_name_contact_section': return 'Your name';
+			case 'general.hint_your_email_contact_section': return 'Your email';
+			case 'general.hint_message_contact_section': return 'Type your message';
+			case 'general.btn_send_contact_section': return 'Send';
+			case 'general.title_experience_section': return 'Work Experience';
+			case 'general.title_project_section': return 'Projects';
+			case 'general.title_personal_projects_project_section': return 'Personal Projects';
+			case 'general.title_client_projects_project_section': return 'Work/Client Projects';
+			case 'general.m_title_personal_projects_project_section': return 'Personal';
+			case 'general.m_title_client_projects_project_section': return 'Work/Client';
+			case 'general.title_all_projects_project_section': return 'All Projects';
+			case 'general.title_skill_section': return 'Skills';
+			case 'general.hi_about_section': return 'Hi there! I\'m ';
+			case 'general.introduce_home_section1': return 'I am a Software Development Engineer for Consumer Product Line (Phone, Set-top Box,...) and a Flutter Developer.';
+			case 'general.introduce_home_section2': return 'I build system applications for AOSP, ATV in the Consumer Product Line and build websites and interactive software applications that run on multiple platforms and devices.';
+			case 'general.browse_projects_home_section': return 'Browse Projects';
+			case 'general.required_input_field': return 'This field is required';
 			case 'project.projects.0.cover_img': return 'https://i.ibb.co/3Fv9QRt/port.png';
 			case 'project.projects.0.created_at': return '2023-01-28T23:08:58.657311';
 			case 'project.projects.0.description': return 'Personal Portfolio Site showcases some of the projects I\'ve built so far.';

@@ -1,14 +1,15 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:profile/generated/translations.g.dart';
+import 'package:profile/ui/desktop/widgets/home_icon_hover.dart';
+import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
+import 'package:profile/utils/constants.dart';
 import 'package:profile/ui/desktop/widgets/contact_card.dart';
 import 'package:profile/ui/desktop/widgets/input_field.dart';
-import 'package:profile/providers/send_message.dart';
-import '../../../widgets/section_title.dart';
-import '../widgets/home_icon_hover.dart';
-import '../widgets/mordern_button.dart';
+import 'package:profile/services/send_message.dart';
+import 'package:profile/widgets/section_title.dart';
 
 class ContactSection extends StatefulWidget {
   const ContactSection({Key? key}) : super(key: key);
@@ -36,15 +37,13 @@ class _ContactSectionState extends State<ContactSection> {
         setState(() {
           _isSending = true;
         });
-        await Message.sendMessage(
-            sender: name!, email: email!, message: message!);
+        await Message.sendMessage(sender: name!, email: email!, message: message!);
         setState(() {
           _isSending = false;
         });
         BotToast.showText(
           duration: const Duration(seconds: 6),
-          text:
-              'Thank You for contacting me ${name!.trim()} , I will get back to you shortly',
+          text: 'Thank You for contacting me ${name!.trim()} , I will get back to you shortly',
           textStyle: kNormalTextStyleGrey,
         );
         _form.currentState!.reset();
@@ -52,8 +51,7 @@ class _ContactSectionState extends State<ContactSection> {
     }
 
     return Container(
-      padding: EdgeInsets.symmetric(
-          horizontal: _screenWidth * .1172, vertical: _screenHeight * .065),
+      padding: EdgeInsets.symmetric(horizontal: _screenWidth * .1172, vertical: _screenHeight * .065),
       width: double.infinity,
       color: klightDarkColor,
       child: Column(
@@ -62,7 +60,7 @@ class _ContactSectionState extends State<ContactSection> {
             margin: const EdgeInsets.symmetric(vertical: 40),
             child: Column(
               children: [
-                SectionTitle(title: 'Contact'),
+                SectionTitle(title: texts.general.title_contact_section),
                 Row(
                   children: [
                     Expanded(
@@ -86,7 +84,7 @@ class _ContactSectionState extends State<ContactSection> {
                             Padding(
                               padding: const EdgeInsets.symmetric(vertical: 40),
                               child: Text(
-                                'Contact Me',
+                                texts.general.title_contact_me_section,
                                 style: kTitleTextStyle.copyWith(fontSize: 30),
                               ),
                             ),
@@ -94,19 +92,19 @@ class _ContactSectionState extends State<ContactSection> {
                               children: const [
                                 ContactCard(
                                   icon: Icons.location_pin,
-                                  content: 'Lusaka, Zambia',
+                                  content: location,
                                 ),
                                 ContactCard(
                                   icon: Icons.email,
-                                  content: 'erickmndev@gmail.com',
+                                  content: gmail,
                                 ),
                                 ContactCard(
                                   icon: Icons.phone,
-                                  content: '+260 973 520052 / +260 962 885743',
+                                  content: phone_work,
                                 ),
                                 ContactCard(
-                                  icon: MdiIcons.whatsapp,
-                                  content: '+260 962 885743',
+                                  icon: MdiIcons.linkedin,
+                                  content: skype,
                                 ),
                               ],
                             ),
@@ -128,7 +126,7 @@ class _ContactSectionState extends State<ContactSection> {
                                 ),
                                 HomeIconHover(
                                   isMobile: true,
-                                  icon: MdiIcons.whatsapp,
+                                  icon: MdiIcons.skype,
                                   color: const Color(0xff075e54),
                                 ),
                                 HomeIconHover(
@@ -138,8 +136,8 @@ class _ContactSectionState extends State<ContactSection> {
                                 ),
                                 HomeIconHover(
                                   isMobile: true,
-                                  icon: MdiIcons.googlePlay,
-                                  color: const Color(0xff48ff48),
+                                  icon: MdiIcons.youtube,
+                                  color: const Color(0xffff0000),
                                 ),
                               ],
                             ),
@@ -160,38 +158,38 @@ class _ContactSectionState extends State<ContactSection> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                'Get in touch',
+                                texts.general.get_in_touch_contact_section,
                                 style: kTitleTextStyle.copyWith(fontSize: 30),
                               ),
-                              const Text(
-                                'Feel free to get in touch',
+                              Text(
+                                texts.general.feel_free_contact_section,
                                 style: kNormalTextStyleGrey,
                               ),
                               InputField(
-                                hint: 'Your name',
+                                hint: texts.general.hint_your_name_contact_section,
                                 maxLines: 1,
                                 onSaved: (value) {
                                   name = value!;
                                 },
                               ),
                               InputField(
-                                hint: 'Your email',
+                                hint: texts.general.hint_your_email_contact_section,
                                 maxLines: 1,
                                 onSaved: (value) {
                                   email = value!;
                                 },
                               ),
                               InputField(
-                                hint: 'Type your message',
+                                hint: texts.general.hint_message_contact_section,
                                 maxLines: 5,
                                 onSaved: (value) {
                                   message = value!;
                                 },
                               ),
-                              MordernButton(
+                              modernButton(
                                 icon: Icons.send,
                                 click: _isSending ? () {} : send,
-                                text: 'Send',
+                                text: texts.general.btn_send_contact_section,
                                 isLoading: _isSending,
                               ),
                             ],

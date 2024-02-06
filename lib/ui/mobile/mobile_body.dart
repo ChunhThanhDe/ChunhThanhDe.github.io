@@ -1,7 +1,8 @@
+import 'package:blurrycontainer/blurrycontainer.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
+import 'package:profile/controller/navigation_top_controller.dart';
+import 'package:profile/generated/translations.g.dart';
 import 'package:profile/ui/desktop/sections/footer_section.dart';
 import 'package:profile/ui/desktop/widgets/animated_text.dart';
 import 'package:profile/ui/mobile/sections/m_about_section.dart';
@@ -12,10 +13,8 @@ import 'package:profile/ui/mobile/sections/m_skill_section.dart';
 import 'package:profile/ui/mobile/sections/m_work_experience.dart';
 import 'package:profile/ui/mobile/widgets/app_bar_icon.dart';
 import 'package:profile/ui/mobile/widgets/hover_container.dart';
-import 'package:blurrycontainer/blurrycontainer.dart';
-
-import '../../providers/analytics.dart';
-import '../../services/notification.dart';
+import 'package:profile/utils/colors.dart';
+import 'package:profile/utils/constants.dart';
 
 class MobileBody extends StatelessWidget {
   final contactKey = GlobalKey();
@@ -37,28 +36,25 @@ class MobileBody extends StatelessWidget {
   }
 
   final ScrollController _scrollController = ScrollController();
-  final phone = '+260962885743';
-  final text = 'Hello There,';
+  NavigationController navigationController = new NavigationController();
 
   @override
   Widget build(BuildContext context) {
-    print("MobileBody");
     return Scaffold(
       backgroundColor: kdarkColor,
       floatingActionButton: FloatingActionButton(
-        shape:
-            RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(50.0),
+        ),
         onPressed: () async {
-          Analytics.trackVisit(NotificationType.whatsApp);
-          var whatsappUrl = 'whatsapp://send?phone=$phone&text=$text';
-          AppData.goToLink(whatsappUrl);
+          AppData.goToLink(link_skype);
         },
         child: const Icon(
-          MdiIcons.whatsapp,
+          MdiIcons.skype,
           size: 30,
           color: Colors.white,
         ),
-        backgroundColor: const Color(0xff075e54),
+        backgroundColor: const Color(0xff00aff0),
       ),
       drawer: Drawer(
         child: Container(
@@ -93,7 +89,7 @@ class MobileBody extends StatelessWidget {
                     color: kPrimaryColor,
                   ),
                   Text(
-                    'Erick Namukolo',
+                    'ChunhThanhDe',
                     style: kTextStyleWhite.copyWith(
                       fontSize: 15,
                       fontWeight: FontWeight.normal,
@@ -109,8 +105,8 @@ class MobileBody extends StatelessWidget {
                 height: 10,
               ),
               HoverContainer(
-                child: const AnimatedTexttt(
-                  text: 'Home',
+                child: AnimatedTexttt(
+                  text: texts.tabs.tabs[0],
                 ),
                 click: () {
                   scrollToItem(homeKey);
@@ -118,8 +114,8 @@ class MobileBody extends StatelessWidget {
                 },
               ),
               HoverContainer(
-                child: const AnimatedTexttt(
-                  text: 'About',
+                child: AnimatedTexttt(
+                  text: texts.tabs.tabs[1],
                 ),
                 click: () {
                   scrollToItem(aboutKey);
@@ -127,8 +123,8 @@ class MobileBody extends StatelessWidget {
                 },
               ),
               HoverContainer(
-                child: const AnimatedTexttt(
-                  text: 'Skills',
+                child: AnimatedTexttt(
+                  text: texts.tabs.tabs[2],
                 ),
                 click: () {
                   scrollToItem(skillsKey);
@@ -136,8 +132,8 @@ class MobileBody extends StatelessWidget {
                 },
               ),
               HoverContainer(
-                child: const AnimatedTexttt(
-                  text: 'Work Experience',
+                child: AnimatedTexttt(
+                  text: texts.tabs.tabs[3],
                 ),
                 click: () {
                   scrollToItem(expKey);
@@ -145,8 +141,8 @@ class MobileBody extends StatelessWidget {
                 },
               ),
               HoverContainer(
-                child: const AnimatedTexttt(
-                  text: 'Projects',
+                child: AnimatedTexttt(
+                  text: texts.tabs.tabs[4],
                 ),
                 click: () {
                   scrollToItem(projectsKey);
@@ -154,8 +150,8 @@ class MobileBody extends StatelessWidget {
                 },
               ),
               HoverContainer(
-                child: const AnimatedTexttt(
-                  text: 'Contact',
+                child: AnimatedTexttt(
+                  text: texts.tabs.tabs[5],
                 ),
                 click: () {
                   scrollToItem(contactKey);
@@ -181,7 +177,16 @@ class MobileBody extends StatelessWidget {
                     ),
                   ),
                 ),
-              )
+              ),
+              navigationController.currentLocale.languageCode == "en"
+                  ? IconButton(
+                      onPressed: () => navigationController.changeLocale(navigationController.vi),
+                      icon: Icon(Icons.abc),
+                    )
+                  : IconButton(
+                      onPressed: () => navigationController.changeLocale(navigationController.en),
+                      icon: Icon(Icons.translate),
+                    )
             ],
           ),
         ),
@@ -211,9 +216,7 @@ class MobileBody extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Builder(builder: (context) {
-                      return AppBarIcon(
-                          icon: MdiIcons.menuOpen,
-                          click: () => Scaffold.of(context).openDrawer());
+                      return AppBarIcon(icon: MdiIcons.menuOpen, click: () => Scaffold.of(context).openDrawer());
                     }),
                     MouseRegion(
                       cursor: SystemMouseCursors.click,
@@ -231,11 +234,9 @@ class MobileBody extends StatelessWidget {
                       ),
                     ),
                     AppBarIcon(
-                      icon: MdiIcons.googlePlay,
+                      icon: MdiIcons.linkedin,
                       click: () async {
-                        Analytics.trackVisit(NotificationType.playStore);
-                        AppData.goToLink(
-                            'https://play.google.com/store/apps/dev?id=8203990443766365712');
+                        AppData.goToLink(link_linkedin);
                       },
                     ),
                   ],

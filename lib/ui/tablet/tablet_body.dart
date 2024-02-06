@@ -1,9 +1,9 @@
 import 'package:blurrycontainer/blurrycontainer.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:profile/controller/project_controller.dart';
-import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
+import 'package:profile/controller/navigation_top_controller.dart';
+import 'package:profile/generated/translations.g.dart';
+import 'package:profile/services/send_message.dart';
 import 'package:profile/ui/desktop/sections/experience_section.dart';
 import 'package:profile/ui/desktop/sections/footer_section.dart';
 import 'package:profile/ui/desktop/widgets/animated_text.dart';
@@ -12,10 +12,11 @@ import 'package:profile/ui/tablet/sections/t_contact_section.dart';
 import 'package:profile/ui/tablet/sections/t_home_section.dart';
 import 'package:profile/ui/tablet/sections/t_projects_and_designs.dart';
 import 'package:profile/ui/tablet/sections/t_skill_section.dart';
-import 'package:provider/provider.dart';
+import 'package:profile/utils/colors.dart';
+import 'package:profile/utils/constants.dart';
 import 'package:web_smooth_scroll/web_smooth_scroll.dart';
 
-import '../desktop/widgets/mordern_button.dart';
+import '../desktop/widgets/modern_button.dart';
 
 class TabletBody extends StatefulWidget {
   const TabletBody({Key? key}) : super(key: key);
@@ -48,6 +49,7 @@ class _TabletBodyState extends State<TabletBody> {
   }
 
   final ScrollController _scrollController = ScrollController();
+  NavigationController navigationController = new NavigationController();
 
   @override
   void dispose() {
@@ -137,39 +139,57 @@ class _TabletBodyState extends State<TabletBody> {
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
                           AnimatedTexttt(
-                            text: 'Home',
+                            text: navigationController.navigation(0),
                             click: () => scrollToItem(homeKey),
                             width: homeWidth,
                           ),
                           AnimatedTexttt(
-                            text: 'About',
+                            text: navigationController.navigation(1),
                             click: () => scrollToItem(aboutKey),
                             width: aboutWidth,
                           ),
                           AnimatedTexttt(
-                            text: 'Skills',
+                            text: navigationController.navigation(2),
                             click: () => scrollToItem(skillsKey),
                             width: skillsWidth,
                           ),
                           AnimatedTexttt(
-                            text: 'Experience',
+                            text: navigationController.navigation(3),
                             click: () => scrollToItem(experienceKey),
                             width: experienceWidth,
                           ),
                           AnimatedTexttt(
-                            text: 'Projects',
+                            text: navigationController.navigation(4),
                             click: () => scrollToItem(projectsKey),
                             width: projectsWidth,
                           ),
                           AnimatedTexttt(
-                            text: 'Contact',
+                            text: navigationController.navigation(5),
                             click: () => scrollToItem(contactKey),
                             width: contactWidth,
                           ),
-                          MordernButton(
+                          modernButton(
                             icon: Icons.download_rounded,
-                            click: () => ProjectsController.downloadCV(),
-                            text: 'Download CV',
+                            click: () => downloadCV(),
+                            text: navigationController.navigation(6),
+                          ),
+                          PopupMenuButton<AppLocale>(
+                            onSelected: (value) {
+                              navigationController.changeLocale(value);
+                            },
+                            icon: const Icon(Icons.translate),
+                            itemBuilder: (_) {
+                              return [
+                                PopupMenuItem(
+                                  value: navigationController.en,
+                                  child: const Text("English"),
+                                ),
+                                PopupMenuItem(
+                                  value: navigationController.vi,
+                                  child: const Text("Việt Nam"),
+                                ),
+                              ];
+                            },
                           ),
                         ],
                       ),

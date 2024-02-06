@@ -1,13 +1,13 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:profile/generated/translations.g.dart';
+import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/utils/colors.dart';
 import  'package:profile/utils/constants.dart';
 import 'package:profile/ui/desktop/widgets/home_icon_hover.dart';
 import 'package:avatar_glow/avatar_glow.dart';
 
-import '../../../controller/project_controller.dart';
-import '../widgets/mordern_button.dart';
 
 class HomeSection extends StatelessWidget {
   final Function() scrollToProjects;
@@ -105,24 +105,24 @@ class HomeSection extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const Text(
-                  'I am a Software Development Engineer for Consumer Product Line (Phone, Set-top Box,...) and a Flutter Developer.',
+                 Text(
+                  texts.general.introduce_home_section1,
                   style: kNormalTextStyleGrey,
                 ),
                 const SizedBox(
                   height: 5,
                 ),
-                const Text(
-                  'I build system applications for AOSP, ATV in the Consumer Product Line and build websites and interactive software applications that run on multiple platforms and devices.',
+                 Text(
+                  texts.general.introduce_home_section2,
                   style: kNormalTextStyleGrey,
                 ),
                 const SizedBox(
                   height: 25,
                 ),
-                MordernButton(
+                modernButton(
                   icon: MdiIcons.folder,
                   click: scrollToProjects,
-                  text: 'Browse Projects',
+                  text: texts.general.browse_projects_home_section,
                 ),
                 const SizedBox(
                   height: 25,
@@ -138,12 +138,16 @@ class HomeSection extends StatelessWidget {
                       color: const Color(0xff171515),
                     ),
                     HomeIconHover(
-                      icon: MdiIcons.whatsapp,
-                      color: const Color(0xff075e54),
+                      icon: MdiIcons.skype,
+                      color: const Color(0xff00aff0),
                     ),
                     HomeIconHover(
                       icon: MdiIcons.facebook,
                       color: const Color(0xff4267B2),
+                    ),
+                    HomeIconHover(
+                      icon: MdiIcons.youtube,
+                      color: const Color(0xffff0000),
                     ),
                     HomeIconHover(
                       icon: MdiIcons.googlePlay,

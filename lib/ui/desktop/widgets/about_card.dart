@@ -2,8 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
-import 'package:profile/controller/about_me_controller.dart';
+import 'package:profile/utils/constants.dart';
+
+import '../../../models/about_card.dart';
 
 class AboutCard extends StatefulWidget {
   final AboutCardModel model;

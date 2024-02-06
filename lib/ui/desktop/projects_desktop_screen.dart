@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:profile/controller/project_controller.dart';
+import 'package:profile/generated/translations.g.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
 import 'package:profile/ui/desktop/widgets/single_project_card.dart';
@@ -65,8 +66,8 @@ class ProjectsDesktopScreen extends StatelessWidget {
           children: [
             Container(
               margin: const EdgeInsets.symmetric(vertical: 30),
-              child: const Text(
-                'Projects',
+              child:  Text(
+                texts.general.title_project_section,
                 style: kMiniTitleTextStyleWhite,
               ),
             ),

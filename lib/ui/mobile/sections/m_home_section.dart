@@ -5,10 +5,12 @@ import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:profile/controller/project_controller.dart';
-import 'package:profile/ui/desktop/widgets/mordern_button.dart';
+import 'package:profile/generated/translations.g.dart';
+import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
 
+import '../../../services/send_message.dart';
 import '../../desktop/widgets/home_icon_hover.dart';
 
 class MHomeSection extends StatelessWidget {
@@ -42,9 +44,11 @@ class MHomeSection extends StatelessWidget {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
-              Text(
-                'I am a ',
-                style: kTitleTextStyle.copyWith(fontSize: 40),
+              Flexible(
+                child: Text(
+                  'I \'m a ',
+                  style: kTitleTextStyle.copyWith(fontSize: 38),
+                ),
               ),
               AnimatedTextKit(
                 repeatForever: true,
@@ -54,7 +58,7 @@ class MHomeSection extends StatelessWidget {
                     textStyle: kTitleTextStyle.copyWith(
                       color: kPrimaryColor,
                       fontWeight: MediaQuery.of(context).size.width >= 500 ? FontWeight.bold : null,
-                      fontSize: 40.0,
+                      fontSize: 38,
                     ),
                     speed: const Duration(milliseconds: 200),
                   ),
@@ -63,7 +67,7 @@ class MHomeSection extends StatelessWidget {
                     textStyle: kTitleTextStyle.copyWith(
                       color: kPrimaryColor,
                       fontWeight: MediaQuery.of(context).size.width >= 500 ? FontWeight.bold : null,
-                      fontSize: 40.0,
+                      fontSize: 38,
                     ),
                     speed: const Duration(milliseconds: 200),
                   ),
@@ -72,7 +76,7 @@ class MHomeSection extends StatelessWidget {
                     textStyle: kTitleTextStyle.copyWith(
                       color: kPrimaryColor,
                       fontWeight: MediaQuery.of(context).size.width >= 500 ? FontWeight.bold : null,
-                      fontSize: 40.0,
+                      fontSize: 38,
                     ),
                     speed: const Duration(milliseconds: 200),
                   ),
@@ -81,7 +85,7 @@ class MHomeSection extends StatelessWidget {
                     textStyle: kTitleTextStyle.copyWith(
                       color: kPrimaryColor,
                       fontWeight: MediaQuery.of(context).size.width >= 500 ? FontWeight.bold : null,
-                      fontSize: 40.0,
+                      fontSize: 38,
                     ),
                     speed: const Duration(milliseconds: 200),
                   ),
@@ -96,18 +100,26 @@ class MHomeSection extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          const Text(
-            'I\'m a Software Engineer & UI/UX Designer based in Lusaka, Zambia. I build interactive software applications & websites that run across platforms & devices.',
+           Text(
+            texts.general.introduce_home_section1,
+            textAlign: TextAlign.center,
+            style: kNormalTextStyleGrey,
+          ),
+          const SizedBox(
+            height: 10,
+          ),
+           Text(
+             texts.general.introduce_home_section2,
             textAlign: TextAlign.center,
             style: kNormalTextStyleGrey,
           ),
           const SizedBox(
             height: 30,
           ),
-          MordernButton(
+          modernButton(
             icon: Icons.download_rounded,
-            click: () => ProjectsController.downloadCV(),
-            text: 'Download CV',
+            click: () => downloadCV(),
+            text: texts.tabs.tabs[6],
           ),
           const SizedBox(
             height: 20,
@@ -116,9 +128,9 @@ class MHomeSection extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               HomeIconHover(
+                isMobile: true,
                 icon: MdiIcons.linkedin,
                 color: const Color(0xff0A66C2),
-                isMobile: true,
               ),
               HomeIconHover(
                 isMobile: true,
@@ -127,13 +139,18 @@ class MHomeSection extends StatelessWidget {
               ),
               HomeIconHover(
                 isMobile: true,
-                icon: MdiIcons.whatsapp,
-                color: const Color(0xff075e54),
+                icon: MdiIcons.skype,
+                color: const Color(0xff00aff0),
               ),
               HomeIconHover(
                 isMobile: true,
                 icon: MdiIcons.facebook,
                 color: const Color(0xff4267B2),
+              ),
+              HomeIconHover(
+                isMobile: true,
+                icon: MdiIcons.youtube,
+                color: const Color(0xffff0000),
               ),
               HomeIconHover(
                 isMobile: true,
