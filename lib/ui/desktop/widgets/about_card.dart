@@ -1,10 +1,9 @@
 // ignore_for_file: avoid_unnecessary_containers
 
 import 'package:flutter/material.dart';
+import 'package:profile/models/about_card.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
-
-import '../../../models/about_card.dart';
 
 class AboutCard extends StatefulWidget {
   final AboutCardModel model;

@@ -60,7 +60,6 @@ class _TabletBodyState extends State<TabletBody> {
   @override
   Widget build(BuildContext context) {
     double _screenWidth = MediaQuery.of(context).size.width;
-    print("TabletBody screenWidth = " + _screenWidth.toString());
     return Scaffold(
       backgroundColor: kdarkColor,
       body: Stack(

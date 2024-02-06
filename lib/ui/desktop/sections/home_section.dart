@@ -4,10 +4,9 @@ import 'package:material_design_icons_flutter/material_design_icons_flutter.dart
 import 'package:profile/generated/translations.g.dart';
 import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
+import 'package:profile/utils/constants.dart';
 import 'package:profile/ui/desktop/widgets/home_icon_hover.dart';
 import 'package:avatar_glow/avatar_glow.dart';
-
 
 class HomeSection extends StatelessWidget {
   final Function() scrollToProjects;
@@ -21,7 +20,7 @@ class HomeSection extends StatelessWidget {
   Widget build(BuildContext context) {
     double _screenWidth = MediaQuery.of(context).size.width;
     double _screenHeight = MediaQuery.of(context).size.height;
-    if (_screenHeight < 700 ) _screenHeight = 700;
+    if (_screenHeight < 700) _screenHeight = 700;
 
     return Container(
       margin: EdgeInsets.only(top: 70),
@@ -38,7 +37,7 @@ class HomeSection extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      'I am a ',
+                      'I\'m a ',
                       style: kTitleTextStyle.copyWith(
                         fontSize: _screenWidth * .035,
                       ),
@@ -105,14 +104,14 @@ class HomeSection extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                 Text(
+                Text(
                   texts.general.introduce_home_section1,
                   style: kNormalTextStyleGrey,
                 ),
                 const SizedBox(
                   height: 5,
                 ),
-                 Text(
+                Text(
                   texts.general.introduce_home_section2,
                   style: kNormalTextStyleGrey,
                 ),

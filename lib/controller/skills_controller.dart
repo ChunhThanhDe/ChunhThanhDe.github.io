@@ -1,6 +1,5 @@
+import 'package:profile/generated/translations.g.dart';
 import 'package:profile/models/skill.dart';
-
-import '../generated/translations.g.dart';
 
 class SkillsController {
   get skillData => texts.skills.skills;
@@ -8,28 +7,9 @@ class SkillsController {
   List<Skill> _skills = [];
 
   List<Skill> get skills => [..._skills];
-  final List<double> pages = [
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-    0.0,
-  ];
 
   SkillsController() {
     fetchSkills();
-  }
-
-  void triggerSelection(int index) {
-    pages[0] = 0.0;
-    pages[1] = 0.0;
-    pages[2] = 0.0;
-    pages[3] = 0.0;
-    pages[4] = 0.0;
-    pages[5] = 0.0;
-
-    pages[index] = 45.0;
   }
 
   void fetchSkills() {

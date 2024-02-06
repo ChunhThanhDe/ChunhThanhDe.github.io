@@ -2,14 +2,16 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:profile/generated/translations.g.dart';
 import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
+import 'package:profile/utils/constants.dart';
 import 'package:profile/widgets/basic_button.dart';
 
 import '../../desktop/widgets/home_icon_hover.dart';
 
 class THomeSection extends StatelessWidget {
   final Function() scrollToProjects;
+
   const THomeSection({
     Key? key,
     required this.scrollToProjects,
@@ -70,15 +72,22 @@ class THomeSection extends StatelessWidget {
                 const SizedBox(
                   height: 20,
                 ),
-                const Text(
-                  'I\'m a Software Engineer & UI/UX Designer based in Lusaka, Zambia. I build interactive software applications & websites that run across platforms & devices.',
+                Text(
+                  texts.general.introduce_home_section1,
+                  style: kNormalTextStyleGrey,
+                ),
+                const SizedBox(
+                  height: 5,
+                ),
+                Text(
+                  texts.general.introduce_home_section2,
                   style: kNormalTextStyleGrey,
                 ),
                 const SizedBox(
                   height: 30,
                 ),
                 BasicButton(
-                  text: 'Browse Projects',
+                  text: texts.general.browse_projects_home_section,
                   click: scrollToProjects,
                 ),
                 const SizedBox(
