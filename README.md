@@ -1,6 +1,6 @@
-# Erick Namukolo
+# ChunhThanhDE
 
-Software Engineer | UI/UX Designer
+Software Engineer | Flutter Deverloper
 
 ## Getting Started
 
