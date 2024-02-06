@@ -16,14 +16,16 @@ class MProjectsAndDesigns extends StatefulWidget {
 }
 
 class _MProjectsAndDesignsState extends State<MProjectsAndDesigns> {
-  List<TabButton> tabs = [
-    TabButton(title: texts.general.m_title_personal_projects_project_section, icon: Icons.folder, isSelected: true),
-    TabButton(title: texts.general.m_title_client_projects_project_section, icon: Icons.laptop_mac_rounded),
-  ];
+  late List<TabButton> tabs;
+  bool isViewPersonal = true;
 
   @override
   Widget build(BuildContext context) {
     ProjectsController projectsController = ProjectsController();
+    tabs = [
+      TabButton(title: texts.general.title_personal_projects_project_section, icon: Icons.folder, isSelected: isViewPersonal),
+      TabButton(title: texts.general.title_client_projects_project_section, icon: Icons.laptop_mac_rounded, isSelected: !isViewPersonal),
+    ];
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 50),
       width: double.infinity,
@@ -51,10 +53,17 @@ class _MProjectsAndDesignsState extends State<MProjectsAndDesigns> {
                         tab: tab,
                         click: () {
                           setState(() {
-                            tabs.forEach((element) {
-                              element.isSelected = false;
-                            });
-                            tab.isSelected = true;
+                            // tabs.forEach((element) {
+                            //   element.isSelected = false;
+                            // });
+                            // tab.isSelected = true;
+
+                            int tabIndex = tabs.indexOf(tab);
+                            if (tabIndex == 1) {
+                              isViewPersonal = false;
+                            } else {
+                              isViewPersonal = true;
+                            }
                           });
                         },
                       ))

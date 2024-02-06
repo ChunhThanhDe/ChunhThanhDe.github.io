@@ -2,13 +2,13 @@ import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:profile/generated/translations.g.dart';
+import 'package:profile/services/send_message.dart';
+import 'package:profile/ui/desktop/widgets/contact_card.dart';
 import 'package:profile/ui/desktop/widgets/home_icon_hover.dart';
+import 'package:profile/ui/desktop/widgets/input_field.dart';
 import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
-import 'package:profile/ui/desktop/widgets/contact_card.dart';
-import 'package:profile/ui/desktop/widgets/input_field.dart';
-import 'package:profile/services/send_message.dart';
 import 'package:profile/widgets/section_title.dart';
 
 class ContactSection extends StatefulWidget {
@@ -43,7 +43,7 @@ class _ContactSectionState extends State<ContactSection> {
         });
         BotToast.showText(
           duration: const Duration(seconds: 6),
-          text: 'Thank You for contacting me ${name!.trim()} , I will get back to you shortly',
+          text: texts.general.thank_you + ' ${name!.trim()} , ' + texts.general.get_back,
           textStyle: kNormalTextStyleGrey,
         );
         _form.currentState!.reset();

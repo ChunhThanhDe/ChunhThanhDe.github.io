@@ -11,7 +11,6 @@ import 'package:profile/widgets/section_title.dart';
 import 'package:collection/collection.dart';
 import 'package:time_machine/time_machine.dart';
 
-
 class ExperienceSection extends StatelessWidget {
   final bool isTabMode;
 
@@ -108,7 +107,7 @@ class ExperienceSection extends StatelessWidget {
                                           ),
                                         ),
                                         const SizedBox(width: 12),
-                                         Icon(
+                                        Icon(
                                           MdiIcons.mapMarker,
                                           color: kPrimaryColor,
                                           size: 16,

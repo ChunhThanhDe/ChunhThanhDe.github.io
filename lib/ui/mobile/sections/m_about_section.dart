@@ -3,7 +3,7 @@ import 'package:profile/controller/about_me_controller.dart';
 import 'package:profile/generated/translations.g.dart';
 import 'package:profile/ui/desktop/widgets/about_card.dart';
 import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
+import 'package:profile/utils/constants.dart';
 import 'package:profile/widgets/section_title.dart';
 
 class MAboutSection extends StatelessWidget {
@@ -18,7 +18,7 @@ class MAboutSection extends StatelessWidget {
       width: double.infinity,
       child: Column(
         children: [
-          SectionTitle(title: 'About'),
+          SectionTitle(title: texts.general.title_about_section),
           MediaQuery.of(context).size.width >= 990
               ? Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,7 +40,7 @@ class MAboutSection extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                           Text(
+                          Text(
                             texts.general.title_introduction_about_section,
                             style: kNormalTextStyleGrey,
                           ),
@@ -63,7 +63,7 @@ class MAboutSection extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.symmetric(vertical: 20),
                             child: Text(
-                              AppData.aboutMe,
+                              texts.about.aboutMe,
                               style: kNormalTextStyleGrey,
                             ),
                           ),
@@ -79,9 +79,11 @@ class MAboutSection extends StatelessWidget {
                       text: TextSpan(
                         style: kTitleTextStyle.copyWith(fontSize: 40),
                         children: [
-                          TextSpan(text: texts.general.hi_about_section,),
                           TextSpan(
-                            text: texts.general.name_about_section,
+                            text: texts.general.hi_about_section,
+                          ),
+                          TextSpan(
+                            text: texts.about.name,
                             style: kTitleTextStyle.copyWith(
                               color: kPrimaryColor,
                               decoration: TextDecoration.underline,
@@ -94,7 +96,7 @@ class MAboutSection extends StatelessWidget {
                     Padding(
                       padding: EdgeInsets.symmetric(vertical: 40),
                       child: Text(
-                        AppData.aboutMe,
+                        texts.about.aboutMe,
                         style: kNormalTextStyleGrey,
                       ),
                     ),

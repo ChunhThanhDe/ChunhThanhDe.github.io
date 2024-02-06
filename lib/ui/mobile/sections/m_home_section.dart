@@ -4,14 +4,12 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
-import 'package:profile/controller/project_controller.dart';
 import 'package:profile/generated/translations.g.dart';
+import 'package:profile/services/send_message.dart';
+import 'package:profile/ui/desktop/widgets/home_icon_hover.dart';
 import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
-
-import '../../../services/send_message.dart';
-import '../../desktop/widgets/home_icon_hover.dart';
 
 class MHomeSection extends StatelessWidget {
   const MHomeSection({Key? key}) : super(key: key);
@@ -100,7 +98,7 @@ class MHomeSection extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-           Text(
+          Text(
             texts.general.introduce_home_section1,
             textAlign: TextAlign.center,
             style: kNormalTextStyleGrey,
@@ -108,8 +106,8 @@ class MHomeSection extends StatelessWidget {
           const SizedBox(
             height: 10,
           ),
-           Text(
-             texts.general.introduce_home_section2,
+          Text(
+            texts.general.introduce_home_section2,
             textAlign: TextAlign.center,
             style: kNormalTextStyleGrey,
           ),

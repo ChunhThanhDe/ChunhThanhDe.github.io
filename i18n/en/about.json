@@ -1,24 +1,24 @@
 {
   "name": "Chung Nguyen Thanh",
-  "aboutMe": "As a software engineer and UI/UX designer with extensive experience in Flutter, Dart, Firebase, and design, I am passionate about developing innovative and engaging digital experiences that meet the needs of users.\n\nWith a strong foundation in software engineering and design principles, I am adept at crafting high-quality code and intuitive user interfaces. I have experience in designing and developing user-friendly, cross-platform mobile applications using Flutter and Dart.\n\nAs a skilled designer, I can create engaging visuals, intuitive layouts, and an exceptional user experience. I have experience in user research, wireframing, prototyping, and designing user interfaces for mobile apps and web-based applications.\n\nI am highly proficient in Firebase, including Firestore, Realtime Database, and Firebase Cloud Messaging. I have used these technologies to build real-time collaborative applications, messaging systems, and cloud-based applications.\n\nThroughout my career, I have demonstrated strong collaboration skills, working closely with product managers, designers, and other developers to ensure that projects are delivered on time and to a high standard.\n\nIn summary, I am a highly skilled software engineer and UI/UX designer with expertise in Flutter, Dart, Firebase, and design. I am passionate about building innovative and engaging digital experiences that meet the needs of users and strive to deliver high-quality code and intuitive user interfaces for all projects.",
+  "aboutMe": "As a skilled software developer, I continually accumulate skills, experience, and expertise in the process of building and developing software applications and systems. I have worked in the role of a software development engineer for phone and smart box product lines, such as integrating system development services and applications into Android TV and AOSP source code.\n\nI have a good understanding and proficiency in utilizing Flutter, Dart, Java, and Spring Boot to design and create cross-platform applications and systems that deliver engaging and user-friendly digital experiences.\n\nWith deep knowledge of software technology and principles of system design analysis, I always ensure that the source code I produce is of high quality with intuitive user interfaces. I have experience in analyzing system design for mobile applications and websites and have conducted user research, prototyping, and designing unique and appealing products.\n\nFurthermore, I also have knowledge of system deployment with ASUZE and AWS. This enables me to build complex and robust systems that meet various requirements and ensure high performance.\n\nThroughout my work, I have demonstrated the ability to work independently while also being a strong team player, collaborating closely with other members of the project. I have been involved in feasibility assessment, solution finding, development planning, and testing alongside designers and other developers. I always ensure that projects are completed on time and meet high-quality standards.\n\nI am always seeking opportunities to apply my knowledge and skills to develop breakthrough software, bringing high value to society. I am passionate about creating exceptional products that fulfill user needs. I am ready to contribute to exciting and meaningful projects and look forward to further developing and expanding my capabilities in the field of software development.",
   "aboutCard": [
-     {
+    {
       "content": "I value simple, clean design patterns, and thoughtful interactions.",
       "iconPath": "assets/vector.png",
-      "title": "UI/UX Design"
+      "title": "Back-End Development"
     },
-     {
-      "content": "Using Flutter & Dart, I build fast, interactive apps & websites.",
+    {
+      "content": "Using Flutter & Dart, I can build applications and websites for my system.",
       "iconPath": "assets/programming-code-signs.png",
       "title": "Front-End Development"
     },
     {
-      "content": "API integrations throughout a software to keep data in sync and enhance productivity.",
+      "content": "Integrating APIs throughout the software to keep data synchronized and enhance productivity.",
       "iconPath": "assets/api.png",
       "title": "API Integration"
     },
-     {
-      "content": "I enjoy bringing ideas to life on the phone or in the browser.",
+    {
+      "content": "I enjoy building useful applications for the community, making people's lives simpler.",
       "iconPath": "assets/web-development.png",
       "title": "Mobile/Web Development"
     }

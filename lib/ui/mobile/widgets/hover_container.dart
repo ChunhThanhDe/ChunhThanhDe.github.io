@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 class HoverContainer extends StatefulWidget {
   final Widget child;
   final Function() click;
+
   const HoverContainer({
     Key? key,
     required this.child,
@@ -15,6 +16,7 @@ class HoverContainer extends StatefulWidget {
 
 class _HoverContainerState extends State<HoverContainer> {
   bool _isHovered = false;
+
   @override
   Widget build(BuildContext context) {
     return MouseRegion(

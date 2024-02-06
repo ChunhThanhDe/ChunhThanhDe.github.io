@@ -7,7 +7,6 @@ import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
 import 'package:profile/widgets/section_title.dart';
 
-
 class AboutSection extends StatelessWidget {
   const AboutSection({Key? key}) : super(key: key);
 
@@ -53,7 +52,7 @@ class AboutSection extends StatelessWidget {
                           fontSize: _screenWidth * .035,
                         ),
                         children: [
-                          const TextSpan(text: 'Hi there! I\'m '),
+                          TextSpan(text: texts.general.hi_about_section),
                           TextSpan(
                             text: aboutController.name,
                             style: kTitleTextStyle.copyWith(

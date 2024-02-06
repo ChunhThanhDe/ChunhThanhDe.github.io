@@ -1,95 +1,70 @@
 {
   "skills": [
     {
-      "date": "2022-12-06T15:05:22.268253",
-      "des": "The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.",
-      "hidden": "false",
-      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FHTML?alt=media&token=4d0a35d0-3726-4182-a6fd-fc000a409b5a",
-      "name": "HTML"
-    },
-    {
-      "date": "2022-12-06T15:06:35.630660",
-      "des": "Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.",
-      "hidden": "false",
-      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FCSS?alt=media&token=0e0d0e0b-bb9c-41ea-b2b7-0a37b1815092",
-      "name": "CSS"
-    },
-    {
-      "date": "2022-12-06T15:07:09.232675",
-      "des": "JS is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.",
-      "hidden": "false",
-      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FJavaScript?alt=media&token=640c6f32-cb7f-4752-a2d3-7a4477048688",
-      "name": "JavaScript"
-    },
-    {
       "date": "2022-12-06T15:07:31.798027",
-      "des": "Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
-      "hidden": "false",
-      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FGit?alt=media&token=cd9be5b5-dca4-4d78-b84a-864d0a31c919",
+      "des": "Git là một hệ thống quản lý phiên bản phân tán miễn phí và mã nguồn mở, được thiết kế để xử lý từ dự án nhỏ đến rất lớn với tốc độ và hiệu suất cao",
+      "img": "https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_git-512.png",
       "name": "Git"
     },
     {
-      "date": "2022-12-06T15:08:03.833114",
-      "des": "Adobe XD is a prototyping tool for user experience and interaction designers used to design websites, mobile apps, and more. Design at the speed of thought.",
-      "hidden": "false",
-      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FAdobe%20XD?alt=media&token=3dddc27d-b63b-4ed6-b515-ff60db6ec01a",
-      "name": "Adobe XD"
-    },
-    {
       "date": "2022-12-06T15:09:18.175658",
-      "des": "Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, macOS, Windows, Google Fuchsia, and the web from a single codebase.",
-      "hidden": "false",
-      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FFlutter?alt=media&token=1b4e6984-6d9c-436c-8366-9843eb8c2836",
+      "des": "Dart là một ngôn ngữ lập trình được thiết kế cho việc phát triển phía khách hàng, chẳng hạn như cho web và ứng dụng di động",
+      "img": "https://img.icons8.com/?size=512&id=5pu47piHKg1I&format=png",
       "name": "Flutter"
     },
     {
       "date": "2022-12-06T15:10:01.509497",
       "des": "Dart is a programming language designed for client development, such as for the web and mobile apps.",
-      "hidden": "false",
-      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FDart?alt=media&token=82f1a59e-cf39-4e17-9f95-b5f39d8654a6",
+      "img": "https://img.icons8.com/?size=512&id=7AFcZ2zirX6Y&format=png",
       "name": "Dart"
     },
     {
       "date": "2022-12-06T15:10:26.815054",
-      "des": "Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps. It is built on Google’s infrastructure.",
-      "hidden": "false",
-      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FFirebase?alt=media&token=d1f23b7d-2cd7-4ff9-ab5e-4a9e746fa714",
+      "des": "Firebase là một dịch vụ Backend-as-a-Service (Baas). Nó cung cấp cho các nhà phát triển một loạt các công cụ và dịch vụ để giúp họ phát triển các ứng dụng chất lượng. Firebase được xây dựng trên cơ sở hạ tầng của Google.",
+      "img": "https://img.icons8.com/?size=512&id=62452&format=png",
       "name": "Firebase"
     },
     {
-      "date": "2022-12-06T15:10:53.810314",
-      "des": "Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.",
-      "hidden": "true",
-      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FNode%20Js?alt=media&token=9441f167-b169-4fee-9d0e-e58683d5a1fa",
-      "name": "Node Js"
-    },
-    {
       "date": "2022-12-06T15:11:22.396871",
-      "des": "MongoDB is an open source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.",
-      "hidden": "true",
-      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FMongoDb?alt=media&token=6174ec12-d249-48fe-94b2-caa19436c8cb",
+      "des": "MongoDB là một chương trình cơ sở dữ liệu hướng tài liệu mã nguồn mở, đa nền tảng. MongoDB được phân loại là chương trình cơ sở dữ liệu NoSQL, sử dụng tài liệu giống JSON với các schema tùy chọn",
+      "img": "https://img.icons8.com/?size=512&id=tBBf3P8HL0vR&format=png",
       "name": "MongoDb"
     },
     {
-      "date": "2022-12-13T06:42:40.468743",
-      "des": "TypeScript is a free and open source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language.",
-      "hidden": "false",
-      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FTypeScript?alt=media&token=ba5d81bb-4dfb-49dd-8e0d-da22d0a03e08",
-      "name": "TypeScript"
+      "date": "2022-12-06T15:11:22.396871",
+      "des": "SQL (Structured Query Language) là ngôn ngữ truy vấn dùng để quản lý và truy xuất cơ sở dữ liệu quan hệ. SQL cho phép thực hiện các thao tác như tạo, truy vấn, cập nhật và xóa dữ liệu trong cơ sở dữ liệu.",
+      "img": "https://img.icons8.com/?size=512&id=qGUfLiYi1bRN&format=png",
+      "name": "SQL"
     },
     {
-      "date": "2022-12-13T06:51:19.229714",
-      "des": "React is a free and open-source front-end JavaScript library for building user interfaces based on UI components.",
-      "hidden": "false",
-      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FReact%20Js?alt=media&token=864bfc4f-bab3-49b7-804b-0f86b2480018",
-      "name": "React Js"
+      "date": "2022-12-06T15:11:22.396871",
+      "des": "Spring Boot là một framework phát triển ứng dụng Java. Nó cung cấp các công cụ và thư viện giúp dễ dàng xây dựng ứng dụng Java mà không cần quá nhiều cấu hình. Spring Boot giúp tăng năng suất phát triển và giảm đáng kể số lượng mã lặp lại.",
+      "img": "https://img.icons8.com/?size=512&id=90519&format=png",
+      "name": "Spring Boot"
     },
     {
-      "date": "2023-08-05T07:30:26.081916",
-      "des": "CodeMagic is a continuous integration and delivery (CI/CD) platform specifically designed for mobile app development. It is primarily used for building, testing, and distributing mobile apps on both iOS and Android platforms.",
-      "hidden": "false",
-      "img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FCodemagic%20(CI%2FCD)?alt=media&token=4b1f2119-e086-4144-8c89-da990b5afff7",
-      "name": "Codemagic (CI/CD)"
+      "date": "2022-12-06T15:11:22.396871",
+      "des": "Azure là một nền tảng đám mây được cung cấp bởi Microsoft. Nó cung cấp các dịch vụ đám mây như máy ảo, lưu trữ dữ liệu, dịch vụ phân tích và nhiều hơn nữa. Azure giúp các tổ chức xây dựng, triển khai và quản lý ứng dụng và dịch vụ trên môi trường đám mây.",
+      "img": "https://img.icons8.com/?size=512&id=VLKafOkk3sBX&format=png",
+      "name": "Azure"
+    },
+    {
+      "date": "2022-12-06T15:11:22.396871",
+      "des": "AWS (Amazon Web Services) là một nền tảng đám mây hàng đầu do Amazon cung cấp. AWS cung cấp một loạt các dịch vụ đám mây bao gồm máy ảo, lưu trữ dữ liệu, cơ sở dữ liệu, dịch vụ tính toán và nhiều hơn nữa. AWS cho phép người dùng xây dựng và triển khai ứng dụng và dịch vụ trên nền tảng đám mây của Amazon.",
+      "img": "https://img.icons8.com/?size=512&id=33039&format=png",
+      "name": "AWS"
+    },
+    {
+      "date": "2022-12-06T15:11:22.396871",
+      "des": "Android là một hệ điều hành di động phổ biến, phát triển bởi Google. Nó được sử dụng trên nhiều thiết bị di động như điện thoại thông minh và máy tính bảng. Android cung cấp một nền tảng phát triển mạnh mẽ cho việc xây dựng ứng dụng di động đa dạng.",
+      "img": "https://img.icons8.com/?size=512&id=17836&format=png",
+      "name": "Android"
+    },
+    {
+      "date": "2022-12-06T15:11:22.396871",
+      "des": "AOSP (Android Open Source Project) là dự án mã nguồn mở cho hệ điều hành Android. Nó cung cấp mã nguồn cho các thành phần cốt lõi của Android và cho phép các nhà phát triển tùy chỉnh và xâydựng phiên bản riêng của hệ điều hành này. AOSP cho phép sự mở rộng và tùy chỉnh linh hoạt của Android.",
+      "img": "https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png",
+      "name": "AOSP"
     }
   ]
 }

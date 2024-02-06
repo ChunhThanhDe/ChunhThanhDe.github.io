@@ -1,5 +1,7 @@
-import '../generated/translations.g.dart';
-import '../models/work.dart';
+
+
+import 'package:profile/generated/translations.g.dart';
+import 'package:profile/models/work.dart';
 
 class ExperienceController {
   List<Work> get workExperience => _workExperience;

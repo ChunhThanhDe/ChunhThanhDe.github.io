@@ -1,24 +1,24 @@
 {
-  "name": "Chung Nguyen Thanh",
-  "aboutMe": "As a software engineer and UI/UX designer with extensive experience in Flutter, Dart, Firebase, and design, I am passionate about developing innovative and engaging digital experiences that meet the needs of users.\n\nWith a strong foundation in software engineering and design principles, I am adept at crafting high-quality code and intuitive user interfaces. I have experience in designing and developing user-friendly, cross-platform mobile applications using Flutter and Dart.\n\nAs a skilled designer, I can create engaging visuals, intuitive layouts, and an exceptional user experience. I have experience in user research, wireframing, prototyping, and designing user interfaces for mobile apps and web-based applications.\n\nI am highly proficient in Firebase, including Firestore, Realtime Database, and Firebase Cloud Messaging. I have used these technologies to build real-time collaborative applications, messaging systems, and cloud-based applications.\n\nThroughout my career, I have demonstrated strong collaboration skills, working closely with product managers, designers, and other developers to ensure that projects are delivered on time and to a high standard.\n\nIn summary, I am a highly skilled software engineer and UI/UX designer with expertise in Flutter, Dart, Firebase, and design. I am passionate about building innovative and engaging digital experiences that meet the needs of users and strive to deliver high-quality code and intuitive user interfaces for all projects.",
+  "name": "Nguyễn Thành Chung",
+  "aboutMe": "Là một nhà phát triển phần mềm có năng lực, tôi luôn tích luỹ kỹ năng, kinh nghiệm, trải nghiệm trong quá trình xây dựng và phát triển các ứng dụng và hệ thống phần mềm. Tôi đã làm việc trong vai trò kỹ sư phát triển phần mềm cho dòng sản phẩm điện thoại và smart box, chẳng hạn như việc tích hợp phát triển các dịch vụ và ứng dụng hệ thống vào mã nguồn Android TV và AOSP.\n\nTôi có hiểu biết và kĩ năng tốt trong việc sử dụng Flutter, Dart, Java, Spring boot để thiết kế và tạo ra những ứng dụng đa nền tảng, hệ thống đem đến những trải nghiệm kỹ thuật số hấp dẫn, thân thiện thiện với người dùng.\n\nVới kiến thức sâu về công nghệ phần mềm và nguyên tắc phân tích thiết kế hệ thống, tôi luôn đảm bảo rằng mã nguồn mà tôi tạo ra đạt chất lượng cao với giao diện người dùng trực quan. Tôi có kinh nghiệm trong việc phân tích thiết kế hệ thống phần mềm cho ứng dụng di động và trang web, và đã thực hiện nghiên cứu người dùng, tạo mẫu và thiết kế một số sản phẩm độc đáo và hấp dẫn.\n\nNgoài ra, tôi cũng có kiến thức về triển khai hệ thống với ASUZE và AWS. Điều này cho phép tôi xây dựng hệ thống phức tạp và mạnh mẽ, đáp ứng được nhiều yêu cầu và đảm bảo hiệu suất cao.\n\nTrong quá trình làm việc, tôi đã chứng tỏ khả năng làm việc độc lập đồng thời có khả năng làm việc nhóm mạnh mẽ và hợp tác chặt chẽ với các thành viên khác trong dự án. Tôi đã tham gia vào quá trình đánh giá khả thi, tìm kiếm giải pháp, xây dựng kế hoạch phát triển và kiểm thử cùng với các nhà thiết kế và nhà phát triển khác. Tôi luôn đảm bảo rằng các dự án được hoàn thành đúng thời hạn và đạt tiêu chuẩn chất lượng cao.\n\nTôi luôn tìm kiếm cơ hội để áp dụng kiến thức và kỹ năng của mình vào việc phát triển phần mềm đột phá, mang lại giá trị cao cho xã hội. Tôi đam mê việc tạo ra những sản phẩm tuyệt vời và đáp ứng nhu cầu của người dùng. Tôi luôn sẵn sàng để đóng góp vào các dự án hấp dẫn và thú vị, và mong muốn tiếp tục phát triển và mở rộng khả năng của mình trong lĩnh vực phát triển phần mềm.",
   "aboutCard": [
-     {
+    {
       "content": "I value simple, clean design patterns, and thoughtful interactions.",
       "iconPath": "assets/vector.png",
-      "title": "UI/UX Design"
+      "title": "Back-End Development"
     },
-     {
-      "content": "Using Flutter & Dart, I build fast, interactive apps & websites.",
+    {
+      "content": "Sử dụng Flutter & Dart, tôi có thể xây dựng các ứng dụng và trang web cho hệ thống của mình.",
       "iconPath": "assets/programming-code-signs.png",
       "title": "Front-End Development"
     },
     {
-      "content": "API integrations throughout a software to keep data in sync and enhance productivity.",
+      "content": "Tích hợp API trong toàn bộ phần mềm để giữ cho dữ liệu được đồng bộ hóa và nâng cao năng suất.",
       "iconPath": "assets/api.png",
       "title": "API Integration"
     },
-     {
-      "content": "I enjoy bringing ideas to life on the phone or in the browser.",
+    {
+      "content": "Tôi thích xây dựng những ứng dụng có ích cho cộng đồng, khiến cuộc sống của mọi người trở nên đơn giản hơn.",
       "iconPath": "assets/web-development.png",
       "title": "Mobile/Web Development"
     }

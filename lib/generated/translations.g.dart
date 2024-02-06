@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 2
-/// Strings: 434 (217 per locale)
+/// Strings: 394 (197 per locale)
 ///
-/// Built on 2024-02-05 at 08:47 UTC
+/// Built on 2024-02-06 at 09:16 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -195,8 +195,8 @@ class _TranslationsAboutVi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get name => 'Chung Nguyen Thanh';
-	String get aboutMe => 'As a software engineer and UI/UX designer with extensive experience in Flutter, Dart, Firebase, and design, I am passionate about developing innovative and engaging digital experiences that meet the needs of users.\n\nWith a strong foundation in software engineering and design principles, I am adept at crafting high-quality code and intuitive user interfaces. I have experience in designing and developing user-friendly, cross-platform mobile applications using Flutter and Dart.\n\nAs a skilled designer, I can create engaging visuals, intuitive layouts, and an exceptional user experience. I have experience in user research, wireframing, prototyping, and designing user interfaces for mobile apps and web-based applications.\n\nI am highly proficient in Firebase, including Firestore, Realtime Database, and Firebase Cloud Messaging. I have used these technologies to build real-time collaborative applications, messaging systems, and cloud-based applications.\n\nThroughout my career, I have demonstrated strong collaboration skills, working closely with product managers, designers, and other developers to ensure that projects are delivered on time and to a high standard.\n\nIn summary, I am a highly skilled software engineer and UI/UX designer with expertise in Flutter, Dart, Firebase, and design. I am passionate about building innovative and engaging digital experiences that meet the needs of users and strive to deliver high-quality code and intuitive user interfaces for all projects.';
+	String get name => 'Nguyễn Thành Chung';
+	String get aboutMe => 'Là một nhà phát triển phần mềm có năng lực, tôi luôn tích luỹ kỹ năng, kinh nghiệm, trải nghiệm trong quá trình xây dựng và phát triển các ứng dụng và hệ thống phần mềm. Tôi đã làm việc trong vai trò kỹ sư phát triển phần mềm cho dòng sản phẩm điện thoại và smart box, chẳng hạn như việc tích hợp phát triển các dịch vụ và ứng dụng hệ thống vào mã nguồn Android TV và AOSP.\n\nTôi có hiểu biết và kĩ năng tốt trong việc sử dụng Flutter, Dart, Java, Spring boot để thiết kế và tạo ra những ứng dụng đa nền tảng, hệ thống đem đến những trải nghiệm kỹ thuật số hấp dẫn, thân thiện thiện với người dùng.\n\nVới kiến thức sâu về công nghệ phần mềm và nguyên tắc phân tích thiết kế hệ thống, tôi luôn đảm bảo rằng mã nguồn mà tôi tạo ra đạt chất lượng cao với giao diện người dùng trực quan. Tôi có kinh nghiệm trong việc phân tích thiết kế hệ thống phần mềm cho ứng dụng di động và trang web, và đã thực hiện nghiên cứu người dùng, tạo mẫu và thiết kế một số sản phẩm độc đáo và hấp dẫn.\n\nNgoài ra, tôi cũng có kiến thức về triển khai hệ thống với ASUZE và AWS. Điều này cho phép tôi xây dựng hệ thống phức tạp và mạnh mẽ, đáp ứng được nhiều yêu cầu và đảm bảo hiệu suất cao.\n\nTrong quá trình làm việc, tôi đã chứng tỏ khả năng làm việc độc lập đồng thời có khả năng làm việc nhóm mạnh mẽ và hợp tác chặt chẽ với các thành viên khác trong dự án. Tôi đã tham gia vào quá trình đánh giá khả thi, tìm kiếm giải pháp, xây dựng kế hoạch phát triển và kiểm thử cùng với các nhà thiết kế và nhà phát triển khác. Tôi luôn đảm bảo rằng các dự án được hoàn thành đúng thời hạn và đạt tiêu chuẩn chất lượng cao.\n\nTôi luôn tìm kiếm cơ hội để áp dụng kiến thức và kỹ năng của mình vào việc phát triển phần mềm đột phá, mang lại giá trị cao cho xã hội. Tôi đam mê việc tạo ra những sản phẩm tuyệt vời và đáp ứng nhu cầu của người dùng. Tôi luôn sẵn sàng để đóng góp vào các dự án hấp dẫn và thú vị, và mong muốn tiếp tục phát triển và mở rộng khả năng của mình trong lĩnh vực phát triển phần mềm.';
 	List<dynamic> get aboutCard => [
 		_TranslationsAbout$aboutCard$0i0$Vi._(_root),
 		_TranslationsAbout$aboutCard$0i1$Vi._(_root),
@@ -212,30 +212,31 @@ class _TranslationsGeneralVi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get title_introduction_about_section => 'Introduction';
-	String get name_about_section => 'Chung Nguyen Thanh';
-	String get title_about_section => 'About';
-	String get title_contact_section => 'Contact';
-	String get title_contact_me_section => 'Contact Me';
-	String get get_in_touch_contact_section => 'Get in touch';
-	String get feel_free_contact_section => 'Feel free to get in touch';
-	String get hint_your_name_contact_section => 'Your name';
-	String get hint_your_email_contact_section => 'Your email';
-	String get hint_message_contact_section => 'Type your message';
-	String get btn_send_contact_section => 'Send';
-	String get title_experience_section => 'Work Experience';
-	String get title_project_section => 'Projects';
-	String get title_personal_projects_project_section => 'Personal Projects';
-	String get title_client_projects_project_section => 'Work/Client Projects';
-	String get m_title_personal_projects_project_section => 'Personal';
-	String get m_title_client_projects_project_section => 'Work/Client';
-	String get title_all_projects_project_section => 'All Projects';
-	String get title_skill_section => 'Skills';
-	String get hi_about_section => 'Hi there! I\'m ';
-	String get introduce_home_section1 => 'I am a Software Development Engineer for Consumer Product Line (Phone, Set-top Box,...) and a Flutter Developer.';
-	String get introduce_home_section2 => 'I build system applications for AOSP, ATV in the Consumer Product Line and build websites and interactive software applications that run on multiple platforms and devices.';
-	String get browse_projects_home_section => 'Browse Projects';
-	String get required_input_field => 'This field is required';
+	String get thank_you => 'Cảm ơn bạn đã liên hệ với tôi';
+	String get get_back => 'Tôi sẽ liên hệ lại với bạn sớm';
+	String get title_introduction_about_section => 'Giới thiệu';
+	String get title_about_section => 'Thông tin cá nhân';
+	String get title_contact_section => 'Liên hệ';
+	String get title_contact_me_section => 'Liên hệ với tôi';
+	String get get_in_touch_contact_section => 'Liên hệ ngay';
+	String get feel_free_contact_section => 'Hãy thoải mái liên hệ với tôi';
+	String get hint_your_name_contact_section => 'Họ và tên của bạn';
+	String get hint_your_email_contact_section => 'Địa chỉ email của bạn';
+	String get hint_message_contact_section => 'Nhập nội dung tin nhắn';
+	String get btn_send_contact_section => 'Gửi';
+	String get title_experience_section => 'Kinh nghiệm làm việc';
+	String get title_project_section => 'Dự án';
+	String get title_personal_projects_project_section => 'Dự án cá nhân';
+	String get title_client_projects_project_section => 'Dự án công việc';
+	String get m_title_personal_projects_project_section => 'Cá nhân';
+	String get m_title_client_projects_project_section => 'Công việc';
+	String get title_all_projects_project_section => 'Tất cả dự án';
+	String get title_skill_section => 'Kỹ năng';
+	String get hi_about_section => 'Xin chào! Tôi là ';
+	String get introduce_home_section1 => 'Tôi là Kỹ sư Phát triển Phần mềm cho Dòng sản phẩm Tiêu dùng (Điện thoại, Set-top Box,...) và là một Lập trình viên Flutter.';
+	String get introduce_home_section2 => 'Tôi xây dựng các ứng dụng hệ thống cho AOSP, ATV trong Dòng sản phẩm Tiêu dùng và xây dựng các trang web và ứng dụng phần mềm tương tác chạy trên nhiều nền tảng và thiết bị.';
+	String get browse_projects_home_section => 'Các dự án';
+	String get required_input_field => 'Trường này là bắt buộc';
 }
 
 // Path: project
@@ -273,8 +274,6 @@ class _TranslationsSkillsVi {
 		_TranslationsSkills$skills$0i8$Vi._(_root),
 		_TranslationsSkills$skills$0i9$Vi._(_root),
 		_TranslationsSkills$skills$0i10$Vi._(_root),
-		_TranslationsSkills$skills$0i11$Vi._(_root),
-		_TranslationsSkills$skills$0i12$Vi._(_root),
 	];
 }
 
@@ -347,7 +346,7 @@ class _TranslationsAbout$aboutCard$0i0$Vi {
 	// Translations
 	String get content => 'I value simple, clean design patterns, and thoughtful interactions.';
 	String get iconPath => 'assets/vector.png';
-	String get title => 'UI/UX Design';
+	String get title => 'Back-End Development';
 }
 
 // Path: about.aboutCard.1
@@ -357,7 +356,7 @@ class _TranslationsAbout$aboutCard$0i1$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get content => 'Using Flutter & Dart, I build fast, interactive apps & websites.';
+	String get content => 'Sử dụng Flutter & Dart, tôi có thể xây dựng các ứng dụng và trang web cho hệ thống của mình.';
 	String get iconPath => 'assets/programming-code-signs.png';
 	String get title => 'Front-End Development';
 }
@@ -369,7 +368,7 @@ class _TranslationsAbout$aboutCard$0i2$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get content => 'API integrations throughout a software to keep data in sync and enhance productivity.';
+	String get content => 'Tích hợp API trong toàn bộ phần mềm để giữ cho dữ liệu được đồng bộ hóa và nâng cao năng suất.';
 	String get iconPath => 'assets/api.png';
 	String get title => 'API Integration';
 }
@@ -381,7 +380,7 @@ class _TranslationsAbout$aboutCard$0i3$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get content => 'I enjoy bringing ideas to life on the phone or in the browser.';
+	String get content => 'Tôi thích xây dựng những ứng dụng có ích cho cộng đồng, khiến cuộc sống của mọi người trở nên đơn giản hơn.';
 	String get iconPath => 'assets/web-development.png';
 	String get title => 'Mobile/Web Development';
 }
@@ -532,11 +531,10 @@ class _TranslationsSkills$skills$0i0$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get date => '2022-12-06T15:05:22.268253';
-	String get des => 'The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.';
-	String get hidden => 'false';
-	String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FHTML?alt=media&token=4d0a35d0-3726-4182-a6fd-fc000a409b5a';
-	String get name => 'HTML';
+	String get date => '2022-12-06T15:07:31.798027';
+	String get des => 'Git là một hệ thống quản lý phiên bản phân tán miễn phí và mã nguồn mở, được thiết kế để xử lý từ dự án nhỏ đến rất lớn với tốc độ và hiệu suất cao';
+	String get img => 'https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_git-512.png';
+	String get name => 'Git';
 }
 
 // Path: skills.skills.1
@@ -546,11 +544,10 @@ class _TranslationsSkills$skills$0i1$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get date => '2022-12-06T15:06:35.630660';
-	String get des => 'Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.';
-	String get hidden => 'false';
-	String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FCSS?alt=media&token=0e0d0e0b-bb9c-41ea-b2b7-0a37b1815092';
-	String get name => 'CSS';
+	String get date => '2022-12-06T15:09:18.175658';
+	String get des => 'Dart là một ngôn ngữ lập trình được thiết kế cho việc phát triển phía khách hàng, chẳng hạn như cho web và ứng dụng di động';
+	String get img => 'https://img.icons8.com/?size=512&id=5pu47piHKg1I&format=png';
+	String get name => 'Flutter';
 }
 
 // Path: skills.skills.2
@@ -560,11 +557,10 @@ class _TranslationsSkills$skills$0i2$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get date => '2022-12-06T15:07:09.232675';
-	String get des => 'JS is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.';
-	String get hidden => 'false';
-	String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FJavaScript?alt=media&token=640c6f32-cb7f-4752-a2d3-7a4477048688';
-	String get name => 'JavaScript';
+	String get date => '2022-12-06T15:10:01.509497';
+	String get des => 'Dart is a programming language designed for client development, such as for the web and mobile apps.';
+	String get img => 'https://img.icons8.com/?size=512&id=7AFcZ2zirX6Y&format=png';
+	String get name => 'Dart';
 }
 
 // Path: skills.skills.3
@@ -574,11 +570,10 @@ class _TranslationsSkills$skills$0i3$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get date => '2022-12-06T15:07:31.798027';
-	String get des => 'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.';
-	String get hidden => 'false';
-	String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FGit?alt=media&token=cd9be5b5-dca4-4d78-b84a-864d0a31c919';
-	String get name => 'Git';
+	String get date => '2022-12-06T15:10:26.815054';
+	String get des => 'Firebase là một dịch vụ Backend-as-a-Service (Baas). Nó cung cấp cho các nhà phát triển một loạt các công cụ và dịch vụ để giúp họ phát triển các ứng dụng chất lượng. Firebase được xây dựng trên cơ sở hạ tầng của Google.';
+	String get img => 'https://img.icons8.com/?size=512&id=62452&format=png';
+	String get name => 'Firebase';
 }
 
 // Path: skills.skills.4
@@ -588,11 +583,10 @@ class _TranslationsSkills$skills$0i4$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get date => '2022-12-06T15:08:03.833114';
-	String get des => 'Adobe XD is a prototyping tool for user experience and interaction designers used to design websites, mobile apps, and more. Design at the speed of thought.';
-	String get hidden => 'false';
-	String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FAdobe%20XD?alt=media&token=3dddc27d-b63b-4ed6-b515-ff60db6ec01a';
-	String get name => 'Adobe XD';
+	String get date => '2022-12-06T15:11:22.396871';
+	String get des => 'MongoDB là một chương trình cơ sở dữ liệu hướng tài liệu mã nguồn mở, đa nền tảng. MongoDB được phân loại là chương trình cơ sở dữ liệu NoSQL, sử dụng tài liệu giống JSON với các schema tùy chọn';
+	String get img => 'https://img.icons8.com/?size=512&id=tBBf3P8HL0vR&format=png';
+	String get name => 'MongoDb';
 }
 
 // Path: skills.skills.5
@@ -602,11 +596,10 @@ class _TranslationsSkills$skills$0i5$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get date => '2022-12-06T15:09:18.175658';
-	String get des => 'Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, macOS, Windows, Google Fuchsia, and the web from a single codebase.';
-	String get hidden => 'false';
-	String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FFlutter?alt=media&token=1b4e6984-6d9c-436c-8366-9843eb8c2836';
-	String get name => 'Flutter';
+	String get date => '2022-12-06T15:11:22.396871';
+	String get des => 'SQL (Structured Query Language) là ngôn ngữ truy vấn dùng để quản lý và truy xuất cơ sở dữ liệu quan hệ. SQL cho phép thực hiện các thao tác như tạo, truy vấn, cập nhật và xóa dữ liệu trong cơ sở dữ liệu.';
+	String get img => 'https://img.icons8.com/?size=512&id=qGUfLiYi1bRN&format=png';
+	String get name => 'SQL';
 }
 
 // Path: skills.skills.6
@@ -616,11 +609,10 @@ class _TranslationsSkills$skills$0i6$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get date => '2022-12-06T15:10:01.509497';
-	String get des => 'Dart is a programming language designed for client development, such as for the web and mobile apps.';
-	String get hidden => 'false';
-	String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FDart?alt=media&token=82f1a59e-cf39-4e17-9f95-b5f39d8654a6';
-	String get name => 'Dart';
+	String get date => '2022-12-06T15:11:22.396871';
+	String get des => 'Spring Boot là một framework phát triển ứng dụng Java. Nó cung cấp các công cụ và thư viện giúp dễ dàng xây dựng ứng dụng Java mà không cần quá nhiều cấu hình. Spring Boot giúp tăng năng suất phát triển và giảm đáng kể số lượng mã lặp lại.';
+	String get img => 'https://img.icons8.com/?size=512&id=90519&format=png';
+	String get name => 'Spring Boot';
 }
 
 // Path: skills.skills.7
@@ -630,11 +622,10 @@ class _TranslationsSkills$skills$0i7$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get date => '2022-12-06T15:10:26.815054';
-	String get des => 'Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps. It is built on Google’s infrastructure.';
-	String get hidden => 'false';
-	String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FFirebase?alt=media&token=d1f23b7d-2cd7-4ff9-ab5e-4a9e746fa714';
-	String get name => 'Firebase';
+	String get date => '2022-12-06T15:11:22.396871';
+	String get des => 'Azure là một nền tảng đám mây được cung cấp bởi Microsoft. Nó cung cấp các dịch vụ đám mây như máy ảo, lưu trữ dữ liệu, dịch vụ phân tích và nhiều hơn nữa. Azure giúp các tổ chức xây dựng, triển khai và quản lý ứng dụng và dịch vụ trên môi trường đám mây.';
+	String get img => 'https://img.icons8.com/?size=512&id=VLKafOkk3sBX&format=png';
+	String get name => 'Azure';
 }
 
 // Path: skills.skills.8
@@ -644,11 +635,10 @@ class _TranslationsSkills$skills$0i8$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get date => '2022-12-06T15:10:53.810314';
-	String get des => 'Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.';
-	String get hidden => 'true';
-	String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FNode%20Js?alt=media&token=9441f167-b169-4fee-9d0e-e58683d5a1fa';
-	String get name => 'Node Js';
+	String get date => '2022-12-06T15:11:22.396871';
+	String get des => 'AWS (Amazon Web Services) là một nền tảng đám mây hàng đầu do Amazon cung cấp. AWS cung cấp một loạt các dịch vụ đám mây bao gồm máy ảo, lưu trữ dữ liệu, cơ sở dữ liệu, dịch vụ tính toán và nhiều hơn nữa. AWS cho phép người dùng xây dựng và triển khai ứng dụng và dịch vụ trên nền tảng đám mây của Amazon.';
+	String get img => 'https://img.icons8.com/?size=512&id=33039&format=png';
+	String get name => 'AWS';
 }
 
 // Path: skills.skills.9
@@ -659,10 +649,9 @@ class _TranslationsSkills$skills$0i9$Vi {
 
 	// Translations
 	String get date => '2022-12-06T15:11:22.396871';
-	String get des => 'MongoDB is an open source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.';
-	String get hidden => 'true';
-	String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FMongoDb?alt=media&token=6174ec12-d249-48fe-94b2-caa19436c8cb';
-	String get name => 'MongoDb';
+	String get des => 'Android là một hệ điều hành di động phổ biến, phát triển bởi Google. Nó được sử dụng trên nhiều thiết bị di động như điện thoại thông minh và máy tính bảng. Android cung cấp một nền tảng phát triển mạnh mẽ cho việc xây dựng ứng dụng di động đa dạng.';
+	String get img => 'https://img.icons8.com/?size=512&id=17836&format=png';
+	String get name => 'Android';
 }
 
 // Path: skills.skills.10
@@ -672,39 +661,10 @@ class _TranslationsSkills$skills$0i10$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get date => '2022-12-13T06:42:40.468743';
-	String get des => 'TypeScript is a free and open source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language.';
-	String get hidden => 'false';
-	String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FTypeScript?alt=media&token=ba5d81bb-4dfb-49dd-8e0d-da22d0a03e08';
-	String get name => 'TypeScript';
-}
-
-// Path: skills.skills.11
-class _TranslationsSkills$skills$0i11$Vi {
-	_TranslationsSkills$skills$0i11$Vi._(this._root);
-
-	final Translations _root; // ignore: unused_field
-
-	// Translations
-	String get date => '2022-12-13T06:51:19.229714';
-	String get des => 'React is a free and open-source front-end JavaScript library for building user interfaces based on UI components.';
-	String get hidden => 'false';
-	String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FReact%20Js?alt=media&token=864bfc4f-bab3-49b7-804b-0f86b2480018';
-	String get name => 'React Js';
-}
-
-// Path: skills.skills.12
-class _TranslationsSkills$skills$0i12$Vi {
-	_TranslationsSkills$skills$0i12$Vi._(this._root);
-
-	final Translations _root; // ignore: unused_field
-
-	// Translations
-	String get date => '2023-08-05T07:30:26.081916';
-	String get des => 'CodeMagic is a continuous integration and delivery (CI/CD) platform specifically designed for mobile app development. It is primarily used for building, testing, and distributing mobile apps on both iOS and Android platforms.';
-	String get hidden => 'false';
-	String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FCodemagic%20(CI%2FCD)?alt=media&token=4b1f2119-e086-4144-8c89-da990b5afff7';
-	String get name => 'Codemagic (CI/CD)';
+	String get date => '2022-12-06T15:11:22.396871';
+	String get des => 'AOSP (Android Open Source Project) là dự án mã nguồn mở cho hệ điều hành Android. Nó cung cấp mã nguồn cho các thành phần cốt lõi của Android và cho phép các nhà phát triển tùy chỉnh và xâydựng phiên bản riêng của hệ điều hành này. AOSP cho phép sự mở rộng và tùy chỉnh linh hoạt của Android.';
+	String get img => 'https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png';
+	String get name => 'AOSP';
 }
 
 // Path: <root>
@@ -779,7 +739,7 @@ class _TranslationsAboutEn implements _TranslationsAboutVi {
 
 	// Translations
 	@override String get name => 'Chung Nguyen Thanh';
-	@override String get aboutMe => 'As a software engineer and UI/UX designer with extensive experience in Flutter, Dart, Firebase, and design, I am passionate about developing innovative and engaging digital experiences that meet the needs of users.\n\nWith a strong foundation in software engineering and design principles, I am adept at crafting high-quality code and intuitive user interfaces. I have experience in designing and developing user-friendly, cross-platform mobile applications using Flutter and Dart.\n\nAs a skilled designer, I can create engaging visuals, intuitive layouts, and an exceptional user experience. I have experience in user research, wireframing, prototyping, and designing user interfaces for mobile apps and web-based applications.\n\nI am highly proficient in Firebase, including Firestore, Realtime Database, and Firebase Cloud Messaging. I have used these technologies to build real-time collaborative applications, messaging systems, and cloud-based applications.\n\nThroughout my career, I have demonstrated strong collaboration skills, working closely with product managers, designers, and other developers to ensure that projects are delivered on time and to a high standard.\n\nIn summary, I am a highly skilled software engineer and UI/UX designer with expertise in Flutter, Dart, Firebase, and design. I am passionate about building innovative and engaging digital experiences that meet the needs of users and strive to deliver high-quality code and intuitive user interfaces for all projects.';
+	@override String get aboutMe => 'As a skilled software developer, I continually accumulate skills, experience, and expertise in the process of building and developing software applications and systems. I have worked in the role of a software development engineer for phone and smart box product lines, such as integrating system development services and applications into Android TV and AOSP source code.\n\nI have a good understanding and proficiency in utilizing Flutter, Dart, Java, and Spring Boot to design and create cross-platform applications and systems that deliver engaging and user-friendly digital experiences.\n\nWith deep knowledge of software technology and principles of system design analysis, I always ensure that the source code I produce is of high quality with intuitive user interfaces. I have experience in analyzing system design for mobile applications and websites and have conducted user research, prototyping, and designing unique and appealing products.\n\nFurthermore, I also have knowledge of system deployment with ASUZE and AWS. This enables me to build complex and robust systems that meet various requirements and ensure high performance.\n\nThroughout my work, I have demonstrated the ability to work independently while also being a strong team player, collaborating closely with other members of the project. I have been involved in feasibility assessment, solution finding, development planning, and testing alongside designers and other developers. I always ensure that projects are completed on time and meet high-quality standards.\n\nI am always seeking opportunities to apply my knowledge and skills to develop breakthrough software, bringing high value to society. I am passionate about creating exceptional products that fulfill user needs. I am ready to contribute to exciting and meaningful projects and look forward to further developing and expanding my capabilities in the field of software development.';
 	@override List<dynamic> get aboutCard => [
 		_TranslationsAbout$aboutCard$0i0$En._(_root),
 		_TranslationsAbout$aboutCard$0i1$En._(_root),
@@ -795,8 +755,9 @@ class _TranslationsGeneralEn implements _TranslationsGeneralVi {
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
+	@override String get thank_you => 'Thank You for contacting me';
+	@override String get get_back => 'I will get back to you shortly';
 	@override String get title_introduction_about_section => 'Introduction';
-	@override String get name_about_section => 'Chung Nguyen Thanh';
 	@override String get title_about_section => 'About';
 	@override String get title_contact_section => 'Contact';
 	@override String get title_contact_me_section => 'Contact Me';
@@ -856,8 +817,6 @@ class _TranslationsSkillsEn implements _TranslationsSkillsVi {
 		_TranslationsSkills$skills$0i8$En._(_root),
 		_TranslationsSkills$skills$0i9$En._(_root),
 		_TranslationsSkills$skills$0i10$En._(_root),
-		_TranslationsSkills$skills$0i11$En._(_root),
-		_TranslationsSkills$skills$0i12$En._(_root),
 	];
 }
 
@@ -930,7 +889,7 @@ class _TranslationsAbout$aboutCard$0i0$En implements _TranslationsAbout$aboutCar
 	// Translations
 	@override String get content => 'I value simple, clean design patterns, and thoughtful interactions.';
 	@override String get iconPath => 'assets/vector.png';
-	@override String get title => 'UI/UX Design';
+	@override String get title => 'Back-End Development';
 }
 
 // Path: about.aboutCard.1
@@ -940,7 +899,7 @@ class _TranslationsAbout$aboutCard$0i1$En implements _TranslationsAbout$aboutCar
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get content => 'Using Flutter & Dart, I build fast, interactive apps & websites.';
+	@override String get content => 'Using Flutter & Dart, I can build applications and websites for my system.';
 	@override String get iconPath => 'assets/programming-code-signs.png';
 	@override String get title => 'Front-End Development';
 }
@@ -952,7 +911,7 @@ class _TranslationsAbout$aboutCard$0i2$En implements _TranslationsAbout$aboutCar
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get content => 'API integrations throughout a software to keep data in sync and enhance productivity.';
+	@override String get content => 'Integrating APIs throughout the software to keep data synchronized and enhance productivity.';
 	@override String get iconPath => 'assets/api.png';
 	@override String get title => 'API Integration';
 }
@@ -964,7 +923,7 @@ class _TranslationsAbout$aboutCard$0i3$En implements _TranslationsAbout$aboutCar
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get content => 'I enjoy bringing ideas to life on the phone or in the browser.';
+	@override String get content => 'I enjoy building useful applications for the community, making people\'s lives simpler.';
 	@override String get iconPath => 'assets/web-development.png';
 	@override String get title => 'Mobile/Web Development';
 }
@@ -1115,11 +1074,10 @@ class _TranslationsSkills$skills$0i0$En implements _TranslationsSkills$skills$0i
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get date => '2022-12-06T15:05:22.268253';
-	@override String get des => 'The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.';
-	@override String get hidden => 'false';
-	@override String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FHTML?alt=media&token=4d0a35d0-3726-4182-a6fd-fc000a409b5a';
-	@override String get name => 'HTML';
+	@override String get date => '2022-12-06T15:07:31.798027';
+	@override String get des => 'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.';
+	@override String get img => 'https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_git-512.png';
+	@override String get name => 'Git';
 }
 
 // Path: skills.skills.1
@@ -1129,11 +1087,10 @@ class _TranslationsSkills$skills$0i1$En implements _TranslationsSkills$skills$0i
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get date => '2022-12-06T15:06:35.630660';
-	@override String get des => 'Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.';
-	@override String get hidden => 'false';
-	@override String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FCSS?alt=media&token=0e0d0e0b-bb9c-41ea-b2b7-0a37b1815092';
-	@override String get name => 'CSS';
+	@override String get date => '2022-12-06T15:09:18.175658';
+	@override String get des => 'Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, macOS, Windows, Google Fuchsia, and the web from a single codebase.';
+	@override String get img => 'https://img.icons8.com/?size=512&id=5pu47piHKg1I&format=png';
+	@override String get name => 'Flutter';
 }
 
 // Path: skills.skills.2
@@ -1143,11 +1100,10 @@ class _TranslationsSkills$skills$0i2$En implements _TranslationsSkills$skills$0i
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get date => '2022-12-06T15:07:09.232675';
-	@override String get des => 'JS is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.';
-	@override String get hidden => 'false';
-	@override String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FJavaScript?alt=media&token=640c6f32-cb7f-4752-a2d3-7a4477048688';
-	@override String get name => 'JavaScript';
+	@override String get date => '2022-12-06T15:10:01.509497';
+	@override String get des => 'Dart is a programming language designed for client development, such as for the web and mobile apps.';
+	@override String get img => 'https://img.icons8.com/?size=512&id=7AFcZ2zirX6Y&format=png';
+	@override String get name => 'Dart';
 }
 
 // Path: skills.skills.3
@@ -1157,11 +1113,10 @@ class _TranslationsSkills$skills$0i3$En implements _TranslationsSkills$skills$0i
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get date => '2022-12-06T15:07:31.798027';
-	@override String get des => 'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.';
-	@override String get hidden => 'false';
-	@override String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FGit?alt=media&token=cd9be5b5-dca4-4d78-b84a-864d0a31c919';
-	@override String get name => 'Git';
+	@override String get date => '2022-12-06T15:10:26.815054';
+	@override String get des => 'Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps. It is built on Google’s infrastructure.';
+	@override String get img => 'https://img.icons8.com/?size=512&id=62452&format=png';
+	@override String get name => 'Firebase';
 }
 
 // Path: skills.skills.4
@@ -1171,11 +1126,10 @@ class _TranslationsSkills$skills$0i4$En implements _TranslationsSkills$skills$0i
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get date => '2022-12-06T15:08:03.833114';
-	@override String get des => 'Adobe XD is a prototyping tool for user experience and interaction designers used to design websites, mobile apps, and more. Design at the speed of thought.';
-	@override String get hidden => 'false';
-	@override String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FAdobe%20XD?alt=media&token=3dddc27d-b63b-4ed6-b515-ff60db6ec01a';
-	@override String get name => 'Adobe XD';
+	@override String get date => '2022-12-06T15:11:22.396871';
+	@override String get des => 'MongoDB is an open source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.';
+	@override String get img => 'https://img.icons8.com/?size=512&id=tBBf3P8HL0vR&format=png';
+	@override String get name => 'MongoDb';
 }
 
 // Path: skills.skills.5
@@ -1185,11 +1139,10 @@ class _TranslationsSkills$skills$0i5$En implements _TranslationsSkills$skills$0i
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get date => '2022-12-06T15:09:18.175658';
-	@override String get des => 'Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, macOS, Windows, Google Fuchsia, and the web from a single codebase.';
-	@override String get hidden => 'false';
-	@override String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FFlutter?alt=media&token=1b4e6984-6d9c-436c-8366-9843eb8c2836';
-	@override String get name => 'Flutter';
+	@override String get date => '2022-12-06T15:11:22.396871';
+	@override String get des => 'SQL (Structured Query Language) is a standard language for managing and manipulating relational databases. It is used to create, modify, and retrieve data from databases.';
+	@override String get img => 'https://img.icons8.com/?size=512&id=qGUfLiYi1bRN&format=png';
+	@override String get name => 'SQL';
 }
 
 // Path: skills.skills.6
@@ -1199,11 +1152,10 @@ class _TranslationsSkills$skills$0i6$En implements _TranslationsSkills$skills$0i
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get date => '2022-12-06T15:10:01.509497';
-	@override String get des => 'Dart is a programming language designed for client development, such as for the web and mobile apps.';
-	@override String get hidden => 'false';
-	@override String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FDart?alt=media&token=82f1a59e-cf39-4e17-9f95-b5f39d8654a6';
-	@override String get name => 'Dart';
+	@override String get date => '2022-12-06T15:11:22.396871';
+	@override String get des => 'Spring Boot is a framework that simplifies the development of Java applications. It provides a set of ready-to-use components and conventions to rapidly build and configure robust and production-ready applications.';
+	@override String get img => 'https://img.icons8.com/?size=512&id=90519&format=png';
+	@override String get name => 'Spring Boot';
 }
 
 // Path: skills.skills.7
@@ -1213,11 +1165,10 @@ class _TranslationsSkills$skills$0i7$En implements _TranslationsSkills$skills$0i
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get date => '2022-12-06T15:10:26.815054';
-	@override String get des => 'Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps. It is built on Google’s infrastructure.';
-	@override String get hidden => 'false';
-	@override String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FFirebase?alt=media&token=d1f23b7d-2cd7-4ff9-ab5e-4a9e746fa714';
-	@override String get name => 'Firebase';
+	@override String get date => '2022-12-06T15:11:22.396871';
+	@override String get des => 'Azure is a cloud computing platform provided by Microsoft. It offers a wide range of cloud services, including virtual machines, storage, databases, and AI capabilities, enabling organizations to build, deploy, and manage applications and services.';
+	@override String get img => 'https://img.icons8.com/?size=512&id=VLKafOkk3sBX&format=png';
+	@override String get name => 'Azure';
 }
 
 // Path: skills.skills.8
@@ -1227,11 +1178,10 @@ class _TranslationsSkills$skills$0i8$En implements _TranslationsSkills$skills$0i
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get date => '2022-12-06T15:10:53.810314';
-	@override String get des => 'Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.';
-	@override String get hidden => 'true';
-	@override String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FNode%20Js?alt=media&token=9441f167-b169-4fee-9d0e-e58683d5a1fa';
-	@override String get name => 'Node Js';
+	@override String get date => '2022-12-06T15:11:22.396871';
+	@override String get des => 'AWS is a comprehensive cloud computing platform provided by Amazon. It offers a wide range of on-demand services, such as computing power, storage, databases, and analytics, allowing businesses to scale and grow their applications and infrastructure.';
+	@override String get img => 'https://img.icons8.com/?size=512&id=33039&format=png';
+	@override String get name => 'AWS';
 }
 
 // Path: skills.skills.9
@@ -1242,10 +1192,9 @@ class _TranslationsSkills$skills$0i9$En implements _TranslationsSkills$skills$0i
 
 	// Translations
 	@override String get date => '2022-12-06T15:11:22.396871';
-	@override String get des => 'MongoDB is an open source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.';
-	@override String get hidden => 'true';
-	@override String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FMongoDb?alt=media&token=6174ec12-d249-48fe-94b2-caa19436c8cb';
-	@override String get name => 'MongoDb';
+	@override String get des => 'Android is an open-source mobile operating system developed by Google. It is designed for smartphones, tablets, and other mobile devices. Android allows developers to create a wide range of applications using Java or Kotlin programming languages';
+	@override String get img => 'https://img.icons8.com/?size=512&id=17836&format=png';
+	@override String get name => 'Android';
 }
 
 // Path: skills.skills.10
@@ -1255,39 +1204,10 @@ class _TranslationsSkills$skills$0i10$En implements _TranslationsSkills$skills$0
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get date => '2022-12-13T06:42:40.468743';
-	@override String get des => 'TypeScript is a free and open source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language.';
-	@override String get hidden => 'false';
-	@override String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FTypeScript?alt=media&token=ba5d81bb-4dfb-49dd-8e0d-da22d0a03e08';
-	@override String get name => 'TypeScript';
-}
-
-// Path: skills.skills.11
-class _TranslationsSkills$skills$0i11$En implements _TranslationsSkills$skills$0i11$Vi {
-	_TranslationsSkills$skills$0i11$En._(this._root);
-
-	@override final _TranslationsEn _root; // ignore: unused_field
-
-	// Translations
-	@override String get date => '2022-12-13T06:51:19.229714';
-	@override String get des => 'React is a free and open-source front-end JavaScript library for building user interfaces based on UI components.';
-	@override String get hidden => 'false';
-	@override String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FReact%20Js?alt=media&token=864bfc4f-bab3-49b7-804b-0f86b2480018';
-	@override String get name => 'React Js';
-}
-
-// Path: skills.skills.12
-class _TranslationsSkills$skills$0i12$En implements _TranslationsSkills$skills$0i12$Vi {
-	_TranslationsSkills$skills$0i12$En._(this._root);
-
-	@override final _TranslationsEn _root; // ignore: unused_field
-
-	// Translations
-	@override String get date => '2023-08-05T07:30:26.081916';
-	@override String get des => 'CodeMagic is a continuous integration and delivery (CI/CD) platform specifically designed for mobile app development. It is primarily used for building, testing, and distributing mobile apps on both iOS and Android platforms.';
-	@override String get hidden => 'false';
-	@override String get img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FCodemagic%20(CI%2FCD)?alt=media&token=4b1f2119-e086-4144-8c89-da990b5afff7';
-	@override String get name => 'Codemagic (CI/CD)';
+	@override String get date => '2022-12-06T15:11:22.396871';
+	@override String get des => ' AOSP (Android Open Source Project) is the open-source project that maintains and develops the Android operating system. It provides the source code, documentation, and tools for building custom Android ROMs and modifying the Android system';
+	@override String get img => 'https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png';
+	@override String get name => 'AOSP';
 }
 
 /// Flat map(s) containing all translations.
@@ -1336,44 +1256,45 @@ extension on Translations {
 			case 'tabs.tabs.4': return 'Projects';
 			case 'tabs.tabs.5': return 'Contact';
 			case 'tabs.tabs.6': return 'Download CV';
-			case 'about.name': return 'Chung Nguyen Thanh';
-			case 'about.aboutMe': return 'As a software engineer and UI/UX designer with extensive experience in Flutter, Dart, Firebase, and design, I am passionate about developing innovative and engaging digital experiences that meet the needs of users.\n\nWith a strong foundation in software engineering and design principles, I am adept at crafting high-quality code and intuitive user interfaces. I have experience in designing and developing user-friendly, cross-platform mobile applications using Flutter and Dart.\n\nAs a skilled designer, I can create engaging visuals, intuitive layouts, and an exceptional user experience. I have experience in user research, wireframing, prototyping, and designing user interfaces for mobile apps and web-based applications.\n\nI am highly proficient in Firebase, including Firestore, Realtime Database, and Firebase Cloud Messaging. I have used these technologies to build real-time collaborative applications, messaging systems, and cloud-based applications.\n\nThroughout my career, I have demonstrated strong collaboration skills, working closely with product managers, designers, and other developers to ensure that projects are delivered on time and to a high standard.\n\nIn summary, I am a highly skilled software engineer and UI/UX designer with expertise in Flutter, Dart, Firebase, and design. I am passionate about building innovative and engaging digital experiences that meet the needs of users and strive to deliver high-quality code and intuitive user interfaces for all projects.';
+			case 'about.name': return 'Nguyễn Thành Chung';
+			case 'about.aboutMe': return 'Là một nhà phát triển phần mềm có năng lực, tôi luôn tích luỹ kỹ năng, kinh nghiệm, trải nghiệm trong quá trình xây dựng và phát triển các ứng dụng và hệ thống phần mềm. Tôi đã làm việc trong vai trò kỹ sư phát triển phần mềm cho dòng sản phẩm điện thoại và smart box, chẳng hạn như việc tích hợp phát triển các dịch vụ và ứng dụng hệ thống vào mã nguồn Android TV và AOSP.\n\nTôi có hiểu biết và kĩ năng tốt trong việc sử dụng Flutter, Dart, Java, Spring boot để thiết kế và tạo ra những ứng dụng đa nền tảng, hệ thống đem đến những trải nghiệm kỹ thuật số hấp dẫn, thân thiện thiện với người dùng.\n\nVới kiến thức sâu về công nghệ phần mềm và nguyên tắc phân tích thiết kế hệ thống, tôi luôn đảm bảo rằng mã nguồn mà tôi tạo ra đạt chất lượng cao với giao diện người dùng trực quan. Tôi có kinh nghiệm trong việc phân tích thiết kế hệ thống phần mềm cho ứng dụng di động và trang web, và đã thực hiện nghiên cứu người dùng, tạo mẫu và thiết kế một số sản phẩm độc đáo và hấp dẫn.\n\nNgoài ra, tôi cũng có kiến thức về triển khai hệ thống với ASUZE và AWS. Điều này cho phép tôi xây dựng hệ thống phức tạp và mạnh mẽ, đáp ứng được nhiều yêu cầu và đảm bảo hiệu suất cao.\n\nTrong quá trình làm việc, tôi đã chứng tỏ khả năng làm việc độc lập đồng thời có khả năng làm việc nhóm mạnh mẽ và hợp tác chặt chẽ với các thành viên khác trong dự án. Tôi đã tham gia vào quá trình đánh giá khả thi, tìm kiếm giải pháp, xây dựng kế hoạch phát triển và kiểm thử cùng với các nhà thiết kế và nhà phát triển khác. Tôi luôn đảm bảo rằng các dự án được hoàn thành đúng thời hạn và đạt tiêu chuẩn chất lượng cao.\n\nTôi luôn tìm kiếm cơ hội để áp dụng kiến thức và kỹ năng của mình vào việc phát triển phần mềm đột phá, mang lại giá trị cao cho xã hội. Tôi đam mê việc tạo ra những sản phẩm tuyệt vời và đáp ứng nhu cầu của người dùng. Tôi luôn sẵn sàng để đóng góp vào các dự án hấp dẫn và thú vị, và mong muốn tiếp tục phát triển và mở rộng khả năng của mình trong lĩnh vực phát triển phần mềm.';
 			case 'about.aboutCard.0.content': return 'I value simple, clean design patterns, and thoughtful interactions.';
 			case 'about.aboutCard.0.iconPath': return 'assets/vector.png';
-			case 'about.aboutCard.0.title': return 'UI/UX Design';
-			case 'about.aboutCard.1.content': return 'Using Flutter & Dart, I build fast, interactive apps & websites.';
+			case 'about.aboutCard.0.title': return 'Back-End Development';
+			case 'about.aboutCard.1.content': return 'Sử dụng Flutter & Dart, tôi có thể xây dựng các ứng dụng và trang web cho hệ thống của mình.';
 			case 'about.aboutCard.1.iconPath': return 'assets/programming-code-signs.png';
 			case 'about.aboutCard.1.title': return 'Front-End Development';
-			case 'about.aboutCard.2.content': return 'API integrations throughout a software to keep data in sync and enhance productivity.';
+			case 'about.aboutCard.2.content': return 'Tích hợp API trong toàn bộ phần mềm để giữ cho dữ liệu được đồng bộ hóa và nâng cao năng suất.';
 			case 'about.aboutCard.2.iconPath': return 'assets/api.png';
 			case 'about.aboutCard.2.title': return 'API Integration';
-			case 'about.aboutCard.3.content': return 'I enjoy bringing ideas to life on the phone or in the browser.';
+			case 'about.aboutCard.3.content': return 'Tôi thích xây dựng những ứng dụng có ích cho cộng đồng, khiến cuộc sống của mọi người trở nên đơn giản hơn.';
 			case 'about.aboutCard.3.iconPath': return 'assets/web-development.png';
 			case 'about.aboutCard.3.title': return 'Mobile/Web Development';
-			case 'general.title_introduction_about_section': return 'Introduction';
-			case 'general.name_about_section': return 'Chung Nguyen Thanh';
-			case 'general.title_about_section': return 'About';
-			case 'general.title_contact_section': return 'Contact';
-			case 'general.title_contact_me_section': return 'Contact Me';
-			case 'general.get_in_touch_contact_section': return 'Get in touch';
-			case 'general.feel_free_contact_section': return 'Feel free to get in touch';
-			case 'general.hint_your_name_contact_section': return 'Your name';
-			case 'general.hint_your_email_contact_section': return 'Your email';
-			case 'general.hint_message_contact_section': return 'Type your message';
-			case 'general.btn_send_contact_section': return 'Send';
-			case 'general.title_experience_section': return 'Work Experience';
-			case 'general.title_project_section': return 'Projects';
-			case 'general.title_personal_projects_project_section': return 'Personal Projects';
-			case 'general.title_client_projects_project_section': return 'Work/Client Projects';
-			case 'general.m_title_personal_projects_project_section': return 'Personal';
-			case 'general.m_title_client_projects_project_section': return 'Work/Client';
-			case 'general.title_all_projects_project_section': return 'All Projects';
-			case 'general.title_skill_section': return 'Skills';
-			case 'general.hi_about_section': return 'Hi there! I\'m ';
-			case 'general.introduce_home_section1': return 'I am a Software Development Engineer for Consumer Product Line (Phone, Set-top Box,...) and a Flutter Developer.';
-			case 'general.introduce_home_section2': return 'I build system applications for AOSP, ATV in the Consumer Product Line and build websites and interactive software applications that run on multiple platforms and devices.';
-			case 'general.browse_projects_home_section': return 'Browse Projects';
-			case 'general.required_input_field': return 'This field is required';
+			case 'general.thank_you': return 'Cảm ơn bạn đã liên hệ với tôi';
+			case 'general.get_back': return 'Tôi sẽ liên hệ lại với bạn sớm';
+			case 'general.title_introduction_about_section': return 'Giới thiệu';
+			case 'general.title_about_section': return 'Thông tin cá nhân';
+			case 'general.title_contact_section': return 'Liên hệ';
+			case 'general.title_contact_me_section': return 'Liên hệ với tôi';
+			case 'general.get_in_touch_contact_section': return 'Liên hệ ngay';
+			case 'general.feel_free_contact_section': return 'Hãy thoải mái liên hệ với tôi';
+			case 'general.hint_your_name_contact_section': return 'Họ và tên của bạn';
+			case 'general.hint_your_email_contact_section': return 'Địa chỉ email của bạn';
+			case 'general.hint_message_contact_section': return 'Nhập nội dung tin nhắn';
+			case 'general.btn_send_contact_section': return 'Gửi';
+			case 'general.title_experience_section': return 'Kinh nghiệm làm việc';
+			case 'general.title_project_section': return 'Dự án';
+			case 'general.title_personal_projects_project_section': return 'Dự án cá nhân';
+			case 'general.title_client_projects_project_section': return 'Dự án công việc';
+			case 'general.m_title_personal_projects_project_section': return 'Cá nhân';
+			case 'general.m_title_client_projects_project_section': return 'Công việc';
+			case 'general.title_all_projects_project_section': return 'Tất cả dự án';
+			case 'general.title_skill_section': return 'Kỹ năng';
+			case 'general.hi_about_section': return 'Xin chào! Tôi là ';
+			case 'general.introduce_home_section1': return 'Tôi là Kỹ sư Phát triển Phần mềm cho Dòng sản phẩm Tiêu dùng (Điện thoại, Set-top Box,...) và là một Lập trình viên Flutter.';
+			case 'general.introduce_home_section2': return 'Tôi xây dựng các ứng dụng hệ thống cho AOSP, ATV trong Dòng sản phẩm Tiêu dùng và xây dựng các trang web và ứng dụng phần mềm tương tác chạy trên nhiều nền tảng và thiết bị.';
+			case 'general.browse_projects_home_section': return 'Các dự án';
+			case 'general.required_input_field': return 'Trường này là bắt buộc';
 			case 'project.projects.0.cover_img': return 'https://i.ibb.co/3Fv9QRt/port.png';
 			case 'project.projects.0.created_at': return '2023-01-28T23:08:58.657311';
 			case 'project.projects.0.description': return 'Personal Portfolio Site showcases some of the projects I\'ve built so far.';
@@ -1448,71 +1369,50 @@ extension on Translations {
 			case 'project.projects.4.tech.3': return 'Adobe XD';
 			case 'project.projects.4.tech.4': return 'Codemagic (CI/CD)';
 			case 'project.projects.4.type': return 'Mobile';
-			case 'skills.skills.0.date': return '2022-12-06T15:05:22.268253';
-			case 'skills.skills.0.des': return 'The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.';
-			case 'skills.skills.0.hidden': return 'false';
-			case 'skills.skills.0.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FHTML?alt=media&token=4d0a35d0-3726-4182-a6fd-fc000a409b5a';
-			case 'skills.skills.0.name': return 'HTML';
-			case 'skills.skills.1.date': return '2022-12-06T15:06:35.630660';
-			case 'skills.skills.1.des': return 'Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.';
-			case 'skills.skills.1.hidden': return 'false';
-			case 'skills.skills.1.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FCSS?alt=media&token=0e0d0e0b-bb9c-41ea-b2b7-0a37b1815092';
-			case 'skills.skills.1.name': return 'CSS';
-			case 'skills.skills.2.date': return '2022-12-06T15:07:09.232675';
-			case 'skills.skills.2.des': return 'JS is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.';
-			case 'skills.skills.2.hidden': return 'false';
-			case 'skills.skills.2.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FJavaScript?alt=media&token=640c6f32-cb7f-4752-a2d3-7a4477048688';
-			case 'skills.skills.2.name': return 'JavaScript';
-			case 'skills.skills.3.date': return '2022-12-06T15:07:31.798027';
-			case 'skills.skills.3.des': return 'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.';
-			case 'skills.skills.3.hidden': return 'false';
-			case 'skills.skills.3.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FGit?alt=media&token=cd9be5b5-dca4-4d78-b84a-864d0a31c919';
-			case 'skills.skills.3.name': return 'Git';
-			case 'skills.skills.4.date': return '2022-12-06T15:08:03.833114';
-			case 'skills.skills.4.des': return 'Adobe XD is a prototyping tool for user experience and interaction designers used to design websites, mobile apps, and more. Design at the speed of thought.';
-			case 'skills.skills.4.hidden': return 'false';
-			case 'skills.skills.4.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FAdobe%20XD?alt=media&token=3dddc27d-b63b-4ed6-b515-ff60db6ec01a';
-			case 'skills.skills.4.name': return 'Adobe XD';
-			case 'skills.skills.5.date': return '2022-12-06T15:09:18.175658';
-			case 'skills.skills.5.des': return 'Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, macOS, Windows, Google Fuchsia, and the web from a single codebase.';
-			case 'skills.skills.5.hidden': return 'false';
-			case 'skills.skills.5.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FFlutter?alt=media&token=1b4e6984-6d9c-436c-8366-9843eb8c2836';
-			case 'skills.skills.5.name': return 'Flutter';
-			case 'skills.skills.6.date': return '2022-12-06T15:10:01.509497';
-			case 'skills.skills.6.des': return 'Dart is a programming language designed for client development, such as for the web and mobile apps.';
-			case 'skills.skills.6.hidden': return 'false';
-			case 'skills.skills.6.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FDart?alt=media&token=82f1a59e-cf39-4e17-9f95-b5f39d8654a6';
-			case 'skills.skills.6.name': return 'Dart';
-			case 'skills.skills.7.date': return '2022-12-06T15:10:26.815054';
-			case 'skills.skills.7.des': return 'Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps. It is built on Google’s infrastructure.';
-			case 'skills.skills.7.hidden': return 'false';
-			case 'skills.skills.7.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FFirebase?alt=media&token=d1f23b7d-2cd7-4ff9-ab5e-4a9e746fa714';
-			case 'skills.skills.7.name': return 'Firebase';
-			case 'skills.skills.8.date': return '2022-12-06T15:10:53.810314';
-			case 'skills.skills.8.des': return 'Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.';
-			case 'skills.skills.8.hidden': return 'true';
-			case 'skills.skills.8.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FNode%20Js?alt=media&token=9441f167-b169-4fee-9d0e-e58683d5a1fa';
-			case 'skills.skills.8.name': return 'Node Js';
+			case 'skills.skills.0.date': return '2022-12-06T15:07:31.798027';
+			case 'skills.skills.0.des': return 'Git là một hệ thống quản lý phiên bản phân tán miễn phí và mã nguồn mở, được thiết kế để xử lý từ dự án nhỏ đến rất lớn với tốc độ và hiệu suất cao';
+			case 'skills.skills.0.img': return 'https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_git-512.png';
+			case 'skills.skills.0.name': return 'Git';
+			case 'skills.skills.1.date': return '2022-12-06T15:09:18.175658';
+			case 'skills.skills.1.des': return 'Dart là một ngôn ngữ lập trình được thiết kế cho việc phát triển phía khách hàng, chẳng hạn như cho web và ứng dụng di động';
+			case 'skills.skills.1.img': return 'https://img.icons8.com/?size=512&id=5pu47piHKg1I&format=png';
+			case 'skills.skills.1.name': return 'Flutter';
+			case 'skills.skills.2.date': return '2022-12-06T15:10:01.509497';
+			case 'skills.skills.2.des': return 'Dart is a programming language designed for client development, such as for the web and mobile apps.';
+			case 'skills.skills.2.img': return 'https://img.icons8.com/?size=512&id=7AFcZ2zirX6Y&format=png';
+			case 'skills.skills.2.name': return 'Dart';
+			case 'skills.skills.3.date': return '2022-12-06T15:10:26.815054';
+			case 'skills.skills.3.des': return 'Firebase là một dịch vụ Backend-as-a-Service (Baas). Nó cung cấp cho các nhà phát triển một loạt các công cụ và dịch vụ để giúp họ phát triển các ứng dụng chất lượng. Firebase được xây dựng trên cơ sở hạ tầng của Google.';
+			case 'skills.skills.3.img': return 'https://img.icons8.com/?size=512&id=62452&format=png';
+			case 'skills.skills.3.name': return 'Firebase';
+			case 'skills.skills.4.date': return '2022-12-06T15:11:22.396871';
+			case 'skills.skills.4.des': return 'MongoDB là một chương trình cơ sở dữ liệu hướng tài liệu mã nguồn mở, đa nền tảng. MongoDB được phân loại là chương trình cơ sở dữ liệu NoSQL, sử dụng tài liệu giống JSON với các schema tùy chọn';
+			case 'skills.skills.4.img': return 'https://img.icons8.com/?size=512&id=tBBf3P8HL0vR&format=png';
+			case 'skills.skills.4.name': return 'MongoDb';
+			case 'skills.skills.5.date': return '2022-12-06T15:11:22.396871';
+			case 'skills.skills.5.des': return 'SQL (Structured Query Language) là ngôn ngữ truy vấn dùng để quản lý và truy xuất cơ sở dữ liệu quan hệ. SQL cho phép thực hiện các thao tác như tạo, truy vấn, cập nhật và xóa dữ liệu trong cơ sở dữ liệu.';
+			case 'skills.skills.5.img': return 'https://img.icons8.com/?size=512&id=qGUfLiYi1bRN&format=png';
+			case 'skills.skills.5.name': return 'SQL';
+			case 'skills.skills.6.date': return '2022-12-06T15:11:22.396871';
+			case 'skills.skills.6.des': return 'Spring Boot là một framework phát triển ứng dụng Java. Nó cung cấp các công cụ và thư viện giúp dễ dàng xây dựng ứng dụng Java mà không cần quá nhiều cấu hình. Spring Boot giúp tăng năng suất phát triển và giảm đáng kể số lượng mã lặp lại.';
+			case 'skills.skills.6.img': return 'https://img.icons8.com/?size=512&id=90519&format=png';
+			case 'skills.skills.6.name': return 'Spring Boot';
+			case 'skills.skills.7.date': return '2022-12-06T15:11:22.396871';
+			case 'skills.skills.7.des': return 'Azure là một nền tảng đám mây được cung cấp bởi Microsoft. Nó cung cấp các dịch vụ đám mây như máy ảo, lưu trữ dữ liệu, dịch vụ phân tích và nhiều hơn nữa. Azure giúp các tổ chức xây dựng, triển khai và quản lý ứng dụng và dịch vụ trên môi trường đám mây.';
+			case 'skills.skills.7.img': return 'https://img.icons8.com/?size=512&id=VLKafOkk3sBX&format=png';
+			case 'skills.skills.7.name': return 'Azure';
+			case 'skills.skills.8.date': return '2022-12-06T15:11:22.396871';
+			case 'skills.skills.8.des': return 'AWS (Amazon Web Services) là một nền tảng đám mây hàng đầu do Amazon cung cấp. AWS cung cấp một loạt các dịch vụ đám mây bao gồm máy ảo, lưu trữ dữ liệu, cơ sở dữ liệu, dịch vụ tính toán và nhiều hơn nữa. AWS cho phép người dùng xây dựng và triển khai ứng dụng và dịch vụ trên nền tảng đám mây của Amazon.';
+			case 'skills.skills.8.img': return 'https://img.icons8.com/?size=512&id=33039&format=png';
+			case 'skills.skills.8.name': return 'AWS';
 			case 'skills.skills.9.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.9.des': return 'MongoDB is an open source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.';
-			case 'skills.skills.9.hidden': return 'true';
-			case 'skills.skills.9.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FMongoDb?alt=media&token=6174ec12-d249-48fe-94b2-caa19436c8cb';
-			case 'skills.skills.9.name': return 'MongoDb';
-			case 'skills.skills.10.date': return '2022-12-13T06:42:40.468743';
-			case 'skills.skills.10.des': return 'TypeScript is a free and open source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language.';
-			case 'skills.skills.10.hidden': return 'false';
-			case 'skills.skills.10.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FTypeScript?alt=media&token=ba5d81bb-4dfb-49dd-8e0d-da22d0a03e08';
-			case 'skills.skills.10.name': return 'TypeScript';
-			case 'skills.skills.11.date': return '2022-12-13T06:51:19.229714';
-			case 'skills.skills.11.des': return 'React is a free and open-source front-end JavaScript library for building user interfaces based on UI components.';
-			case 'skills.skills.11.hidden': return 'false';
-			case 'skills.skills.11.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FReact%20Js?alt=media&token=864bfc4f-bab3-49b7-804b-0f86b2480018';
-			case 'skills.skills.11.name': return 'React Js';
-			case 'skills.skills.12.date': return '2023-08-05T07:30:26.081916';
-			case 'skills.skills.12.des': return 'CodeMagic is a continuous integration and delivery (CI/CD) platform specifically designed for mobile app development. It is primarily used for building, testing, and distributing mobile apps on both iOS and Android platforms.';
-			case 'skills.skills.12.hidden': return 'false';
-			case 'skills.skills.12.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FCodemagic%20(CI%2FCD)?alt=media&token=4b1f2119-e086-4144-8c89-da990b5afff7';
-			case 'skills.skills.12.name': return 'Codemagic (CI/CD)';
+			case 'skills.skills.9.des': return 'Android là một hệ điều hành di động phổ biến, phát triển bởi Google. Nó được sử dụng trên nhiều thiết bị di động như điện thoại thông minh và máy tính bảng. Android cung cấp một nền tảng phát triển mạnh mẽ cho việc xây dựng ứng dụng di động đa dạng.';
+			case 'skills.skills.9.img': return 'https://img.icons8.com/?size=512&id=17836&format=png';
+			case 'skills.skills.9.name': return 'Android';
+			case 'skills.skills.10.date': return '2022-12-06T15:11:22.396871';
+			case 'skills.skills.10.des': return 'AOSP (Android Open Source Project) là dự án mã nguồn mở cho hệ điều hành Android. Nó cung cấp mã nguồn cho các thành phần cốt lõi của Android và cho phép các nhà phát triển tùy chỉnh và xâydựng phiên bản riêng của hệ điều hành này. AOSP cho phép sự mở rộng và tùy chỉnh linh hoạt của Android.';
+			case 'skills.skills.10.img': return 'https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png';
+			case 'skills.skills.10.name': return 'AOSP';
 			default: return null;
 		}
 	}
@@ -1562,21 +1462,22 @@ extension on _TranslationsEn {
 			case 'tabs.tabs.5': return 'Contact';
 			case 'tabs.tabs.6': return 'Download CV';
 			case 'about.name': return 'Chung Nguyen Thanh';
-			case 'about.aboutMe': return 'As a software engineer and UI/UX designer with extensive experience in Flutter, Dart, Firebase, and design, I am passionate about developing innovative and engaging digital experiences that meet the needs of users.\n\nWith a strong foundation in software engineering and design principles, I am adept at crafting high-quality code and intuitive user interfaces. I have experience in designing and developing user-friendly, cross-platform mobile applications using Flutter and Dart.\n\nAs a skilled designer, I can create engaging visuals, intuitive layouts, and an exceptional user experience. I have experience in user research, wireframing, prototyping, and designing user interfaces for mobile apps and web-based applications.\n\nI am highly proficient in Firebase, including Firestore, Realtime Database, and Firebase Cloud Messaging. I have used these technologies to build real-time collaborative applications, messaging systems, and cloud-based applications.\n\nThroughout my career, I have demonstrated strong collaboration skills, working closely with product managers, designers, and other developers to ensure that projects are delivered on time and to a high standard.\n\nIn summary, I am a highly skilled software engineer and UI/UX designer with expertise in Flutter, Dart, Firebase, and design. I am passionate about building innovative and engaging digital experiences that meet the needs of users and strive to deliver high-quality code and intuitive user interfaces for all projects.';
+			case 'about.aboutMe': return 'As a skilled software developer, I continually accumulate skills, experience, and expertise in the process of building and developing software applications and systems. I have worked in the role of a software development engineer for phone and smart box product lines, such as integrating system development services and applications into Android TV and AOSP source code.\n\nI have a good understanding and proficiency in utilizing Flutter, Dart, Java, and Spring Boot to design and create cross-platform applications and systems that deliver engaging and user-friendly digital experiences.\n\nWith deep knowledge of software technology and principles of system design analysis, I always ensure that the source code I produce is of high quality with intuitive user interfaces. I have experience in analyzing system design for mobile applications and websites and have conducted user research, prototyping, and designing unique and appealing products.\n\nFurthermore, I also have knowledge of system deployment with ASUZE and AWS. This enables me to build complex and robust systems that meet various requirements and ensure high performance.\n\nThroughout my work, I have demonstrated the ability to work independently while also being a strong team player, collaborating closely with other members of the project. I have been involved in feasibility assessment, solution finding, development planning, and testing alongside designers and other developers. I always ensure that projects are completed on time and meet high-quality standards.\n\nI am always seeking opportunities to apply my knowledge and skills to develop breakthrough software, bringing high value to society. I am passionate about creating exceptional products that fulfill user needs. I am ready to contribute to exciting and meaningful projects and look forward to further developing and expanding my capabilities in the field of software development.';
 			case 'about.aboutCard.0.content': return 'I value simple, clean design patterns, and thoughtful interactions.';
 			case 'about.aboutCard.0.iconPath': return 'assets/vector.png';
-			case 'about.aboutCard.0.title': return 'UI/UX Design';
-			case 'about.aboutCard.1.content': return 'Using Flutter & Dart, I build fast, interactive apps & websites.';
+			case 'about.aboutCard.0.title': return 'Back-End Development';
+			case 'about.aboutCard.1.content': return 'Using Flutter & Dart, I can build applications and websites for my system.';
 			case 'about.aboutCard.1.iconPath': return 'assets/programming-code-signs.png';
 			case 'about.aboutCard.1.title': return 'Front-End Development';
-			case 'about.aboutCard.2.content': return 'API integrations throughout a software to keep data in sync and enhance productivity.';
+			case 'about.aboutCard.2.content': return 'Integrating APIs throughout the software to keep data synchronized and enhance productivity.';
 			case 'about.aboutCard.2.iconPath': return 'assets/api.png';
 			case 'about.aboutCard.2.title': return 'API Integration';
-			case 'about.aboutCard.3.content': return 'I enjoy bringing ideas to life on the phone or in the browser.';
+			case 'about.aboutCard.3.content': return 'I enjoy building useful applications for the community, making people\'s lives simpler.';
 			case 'about.aboutCard.3.iconPath': return 'assets/web-development.png';
 			case 'about.aboutCard.3.title': return 'Mobile/Web Development';
+			case 'general.thank_you': return 'Thank You for contacting me';
+			case 'general.get_back': return 'I will get back to you shortly';
 			case 'general.title_introduction_about_section': return 'Introduction';
-			case 'general.name_about_section': return 'Chung Nguyen Thanh';
 			case 'general.title_about_section': return 'About';
 			case 'general.title_contact_section': return 'Contact';
 			case 'general.title_contact_me_section': return 'Contact Me';
@@ -1673,71 +1574,50 @@ extension on _TranslationsEn {
 			case 'project.projects.4.tech.3': return 'Adobe XD';
 			case 'project.projects.4.tech.4': return 'Codemagic (CI/CD)';
 			case 'project.projects.4.type': return 'Mobile';
-			case 'skills.skills.0.date': return '2022-12-06T15:05:22.268253';
-			case 'skills.skills.0.des': return 'The HyperText Markup Language or HTML is the standard markup language for documents designed to be displayed in a web browser.';
-			case 'skills.skills.0.hidden': return 'false';
-			case 'skills.skills.0.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FHTML?alt=media&token=4d0a35d0-3726-4182-a6fd-fc000a409b5a';
-			case 'skills.skills.0.name': return 'HTML';
-			case 'skills.skills.1.date': return '2022-12-06T15:06:35.630660';
-			case 'skills.skills.1.des': return 'Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML.';
-			case 'skills.skills.1.hidden': return 'false';
-			case 'skills.skills.1.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FCSS?alt=media&token=0e0d0e0b-bb9c-41ea-b2b7-0a37b1815092';
-			case 'skills.skills.1.name': return 'CSS';
-			case 'skills.skills.2.date': return '2022-12-06T15:07:09.232675';
-			case 'skills.skills.2.des': return 'JS is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS.';
-			case 'skills.skills.2.hidden': return 'false';
-			case 'skills.skills.2.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FJavaScript?alt=media&token=640c6f32-cb7f-4752-a2d3-7a4477048688';
-			case 'skills.skills.2.name': return 'JavaScript';
-			case 'skills.skills.3.date': return '2022-12-06T15:07:31.798027';
-			case 'skills.skills.3.des': return 'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.';
-			case 'skills.skills.3.hidden': return 'false';
-			case 'skills.skills.3.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FGit?alt=media&token=cd9be5b5-dca4-4d78-b84a-864d0a31c919';
-			case 'skills.skills.3.name': return 'Git';
-			case 'skills.skills.4.date': return '2022-12-06T15:08:03.833114';
-			case 'skills.skills.4.des': return 'Adobe XD is a prototyping tool for user experience and interaction designers used to design websites, mobile apps, and more. Design at the speed of thought.';
-			case 'skills.skills.4.hidden': return 'false';
-			case 'skills.skills.4.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FAdobe%20XD?alt=media&token=3dddc27d-b63b-4ed6-b515-ff60db6ec01a';
-			case 'skills.skills.4.name': return 'Adobe XD';
-			case 'skills.skills.5.date': return '2022-12-06T15:09:18.175658';
-			case 'skills.skills.5.des': return 'Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, macOS, Windows, Google Fuchsia, and the web from a single codebase.';
-			case 'skills.skills.5.hidden': return 'false';
-			case 'skills.skills.5.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FFlutter?alt=media&token=1b4e6984-6d9c-436c-8366-9843eb8c2836';
-			case 'skills.skills.5.name': return 'Flutter';
-			case 'skills.skills.6.date': return '2022-12-06T15:10:01.509497';
-			case 'skills.skills.6.des': return 'Dart is a programming language designed for client development, such as for the web and mobile apps.';
-			case 'skills.skills.6.hidden': return 'false';
-			case 'skills.skills.6.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FDart?alt=media&token=82f1a59e-cf39-4e17-9f95-b5f39d8654a6';
-			case 'skills.skills.6.name': return 'Dart';
-			case 'skills.skills.7.date': return '2022-12-06T15:10:26.815054';
-			case 'skills.skills.7.des': return 'Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps. It is built on Google’s infrastructure.';
-			case 'skills.skills.7.hidden': return 'false';
-			case 'skills.skills.7.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FFirebase?alt=media&token=d1f23b7d-2cd7-4ff9-ab5e-4a9e746fa714';
-			case 'skills.skills.7.name': return 'Firebase';
-			case 'skills.skills.8.date': return '2022-12-06T15:10:53.810314';
-			case 'skills.skills.8.des': return 'Node.js is an open source, cross-platform runtime environment for developing server-side and networking applications. Node.js applications are written in JavaScript, and can be run within the Node.js runtime on OS X, Microsoft Windows, and Linux.';
-			case 'skills.skills.8.hidden': return 'true';
-			case 'skills.skills.8.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FNode%20Js?alt=media&token=9441f167-b169-4fee-9d0e-e58683d5a1fa';
-			case 'skills.skills.8.name': return 'Node Js';
+			case 'skills.skills.0.date': return '2022-12-06T15:07:31.798027';
+			case 'skills.skills.0.des': return 'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.';
+			case 'skills.skills.0.img': return 'https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_git-512.png';
+			case 'skills.skills.0.name': return 'Git';
+			case 'skills.skills.1.date': return '2022-12-06T15:09:18.175658';
+			case 'skills.skills.1.des': return 'Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, macOS, Windows, Google Fuchsia, and the web from a single codebase.';
+			case 'skills.skills.1.img': return 'https://img.icons8.com/?size=512&id=5pu47piHKg1I&format=png';
+			case 'skills.skills.1.name': return 'Flutter';
+			case 'skills.skills.2.date': return '2022-12-06T15:10:01.509497';
+			case 'skills.skills.2.des': return 'Dart is a programming language designed for client development, such as for the web and mobile apps.';
+			case 'skills.skills.2.img': return 'https://img.icons8.com/?size=512&id=7AFcZ2zirX6Y&format=png';
+			case 'skills.skills.2.name': return 'Dart';
+			case 'skills.skills.3.date': return '2022-12-06T15:10:26.815054';
+			case 'skills.skills.3.des': return 'Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps. It is built on Google’s infrastructure.';
+			case 'skills.skills.3.img': return 'https://img.icons8.com/?size=512&id=62452&format=png';
+			case 'skills.skills.3.name': return 'Firebase';
+			case 'skills.skills.4.date': return '2022-12-06T15:11:22.396871';
+			case 'skills.skills.4.des': return 'MongoDB is an open source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.';
+			case 'skills.skills.4.img': return 'https://img.icons8.com/?size=512&id=tBBf3P8HL0vR&format=png';
+			case 'skills.skills.4.name': return 'MongoDb';
+			case 'skills.skills.5.date': return '2022-12-06T15:11:22.396871';
+			case 'skills.skills.5.des': return 'SQL (Structured Query Language) is a standard language for managing and manipulating relational databases. It is used to create, modify, and retrieve data from databases.';
+			case 'skills.skills.5.img': return 'https://img.icons8.com/?size=512&id=qGUfLiYi1bRN&format=png';
+			case 'skills.skills.5.name': return 'SQL';
+			case 'skills.skills.6.date': return '2022-12-06T15:11:22.396871';
+			case 'skills.skills.6.des': return 'Spring Boot is a framework that simplifies the development of Java applications. It provides a set of ready-to-use components and conventions to rapidly build and configure robust and production-ready applications.';
+			case 'skills.skills.6.img': return 'https://img.icons8.com/?size=512&id=90519&format=png';
+			case 'skills.skills.6.name': return 'Spring Boot';
+			case 'skills.skills.7.date': return '2022-12-06T15:11:22.396871';
+			case 'skills.skills.7.des': return 'Azure is a cloud computing platform provided by Microsoft. It offers a wide range of cloud services, including virtual machines, storage, databases, and AI capabilities, enabling organizations to build, deploy, and manage applications and services.';
+			case 'skills.skills.7.img': return 'https://img.icons8.com/?size=512&id=VLKafOkk3sBX&format=png';
+			case 'skills.skills.7.name': return 'Azure';
+			case 'skills.skills.8.date': return '2022-12-06T15:11:22.396871';
+			case 'skills.skills.8.des': return 'AWS is a comprehensive cloud computing platform provided by Amazon. It offers a wide range of on-demand services, such as computing power, storage, databases, and analytics, allowing businesses to scale and grow their applications and infrastructure.';
+			case 'skills.skills.8.img': return 'https://img.icons8.com/?size=512&id=33039&format=png';
+			case 'skills.skills.8.name': return 'AWS';
 			case 'skills.skills.9.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.9.des': return 'MongoDB is an open source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.';
-			case 'skills.skills.9.hidden': return 'true';
-			case 'skills.skills.9.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FMongoDb?alt=media&token=6174ec12-d249-48fe-94b2-caa19436c8cb';
-			case 'skills.skills.9.name': return 'MongoDb';
-			case 'skills.skills.10.date': return '2022-12-13T06:42:40.468743';
-			case 'skills.skills.10.des': return 'TypeScript is a free and open source programming language developed and maintained by Microsoft. It is a strict syntactical superset of JavaScript and adds optional static typing to the language.';
-			case 'skills.skills.10.hidden': return 'false';
-			case 'skills.skills.10.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FTypeScript?alt=media&token=ba5d81bb-4dfb-49dd-8e0d-da22d0a03e08';
-			case 'skills.skills.10.name': return 'TypeScript';
-			case 'skills.skills.11.date': return '2022-12-13T06:51:19.229714';
-			case 'skills.skills.11.des': return 'React is a free and open-source front-end JavaScript library for building user interfaces based on UI components.';
-			case 'skills.skills.11.hidden': return 'false';
-			case 'skills.skills.11.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FReact%20Js?alt=media&token=864bfc4f-bab3-49b7-804b-0f86b2480018';
-			case 'skills.skills.11.name': return 'React Js';
-			case 'skills.skills.12.date': return '2023-08-05T07:30:26.081916';
-			case 'skills.skills.12.des': return 'CodeMagic is a continuous integration and delivery (CI/CD) platform specifically designed for mobile app development. It is primarily used for building, testing, and distributing mobile apps on both iOS and Android platforms.';
-			case 'skills.skills.12.hidden': return 'false';
-			case 'skills.skills.12.img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/skill-icons%2FCodemagic%20(CI%2FCD)?alt=media&token=4b1f2119-e086-4144-8c89-da990b5afff7';
-			case 'skills.skills.12.name': return 'Codemagic (CI/CD)';
+			case 'skills.skills.9.des': return 'Android is an open-source mobile operating system developed by Google. It is designed for smartphones, tablets, and other mobile devices. Android allows developers to create a wide range of applications using Java or Kotlin programming languages';
+			case 'skills.skills.9.img': return 'https://img.icons8.com/?size=512&id=17836&format=png';
+			case 'skills.skills.9.name': return 'Android';
+			case 'skills.skills.10.date': return '2022-12-06T15:11:22.396871';
+			case 'skills.skills.10.des': return ' AOSP (Android Open Source Project) is the open-source project that maintains and develops the Android operating system. It provides the source code, documentation, and tools for building custom Android ROMs and modifying the Android system';
+			case 'skills.skills.10.img': return 'https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png';
+			case 'skills.skills.10.name': return 'AOSP';
 			default: return null;
 		}
 	}

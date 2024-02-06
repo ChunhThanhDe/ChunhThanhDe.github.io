@@ -3,15 +3,15 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
+import 'package:profile/generated/translations.g.dart';
+import 'package:profile/services/send_message.dart';
+import 'package:profile/ui/desktop/widgets/contact_card.dart';
+import 'package:profile/ui/desktop/widgets/home_icon_hover.dart';
+import 'package:profile/ui/desktop/widgets/input_field.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
-import 'package:profile/ui/desktop/widgets/contact_card.dart';
-import 'package:profile/ui/desktop/widgets/input_field.dart';
 import 'package:profile/widgets/basic_button.dart';
-
-import '../../../services/send_message.dart';
-import '../../../widgets/section_title.dart';
-import '../../desktop/widgets/home_icon_hover.dart';
+import 'package:profile/widgets/section_title.dart';
 
 class TContactSection extends StatefulWidget {
   const TContactSection({Key? key}) : super(key: key);
@@ -43,7 +43,7 @@ class _TContactSectionState extends State<TContactSection> {
         });
         BotToast.showText(
           duration: const Duration(seconds: 6),
-          text: 'Thank You for contacting me ${name!.trim()} , I will get back to you shortly.',
+          text: texts.general.thank_you + ' ${name!.trim()} , ' + texts.general.get_back,
           textStyle: kNormalTextStyleGrey,
         );
         _form.currentState!.reset();
@@ -60,7 +60,7 @@ class _TContactSectionState extends State<TContactSection> {
             margin: const EdgeInsets.symmetric(vertical: 40),
             child: Column(
               children: [
-                SectionTitle(title: 'Contact'),
+                SectionTitle(title: texts.general.title_contact_section),
                 MediaQuery.of(context).size.width >= 1170
                     ? Row(
                         children: [
@@ -85,7 +85,7 @@ class _TContactSectionState extends State<TContactSection> {
                                   Padding(
                                     padding: const EdgeInsets.symmetric(vertical: 40),
                                     child: Text(
-                                      'Contact Me',
+                                      texts.general.title_contact_me_section,
                                       style: kTitleTextStyle.copyWith(fontSize: 20),
                                     ),
                                   ),
@@ -164,36 +164,36 @@ class _TContactSectionState extends State<TContactSection> {
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
-                                      'Get in touch',
+                                      texts.general.get_in_touch_contact_section,
                                       style: kTitleTextStyle.copyWith(fontSize: 30),
                                     ),
-                                    const Text(
-                                      'Feel free to get in touch',
+                                    Text(
+                                      texts.general.feel_free_contact_section,
                                       style: kNormalTextStyleGrey,
                                     ),
                                     InputField(
-                                      hint: 'Your name',
+                                      hint: texts.general.hint_your_name_contact_section,
                                       maxLines: 1,
                                       onSaved: (value) {
                                         name = value!;
                                       },
                                     ),
                                     InputField(
-                                      hint: 'Your email',
+                                      hint: texts.general.hint_your_email_contact_section,
                                       maxLines: 1,
                                       onSaved: (value) {
                                         email = value!;
                                       },
                                     ),
                                     InputField(
-                                      hint: 'Type your message',
+                                      hint: texts.general.hint_message_contact_section,
                                       maxLines: 5,
                                       onSaved: (value) {
                                         message = value!;
                                       },
                                     ),
                                     BasicButton(
-                                      text: 'Send',
+                                      text: texts.general.btn_send_contact_section,
                                       click: send,
                                       isSending: _isSending,
                                     ),
@@ -226,7 +226,7 @@ class _TContactSectionState extends State<TContactSection> {
                                 Padding(
                                   padding: const EdgeInsets.symmetric(vertical: 40),
                                   child: Text(
-                                    'Contact Me',
+                                    texts.general.title_contact_me_section,
                                     style: kTitleTextStyle.copyWith(fontSize: 20),
                                   ),
                                 ),
@@ -295,36 +295,36 @@ class _TContactSectionState extends State<TContactSection> {
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
-                                    'Get in touch',
+                                    texts.general.get_in_touch_contact_section,
                                     style: kTitleTextStyle.copyWith(fontSize: 30),
                                   ),
-                                  const Text(
-                                    'Feel free to get in touch',
+                                  Text(
+                                    texts.general.feel_free_contact_section,
                                     style: kNormalTextStyleGrey,
                                   ),
                                   InputField(
-                                    hint: 'Your name',
+                                    hint: texts.general.hint_your_name_contact_section,
                                     maxLines: 1,
                                     onSaved: (value) {
                                       name = value;
                                     },
                                   ),
                                   InputField(
-                                    hint: 'Your email',
+                                    hint: texts.general.hint_your_email_contact_section,
                                     maxLines: 1,
                                     onSaved: (value) {
                                       email = value;
                                     },
                                   ),
                                   InputField(
-                                    hint: 'Type your message',
+                                    hint: texts.general.hint_message_contact_section,
                                     maxLines: 5,
                                     onSaved: (value) {
                                       message = value;
                                     },
                                   ),
                                   BasicButton(
-                                    text: 'Send',
+                                    text: texts.general.btn_send_contact_section,
                                     click: send,
                                     isSending: _isSending,
                                   ),

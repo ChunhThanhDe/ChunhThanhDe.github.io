@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
 import 'package:profile/controller/about_me_controller.dart';
+import 'package:profile/generated/translations.g.dart';
 import 'package:profile/ui/desktop/widgets/about_card.dart';
+import 'package:profile/utils/colors.dart';
+import 'package:profile/utils/constants.dart';
 import 'package:profile/widgets/section_title.dart';
 
 class TAboutSection extends StatelessWidget {
@@ -18,7 +19,7 @@ class TAboutSection extends StatelessWidget {
       width: double.infinity,
       child: Column(
         children: [
-          SectionTitle(title: 'About'),
+          SectionTitle(title: texts.general.title_about_section),
           MediaQuery.of(context).size.width >= 990
               ? Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
@@ -40,17 +41,17 @@ class TAboutSection extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
-                          const Text(
-                            'Introduction',
+                          Text(
+                            texts.general.title_introduction_about_section,
                             style: kNormalTextStyleGrey,
                           ),
                           RichText(
                             text: TextSpan(
                               style: kTitleTextStyle.copyWith(fontSize: 40),
                               children: [
-                                const TextSpan(text: 'Hi there! I\'m '),
+                                TextSpan(text: texts.general.hi_about_section),
                                 TextSpan(
-                                  text: 'Erick Namukolo',
+                                  text: texts.about.name,
                                   style: kTitleTextStyle.copyWith(
                                     color: kPrimaryColor,
                                     decoration: TextDecoration.underline,
@@ -63,7 +64,7 @@ class TAboutSection extends StatelessWidget {
                           Padding(
                             padding: EdgeInsets.symmetric(vertical: 20),
                             child: Text(
-                              AppData.aboutMe,
+                              texts.about.aboutMe,
                               style: kNormalTextStyleGrey,
                             ),
                           ),
@@ -79,9 +80,11 @@ class TAboutSection extends StatelessWidget {
                       text: TextSpan(
                         style: kTitleTextStyle.copyWith(fontSize: 40),
                         children: [
-                          const TextSpan(text: 'Hi there! I\'m '),
                           TextSpan(
-                            text: 'Erick Namukolo',
+                            text: texts.general.hi_about_section,
+                          ),
+                          TextSpan(
+                            text: texts.about.name,
                             style: kTitleTextStyle.copyWith(
                               color: kPrimaryColor,
                               decoration: TextDecoration.underline,
@@ -91,10 +94,10 @@ class TAboutSection extends StatelessWidget {
                         ],
                       ),
                     ),
-                    const Padding(
+                    Padding(
                       padding: EdgeInsets.symmetric(vertical: 40),
                       child: Text(
-                        'I’m a Software Engineer, passionate about Flutter Development & UI/UX Design (Mobile/Web Design) with an interest in back-end development (Currently learning Node Js).\n\nI create successful mobile apps(IOS & Android) and responsive websites that are fast, easy to use, and built with best practices. The main area of my expertise is front-end development using Flutter, Dart, HTML, CSS, JS, building small,medium and large software applications,features, animations, and coding interactive layouts.\n\nI have worked on a multitude of mobile and web based projects for a number of clients providing Mobile & Web Design (Adobe XD) and Development (Flutter,Dart,Firebase,Sqflite, Responsive Layouts).',
+                        texts.about.aboutMe,
                         style: kNormalTextStyleGrey,
                       ),
                     ),

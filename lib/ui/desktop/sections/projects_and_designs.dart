@@ -19,16 +19,18 @@ class ProjectsAndDesigns extends StatefulWidget {
 }
 
 class _ProjectsAndDesignsState extends State<ProjectsAndDesigns> {
-  List<TabButton> tabs = [
-    TabButton(title: texts.general.title_personal_projects_project_section, icon: Icons.folder, isSelected: true),
-    TabButton(title: texts.general.title_client_projects_project_section, icon: Icons.laptop_mac_rounded),
-  ];
+  late List<TabButton> tabs;
+  bool isViewPersonal = true;
 
   @override
   Widget build(BuildContext context) {
     double _screenWidth = MediaQuery.of(context).size.width;
     double _screenHeight = MediaQuery.of(context).size.height;
     ProjectsController projectsController = ProjectsController();
+    tabs = [
+      TabButton(title: texts.general.title_personal_projects_project_section, icon: Icons.folder, isSelected: isViewPersonal),
+      TabButton(title: texts.general.title_client_projects_project_section, icon: Icons.laptop_mac_rounded, isSelected: !isViewPersonal),
+    ];
 
     return Container(
       padding: EdgeInsets.symmetric(horizontal: _screenWidth * .1172, vertical: _screenHeight * .065),
@@ -39,7 +41,7 @@ class _ProjectsAndDesignsState extends State<ProjectsAndDesigns> {
           SectionTitle(title: texts.general.title_project_section),
           Container(
             padding: EdgeInsets.all(12),
-            width: _screenWidth * .35,
+            width: _screenWidth * .45,
             decoration: BoxDecoration(
               color: klightDarkColor,
               boxShadow: [
@@ -57,10 +59,17 @@ class _ProjectsAndDesignsState extends State<ProjectsAndDesigns> {
                         tab: tab,
                         click: () {
                           setState(() {
-                            tabs.forEach((element) {
-                              element.isSelected = false;
-                            });
-                            tab.isSelected = true;
+                            // tabs.forEach((element) {
+                            //   element.isSelected = false;
+                            // });
+                            // tab.isSelected = true;
+
+                            int tabIndex = tabs.indexOf(tab);
+                            if (tabIndex == 1) {
+                              isViewPersonal = false;
+                            } else {
+                              isViewPersonal = true;
+                            }
                           });
                         },
                       ))

@@ -2,14 +2,14 @@ import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:profile/generated/translations.g.dart';
+import 'package:profile/services/send_message.dart';
+import 'package:profile/ui/desktop/widgets/contact_card.dart';
+import 'package:profile/ui/desktop/widgets/home_icon_hover.dart';
+import 'package:profile/ui/desktop/widgets/input_field.dart';
+import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
-import 'package:profile/ui/desktop/widgets/contact_card.dart';
-import 'package:profile/ui/desktop/widgets/input_field.dart';
 import 'package:profile/widgets/section_title.dart';
-import '../../desktop/widgets/modern_button.dart';
-import '../../desktop/widgets/home_icon_hover.dart';
-import '../../../services/send_message.dart';
 
 class MContactSection extends StatefulWidget {
   const MContactSection({Key? key}) : super(key: key);
@@ -44,7 +44,7 @@ class _MContactSectionState extends State<MContactSection> {
         });
         BotToast.showText(
           duration: const Duration(seconds: 6),
-          text: 'Thank You for contacting me ${name.text.trim()} , I will get back to you shortly',
+          text: texts.general.thank_you + ' ${name.text} , ' + texts.general.get_back,
           textStyle: kNormalTextStyleGrey,
         );
         _form.currentState!.reset();
@@ -57,7 +57,7 @@ class _MContactSectionState extends State<MContactSection> {
       color: klightDarkColor,
       child: Column(
         children: [
-          SectionTitle(title: 'Contact'),
+          SectionTitle(title: texts.general.title_contact_section),
           Column(
             children: [
               Container(
@@ -80,7 +80,7 @@ class _MContactSectionState extends State<MContactSection> {
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 20),
                       child: Text(
-                        'Contact Me',
+                        texts.general.title_contact_me_section,
                         style: kTitleTextStyle.copyWith(fontSize: 20),
                       ),
                     ),
