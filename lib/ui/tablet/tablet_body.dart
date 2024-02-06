@@ -115,7 +115,7 @@ class _TabletBodyState extends State<TabletBody> {
                               ),
                             ),
                           ),
-                          const Icon(
+                          Icon(
                             MdiIcons.chevronLeft,
                             color: kPrimaryColor,
                           ),
@@ -125,7 +125,7 @@ class _TabletBodyState extends State<TabletBody> {
                               fontSize: 15,
                             ),
                           ),
-                          const Icon(
+                          Icon(
                             MdiIcons.chevronRight,
                             color: kPrimaryColor,
                           ),

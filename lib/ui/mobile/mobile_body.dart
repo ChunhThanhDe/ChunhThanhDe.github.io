@@ -49,7 +49,7 @@ class MobileBody extends StatelessWidget {
         onPressed: () async {
           AppData.goToLink(link_skype);
         },
-        child: const Icon(
+        child: Icon(
           MdiIcons.skype,
           size: 30,
           color: Colors.white,
@@ -84,7 +84,7 @@ class MobileBody extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Icon(
+                  Icon(
                     MdiIcons.chevronLeft,
                     color: kPrimaryColor,
                   ),
@@ -95,7 +95,7 @@ class MobileBody extends StatelessWidget {
                       fontWeight: FontWeight.normal,
                     ),
                   ),
-                  const Icon(
+                  Icon(
                     MdiIcons.chevronRight,
                     color: kPrimaryColor,
                   ),

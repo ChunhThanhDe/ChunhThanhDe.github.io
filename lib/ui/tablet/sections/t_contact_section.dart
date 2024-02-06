@@ -4,7 +4,7 @@ import 'package:bot_toast/bot_toast.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
+import 'package:profile/utils/constants.dart';
 import 'package:profile/ui/desktop/widgets/contact_card.dart';
 import 'package:profile/ui/desktop/widgets/input_field.dart';
 import 'package:profile/widgets/basic_button.dart';
@@ -22,6 +22,7 @@ class TContactSection extends StatefulWidget {
 
 class _TContactSectionState extends State<TContactSection> {
   bool _isSending = false;
+
   @override
   Widget build(BuildContext context) {
     final _form = GlobalKey<FormState>();
@@ -36,15 +37,13 @@ class _TContactSectionState extends State<TContactSection> {
         setState(() {
           _isSending = true;
         });
-        await Message.sendMessage(
-            sender: name!, email: email!, message: message!);
+        await Message.sendMessage(sender: name!, email: email!, message: message!);
         setState(() {
           _isSending = false;
         });
         BotToast.showText(
           duration: const Duration(seconds: 6),
-          text:
-              'Thank You for contacting me ${name!.trim()} , I will get back to you shortly.',
+          text: 'Thank You for contacting me ${name!.trim()} , I will get back to you shortly.',
           textStyle: kNormalTextStyleGrey,
         );
         _form.currentState!.reset();
@@ -76,8 +75,7 @@ class _TContactSectionState extends State<TContactSection> {
                                 boxShadow: [
                                   BoxShadow(
                                     offset: const Offset(3, 5),
-                                    color: const Color(0xff000000)
-                                        .withOpacity(.12),
+                                    color: const Color(0xff000000).withOpacity(.12),
                                     blurRadius: 3.0,
                                   ),
                                 ],
@@ -85,16 +83,14 @@ class _TContactSectionState extends State<TContactSection> {
                               child: Column(
                                 children: [
                                   Padding(
-                                    padding: const EdgeInsets.symmetric(
-                                        vertical: 40),
+                                    padding: const EdgeInsets.symmetric(vertical: 40),
                                     child: Text(
                                       'Contact Me',
-                                      style: kTitleTextStyle.copyWith(
-                                          fontSize: 20),
+                                      style: kTitleTextStyle.copyWith(fontSize: 20),
                                     ),
                                   ),
                                   Column(
-                                    children: const [
+                                    children: [
                                       ContactCard(
                                         icon: Icons.location_pin,
                                         content: location,
@@ -164,14 +160,12 @@ class _TContactSectionState extends State<TContactSection> {
                               child: Container(
                                 height: 500,
                                 child: Column(
-                                  mainAxisAlignment:
-                                      MainAxisAlignment.spaceBetween,
+                                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
                                     Text(
                                       'Get in touch',
-                                      style: kTitleTextStyle.copyWith(
-                                          fontSize: 30),
+                                      style: kTitleTextStyle.copyWith(fontSize: 30),
                                     ),
                                     const Text(
                                       'Feel free to get in touch',
@@ -222,8 +216,7 @@ class _TContactSectionState extends State<TContactSection> {
                               boxShadow: [
                                 BoxShadow(
                                   offset: const Offset(3, 5),
-                                  color:
-                                      const Color(0xff000000).withOpacity(.12),
+                                  color: const Color(0xff000000).withOpacity(.12),
                                   blurRadius: 3.0,
                                 ),
                               ],
@@ -231,16 +224,14 @@ class _TContactSectionState extends State<TContactSection> {
                             child: Column(
                               children: [
                                 Padding(
-                                  padding:
-                                      const EdgeInsets.symmetric(vertical: 40),
+                                  padding: const EdgeInsets.symmetric(vertical: 40),
                                   child: Text(
                                     'Contact Me',
-                                    style:
-                                        kTitleTextStyle.copyWith(fontSize: 20),
+                                    style: kTitleTextStyle.copyWith(fontSize: 20),
                                   ),
                                 ),
                                 Column(
-                                  children: const [
+                                  children: [
                                     ContactCard(
                                       icon: Icons.location_pin,
                                       content: location,
@@ -300,14 +291,12 @@ class _TContactSectionState extends State<TContactSection> {
                             child: Form(
                               key: _form,
                               child: Column(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                                mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [
                                   Text(
                                     'Get in touch',
-                                    style:
-                                        kTitleTextStyle.copyWith(fontSize: 30),
+                                    style: kTitleTextStyle.copyWith(fontSize: 30),
                                   ),
                                   const Text(
                                     'Feel free to get in touch',
