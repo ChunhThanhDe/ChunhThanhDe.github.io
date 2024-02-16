@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_glow/flutter_glow.dart';
 import 'package:profile/utils/colors.dart';
 
 class AppBarLangIcon extends StatelessWidget {
