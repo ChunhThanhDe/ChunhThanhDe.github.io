@@ -20,127 +20,151 @@ class THomeSection extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double _screenHeight = MediaQuery.of(context).size.height;
-    if (_screenHeight < 600) _screenHeight = 600;
-
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 90, vertical: 70),
       margin: const EdgeInsets.only(top: 50),
-      height: _screenHeight * .83,
+      // height: _screenHeight * .83,
       width: double.infinity,
-      child: Row(
+      child: Column(
         children: [
-          Expanded(
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Row(
+          MediaQuery.of(context).size.width <= 860
+              ? const Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
+                    AvatarGlow(
+                      endRadius: 120.0 * 1.3,
+                      animate: true,
+                      glowColor: kPrimaryColor,
+                      repeat: true,
+                      duration: Duration(milliseconds: 2000),
+                      // repeatPauseDuration: Duration(milliseconds: 30),
+                      child: CircleAvatar(
+                        foregroundImage: AssetImage('assets/avatar.png'),
+                        backgroundColor: klightDarkColor,
+                        radius: 90 * 1.3,
+                      ),
+                    ),
+                  ],
+                )
+              : const Text(''),
+          SizedBox(height: 10),
+          Row(
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Row(
+                      children: [
+                        Text(
+                          'I am a ',
+                          style: kTitleTextStyle.copyWith(fontSize: 40),
+                        ),
+                        AnimatedTextKit(
+                          repeatForever: true,
+                          animatedTexts: [
+                            TypewriterAnimatedText(
+                              'Flutter',
+                              textStyle: kTitleTextStyle.copyWith(
+                                color: kPrimaryColor,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 40.0,
+                              ),
+                              speed: const Duration(milliseconds: 200),
+                            ),
+                            TypewriterAnimatedText(
+                              'Web',
+                              textStyle: kTitleTextStyle.copyWith(
+                                color: kPrimaryColor,
+                                fontWeight: FontWeight.bold,
+                                fontSize: 40.0,
+                              ),
+                              speed: const Duration(milliseconds: 200),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
                     Text(
-                      'I am a ',
+                      'Developer.',
                       style: kTitleTextStyle.copyWith(fontSize: 40),
                     ),
-                    AnimatedTextKit(
-                      repeatForever: true,
-                      animatedTexts: [
-                        TypewriterAnimatedText(
-                          'Flutter',
-                          textStyle: kTitleTextStyle.copyWith(
-                            color: kPrimaryColor,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 40.0,
-                          ),
-                          speed: const Duration(milliseconds: 200),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      texts.general.introduce_home_section1,
+                      style: kNormalTextStyleGrey,
+                    ),
+                    const SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      texts.general.introduce_home_section2,
+                      style: kNormalTextStyleGrey,
+                    ),
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    BasicButton(
+                      text: texts.general.browse_projects_home_section,
+                      click: scrollToProjects,
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Row(
+                      children: [
+                        HomeIconHover(
+                          icon: MdiIcons.linkedin,
+                          color: const Color(0xff0A66C2),
                         ),
-                        TypewriterAnimatedText(
-                          'Web',
-                          textStyle: kTitleTextStyle.copyWith(
-                            color: kPrimaryColor,
-                            fontWeight: FontWeight.bold,
-                            fontSize: 40.0,
-                          ),
-                          speed: const Duration(milliseconds: 200),
+                        HomeIconHover(
+                          icon: MdiIcons.github,
+                          color: const Color(0xff171515),
+                        ),
+                        HomeIconHover(
+                          icon: MdiIcons.skype,
+                          color: const Color(0xff00aff0),
+                        ),
+                        HomeIconHover(
+                          icon: MdiIcons.facebook,
+                          color: const Color(0xff4267B2),
+                        ),
+                        HomeIconHover(
+                          icon: MdiIcons.youtube,
+                          color: const Color(0xffff0000),
+                        ),
+                        HomeIconHover(
+                          icon: MdiIcons.googlePlay,
+                          color: const Color(0xff48ff48),
                         ),
                       ],
                     ),
                   ],
                 ),
-                Text(
-                  'Developer.',
-                  style: kTitleTextStyle.copyWith(fontSize: 40),
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Text(
-                  texts.general.introduce_home_section1,
-                  style: kNormalTextStyleGrey,
-                ),
-                const SizedBox(
-                  height: 5,
-                ),
-                Text(
-                  texts.general.introduce_home_section2,
-                  style: kNormalTextStyleGrey,
-                ),
-                const SizedBox(
-                  height: 30,
-                ),
-                BasicButton(
-                  text: texts.general.browse_projects_home_section,
-                  click: scrollToProjects,
-                ),
-                const SizedBox(
-                  height: 20,
-                ),
-                Row(
-                  children: [
-                    HomeIconHover(
-                      icon: MdiIcons.linkedin,
-                      color: const Color(0xff0A66C2),
-                    ),
-                    HomeIconHover(
-                      icon: MdiIcons.github,
-                      color: const Color(0xff171515),
-                    ),
-                    HomeIconHover(
-                      icon: MdiIcons.skype,
-                      color: const Color(0xff00aff0),
-                    ),
-                    HomeIconHover(
-                      icon: MdiIcons.facebook,
-                      color: const Color(0xff4267B2),
-                    ),
-                    HomeIconHover(
-                      icon: MdiIcons.youtube,
-                      color: const Color(0xffff0000),
-                    ),
-                    HomeIconHover(
-                      icon: MdiIcons.googlePlay,
-                      color: const Color(0xff48ff48),
-                    ),
-                  ],
-                ),
-              ],
-            ),
+              ),
+              MediaQuery.of(context).size.width >= 860
+                  ? const Expanded(
+                      child: AvatarGlow(
+                        endRadius: 120.0 * 1.3,
+                        animate: true,
+                        glowColor: kPrimaryColor,
+                        repeat: true,
+                        duration: Duration(milliseconds: 2000),
+                        // repeatPauseDuration: Duration(milliseconds: 30),
+                        child: CircleAvatar(
+                          foregroundImage: AssetImage('assets/avatar.png'),
+                          backgroundColor: klightDarkColor,
+                          radius: 90 * 1.3,
+                        ),
+                      ),
+                    )
+                  : const Text(''),
+            ],
           ),
-          MediaQuery.of(context).size.width >= 860
-              ? const Expanded(
-                  child: AvatarGlow(
-                    endRadius: 120.0 * 1.3,
-                    animate: true,
-                    glowColor: kPrimaryColor,
-                    repeat: true,
-                    duration: Duration(milliseconds: 2000),
-                    // repeatPauseDuration: Duration(milliseconds: 30),
-                    child: CircleAvatar(
-                      foregroundImage: AssetImage('assets/avatar.png'),
-                      backgroundColor: klightDarkColor,
-                      radius: 90 * 1.3,
-                    ),
-                  ),
-                )
-              : const Text(''),
+          SizedBox(height: 30),
         ],
       ),
     );

@@ -1,9 +1,7 @@
 import 'package:bot_toast/bot_toast.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:g_recaptcha_v3/g_recaptcha_v3.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
 import 'package:profile/ui/desktop/desktop_body.dart';
@@ -31,16 +29,11 @@ Future<void> main() async {
       measurementId: 'G-YBXX3M3NVY',
     ),
   );
-  // await FirebaseAppCheck.instance.activate(
-  //   webProvider: ReCaptchaV3Provider('6LcAWWgpAAAAAGif1NuIexctX-DBevZGz7C7fBjq'),
-  //   androidProvider: AndroidProvider.debug,
-  //   appleProvider: AppleProvider.appAttest,
-  // );
-
-  // if (kIsWeb) {
-  //   bool ready = await GRecaptchaV3.ready("6LcAWWgpAAAAAGif1NuIexctX-DBevZGz7C7fBjq", showBadge: true); //--2
-  //   print("Is Recaptcha ready? $ready");
-  // }
+  await FirebaseAppCheck.instance.activate(
+    webProvider: ReCaptchaV3Provider('6LcAWWgpAAAAAGif1NuIexctX-DBevZGz7C7fBjq'),
+    androidProvider: AndroidProvider.debug,
+    appleProvider: AppleProvider.appAttest,
+  );
 
   setPathUrlStrategy();
   runApp(TranslationProvider(child: const profile()));

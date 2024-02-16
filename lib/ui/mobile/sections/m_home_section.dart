@@ -44,7 +44,7 @@ class MHomeSection extends StatelessWidget {
             children: [
               Flexible(
                 child: Text(
-                  'I \'m a ',
+                  'I am a ',
                   style: kTitleTextStyle.copyWith(fontSize: 38),
                 ),
               ),
@@ -93,7 +93,7 @@ class MHomeSection extends StatelessWidget {
           ),
           Text(
             'Developer.',
-            style: kTitleTextStyle.copyWith(fontSize: 40),
+            style: kTitleTextStyle.copyWith(fontSize: 38),
           ),
           const SizedBox(
             height: 20,

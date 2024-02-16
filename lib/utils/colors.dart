@@ -5,3 +5,4 @@ const kdarkColor = Color(0xff2d2e32);
 const kSecondaryColor = Color(0xff15202B);
 const kPrimaryColor = Color(0xFF0A6D31);
 const kSuccessColor = Color(0xff188351);
+const kgreyButton = Color(0xff808080);

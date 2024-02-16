@@ -37,7 +37,7 @@ class HomeSection extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      'I\'m a ',
+                      'I am a ',
                       style: kTitleTextStyle.copyWith(
                         fontSize: _screenWidth * .035,
                       ),

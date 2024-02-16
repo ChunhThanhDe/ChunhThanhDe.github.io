@@ -12,10 +12,12 @@ import 'package:profile/ui/tablet/sections/t_contact_section.dart';
 import 'package:profile/ui/tablet/sections/t_home_section.dart';
 import 'package:profile/ui/tablet/sections/t_projects_and_designs.dart';
 import 'package:profile/ui/tablet/sections/t_skill_section.dart';
+import 'package:profile/ui/tablet/widgets/t_popup_menu_Item.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
 import 'package:web_smooth_scroll/web_smooth_scroll.dart';
 
+import '../../widgets/app_bar_lang_icon.dart';
 import '../desktop/widgets/modern_button.dart';
 
 class TabletBody extends StatefulWidget {
@@ -41,6 +43,7 @@ class _TabletBodyState extends State<TabletBody> {
 
   Future scrollToItem(var sectionKey) async {
     final context = sectionKey.currentContext!;
+    Navigator.pop(context);
     await Scrollable.ensureVisible(
       context,
       duration: const Duration(seconds: 2),
@@ -56,6 +59,9 @@ class _TabletBodyState extends State<TabletBody> {
     _scrollController.dispose();
     super.dispose();
   }
+
+  late String selectedValue;
+  bool isPopupMenuOpen = false;
 
   @override
   Widget build(BuildContext context) {
@@ -99,6 +105,7 @@ class _TabletBodyState extends State<TabletBody> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Expanded(
+                      flex: 1,
                       child: Row(
                         children: [
                           MouseRegion(
@@ -134,62 +141,85 @@ class _TabletBodyState extends State<TabletBody> {
                     Expanded(
                       flex: 2,
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        mainAxisAlignment: MainAxisAlignment.end,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          AnimatedTexttt(
-                            text: navigationController.navigation(0),
-                            click: () => scrollToItem(homeKey),
-                            width: homeWidth,
+                          PopupMenuButton<void>(
+                            itemBuilder: (BuildContext context) => <PopupMenuEntry>[
+                              PopupMenuItem(
+                                child: PopupMenuItemWidget(
+                                  icon: Icons.menu,
+                                  onTap: () => scrollToItem(homeKey),
+                                  text: navigationController.navigation(0),
+                                ),
+                              ),
+                              PopupMenuItem(
+                                value: navigationController.navigation(1),
+                                child: PopupMenuItemWidget(
+                                  icon: Icons.menu,
+                                  onTap: () => scrollToItem(aboutKey),
+                                  text: navigationController.navigation(1),
+                                ),
+                              ),
+                              PopupMenuItem(
+                                value: navigationController.navigation(2),
+                                child: PopupMenuItemWidget(
+                                  icon: Icons.menu,
+                                  onTap: () => scrollToItem(skillsKey),
+                                  text: navigationController.navigation(2),
+                                ),
+                              ),
+                              PopupMenuItem(
+                                value: navigationController.navigation(3),
+                                child: PopupMenuItemWidget(
+                                  icon: Icons.menu,
+                                  onTap: () => scrollToItem(experienceKey),
+                                  text: navigationController.navigation(3),
+                                ),
+                              ),
+                              PopupMenuItem(
+                                value: navigationController.navigation(4),
+                                child: PopupMenuItemWidget(
+                                  icon: Icons.menu,
+                                  onTap: () => scrollToItem(projectsKey),
+                                  text: navigationController.navigation(4),
+                                ),
+                              ),
+                              PopupMenuItem(
+                                value: navigationController.navigation(5),
+                                child: PopupMenuItemWidget(
+                                  icon: Icons.menu,
+                                  onTap: () => scrollToItem(contactKey),
+                                  text: navigationController.navigation(5),
+                                ),
+                              ),
+                            ],
+                            child: const Icon(Icons.menu),
+                            offset: Offset(0, 50),
                           ),
-                          AnimatedTexttt(
-                            text: navigationController.navigation(1),
-                            click: () => scrollToItem(aboutKey),
-                            width: aboutWidth,
-                          ),
-                          AnimatedTexttt(
-                            text: navigationController.navigation(2),
-                            click: () => scrollToItem(skillsKey),
-                            width: skillsWidth,
-                          ),
-                          AnimatedTexttt(
-                            text: navigationController.navigation(3),
-                            click: () => scrollToItem(experienceKey),
-                            width: experienceWidth,
-                          ),
-                          AnimatedTexttt(
-                            text: navigationController.navigation(4),
-                            click: () => scrollToItem(projectsKey),
-                            width: projectsWidth,
-                          ),
-                          AnimatedTexttt(
-                            text: navigationController.navigation(5),
-                            click: () => scrollToItem(contactKey),
-                            width: contactWidth,
+                          SizedBox(
+                            width: 5,
                           ),
                           modernButton(
                             icon: Icons.download_rounded,
                             click: () => downloadCV(),
                             text: navigationController.navigation(6),
                           ),
-                          PopupMenuButton<AppLocale>(
-                            onSelected: (value) {
-                              navigationController.changeLocale(value);
-                            },
-                            icon: const Icon(Icons.translate),
-                            itemBuilder: (_) {
-                              return [
-                                PopupMenuItem(
-                                  value: navigationController.en,
-                                  child: const Text("English"),
+                          navigationController.currentLocale == navigationController.en
+                              ? AppBarLangIcon(
+                                  hint: texts.general.vietnam,
+                                  icon: Image.asset('icons/flags/png100px/vn.png', package: 'country_icons'),
+                                  click: () async {
+                                    navigationController.changeLocale(navigationController.vi);
+                                  },
+                                )
+                              : AppBarLangIcon(
+                                  hint: texts.general.english,
+                                  icon: Image.asset('icons/flags/png100px/us.png', package: 'country_icons'),
+                                  click: () async {
+                                    navigationController.changeLocale(navigationController.en);
+                                  },
                                 ),
-                                PopupMenuItem(
-                                  value: navigationController.vi,
-                                  child: const Text("Việt Nam"),
-                                ),
-                              ];
-                            },
-                          ),
                         ],
                       ),
                     ),

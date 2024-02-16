@@ -62,9 +62,11 @@ class ExperienceSection extends StatelessWidget {
                                   children: [
                                     Row(
                                       children: [
-                                        Text(
-                                          work.position,
-                                          style: kNormalTextStyleWhite,
+                                        Flexible(
+                                          child: Text(
+                                            work.position,
+                                            style: kNormalTextStyleWhite,
+                                          ),
                                         ),
                                         const SizedBox(width: 10),
                                         GestureDetector(
@@ -140,9 +142,8 @@ class ExperienceSection extends StatelessWidget {
                                             fontSize: 14,
                                           ),
                                         ),
-                                        Container(
-                                          margin: const EdgeInsets.only(left: 6),
-                                          width: 600,
+                                        SizedBox(width: 7),
+                                        Flexible(
                                           child: Text(
                                             workDone,
                                             style: kNormalTextStyleGrey.copyWith(

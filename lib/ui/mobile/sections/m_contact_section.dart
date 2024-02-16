@@ -63,7 +63,7 @@ class _MContactSectionState extends State<MContactSection> {
               Container(
                 width: double.infinity,
                 margin: const EdgeInsets.symmetric(vertical: 10),
-                height: 500,
+                // height: 500,
                 decoration: BoxDecoration(
                   color: kdarkColor,
                   borderRadius: BorderRadius.circular(10.0),
@@ -142,6 +142,9 @@ class _MContactSectionState extends State<MContactSection> {
                         ),
                       ],
                     ),
+                    const SizedBox(
+                      height: 20,
+                    )
                   ],
                 ),
               ),
@@ -191,6 +194,7 @@ class _MContactSectionState extends State<MContactSection> {
               ),
             ],
           ),
+
         ],
       ),
     );

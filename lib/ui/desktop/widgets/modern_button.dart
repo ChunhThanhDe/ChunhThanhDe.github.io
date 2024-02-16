@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_glow/flutter_glow.dart';
+import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
 
@@ -32,10 +33,18 @@ class modernButton extends StatelessWidget {
             borderRadius: const BorderRadius.all(Radius.circular(45)),
           ),
           child: isLoading
-              ? const SizedBox(
-                  height: 25,
-                  width: 25,
-                  child: CircularProgressIndicator(strokeWidth: 2),
+              ? Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Text(text, style: kNormalTextStyleWhite),
+                    SizedBox(width: 10),
+                    GlowIcon(
+                      MdiIcons.loading,
+                      glowColor: Colors.white,
+                      blurRadius: 6.0,
+                    ),
+                  ],
                 )
               : Row(
                   mainAxisAlignment: MainAxisAlignment.center,

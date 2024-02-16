@@ -17,33 +17,39 @@ const String link_facebook = "https://www.facebook.com/Changtrainhaycam.Chung/";
 // const String serverToken = 'key=AAAAwDvm_9Q:APA91bEpQxWZzdf1JAA_y1eKbFa1r26V2PO5twPU_RhdpyLEJ12xXdd0QYQYHURPdzh-zVIoe6nC8yE5Eat99WZAlr-R0ucuzTrCs8hDNn3th3wavSpIIcH6Vhah5cp-XmYniTlEDqe8';
 
 const kTextStyleWhite = TextStyle(
+  fontFamily: 'Poppins',
   color: Colors.white,
   fontWeight: FontWeight.bold,
   fontSize: 14,
 );
 const kNormalTextStyleWhite = TextStyle(
+  fontFamily: 'Poppins',
   color: Colors.white,
   fontSize: 14,
 );
 
 const kMiniTitleTextStyleWhite = TextStyle(
+  fontFamily: 'Poppins',
   color: Colors.white,
   fontSize: 16,
 );
 
 const kMiniTitleTextStylePink = TextStyle(
+  fontFamily: 'Poppins',
   color: kPrimaryColor,
   fontSize: 16,
   fontWeight: FontWeight.bold,
 );
 
 const kNormalTextStyleGrey = TextStyle(
+  fontFamily: 'Poppins',
   color: Color(0xffB3A595),
   fontSize: 14,
   height: 1.5,
 );
 
 const kTitleTextStyle = TextStyle(
+  fontFamily: 'Poppins',
   color: Colors.white,
   fontWeight: FontWeight.bold,
   fontSize: 48,
