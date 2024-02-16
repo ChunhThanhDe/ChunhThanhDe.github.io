@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:profile/models/skill.dart';
 import 'package:profile/utils/colors.dart';
-import  'package:profile/utils/constants.dart';
-
+import 'package:profile/utils/constants.dart';
 
 class TSkillCard extends StatefulWidget {
   final Skill skill;
+
   const TSkillCard({
     Key? key,
     required this.skill,
@@ -17,6 +17,7 @@ class TSkillCard extends StatefulWidget {
 
 class _TSkillCardState extends State<TSkillCard> {
   bool _ishovered = false;
+
   @override
   Widget build(BuildContext context) {
     return MouseRegion(
@@ -34,8 +35,7 @@ class _TSkillCardState extends State<TSkillCard> {
         duration: const Duration(milliseconds: 750),
         curve: Curves.bounceOut,
         margin: EdgeInsets.symmetric(vertical: _ishovered ? 10 : 20),
-        padding: EdgeInsets.symmetric(
-            vertical: 20, horizontal: _ishovered ? 20 : 30),
+        padding: EdgeInsets.symmetric(vertical: 20, horizontal: _ishovered ? 20 : 30),
         width: double.infinity,
         height: _ishovered ? 165 : 150,
         decoration: BoxDecoration(
@@ -69,9 +69,11 @@ class _TSkillCardState extends State<TSkillCard> {
                     widget.skill.name,
                     style: kNormalTextStyleWhite.copyWith(fontSize: 18),
                   ),
-                  Text(
-                    widget.skill.des,
-                    style: kNormalTextStyleGrey,
+                  Expanded(
+                    child: Text(
+                      widget.skill.des,
+                      style: kNormalTextStyleGrey,
+                    ),
                   ),
                 ],
               ),

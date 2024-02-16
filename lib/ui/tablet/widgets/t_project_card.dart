@@ -78,26 +78,27 @@ class _TProjectCardState extends State<TProjectCard> {
                                 style: kTitleTextStyle.copyWith(fontSize: 30),
                               ),
                               Container(
-                                height: 160,
-                                width: double.infinity,
-                                padding: const EdgeInsets.all(20.0),
-                                decoration: BoxDecoration(
-                                  color: klightDarkColor,
-                                  borderRadius: BorderRadius.circular(6.0),
-                                  boxShadow: [
-                                    BoxShadow(
-                                      offset: const Offset(3, 5),
-                                      color: const Color(0xff000000).withOpacity(.1),
-                                      blurRadius: 2.0,
-                                      spreadRadius: 2.0,
+                                  height: 160,
+                                  width: double.infinity,
+                                  padding: const EdgeInsets.all(20.0),
+                                  decoration: BoxDecoration(
+                                    color: klightDarkColor,
+                                    borderRadius: BorderRadius.circular(6.0),
+                                    boxShadow: [
+                                      BoxShadow(
+                                        offset: const Offset(3, 5),
+                                        color: const Color(0xff000000).withOpacity(.1),
+                                        blurRadius: 2.0,
+                                        spreadRadius: 2.0,
+                                      ),
+                                    ],
+                                  ),
+                                  child: SingleChildScrollView(
+                                    child: Text(
+                                      widget.project.description,
+                                      style: kNormalTextStyleGrey,
                                     ),
-                                  ],
-                                ),
-                                child: Text(
-                                  widget.project.description,
-                                  style: kNormalTextStyleGrey,
-                                ),
-                              ),
+                                  )),
                               Row(
                                 mainAxisAlignment: MainAxisAlignment.end,
                                 children: [
@@ -159,13 +160,14 @@ class _TProjectCardState extends State<TProjectCard> {
                       ),
                     ),
                     Padding(
-                      padding: const EdgeInsets.only(right: 10),
-                      child: Text(
-                        widget.project.description,
-                        style: kNormalTextStyleWhite,
-                        textAlign: TextAlign.right,
-                      ),
-                    ),
+                        padding: const EdgeInsets.only(right: 10),
+                        child: Text(
+                          widget.project.description,
+                          style: kNormalTextStyleWhite,
+                          textAlign: TextAlign.right,
+                          overflow: TextOverflow.ellipsis,
+                          maxLines: 8,
+                        )),
                     Container(
                       color: klightDarkColor,
                       width: double.infinity,
@@ -174,8 +176,8 @@ class _TProjectCardState extends State<TProjectCard> {
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         crossAxisAlignment: CrossAxisAlignment.center,
                         children: [
-                          ProjectIconBtn(icon: MdiIcons.github, link: widget.project.githubLink),
-                          ProjectIconBtn(icon: MdiIcons.link, link: widget.project.externalLink),
+                          ProjectIconBtn(icon: MdiIcons.github, link: widget.project.githubLink, isTablet: true),
+                          ProjectIconBtn(icon: MdiIcons.link, link: widget.project.externalLink, isTablet: true),
                         ],
                       ),
                     ),

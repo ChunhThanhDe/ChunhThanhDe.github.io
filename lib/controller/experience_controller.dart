@@ -48,6 +48,7 @@ class ExperienceController {
       }
       _workExperience = _loadedExperiences;
     } catch (e) {
+      print ("fetchAndSetExperiences error: " + e.toString());
       throw e;
     }
   }

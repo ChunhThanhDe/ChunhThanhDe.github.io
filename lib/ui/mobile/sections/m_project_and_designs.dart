@@ -23,8 +23,8 @@ class _MProjectsAndDesignsState extends State<MProjectsAndDesigns> {
   Widget build(BuildContext context) {
     ProjectsController projectsController = ProjectsController();
     tabs = [
-      TabButton(title: texts.general.title_personal_projects_project_section, icon: Icons.folder, isSelected: isViewPersonal),
-      TabButton(title: texts.general.title_client_projects_project_section, icon: Icons.laptop_mac_rounded, isSelected: !isViewPersonal),
+      TabButton(title: texts.general.m_title_personal_projects_project_section, icon: Icons.folder, isSelected: isViewPersonal),
+      TabButton(title: texts.general.m_title_client_projects_project_section, icon: Icons.laptop_mac_rounded, isSelected: !isViewPersonal),
     ];
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 50),

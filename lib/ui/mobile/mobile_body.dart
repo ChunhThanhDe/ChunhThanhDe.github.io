@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:profile/controller/navigation_top_controller.dart';
 import 'package:profile/generated/translations.g.dart';
+import 'package:profile/models/tab_btn.dart';
 import 'package:profile/ui/desktop/sections/footer_section.dart';
 import 'package:profile/ui/desktop/widgets/animated_text.dart';
 import 'package:profile/ui/mobile/sections/m_about_section.dart';
@@ -11,20 +12,26 @@ import 'package:profile/ui/mobile/sections/m_home_section.dart';
 import 'package:profile/ui/mobile/sections/m_project_and_designs.dart';
 import 'package:profile/ui/mobile/sections/m_skill_section.dart';
 import 'package:profile/ui/mobile/sections/m_work_experience.dart';
-import 'package:profile/ui/mobile/widgets/app_bar_icon.dart';
+import 'package:profile/widgets/app_bar_icon.dart';
 import 'package:profile/ui/mobile/widgets/hover_container.dart';
+import 'package:profile/ui/mobile/widgets/tab_btn_lang.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
 
-class MobileBody extends StatelessWidget {
+class MobileBody extends StatefulWidget {
+  MobileBody({Key? key}) : super(key: key);
+
+  @override
+  State<MobileBody> createState() => _MobileBodyState();
+}
+
+class _MobileBodyState extends State<MobileBody> {
   final contactKey = GlobalKey();
   final homeKey = GlobalKey();
   final aboutKey = GlobalKey();
   final skillsKey = GlobalKey();
   final expKey = GlobalKey();
   final projectsKey = GlobalKey();
-
-  MobileBody({Key? key}) : super(key: key);
 
   Future scrollToItem(var sectionKey) async {
     final context = sectionKey.currentContext!;
@@ -37,9 +44,14 @@ class MobileBody extends StatelessWidget {
 
   final ScrollController _scrollController = ScrollController();
   NavigationController navigationController = new NavigationController();
+  late List<TabButtonLang> tabs;
 
   @override
   Widget build(BuildContext context) {
+    tabs = [
+      TabButtonLang(title: texts.general.vietnam, icon: Image.asset('icons/flags/png100px/vn.png', package: 'country_icons'), isSelected: navigationController.currentLocale == navigationController.vi),
+      TabButtonLang(title: texts.general.english, icon: Image.asset('icons/flags/png100px/us.png', package: 'country_icons'), isSelected: navigationController.currentLocale == navigationController.en),
+    ];
     return Scaffold(
       backgroundColor: kdarkColor,
       floatingActionButton: FloatingActionButton(
@@ -75,7 +87,7 @@ class MobileBody extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(15.0),
                     child: Image.network(
-                      'https://firebasestorage.googleapis.com/v0/b/profile-28840.appspot.com/o/project-images%2Fadmin_2023-01-31T13%3A34%3A23.793033?alt=media&token=466588bb-d478-4ed6-99e2-e2338f21f439',
+                      'https://media.licdn.com/dms/image/D5603AQE94bklZfqiEQ/profile-displayphoto-shrink_800_800/0/1692931978549?e=1712793600&v=beta&t=sqt0zfsGgZ9MiTZGNSzqWVlYycgr6s-TXkQ_eOuIc94',
                       fit: BoxFit.cover,
                     ),
                   ),
@@ -100,6 +112,33 @@ class MobileBody extends StatelessWidget {
                     color: kPrimaryColor,
                   ),
                 ],
+              ),
+              const SizedBox(
+                height: 10,
+              ),
+              Padding(
+                padding: EdgeInsetsDirectional.fromSTEB(5, 5, 5, 5),
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    TabBtnLang(
+                      tab: tabs[0],
+                      click: () {
+                        setState(() {
+                          navigationController.changeLocale(navigationController.vi);
+                        });
+                      },
+                    ),
+                    TabBtnLang(
+                      tab: tabs[1],
+                      click: () {
+                        setState(() {
+                          navigationController.changeLocale(navigationController.en);
+                        });
+                      },
+                    )
+                  ],
+                ),
               ),
               const SizedBox(
                 height: 10,
@@ -178,15 +217,6 @@ class MobileBody extends StatelessWidget {
                   ),
                 ),
               ),
-              navigationController.currentLocale.languageCode == "en"
-                  ? IconButton(
-                      onPressed: () => navigationController.changeLocale(navigationController.vi),
-                      icon: Icon(Icons.abc),
-                    )
-                  : IconButton(
-                      onPressed: () => navigationController.changeLocale(navigationController.en),
-                      icon: Icon(Icons.translate),
-                    )
             ],
           ),
         ),

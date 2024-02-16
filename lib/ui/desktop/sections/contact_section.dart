@@ -37,16 +37,17 @@ class _ContactSectionState extends State<ContactSection> {
         setState(() {
           _isSending = true;
         });
-        await Message.sendMessage(sender: name!, email: email!, message: message!);
+        bool result = await Message.sendMessage(sender: name!, email: email!, message: message!);
         setState(() {
           _isSending = false;
         });
-        BotToast.showText(
-          duration: const Duration(seconds: 6),
-          text: texts.general.thank_you + ' ${name!.trim()} , ' + texts.general.get_back,
-          textStyle: kNormalTextStyleGrey,
-        );
-        _form.currentState!.reset();
+        if (result)
+          BotToast.showText(
+            duration: const Duration(seconds: 6),
+            text: texts.general.thank_you + ' ${name!.trim()} , ' + texts.general.get_back,
+            textStyle: kNormalTextStyleGrey,
+          );
+        _form.currentState?.reset();
       }
     }
 
@@ -89,7 +90,7 @@ class _ContactSectionState extends State<ContactSection> {
                               ),
                             ),
                             Column(
-                              children:  [
+                              children: [
                                 ContactCard(
                                   icon: Icons.location_pin,
                                   content: location,

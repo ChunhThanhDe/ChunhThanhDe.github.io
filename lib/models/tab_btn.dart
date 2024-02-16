@@ -15,3 +15,19 @@ class TabButton {
     this.isSelected = false,
   });
 }
+
+class TabButtonLang {
+  String title;
+  Image icon;
+  bool isSelected;
+  String? des;
+  VoidCallback? click;
+
+  TabButtonLang({
+    required this.title,
+    required this.icon,
+    this.des,
+    this.click,
+    this.isSelected = false,
+  });
+}

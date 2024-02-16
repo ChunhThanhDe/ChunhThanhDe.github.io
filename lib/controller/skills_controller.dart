@@ -27,6 +27,7 @@ class SkillsController {
       }
       _skills = _loadedSkills;
     } catch (e) {
+      print ("fetchSkills error: " + e.toString());
       throw e;
     }
   }

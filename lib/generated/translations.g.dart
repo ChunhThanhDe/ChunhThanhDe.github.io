@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 2
-/// Strings: 394 (197 per locale)
+/// Strings: 398 (199 per locale)
 ///
-/// Built on 2024-02-06 at 09:16 UTC
+/// Built on 2024-02-07 at 03:44 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -212,6 +212,8 @@ class _TranslationsGeneralVi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
+	String get vietnam => 'Tiếng Việt';
+	String get english => 'Tiếng Anh';
 	String get thank_you => 'Cảm ơn bạn đã liên hệ với tôi';
 	String get get_back => 'Tôi sẽ liên hệ lại với bạn sớm';
 	String get title_introduction_about_section => 'Giới thiệu';
@@ -755,6 +757,8 @@ class _TranslationsGeneralEn implements _TranslationsGeneralVi {
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
+	@override String get vietnam => 'Vietnamese';
+	@override String get english => 'English';
 	@override String get thank_you => 'Thank You for contacting me';
 	@override String get get_back => 'I will get back to you shortly';
 	@override String get title_introduction_about_section => 'Introduction';
@@ -1270,6 +1274,8 @@ extension on Translations {
 			case 'about.aboutCard.3.content': return 'Tôi thích xây dựng những ứng dụng có ích cho cộng đồng, khiến cuộc sống của mọi người trở nên đơn giản hơn.';
 			case 'about.aboutCard.3.iconPath': return 'assets/web-development.png';
 			case 'about.aboutCard.3.title': return 'Mobile/Web Development';
+			case 'general.vietnam': return 'Tiếng Việt';
+			case 'general.english': return 'Tiếng Anh';
 			case 'general.thank_you': return 'Cảm ơn bạn đã liên hệ với tôi';
 			case 'general.get_back': return 'Tôi sẽ liên hệ lại với bạn sớm';
 			case 'general.title_introduction_about_section': return 'Giới thiệu';
@@ -1475,6 +1481,8 @@ extension on _TranslationsEn {
 			case 'about.aboutCard.3.content': return 'I enjoy building useful applications for the community, making people\'s lives simpler.';
 			case 'about.aboutCard.3.iconPath': return 'assets/web-development.png';
 			case 'about.aboutCard.3.title': return 'Mobile/Web Development';
+			case 'general.vietnam': return 'Vietnamese';
+			case 'general.english': return 'English';
 			case 'general.thank_you': return 'Thank You for contacting me';
 			case 'general.get_back': return 'I will get back to you shortly';
 			case 'general.title_introduction_about_section': return 'Introduction';

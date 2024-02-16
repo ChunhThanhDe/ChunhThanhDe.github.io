@@ -1,14 +1,14 @@
+import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_glow/flutter_glow.dart';
 import 'package:profile/models/tab_btn.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
 
-class TabBtn extends StatelessWidget {
-  final TabButton tab;
+class TabBtnLang extends StatelessWidget {
+  final TabButtonLang tab;
   final VoidCallback click;
 
-  const TabBtn({Key? key, required this.tab, required this.click});
+  const TabBtnLang({Key? key, required this.tab, required this.click});
 
   @override
   Widget build(BuildContext context) {
@@ -20,8 +20,8 @@ class TabBtn extends StatelessWidget {
           child: Container(
             padding: EdgeInsets.all(6),
             margin: EdgeInsets.only(
-              right: tab.title.contains('Personal') ? 5 : 0,
-              left: tab.title.contains('Work') ? 0 : 5,
+              right: 0,
+              left: 5,
             ),
             decoration: tab.isSelected
                 ? BoxDecoration(
@@ -31,17 +31,27 @@ class TabBtn extends StatelessWidget {
                       width: 2.0,
                     ),
                     borderRadius: BorderRadius.circular(50.0))
-                : null,
+                : BoxDecoration(
+                    color: kPrimaryColor.withOpacity(.1),
+                    border: Border.all(
+                      color: kgreyButton,
+                      width: 2.0,
+                    ),
+                    borderRadius: BorderRadius.circular(50.0)),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 tab.isSelected
-                    ? GlowIcon(
-                        tab.icon,
+                    ? AvatarGlow(
                         glowColor: kPrimaryColor,
-                        color: kPrimaryColor,
+                        endRadius: 5,
+                        child: tab.icon,
                       )
-                    : Icon(tab.icon, color: kgreyButton),
+                    : AvatarGlow(
+                        glowColor: kgreyButton,
+                        endRadius: 5,
+                        child: tab.icon,
+                      ),
                 SizedBox(width: 10),
                 FittedBox(
                   child: Text(

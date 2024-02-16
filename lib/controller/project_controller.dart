@@ -53,6 +53,7 @@ class ProjectsController {
       }
       _projects = _loadedProjects;
     } catch (e) {
+      print ("fetchAndSetProjects error: " + e.toString());
       throw e;
     }
   }

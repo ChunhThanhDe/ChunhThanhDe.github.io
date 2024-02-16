@@ -1,20 +1,49 @@
+import 'dart:convert';
 import 'dart:html';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_app_check/firebase_app_check.dart';
+import 'package:http/http.dart' as http;
 
 class Message {
-  static Future<void> sendMessage({
+  static Future<bool> sendMessage({
     required String sender,
     required String email,
     required String message,
   }) async {
-    await FirebaseFirestore.instance.collection('messages')
-      ..add({
-        'sender': sender.trim(),
-        'email': email.trim(),
-        'message': message.trim(),
-        'createdAt': FieldValue.serverTimestamp(),
-      });
+    try {
+      String? appCheckToken = await FirebaseAppCheck.instance.getToken();
+      if (appCheckToken != null) {
+        await FirebaseFirestore.instance.collection('messages').add({
+          'sender': sender.trim(),
+          'email': email.trim(),
+          'message': message.trim(),
+          'createdAt': FieldValue.serverTimestamp(),
+          'token': appCheckToken,
+        });
+        return true;
+      }
+    } catch (e) {
+      print("get AppCheck error: " + e.toString());
+    }
+    return false;
+  }
+}
+
+// only use to verify in server
+Future<bool> isRecaptchaSuccess(String recaptchaToken) async {
+  final secretKey = 'YOUR_RECAPTCHA_SECRET_KEY';
+  final url = 'https://www.google.com/recaptcha/api/siteverify';
+  final response = await http.post(Uri.parse(url), body: {
+    'secret': secretKey,
+    'response': recaptchaToken,
+  });
+
+  if (response.statusCode == 200) {
+    final data = jsonDecode(response.body);
+    return data['success'] == true;
+  } else {
+    return false;
   }
 }
 

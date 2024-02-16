@@ -19,6 +19,8 @@ import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
 import 'package:web_smooth_scroll/web_smooth_scroll.dart';
 
+import '../../widgets/app_bar_lang_icon.dart';
+
 class DesktopBody extends StatefulWidget {
   const DesktopBody({Key? key}) : super(key: key);
 
@@ -102,7 +104,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     Expanded(
-                      flex: _screenWidth > 1700 ? 2 : 1,
+                      flex: _screenWidth > 1700 ? 8 : 4,
                       child: Row(
                         children: [
                           MouseRegion(
@@ -118,7 +120,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                               ),
                             ),
                           ),
-                           Icon(
+                          Icon(
                             MdiIcons.chevronLeft,
                             color: kPrimaryColor,
                           ),
@@ -128,7 +130,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                               fontSize: 15,
                             ),
                           ),
-                           Icon(
+                          Icon(
                             MdiIcons.chevronRight,
                             color: kPrimaryColor,
                           ),
@@ -136,6 +138,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                       ),
                     ),
                     Expanded(
+                      flex: 5,
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.center,
@@ -175,24 +178,21 @@ class _DesktopBodyState extends State<DesktopBody> {
                             click: () => downloadCV(),
                             text: navigationController.navigation(6),
                           ),
-                          PopupMenuButton<AppLocale>(
-                            onSelected: (value) {
-                              navigationController.changeLocale(value);
-                            },
-                            icon: const Icon(Icons.translate),
-                            itemBuilder: (_) {
-                              return [
-                                PopupMenuItem(
-                                  value: navigationController.en,
-                                  child: const Text("English"),
+                          navigationController.currentLocale == navigationController.en
+                              ? AppBarLangIcon(
+                                  hint: texts.general.vietnam,
+                                  icon: Image.asset('icons/flags/png100px/vn.png', package: 'country_icons'),
+                                  click: () async {
+                                    navigationController.changeLocale(navigationController.vi);
+                                  },
+                                )
+                              : AppBarLangIcon(
+                                  hint: texts.general.english,
+                                  icon: Image.asset('icons/flags/png100px/us.png', package: 'country_icons'),
+                                  click: () async {
+                                    navigationController.changeLocale(navigationController.en);
+                                  },
                                 ),
-                                PopupMenuItem(
-                                  value: navigationController.vi,
-                                  child: const Text("Việt Nam"),
-                                ),
-                              ];
-                            },
-                          ),
                         ],
                       ),
                     ),
