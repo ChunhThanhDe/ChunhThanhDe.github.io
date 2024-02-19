@@ -25,5 +25,6 @@
   "introduce_home_section1": "I am a Software Development Engineer for Consumer Product Line (Phone, Set-top Box,...) and a Flutter Developer.",
   "introduce_home_section2": "I build system applications for AOSP, ATV in the Consumer Product Line and build websites and interactive software applications that run on multiple platforms and devices.",
   "browse_projects_home_section": "Browse Projects",
-  "required_input_field" : "This field is required"
+  "required_input_field" : "This field is required",
+  "copy": "Copied to clipboard"
 }

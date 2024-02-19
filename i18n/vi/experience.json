@@ -1,42 +1,14 @@
 {
   "experiences": [
     {
-      "company": "Omnis Corporation",
-      "country": "Zambia",
-      "created_at": "2022-12-31T14:23:43.877077",
-      "emp_type": "Part - Time",
-      "end_date": "2022-03-07T00:00:00.000",
-      "is_hidden": "false",
-      "position": "UI / UX Designer & Flutter Developer",
-      "start_date": "2021-01-05T00:00:00.000",
-      "state": "Lusaka",
-      "work_done": "Designed clean & Simple yet thoughtful UI/UX design patterns for both mobile and web apps.#Built both mobile and web applications with interactive & responsive layouts.#API integrations throughout a software to keep data in sync and enhance productivity.",
-      "works_here": "false"
-    },
-    {
-      "company": "Lassod Consulting Limited",
-      "country": "UK",
-      "created_at": "2022-12-31T14:28:07.703644",
+      "company": "VNPT Technology",
+      "country": "Việt Nam",
       "emp_type": "Full - Time",
-      "is_hidden": "false",
-      "position": "Software Engineer (Remote)",
-      "site_url": "lassod.com",
-      "start_date": "2022-03-07T00:00:00.000",
-      "state": "England",
-      "work_done": "Write modern, performant, maintainable code for a diverse array of client and internal projects with Flutter & Dart.#Communicate with multi-disciplinary teams of engineers, designers and clients on a daily basis.#Work with a variety of different languages, platforms, frameworks, and content management systems such as Dart, Flutter, Github, Gitlab, Jira and Time Management.",
-      "works_here": "true"
-    },
-    {
-      "company": "Pynch Technology",
-      "country": "Zambia",
-      "created_at": "2023-01-01T14:51:02.923189",
-      "emp_type": "Part - Time",
-      "is_hidden": "false",
-      "position": "Mobile Developer (Remote)",
-      "site_url": "pynch.co.zm",
-      "start_date": "2022-11-07T00:00:00.000",
-      "state": "Lusaka",
-      "work_done": "Designing, developing, testing and implementing mobile applications using the Flutter framework.#Working closely with the backend engineer and UI/UX designer to ensure proper integration in mobile applications.",
+      "position": "Software Engineer (Onsite)",
+      "site_url": "www.vnpt-technology.vn",
+      "start_date": "2022-08-15T00:00:00.000",
+      "state": "Hà Nội",
+      "work_done": "Phát triển ứng dụng hệ thống cho dòng sản phẩm SmartBox 2 AOSP, SmartBox 2 ATV và SmartBox 3 ATV bao gồm các ứng dụng cập nhật firmware OTA, Security Uboot, Security Setting.# Nghiên cứu định hướng các giải pháp phát triển cho dòng sản phẩm SmartBox # Xây dựng hệ thống  Quản lý các thiết bị đầu cuối SmartBox - TMS (Terminal Management system) # Phát triển các ứng dụng triển khai eSOP bằng Flutter & Dart cho dòng sản phẩm SmartBox",
       "works_here": "true"
     }
   ]

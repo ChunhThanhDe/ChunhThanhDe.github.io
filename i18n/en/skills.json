@@ -13,12 +13,6 @@
       "name": "Flutter"
     },
     {
-      "date": "2022-12-06T15:10:01.509497",
-      "des": "Dart is a programming language designed for client development, such as for the web and mobile apps.",
-      "img": "https://img.icons8.com/?size=512&id=7AFcZ2zirX6Y&format=png",
-      "name": "Dart"
-    },
-    {
       "date": "2022-12-06T15:10:26.815054",
       "des": "Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps. It is built on Google’s infrastructure.",
       "img": "https://img.icons8.com/?size=512&id=62452&format=png",
@@ -57,13 +51,13 @@
     {
       "date": "2022-12-06T15:11:22.396871",
       "des": "Android is an open-source mobile operating system developed by Google. It is designed for smartphones, tablets, and other mobile devices. Android allows developers to create a wide range of applications using Java or Kotlin programming languages",
-      "img": "https://img.icons8.com/?size=512&id=17836&format=png",
+      "img": "https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png",
       "name": "Android"
     },
     {
       "date": "2022-12-06T15:11:22.396871",
       "des": " AOSP (Android Open Source Project) is the open-source project that maintains and develops the Android operating system. It provides the source code, documentation, and tools for building custom Android ROMs and modifying the Android system",
-      "img": "https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png",
+      "img": "https://img.icons8.com/?size=512&id=17836&format=png",
       "name": "AOSP"
     }
   ]

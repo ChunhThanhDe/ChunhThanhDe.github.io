@@ -8,15 +8,9 @@
     },
     {
       "date": "2022-12-06T15:09:18.175658",
-      "des": "Dart là một ngôn ngữ lập trình được thiết kế cho việc phát triển phía khách hàng, chẳng hạn như cho web và ứng dụng di động",
+      "des": "Flutter là bộ công cụ phát triển phần mềm UI nguồn mở do Google tạo ra. Nó được sử dụng để phát triển các ứng dụng đa nền tảng từ một cơ sở mã duy nhất cho mọi trình duyệt web, Fuchsia, Android, iOS, Linux, macOS và Windows.",
       "img": "https://img.icons8.com/?size=512&id=5pu47piHKg1I&format=png",
       "name": "Flutter"
-    },
-    {
-      "date": "2022-12-06T15:10:01.509497",
-      "des": "Dart is a programming language designed for client development, such as for the web and mobile apps.",
-      "img": "https://img.icons8.com/?size=512&id=7AFcZ2zirX6Y&format=png",
-      "name": "Dart"
     },
     {
       "date": "2022-12-06T15:10:26.815054",
@@ -57,13 +51,13 @@
     {
       "date": "2022-12-06T15:11:22.396871",
       "des": "Android là một hệ điều hành di động phổ biến, phát triển bởi Google. Nó được sử dụng trên nhiều thiết bị di động như điện thoại thông minh và máy tính bảng. Android cung cấp một nền tảng phát triển mạnh mẽ cho việc xây dựng ứng dụng di động đa dạng.",
-      "img": "https://img.icons8.com/?size=512&id=17836&format=png",
+      "img": "https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png",
       "name": "Android"
     },
     {
       "date": "2022-12-06T15:11:22.396871",
       "des": "AOSP (Android Open Source Project) là dự án mã nguồn mở cho hệ điều hành Android. Nó cung cấp mã nguồn cho các thành phần cốt lõi của Android và cho phép các nhà phát triển tùy chỉnh và xâydựng phiên bản riêng của hệ điều hành này. AOSP cho phép sự mở rộng và tùy chỉnh linh hoạt của Android.",
-      "img": "https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png",
+      "img": "https://img.icons8.com/?size=512&id=17836&format=png",
       "name": "AOSP"
     }
   ]

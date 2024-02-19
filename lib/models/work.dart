@@ -1,6 +1,5 @@
 class Work {
   String? _id;
-  bool _isHidden;
   String _company;
   String _position;
   String _country;
@@ -16,9 +15,6 @@ class Work {
 
   String? get id => _id;
   set id(String? value) => _id = value;
-
-  bool get isHidden => _isHidden;
-  set isHidden(bool value) => _isHidden = value;
 
   String get company => _company;
   set company(String value) => _company = value;
@@ -69,7 +65,6 @@ class Work {
     String? endDate,
     String? id,
     bool worksHere = false,
-    bool isHidden = false,
     bool isHovered = false,
   }) : _company = company,
         _position = position,
@@ -83,6 +78,5 @@ class Work {
         _endDate = endDate,
         _id = id,
         _worksHere = worksHere,
-        _isHidden = isHidden,
         _isHovered = isHovered;
 }

@@ -1,4 +1,7 @@
+import 'package:bot_toast/bot_toast.dart';
+import 'package:clipboard/clipboard.dart';
 import 'package:flutter/material.dart';
+import 'package:profile/generated/translations.g.dart';
 import 'package:profile/utils/constants.dart';
 
 class ContactCard extends StatelessWidget {
@@ -13,7 +16,16 @@ class ContactCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
+    return GestureDetector(
+      onTap: () {
+        FlutterClipboard.copy(content);
+        BotToast.showText(
+          duration: const Duration(seconds: 6),
+          text: texts.general.copy,
+          textStyle: kNormalTextStyleGrey,
+        );
+      },
+      child: Container(
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
         child: Row(
           children: [
@@ -28,10 +40,12 @@ class ContactCard extends StatelessWidget {
             Flexible(
               child: Text(
                 content,
-                style: kNormalTextStyleGrey.copyWith(fontSize: 17),
+                style: TextStyle(fontSize: 17),
               ),
             ),
           ],
-        ));
+        ),
+      ),
+    );
   }
 }
