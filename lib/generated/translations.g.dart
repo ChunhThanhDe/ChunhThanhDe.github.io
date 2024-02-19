@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 2
-/// Strings: 398 (199 per locale)
+/// Strings: 344 (172 per locale)
 ///
-/// Built on 2024-02-07 at 03:44 UTC
+/// Built on 2024-02-19 at 03:11 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -165,8 +165,6 @@ class _TranslationsExperienceVi {
 	// Translations
 	List<dynamic> get experiences => [
 		_TranslationsExperience$experiences$0i0$Vi._(_root),
-		_TranslationsExperience$experiences$0i1$Vi._(_root),
-		_TranslationsExperience$experiences$0i2$Vi._(_root),
 	];
 }
 
@@ -178,13 +176,13 @@ class _TranslationsTabsVi {
 
 	// Translations
 	List<String> get tabs => [
-		'Home',
-		'About',
-		'Skills',
-		'Experience',
-		'Projects',
-		'Contact',
-		'Download CV',
+		'Trang chủ',
+		'Về tôi',
+		'Kỹ năng',
+		'Kinh nghiệm',
+		'Các dự án',
+		'Liên hệ',
+		'Tải về CV',
 	];
 }
 
@@ -239,6 +237,7 @@ class _TranslationsGeneralVi {
 	String get introduce_home_section2 => 'Tôi xây dựng các ứng dụng hệ thống cho AOSP, ATV trong Dòng sản phẩm Tiêu dùng và xây dựng các trang web và ứng dụng phần mềm tương tác chạy trên nhiều nền tảng và thiết bị.';
 	String get browse_projects_home_section => 'Các dự án';
 	String get required_input_field => 'Trường này là bắt buộc';
+	String get copy => 'Đã sao chép vào clipboard';
 }
 
 // Path: project
@@ -275,7 +274,6 @@ class _TranslationsSkillsVi {
 		_TranslationsSkills$skills$0i7$Vi._(_root),
 		_TranslationsSkills$skills$0i8$Vi._(_root),
 		_TranslationsSkills$skills$0i9$Vi._(_root),
-		_TranslationsSkills$skills$0i10$Vi._(_root),
 	];
 }
 
@@ -286,56 +284,14 @@ class _TranslationsExperience$experiences$0i0$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get company => 'Omnis Corporation';
-	String get country => 'Zambia';
-	String get created_at => '2022-12-31T14:23:43.877077';
-	String get emp_type => 'Part - Time';
-	String get end_date => '2022-03-07T00:00:00.000';
-	String get is_hidden => 'false';
-	String get position => 'UI / UX Designer & Flutter Developer';
-	String get start_date => '2021-01-05T00:00:00.000';
-	String get state => 'Lusaka';
-	String get work_done => 'Designed clean & Simple yet thoughtful UI/UX design patterns for both mobile and web apps.#Built both mobile and web applications with interactive & responsive layouts.#API integrations throughout a software to keep data in sync and enhance productivity.';
-	String get works_here => 'false';
-}
-
-// Path: experience.experiences.1
-class _TranslationsExperience$experiences$0i1$Vi {
-	_TranslationsExperience$experiences$0i1$Vi._(this._root);
-
-	final Translations _root; // ignore: unused_field
-
-	// Translations
-	String get company => 'Lassod Consulting Limited';
-	String get country => 'UK';
-	String get created_at => '2022-12-31T14:28:07.703644';
+	String get company => 'VNPT Technology';
+	String get country => 'Việt Nam';
 	String get emp_type => 'Full - Time';
-	String get is_hidden => 'false';
-	String get position => 'Software Engineer (Remote)';
-	String get site_url => 'lassod.com';
-	String get start_date => '2022-03-07T00:00:00.000';
-	String get state => 'England';
-	String get work_done => 'Write modern, performant, maintainable code for a diverse array of client and internal projects with Flutter & Dart.#Communicate with multi-disciplinary teams of engineers, designers and clients on a daily basis.#Work with a variety of different languages, platforms, frameworks, and content management systems such as Dart, Flutter, Github, Gitlab, Jira and Time Management.';
-	String get works_here => 'true';
-}
-
-// Path: experience.experiences.2
-class _TranslationsExperience$experiences$0i2$Vi {
-	_TranslationsExperience$experiences$0i2$Vi._(this._root);
-
-	final Translations _root; // ignore: unused_field
-
-	// Translations
-	String get company => 'Pynch Technology';
-	String get country => 'Zambia';
-	String get created_at => '2023-01-01T14:51:02.923189';
-	String get emp_type => 'Part - Time';
-	String get is_hidden => 'false';
-	String get position => 'Mobile Developer (Remote)';
-	String get site_url => 'pynch.co.zm';
-	String get start_date => '2022-11-07T00:00:00.000';
-	String get state => 'Lusaka';
-	String get work_done => 'Designing, developing, testing and implementing mobile applications using the Flutter framework.#Working closely with the backend engineer and UI/UX designer to ensure proper integration in mobile applications.';
+	String get position => 'Software Engineer (Onsite)';
+	String get site_url => 'www.vnpt-technology.vn';
+	String get start_date => '2022-08-15T00:00:00.000';
+	String get state => 'Hà Nội';
+	String get work_done => 'Phát triển ứng dụng hệ thống cho dòng sản phẩm SmartBox 2 AOSP, SmartBox 2 ATV và SmartBox 3 ATV bao gồm các ứng dụng cập nhật firmware OTA, Security Uboot, Security Setting.# Nghiên cứu định hướng các giải pháp phát triển cho dòng sản phẩm SmartBox # Xây dựng hệ thống  Quản lý các thiết bị đầu cuối SmartBox - TMS (Terminal Management system) # Phát triển các ứng dụng triển khai eSOP bằng Flutter & Dart cho dòng sản phẩm SmartBox';
 	String get works_here => 'true';
 }
 
@@ -346,7 +302,7 @@ class _TranslationsAbout$aboutCard$0i0$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get content => 'I value simple, clean design patterns, and thoughtful interactions.';
+	String get content => 'Tôi đánh giá cao các mẫu thiết kế hệ thống đơn giản, rõ ràng và đầy đủ các tương tác chu đáo..';
 	String get iconPath => 'assets/vector.png';
 	String get title => 'Back-End Development';
 }
@@ -547,7 +503,7 @@ class _TranslationsSkills$skills$0i1$Vi {
 
 	// Translations
 	String get date => '2022-12-06T15:09:18.175658';
-	String get des => 'Dart là một ngôn ngữ lập trình được thiết kế cho việc phát triển phía khách hàng, chẳng hạn như cho web và ứng dụng di động';
+	String get des => 'Flutter là bộ công cụ phát triển phần mềm UI nguồn mở do Google tạo ra. Nó được sử dụng để phát triển các ứng dụng đa nền tảng từ một cơ sở mã duy nhất cho mọi trình duyệt web, Fuchsia, Android, iOS, Linux, macOS và Windows.';
 	String get img => 'https://img.icons8.com/?size=512&id=5pu47piHKg1I&format=png';
 	String get name => 'Flutter';
 }
@@ -559,28 +515,15 @@ class _TranslationsSkills$skills$0i2$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get date => '2022-12-06T15:10:01.509497';
-	String get des => 'Dart is a programming language designed for client development, such as for the web and mobile apps.';
-	String get img => 'https://img.icons8.com/?size=512&id=7AFcZ2zirX6Y&format=png';
-	String get name => 'Dart';
-}
-
-// Path: skills.skills.3
-class _TranslationsSkills$skills$0i3$Vi {
-	_TranslationsSkills$skills$0i3$Vi._(this._root);
-
-	final Translations _root; // ignore: unused_field
-
-	// Translations
 	String get date => '2022-12-06T15:10:26.815054';
 	String get des => 'Firebase là một dịch vụ Backend-as-a-Service (Baas). Nó cung cấp cho các nhà phát triển một loạt các công cụ và dịch vụ để giúp họ phát triển các ứng dụng chất lượng. Firebase được xây dựng trên cơ sở hạ tầng của Google.';
 	String get img => 'https://img.icons8.com/?size=512&id=62452&format=png';
 	String get name => 'Firebase';
 }
 
-// Path: skills.skills.4
-class _TranslationsSkills$skills$0i4$Vi {
-	_TranslationsSkills$skills$0i4$Vi._(this._root);
+// Path: skills.skills.3
+class _TranslationsSkills$skills$0i3$Vi {
+	_TranslationsSkills$skills$0i3$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -591,9 +534,9 @@ class _TranslationsSkills$skills$0i4$Vi {
 	String get name => 'MongoDb';
 }
 
-// Path: skills.skills.5
-class _TranslationsSkills$skills$0i5$Vi {
-	_TranslationsSkills$skills$0i5$Vi._(this._root);
+// Path: skills.skills.4
+class _TranslationsSkills$skills$0i4$Vi {
+	_TranslationsSkills$skills$0i4$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -604,9 +547,9 @@ class _TranslationsSkills$skills$0i5$Vi {
 	String get name => 'SQL';
 }
 
-// Path: skills.skills.6
-class _TranslationsSkills$skills$0i6$Vi {
-	_TranslationsSkills$skills$0i6$Vi._(this._root);
+// Path: skills.skills.5
+class _TranslationsSkills$skills$0i5$Vi {
+	_TranslationsSkills$skills$0i5$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -617,9 +560,9 @@ class _TranslationsSkills$skills$0i6$Vi {
 	String get name => 'Spring Boot';
 }
 
-// Path: skills.skills.7
-class _TranslationsSkills$skills$0i7$Vi {
-	_TranslationsSkills$skills$0i7$Vi._(this._root);
+// Path: skills.skills.6
+class _TranslationsSkills$skills$0i6$Vi {
+	_TranslationsSkills$skills$0i6$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -630,9 +573,9 @@ class _TranslationsSkills$skills$0i7$Vi {
 	String get name => 'Azure';
 }
 
-// Path: skills.skills.8
-class _TranslationsSkills$skills$0i8$Vi {
-	_TranslationsSkills$skills$0i8$Vi._(this._root);
+// Path: skills.skills.7
+class _TranslationsSkills$skills$0i7$Vi {
+	_TranslationsSkills$skills$0i7$Vi._(this._root);
 
 	final Translations _root; // ignore: unused_field
 
@@ -643,6 +586,19 @@ class _TranslationsSkills$skills$0i8$Vi {
 	String get name => 'AWS';
 }
 
+// Path: skills.skills.8
+class _TranslationsSkills$skills$0i8$Vi {
+	_TranslationsSkills$skills$0i8$Vi._(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+	String get date => '2022-12-06T15:11:22.396871';
+	String get des => 'Android là một hệ điều hành di động phổ biến, phát triển bởi Google. Nó được sử dụng trên nhiều thiết bị di động như điện thoại thông minh và máy tính bảng. Android cung cấp một nền tảng phát triển mạnh mẽ cho việc xây dựng ứng dụng di động đa dạng.';
+	String get img => 'https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png';
+	String get name => 'Android';
+}
+
 // Path: skills.skills.9
 class _TranslationsSkills$skills$0i9$Vi {
 	_TranslationsSkills$skills$0i9$Vi._(this._root);
@@ -651,21 +607,8 @@ class _TranslationsSkills$skills$0i9$Vi {
 
 	// Translations
 	String get date => '2022-12-06T15:11:22.396871';
-	String get des => 'Android là một hệ điều hành di động phổ biến, phát triển bởi Google. Nó được sử dụng trên nhiều thiết bị di động như điện thoại thông minh và máy tính bảng. Android cung cấp một nền tảng phát triển mạnh mẽ cho việc xây dựng ứng dụng di động đa dạng.';
-	String get img => 'https://img.icons8.com/?size=512&id=17836&format=png';
-	String get name => 'Android';
-}
-
-// Path: skills.skills.10
-class _TranslationsSkills$skills$0i10$Vi {
-	_TranslationsSkills$skills$0i10$Vi._(this._root);
-
-	final Translations _root; // ignore: unused_field
-
-	// Translations
-	String get date => '2022-12-06T15:11:22.396871';
 	String get des => 'AOSP (Android Open Source Project) là dự án mã nguồn mở cho hệ điều hành Android. Nó cung cấp mã nguồn cho các thành phần cốt lõi của Android và cho phép các nhà phát triển tùy chỉnh và xâydựng phiên bản riêng của hệ điều hành này. AOSP cho phép sự mở rộng và tùy chỉnh linh hoạt của Android.';
-	String get img => 'https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png';
+	String get img => 'https://img.icons8.com/?size=512&id=17836&format=png';
 	String get name => 'AOSP';
 }
 
@@ -710,8 +653,6 @@ class _TranslationsExperienceEn implements _TranslationsExperienceVi {
 	// Translations
 	@override List<dynamic> get experiences => [
 		_TranslationsExperience$experiences$0i0$En._(_root),
-		_TranslationsExperience$experiences$0i1$En._(_root),
-		_TranslationsExperience$experiences$0i2$En._(_root),
 	];
 }
 
@@ -784,6 +725,7 @@ class _TranslationsGeneralEn implements _TranslationsGeneralVi {
 	@override String get introduce_home_section2 => 'I build system applications for AOSP, ATV in the Consumer Product Line and build websites and interactive software applications that run on multiple platforms and devices.';
 	@override String get browse_projects_home_section => 'Browse Projects';
 	@override String get required_input_field => 'This field is required';
+	@override String get copy => 'Copied to clipboard';
 }
 
 // Path: project
@@ -820,7 +762,6 @@ class _TranslationsSkillsEn implements _TranslationsSkillsVi {
 		_TranslationsSkills$skills$0i7$En._(_root),
 		_TranslationsSkills$skills$0i8$En._(_root),
 		_TranslationsSkills$skills$0i9$En._(_root),
-		_TranslationsSkills$skills$0i10$En._(_root),
 	];
 }
 
@@ -831,56 +772,14 @@ class _TranslationsExperience$experiences$0i0$En implements _TranslationsExperie
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get company => 'Omnis Corporation';
-	@override String get country => 'Zambia';
-	@override String get created_at => '2022-12-31T14:23:43.877077';
-	@override String get emp_type => 'Part - Time';
-	@override String get end_date => '2022-03-07T00:00:00.000';
-	@override String get is_hidden => 'false';
-	@override String get position => 'UI / UX Designer & Flutter Developer';
-	@override String get start_date => '2021-01-05T00:00:00.000';
-	@override String get state => 'Lusaka';
-	@override String get work_done => 'Designed clean & Simple yet thoughtful UI/UX design patterns for both mobile and web apps.#Built both mobile and web applications with interactive & responsive layouts.#API integrations throughout a software to keep data in sync and enhance productivity.';
-	@override String get works_here => 'false';
-}
-
-// Path: experience.experiences.1
-class _TranslationsExperience$experiences$0i1$En implements _TranslationsExperience$experiences$0i1$Vi {
-	_TranslationsExperience$experiences$0i1$En._(this._root);
-
-	@override final _TranslationsEn _root; // ignore: unused_field
-
-	// Translations
-	@override String get company => 'Lassod Consulting Limited';
-	@override String get country => 'UK';
-	@override String get created_at => '2022-12-31T14:28:07.703644';
+	@override String get company => 'VNPT Technology';
+	@override String get country => 'VietNam';
 	@override String get emp_type => 'Full - Time';
-	@override String get is_hidden => 'false';
 	@override String get position => 'Software Engineer (Remote)';
-	@override String get site_url => 'lassod.com';
-	@override String get start_date => '2022-03-07T00:00:00.000';
-	@override String get state => 'England';
-	@override String get work_done => 'Write modern, performant, maintainable code for a diverse array of client and internal projects with Flutter & Dart.#Communicate with multi-disciplinary teams of engineers, designers and clients on a daily basis.#Work with a variety of different languages, platforms, frameworks, and content management systems such as Dart, Flutter, Github, Gitlab, Jira and Time Management.';
-	@override String get works_here => 'true';
-}
-
-// Path: experience.experiences.2
-class _TranslationsExperience$experiences$0i2$En implements _TranslationsExperience$experiences$0i2$Vi {
-	_TranslationsExperience$experiences$0i2$En._(this._root);
-
-	@override final _TranslationsEn _root; // ignore: unused_field
-
-	// Translations
-	@override String get company => 'Pynch Technology';
-	@override String get country => 'Zambia';
-	@override String get created_at => '2023-01-01T14:51:02.923189';
-	@override String get emp_type => 'Part - Time';
-	@override String get is_hidden => 'false';
-	@override String get position => 'Mobile Developer (Remote)';
-	@override String get site_url => 'pynch.co.zm';
-	@override String get start_date => '2022-11-07T00:00:00.000';
-	@override String get state => 'Lusaka';
-	@override String get work_done => 'Designing, developing, testing and implementing mobile applications using the Flutter framework.#Working closely with the backend engineer and UI/UX designer to ensure proper integration in mobile applications.';
+	@override String get site_url => 'www.vnpt-technology.vn';
+	@override String get start_date => '2022-08-15T00:00:00.000';
+	@override String get state => 'HaNoi';
+	@override String get work_done => 'Develop system applications for the SmartBox 2 AOSP, SmartBox 2 ATV and SmartBox 3 ATV product lines including OTA firmware update applications, Security Uboot, Security Setting.# Research and develop solutions for the product line SmartBox product # Build SmartBox terminal management system - TMS (Terminal Management system) # Develop eSOP deployment applications using Flutter & Dart for SmartBox product line';
 	@override String get works_here => 'true';
 }
 
@@ -891,7 +790,7 @@ class _TranslationsAbout$aboutCard$0i0$En implements _TranslationsAbout$aboutCar
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get content => 'I value simple, clean design patterns, and thoughtful interactions.';
+	@override String get content => 'I appreciate system design patterns that are simple, clear, and full of thoughtful interactions..';
 	@override String get iconPath => 'assets/vector.png';
 	@override String get title => 'Back-End Development';
 }
@@ -1104,28 +1003,15 @@ class _TranslationsSkills$skills$0i2$En implements _TranslationsSkills$skills$0i
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get date => '2022-12-06T15:10:01.509497';
-	@override String get des => 'Dart is a programming language designed for client development, such as for the web and mobile apps.';
-	@override String get img => 'https://img.icons8.com/?size=512&id=7AFcZ2zirX6Y&format=png';
-	@override String get name => 'Dart';
-}
-
-// Path: skills.skills.3
-class _TranslationsSkills$skills$0i3$En implements _TranslationsSkills$skills$0i3$Vi {
-	_TranslationsSkills$skills$0i3$En._(this._root);
-
-	@override final _TranslationsEn _root; // ignore: unused_field
-
-	// Translations
 	@override String get date => '2022-12-06T15:10:26.815054';
 	@override String get des => 'Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps. It is built on Google’s infrastructure.';
 	@override String get img => 'https://img.icons8.com/?size=512&id=62452&format=png';
 	@override String get name => 'Firebase';
 }
 
-// Path: skills.skills.4
-class _TranslationsSkills$skills$0i4$En implements _TranslationsSkills$skills$0i4$Vi {
-	_TranslationsSkills$skills$0i4$En._(this._root);
+// Path: skills.skills.3
+class _TranslationsSkills$skills$0i3$En implements _TranslationsSkills$skills$0i3$Vi {
+	_TranslationsSkills$skills$0i3$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
 
@@ -1136,9 +1022,9 @@ class _TranslationsSkills$skills$0i4$En implements _TranslationsSkills$skills$0i
 	@override String get name => 'MongoDb';
 }
 
-// Path: skills.skills.5
-class _TranslationsSkills$skills$0i5$En implements _TranslationsSkills$skills$0i5$Vi {
-	_TranslationsSkills$skills$0i5$En._(this._root);
+// Path: skills.skills.4
+class _TranslationsSkills$skills$0i4$En implements _TranslationsSkills$skills$0i4$Vi {
+	_TranslationsSkills$skills$0i4$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
 
@@ -1149,9 +1035,9 @@ class _TranslationsSkills$skills$0i5$En implements _TranslationsSkills$skills$0i
 	@override String get name => 'SQL';
 }
 
-// Path: skills.skills.6
-class _TranslationsSkills$skills$0i6$En implements _TranslationsSkills$skills$0i6$Vi {
-	_TranslationsSkills$skills$0i6$En._(this._root);
+// Path: skills.skills.5
+class _TranslationsSkills$skills$0i5$En implements _TranslationsSkills$skills$0i5$Vi {
+	_TranslationsSkills$skills$0i5$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
 
@@ -1162,9 +1048,9 @@ class _TranslationsSkills$skills$0i6$En implements _TranslationsSkills$skills$0i
 	@override String get name => 'Spring Boot';
 }
 
-// Path: skills.skills.7
-class _TranslationsSkills$skills$0i7$En implements _TranslationsSkills$skills$0i7$Vi {
-	_TranslationsSkills$skills$0i7$En._(this._root);
+// Path: skills.skills.6
+class _TranslationsSkills$skills$0i6$En implements _TranslationsSkills$skills$0i6$Vi {
+	_TranslationsSkills$skills$0i6$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
 
@@ -1175,9 +1061,9 @@ class _TranslationsSkills$skills$0i7$En implements _TranslationsSkills$skills$0i
 	@override String get name => 'Azure';
 }
 
-// Path: skills.skills.8
-class _TranslationsSkills$skills$0i8$En implements _TranslationsSkills$skills$0i8$Vi {
-	_TranslationsSkills$skills$0i8$En._(this._root);
+// Path: skills.skills.7
+class _TranslationsSkills$skills$0i7$En implements _TranslationsSkills$skills$0i7$Vi {
+	_TranslationsSkills$skills$0i7$En._(this._root);
 
 	@override final _TranslationsEn _root; // ignore: unused_field
 
@@ -1188,6 +1074,19 @@ class _TranslationsSkills$skills$0i8$En implements _TranslationsSkills$skills$0i
 	@override String get name => 'AWS';
 }
 
+// Path: skills.skills.8
+class _TranslationsSkills$skills$0i8$En implements _TranslationsSkills$skills$0i8$Vi {
+	_TranslationsSkills$skills$0i8$En._(this._root);
+
+	@override final _TranslationsEn _root; // ignore: unused_field
+
+	// Translations
+	@override String get date => '2022-12-06T15:11:22.396871';
+	@override String get des => 'Android is an open-source mobile operating system developed by Google. It is designed for smartphones, tablets, and other mobile devices. Android allows developers to create a wide range of applications using Java or Kotlin programming languages';
+	@override String get img => 'https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png';
+	@override String get name => 'Android';
+}
+
 // Path: skills.skills.9
 class _TranslationsSkills$skills$0i9$En implements _TranslationsSkills$skills$0i9$Vi {
 	_TranslationsSkills$skills$0i9$En._(this._root);
@@ -1196,21 +1095,8 @@ class _TranslationsSkills$skills$0i9$En implements _TranslationsSkills$skills$0i
 
 	// Translations
 	@override String get date => '2022-12-06T15:11:22.396871';
-	@override String get des => 'Android is an open-source mobile operating system developed by Google. It is designed for smartphones, tablets, and other mobile devices. Android allows developers to create a wide range of applications using Java or Kotlin programming languages';
-	@override String get img => 'https://img.icons8.com/?size=512&id=17836&format=png';
-	@override String get name => 'Android';
-}
-
-// Path: skills.skills.10
-class _TranslationsSkills$skills$0i10$En implements _TranslationsSkills$skills$0i10$Vi {
-	_TranslationsSkills$skills$0i10$En._(this._root);
-
-	@override final _TranslationsEn _root; // ignore: unused_field
-
-	// Translations
-	@override String get date => '2022-12-06T15:11:22.396871';
 	@override String get des => ' AOSP (Android Open Source Project) is the open-source project that maintains and develops the Android operating system. It provides the source code, documentation, and tools for building custom Android ROMs and modifying the Android system';
-	@override String get img => 'https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png';
+	@override String get img => 'https://img.icons8.com/?size=512&id=17836&format=png';
 	@override String get name => 'AOSP';
 }
 
@@ -1220,49 +1106,25 @@ class _TranslationsSkills$skills$0i10$En implements _TranslationsSkills$skills$0
 extension on Translations {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
-			case 'experience.experiences.0.company': return 'Omnis Corporation';
-			case 'experience.experiences.0.country': return 'Zambia';
-			case 'experience.experiences.0.created_at': return '2022-12-31T14:23:43.877077';
-			case 'experience.experiences.0.emp_type': return 'Part - Time';
-			case 'experience.experiences.0.end_date': return '2022-03-07T00:00:00.000';
-			case 'experience.experiences.0.is_hidden': return 'false';
-			case 'experience.experiences.0.position': return 'UI / UX Designer & Flutter Developer';
-			case 'experience.experiences.0.start_date': return '2021-01-05T00:00:00.000';
-			case 'experience.experiences.0.state': return 'Lusaka';
-			case 'experience.experiences.0.work_done': return 'Designed clean & Simple yet thoughtful UI/UX design patterns for both mobile and web apps.#Built both mobile and web applications with interactive & responsive layouts.#API integrations throughout a software to keep data in sync and enhance productivity.';
-			case 'experience.experiences.0.works_here': return 'false';
-			case 'experience.experiences.1.company': return 'Lassod Consulting Limited';
-			case 'experience.experiences.1.country': return 'UK';
-			case 'experience.experiences.1.created_at': return '2022-12-31T14:28:07.703644';
-			case 'experience.experiences.1.emp_type': return 'Full - Time';
-			case 'experience.experiences.1.is_hidden': return 'false';
-			case 'experience.experiences.1.position': return 'Software Engineer (Remote)';
-			case 'experience.experiences.1.site_url': return 'lassod.com';
-			case 'experience.experiences.1.start_date': return '2022-03-07T00:00:00.000';
-			case 'experience.experiences.1.state': return 'England';
-			case 'experience.experiences.1.work_done': return 'Write modern, performant, maintainable code for a diverse array of client and internal projects with Flutter & Dart.#Communicate with multi-disciplinary teams of engineers, designers and clients on a daily basis.#Work with a variety of different languages, platforms, frameworks, and content management systems such as Dart, Flutter, Github, Gitlab, Jira and Time Management.';
-			case 'experience.experiences.1.works_here': return 'true';
-			case 'experience.experiences.2.company': return 'Pynch Technology';
-			case 'experience.experiences.2.country': return 'Zambia';
-			case 'experience.experiences.2.created_at': return '2023-01-01T14:51:02.923189';
-			case 'experience.experiences.2.emp_type': return 'Part - Time';
-			case 'experience.experiences.2.is_hidden': return 'false';
-			case 'experience.experiences.2.position': return 'Mobile Developer (Remote)';
-			case 'experience.experiences.2.site_url': return 'pynch.co.zm';
-			case 'experience.experiences.2.start_date': return '2022-11-07T00:00:00.000';
-			case 'experience.experiences.2.state': return 'Lusaka';
-			case 'experience.experiences.2.work_done': return 'Designing, developing, testing and implementing mobile applications using the Flutter framework.#Working closely with the backend engineer and UI/UX designer to ensure proper integration in mobile applications.';
-			case 'experience.experiences.2.works_here': return 'true';
-			case 'tabs.tabs.0': return 'Home';
-			case 'tabs.tabs.1': return 'About';
-			case 'tabs.tabs.2': return 'Skills';
-			case 'tabs.tabs.3': return 'Experience';
-			case 'tabs.tabs.4': return 'Projects';
-			case 'tabs.tabs.5': return 'Contact';
-			case 'tabs.tabs.6': return 'Download CV';
+			case 'experience.experiences.0.company': return 'VNPT Technology';
+			case 'experience.experiences.0.country': return 'Việt Nam';
+			case 'experience.experiences.0.emp_type': return 'Full - Time';
+			case 'experience.experiences.0.position': return 'Software Engineer (Onsite)';
+			case 'experience.experiences.0.site_url': return 'www.vnpt-technology.vn';
+			case 'experience.experiences.0.start_date': return '2022-08-15T00:00:00.000';
+			case 'experience.experiences.0.state': return 'Hà Nội';
+			case 'experience.experiences.0.work_done': return 'Phát triển ứng dụng hệ thống cho dòng sản phẩm SmartBox 2 AOSP, SmartBox 2 ATV và SmartBox 3 ATV bao gồm các ứng dụng cập nhật firmware OTA, Security Uboot, Security Setting.# Nghiên cứu định hướng các giải pháp phát triển cho dòng sản phẩm SmartBox # Xây dựng hệ thống  Quản lý các thiết bị đầu cuối SmartBox - TMS (Terminal Management system) # Phát triển các ứng dụng triển khai eSOP bằng Flutter & Dart cho dòng sản phẩm SmartBox';
+			case 'experience.experiences.0.works_here': return 'true';
+			case 'tabs.tabs.0': return 'Trang chủ';
+			case 'tabs.tabs.1': return 'Về tôi';
+			case 'tabs.tabs.2': return 'Kỹ năng';
+			case 'tabs.tabs.3': return 'Kinh nghiệm';
+			case 'tabs.tabs.4': return 'Các dự án';
+			case 'tabs.tabs.5': return 'Liên hệ';
+			case 'tabs.tabs.6': return 'Tải về CV';
 			case 'about.name': return 'Nguyễn Thành Chung';
 			case 'about.aboutMe': return 'Là một nhà phát triển phần mềm có năng lực, tôi luôn tích luỹ kỹ năng, kinh nghiệm, trải nghiệm trong quá trình xây dựng và phát triển các ứng dụng và hệ thống phần mềm. Tôi đã làm việc trong vai trò kỹ sư phát triển phần mềm cho dòng sản phẩm điện thoại và smart box, chẳng hạn như việc tích hợp phát triển các dịch vụ và ứng dụng hệ thống vào mã nguồn Android TV và AOSP.\n\nTôi có hiểu biết và kĩ năng tốt trong việc sử dụng Flutter, Dart, Java, Spring boot để thiết kế và tạo ra những ứng dụng đa nền tảng, hệ thống đem đến những trải nghiệm kỹ thuật số hấp dẫn, thân thiện thiện với người dùng.\n\nVới kiến thức sâu về công nghệ phần mềm và nguyên tắc phân tích thiết kế hệ thống, tôi luôn đảm bảo rằng mã nguồn mà tôi tạo ra đạt chất lượng cao với giao diện người dùng trực quan. Tôi có kinh nghiệm trong việc phân tích thiết kế hệ thống phần mềm cho ứng dụng di động và trang web, và đã thực hiện nghiên cứu người dùng, tạo mẫu và thiết kế một số sản phẩm độc đáo và hấp dẫn.\n\nNgoài ra, tôi cũng có kiến thức về triển khai hệ thống với ASUZE và AWS. Điều này cho phép tôi xây dựng hệ thống phức tạp và mạnh mẽ, đáp ứng được nhiều yêu cầu và đảm bảo hiệu suất cao.\n\nTrong quá trình làm việc, tôi đã chứng tỏ khả năng làm việc độc lập đồng thời có khả năng làm việc nhóm mạnh mẽ và hợp tác chặt chẽ với các thành viên khác trong dự án. Tôi đã tham gia vào quá trình đánh giá khả thi, tìm kiếm giải pháp, xây dựng kế hoạch phát triển và kiểm thử cùng với các nhà thiết kế và nhà phát triển khác. Tôi luôn đảm bảo rằng các dự án được hoàn thành đúng thời hạn và đạt tiêu chuẩn chất lượng cao.\n\nTôi luôn tìm kiếm cơ hội để áp dụng kiến thức và kỹ năng của mình vào việc phát triển phần mềm đột phá, mang lại giá trị cao cho xã hội. Tôi đam mê việc tạo ra những sản phẩm tuyệt vời và đáp ứng nhu cầu của người dùng. Tôi luôn sẵn sàng để đóng góp vào các dự án hấp dẫn và thú vị, và mong muốn tiếp tục phát triển và mở rộng khả năng của mình trong lĩnh vực phát triển phần mềm.';
-			case 'about.aboutCard.0.content': return 'I value simple, clean design patterns, and thoughtful interactions.';
+			case 'about.aboutCard.0.content': return 'Tôi đánh giá cao các mẫu thiết kế hệ thống đơn giản, rõ ràng và đầy đủ các tương tác chu đáo..';
 			case 'about.aboutCard.0.iconPath': return 'assets/vector.png';
 			case 'about.aboutCard.0.title': return 'Back-End Development';
 			case 'about.aboutCard.1.content': return 'Sử dụng Flutter & Dart, tôi có thể xây dựng các ứng dụng và trang web cho hệ thống của mình.';
@@ -1301,6 +1163,7 @@ extension on Translations {
 			case 'general.introduce_home_section2': return 'Tôi xây dựng các ứng dụng hệ thống cho AOSP, ATV trong Dòng sản phẩm Tiêu dùng và xây dựng các trang web và ứng dụng phần mềm tương tác chạy trên nhiều nền tảng và thiết bị.';
 			case 'general.browse_projects_home_section': return 'Các dự án';
 			case 'general.required_input_field': return 'Trường này là bắt buộc';
+			case 'general.copy': return 'Đã sao chép vào clipboard';
 			case 'project.projects.0.cover_img': return 'https://i.ibb.co/3Fv9QRt/port.png';
 			case 'project.projects.0.created_at': return '2023-01-28T23:08:58.657311';
 			case 'project.projects.0.description': return 'Personal Portfolio Site showcases some of the projects I\'ve built so far.';
@@ -1380,45 +1243,41 @@ extension on Translations {
 			case 'skills.skills.0.img': return 'https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_git-512.png';
 			case 'skills.skills.0.name': return 'Git';
 			case 'skills.skills.1.date': return '2022-12-06T15:09:18.175658';
-			case 'skills.skills.1.des': return 'Dart là một ngôn ngữ lập trình được thiết kế cho việc phát triển phía khách hàng, chẳng hạn như cho web và ứng dụng di động';
+			case 'skills.skills.1.des': return 'Flutter là bộ công cụ phát triển phần mềm UI nguồn mở do Google tạo ra. Nó được sử dụng để phát triển các ứng dụng đa nền tảng từ một cơ sở mã duy nhất cho mọi trình duyệt web, Fuchsia, Android, iOS, Linux, macOS và Windows.';
 			case 'skills.skills.1.img': return 'https://img.icons8.com/?size=512&id=5pu47piHKg1I&format=png';
 			case 'skills.skills.1.name': return 'Flutter';
-			case 'skills.skills.2.date': return '2022-12-06T15:10:01.509497';
-			case 'skills.skills.2.des': return 'Dart is a programming language designed for client development, such as for the web and mobile apps.';
-			case 'skills.skills.2.img': return 'https://img.icons8.com/?size=512&id=7AFcZ2zirX6Y&format=png';
-			case 'skills.skills.2.name': return 'Dart';
-			case 'skills.skills.3.date': return '2022-12-06T15:10:26.815054';
-			case 'skills.skills.3.des': return 'Firebase là một dịch vụ Backend-as-a-Service (Baas). Nó cung cấp cho các nhà phát triển một loạt các công cụ và dịch vụ để giúp họ phát triển các ứng dụng chất lượng. Firebase được xây dựng trên cơ sở hạ tầng của Google.';
-			case 'skills.skills.3.img': return 'https://img.icons8.com/?size=512&id=62452&format=png';
-			case 'skills.skills.3.name': return 'Firebase';
+			case 'skills.skills.2.date': return '2022-12-06T15:10:26.815054';
+			case 'skills.skills.2.des': return 'Firebase là một dịch vụ Backend-as-a-Service (Baas). Nó cung cấp cho các nhà phát triển một loạt các công cụ và dịch vụ để giúp họ phát triển các ứng dụng chất lượng. Firebase được xây dựng trên cơ sở hạ tầng của Google.';
+			case 'skills.skills.2.img': return 'https://img.icons8.com/?size=512&id=62452&format=png';
+			case 'skills.skills.2.name': return 'Firebase';
+			case 'skills.skills.3.date': return '2022-12-06T15:11:22.396871';
+			case 'skills.skills.3.des': return 'MongoDB là một chương trình cơ sở dữ liệu hướng tài liệu mã nguồn mở, đa nền tảng. MongoDB được phân loại là chương trình cơ sở dữ liệu NoSQL, sử dụng tài liệu giống JSON với các schema tùy chọn';
+			case 'skills.skills.3.img': return 'https://img.icons8.com/?size=512&id=tBBf3P8HL0vR&format=png';
+			case 'skills.skills.3.name': return 'MongoDb';
 			case 'skills.skills.4.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.4.des': return 'MongoDB là một chương trình cơ sở dữ liệu hướng tài liệu mã nguồn mở, đa nền tảng. MongoDB được phân loại là chương trình cơ sở dữ liệu NoSQL, sử dụng tài liệu giống JSON với các schema tùy chọn';
-			case 'skills.skills.4.img': return 'https://img.icons8.com/?size=512&id=tBBf3P8HL0vR&format=png';
-			case 'skills.skills.4.name': return 'MongoDb';
+			case 'skills.skills.4.des': return 'SQL (Structured Query Language) là ngôn ngữ truy vấn dùng để quản lý và truy xuất cơ sở dữ liệu quan hệ. SQL cho phép thực hiện các thao tác như tạo, truy vấn, cập nhật và xóa dữ liệu trong cơ sở dữ liệu.';
+			case 'skills.skills.4.img': return 'https://img.icons8.com/?size=512&id=qGUfLiYi1bRN&format=png';
+			case 'skills.skills.4.name': return 'SQL';
 			case 'skills.skills.5.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.5.des': return 'SQL (Structured Query Language) là ngôn ngữ truy vấn dùng để quản lý và truy xuất cơ sở dữ liệu quan hệ. SQL cho phép thực hiện các thao tác như tạo, truy vấn, cập nhật và xóa dữ liệu trong cơ sở dữ liệu.';
-			case 'skills.skills.5.img': return 'https://img.icons8.com/?size=512&id=qGUfLiYi1bRN&format=png';
-			case 'skills.skills.5.name': return 'SQL';
+			case 'skills.skills.5.des': return 'Spring Boot là một framework phát triển ứng dụng Java. Nó cung cấp các công cụ và thư viện giúp dễ dàng xây dựng ứng dụng Java mà không cần quá nhiều cấu hình. Spring Boot giúp tăng năng suất phát triển và giảm đáng kể số lượng mã lặp lại.';
+			case 'skills.skills.5.img': return 'https://img.icons8.com/?size=512&id=90519&format=png';
+			case 'skills.skills.5.name': return 'Spring Boot';
 			case 'skills.skills.6.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.6.des': return 'Spring Boot là một framework phát triển ứng dụng Java. Nó cung cấp các công cụ và thư viện giúp dễ dàng xây dựng ứng dụng Java mà không cần quá nhiều cấu hình. Spring Boot giúp tăng năng suất phát triển và giảm đáng kể số lượng mã lặp lại.';
-			case 'skills.skills.6.img': return 'https://img.icons8.com/?size=512&id=90519&format=png';
-			case 'skills.skills.6.name': return 'Spring Boot';
+			case 'skills.skills.6.des': return 'Azure là một nền tảng đám mây được cung cấp bởi Microsoft. Nó cung cấp các dịch vụ đám mây như máy ảo, lưu trữ dữ liệu, dịch vụ phân tích và nhiều hơn nữa. Azure giúp các tổ chức xây dựng, triển khai và quản lý ứng dụng và dịch vụ trên môi trường đám mây.';
+			case 'skills.skills.6.img': return 'https://img.icons8.com/?size=512&id=VLKafOkk3sBX&format=png';
+			case 'skills.skills.6.name': return 'Azure';
 			case 'skills.skills.7.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.7.des': return 'Azure là một nền tảng đám mây được cung cấp bởi Microsoft. Nó cung cấp các dịch vụ đám mây như máy ảo, lưu trữ dữ liệu, dịch vụ phân tích và nhiều hơn nữa. Azure giúp các tổ chức xây dựng, triển khai và quản lý ứng dụng và dịch vụ trên môi trường đám mây.';
-			case 'skills.skills.7.img': return 'https://img.icons8.com/?size=512&id=VLKafOkk3sBX&format=png';
-			case 'skills.skills.7.name': return 'Azure';
+			case 'skills.skills.7.des': return 'AWS (Amazon Web Services) là một nền tảng đám mây hàng đầu do Amazon cung cấp. AWS cung cấp một loạt các dịch vụ đám mây bao gồm máy ảo, lưu trữ dữ liệu, cơ sở dữ liệu, dịch vụ tính toán và nhiều hơn nữa. AWS cho phép người dùng xây dựng và triển khai ứng dụng và dịch vụ trên nền tảng đám mây của Amazon.';
+			case 'skills.skills.7.img': return 'https://img.icons8.com/?size=512&id=33039&format=png';
+			case 'skills.skills.7.name': return 'AWS';
 			case 'skills.skills.8.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.8.des': return 'AWS (Amazon Web Services) là một nền tảng đám mây hàng đầu do Amazon cung cấp. AWS cung cấp một loạt các dịch vụ đám mây bao gồm máy ảo, lưu trữ dữ liệu, cơ sở dữ liệu, dịch vụ tính toán và nhiều hơn nữa. AWS cho phép người dùng xây dựng và triển khai ứng dụng và dịch vụ trên nền tảng đám mây của Amazon.';
-			case 'skills.skills.8.img': return 'https://img.icons8.com/?size=512&id=33039&format=png';
-			case 'skills.skills.8.name': return 'AWS';
+			case 'skills.skills.8.des': return 'Android là một hệ điều hành di động phổ biến, phát triển bởi Google. Nó được sử dụng trên nhiều thiết bị di động như điện thoại thông minh và máy tính bảng. Android cung cấp một nền tảng phát triển mạnh mẽ cho việc xây dựng ứng dụng di động đa dạng.';
+			case 'skills.skills.8.img': return 'https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png';
+			case 'skills.skills.8.name': return 'Android';
 			case 'skills.skills.9.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.9.des': return 'Android là một hệ điều hành di động phổ biến, phát triển bởi Google. Nó được sử dụng trên nhiều thiết bị di động như điện thoại thông minh và máy tính bảng. Android cung cấp một nền tảng phát triển mạnh mẽ cho việc xây dựng ứng dụng di động đa dạng.';
+			case 'skills.skills.9.des': return 'AOSP (Android Open Source Project) là dự án mã nguồn mở cho hệ điều hành Android. Nó cung cấp mã nguồn cho các thành phần cốt lõi của Android và cho phép các nhà phát triển tùy chỉnh và xâydựng phiên bản riêng của hệ điều hành này. AOSP cho phép sự mở rộng và tùy chỉnh linh hoạt của Android.';
 			case 'skills.skills.9.img': return 'https://img.icons8.com/?size=512&id=17836&format=png';
-			case 'skills.skills.9.name': return 'Android';
-			case 'skills.skills.10.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.10.des': return 'AOSP (Android Open Source Project) là dự án mã nguồn mở cho hệ điều hành Android. Nó cung cấp mã nguồn cho các thành phần cốt lõi của Android và cho phép các nhà phát triển tùy chỉnh và xâydựng phiên bản riêng của hệ điều hành này. AOSP cho phép sự mở rộng và tùy chỉnh linh hoạt của Android.';
-			case 'skills.skills.10.img': return 'https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png';
-			case 'skills.skills.10.name': return 'AOSP';
+			case 'skills.skills.9.name': return 'AOSP';
 			default: return null;
 		}
 	}
@@ -1427,39 +1286,15 @@ extension on Translations {
 extension on _TranslationsEn {
 	dynamic _flatMapFunction(String path) {
 		switch (path) {
-			case 'experience.experiences.0.company': return 'Omnis Corporation';
-			case 'experience.experiences.0.country': return 'Zambia';
-			case 'experience.experiences.0.created_at': return '2022-12-31T14:23:43.877077';
-			case 'experience.experiences.0.emp_type': return 'Part - Time';
-			case 'experience.experiences.0.end_date': return '2022-03-07T00:00:00.000';
-			case 'experience.experiences.0.is_hidden': return 'false';
-			case 'experience.experiences.0.position': return 'UI / UX Designer & Flutter Developer';
-			case 'experience.experiences.0.start_date': return '2021-01-05T00:00:00.000';
-			case 'experience.experiences.0.state': return 'Lusaka';
-			case 'experience.experiences.0.work_done': return 'Designed clean & Simple yet thoughtful UI/UX design patterns for both mobile and web apps.#Built both mobile and web applications with interactive & responsive layouts.#API integrations throughout a software to keep data in sync and enhance productivity.';
-			case 'experience.experiences.0.works_here': return 'false';
-			case 'experience.experiences.1.company': return 'Lassod Consulting Limited';
-			case 'experience.experiences.1.country': return 'UK';
-			case 'experience.experiences.1.created_at': return '2022-12-31T14:28:07.703644';
-			case 'experience.experiences.1.emp_type': return 'Full - Time';
-			case 'experience.experiences.1.is_hidden': return 'false';
-			case 'experience.experiences.1.position': return 'Software Engineer (Remote)';
-			case 'experience.experiences.1.site_url': return 'lassod.com';
-			case 'experience.experiences.1.start_date': return '2022-03-07T00:00:00.000';
-			case 'experience.experiences.1.state': return 'England';
-			case 'experience.experiences.1.work_done': return 'Write modern, performant, maintainable code for a diverse array of client and internal projects with Flutter & Dart.#Communicate with multi-disciplinary teams of engineers, designers and clients on a daily basis.#Work with a variety of different languages, platforms, frameworks, and content management systems such as Dart, Flutter, Github, Gitlab, Jira and Time Management.';
-			case 'experience.experiences.1.works_here': return 'true';
-			case 'experience.experiences.2.company': return 'Pynch Technology';
-			case 'experience.experiences.2.country': return 'Zambia';
-			case 'experience.experiences.2.created_at': return '2023-01-01T14:51:02.923189';
-			case 'experience.experiences.2.emp_type': return 'Part - Time';
-			case 'experience.experiences.2.is_hidden': return 'false';
-			case 'experience.experiences.2.position': return 'Mobile Developer (Remote)';
-			case 'experience.experiences.2.site_url': return 'pynch.co.zm';
-			case 'experience.experiences.2.start_date': return '2022-11-07T00:00:00.000';
-			case 'experience.experiences.2.state': return 'Lusaka';
-			case 'experience.experiences.2.work_done': return 'Designing, developing, testing and implementing mobile applications using the Flutter framework.#Working closely with the backend engineer and UI/UX designer to ensure proper integration in mobile applications.';
-			case 'experience.experiences.2.works_here': return 'true';
+			case 'experience.experiences.0.company': return 'VNPT Technology';
+			case 'experience.experiences.0.country': return 'VietNam';
+			case 'experience.experiences.0.emp_type': return 'Full - Time';
+			case 'experience.experiences.0.position': return 'Software Engineer (Remote)';
+			case 'experience.experiences.0.site_url': return 'www.vnpt-technology.vn';
+			case 'experience.experiences.0.start_date': return '2022-08-15T00:00:00.000';
+			case 'experience.experiences.0.state': return 'HaNoi';
+			case 'experience.experiences.0.work_done': return 'Develop system applications for the SmartBox 2 AOSP, SmartBox 2 ATV and SmartBox 3 ATV product lines including OTA firmware update applications, Security Uboot, Security Setting.# Research and develop solutions for the product line SmartBox product # Build SmartBox terminal management system - TMS (Terminal Management system) # Develop eSOP deployment applications using Flutter & Dart for SmartBox product line';
+			case 'experience.experiences.0.works_here': return 'true';
 			case 'tabs.tabs.0': return 'Home';
 			case 'tabs.tabs.1': return 'About';
 			case 'tabs.tabs.2': return 'Skills';
@@ -1469,7 +1304,7 @@ extension on _TranslationsEn {
 			case 'tabs.tabs.6': return 'Download CV';
 			case 'about.name': return 'Chung Nguyen Thanh';
 			case 'about.aboutMe': return 'As a skilled software developer, I continually accumulate skills, experience, and expertise in the process of building and developing software applications and systems. I have worked in the role of a software development engineer for phone and smart box product lines, such as integrating system development services and applications into Android TV and AOSP source code.\n\nI have a good understanding and proficiency in utilizing Flutter, Dart, Java, and Spring Boot to design and create cross-platform applications and systems that deliver engaging and user-friendly digital experiences.\n\nWith deep knowledge of software technology and principles of system design analysis, I always ensure that the source code I produce is of high quality with intuitive user interfaces. I have experience in analyzing system design for mobile applications and websites and have conducted user research, prototyping, and designing unique and appealing products.\n\nFurthermore, I also have knowledge of system deployment with ASUZE and AWS. This enables me to build complex and robust systems that meet various requirements and ensure high performance.\n\nThroughout my work, I have demonstrated the ability to work independently while also being a strong team player, collaborating closely with other members of the project. I have been involved in feasibility assessment, solution finding, development planning, and testing alongside designers and other developers. I always ensure that projects are completed on time and meet high-quality standards.\n\nI am always seeking opportunities to apply my knowledge and skills to develop breakthrough software, bringing high value to society. I am passionate about creating exceptional products that fulfill user needs. I am ready to contribute to exciting and meaningful projects and look forward to further developing and expanding my capabilities in the field of software development.';
-			case 'about.aboutCard.0.content': return 'I value simple, clean design patterns, and thoughtful interactions.';
+			case 'about.aboutCard.0.content': return 'I appreciate system design patterns that are simple, clear, and full of thoughtful interactions..';
 			case 'about.aboutCard.0.iconPath': return 'assets/vector.png';
 			case 'about.aboutCard.0.title': return 'Back-End Development';
 			case 'about.aboutCard.1.content': return 'Using Flutter & Dart, I can build applications and websites for my system.';
@@ -1508,6 +1343,7 @@ extension on _TranslationsEn {
 			case 'general.introduce_home_section2': return 'I build system applications for AOSP, ATV in the Consumer Product Line and build websites and interactive software applications that run on multiple platforms and devices.';
 			case 'general.browse_projects_home_section': return 'Browse Projects';
 			case 'general.required_input_field': return 'This field is required';
+			case 'general.copy': return 'Copied to clipboard';
 			case 'project.projects.0.cover_img': return 'https://i.ibb.co/3Fv9QRt/port.png';
 			case 'project.projects.0.created_at': return '2023-01-28T23:08:58.657311';
 			case 'project.projects.0.description': return 'Personal Portfolio Site showcases some of the projects I\'ve built so far.';
@@ -1590,42 +1426,38 @@ extension on _TranslationsEn {
 			case 'skills.skills.1.des': return 'Flutter is an open-source UI software development kit created by Google. It is used to develop cross platform applications for Android, iOS, Linux, macOS, Windows, Google Fuchsia, and the web from a single codebase.';
 			case 'skills.skills.1.img': return 'https://img.icons8.com/?size=512&id=5pu47piHKg1I&format=png';
 			case 'skills.skills.1.name': return 'Flutter';
-			case 'skills.skills.2.date': return '2022-12-06T15:10:01.509497';
-			case 'skills.skills.2.des': return 'Dart is a programming language designed for client development, such as for the web and mobile apps.';
-			case 'skills.skills.2.img': return 'https://img.icons8.com/?size=512&id=7AFcZ2zirX6Y&format=png';
-			case 'skills.skills.2.name': return 'Dart';
-			case 'skills.skills.3.date': return '2022-12-06T15:10:26.815054';
-			case 'skills.skills.3.des': return 'Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps. It is built on Google’s infrastructure.';
-			case 'skills.skills.3.img': return 'https://img.icons8.com/?size=512&id=62452&format=png';
-			case 'skills.skills.3.name': return 'Firebase';
+			case 'skills.skills.2.date': return '2022-12-06T15:10:26.815054';
+			case 'skills.skills.2.des': return 'Firebase is a Backend-as-a-Service (Baas). It provides developers with a variety of tools and services to help them develop quality apps. It is built on Google’s infrastructure.';
+			case 'skills.skills.2.img': return 'https://img.icons8.com/?size=512&id=62452&format=png';
+			case 'skills.skills.2.name': return 'Firebase';
+			case 'skills.skills.3.date': return '2022-12-06T15:11:22.396871';
+			case 'skills.skills.3.des': return 'MongoDB is an open source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.';
+			case 'skills.skills.3.img': return 'https://img.icons8.com/?size=512&id=tBBf3P8HL0vR&format=png';
+			case 'skills.skills.3.name': return 'MongoDb';
 			case 'skills.skills.4.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.4.des': return 'MongoDB is an open source cross-platform document-oriented database program. Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.';
-			case 'skills.skills.4.img': return 'https://img.icons8.com/?size=512&id=tBBf3P8HL0vR&format=png';
-			case 'skills.skills.4.name': return 'MongoDb';
+			case 'skills.skills.4.des': return 'SQL (Structured Query Language) is a standard language for managing and manipulating relational databases. It is used to create, modify, and retrieve data from databases.';
+			case 'skills.skills.4.img': return 'https://img.icons8.com/?size=512&id=qGUfLiYi1bRN&format=png';
+			case 'skills.skills.4.name': return 'SQL';
 			case 'skills.skills.5.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.5.des': return 'SQL (Structured Query Language) is a standard language for managing and manipulating relational databases. It is used to create, modify, and retrieve data from databases.';
-			case 'skills.skills.5.img': return 'https://img.icons8.com/?size=512&id=qGUfLiYi1bRN&format=png';
-			case 'skills.skills.5.name': return 'SQL';
+			case 'skills.skills.5.des': return 'Spring Boot is a framework that simplifies the development of Java applications. It provides a set of ready-to-use components and conventions to rapidly build and configure robust and production-ready applications.';
+			case 'skills.skills.5.img': return 'https://img.icons8.com/?size=512&id=90519&format=png';
+			case 'skills.skills.5.name': return 'Spring Boot';
 			case 'skills.skills.6.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.6.des': return 'Spring Boot is a framework that simplifies the development of Java applications. It provides a set of ready-to-use components and conventions to rapidly build and configure robust and production-ready applications.';
-			case 'skills.skills.6.img': return 'https://img.icons8.com/?size=512&id=90519&format=png';
-			case 'skills.skills.6.name': return 'Spring Boot';
+			case 'skills.skills.6.des': return 'Azure is a cloud computing platform provided by Microsoft. It offers a wide range of cloud services, including virtual machines, storage, databases, and AI capabilities, enabling organizations to build, deploy, and manage applications and services.';
+			case 'skills.skills.6.img': return 'https://img.icons8.com/?size=512&id=VLKafOkk3sBX&format=png';
+			case 'skills.skills.6.name': return 'Azure';
 			case 'skills.skills.7.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.7.des': return 'Azure is a cloud computing platform provided by Microsoft. It offers a wide range of cloud services, including virtual machines, storage, databases, and AI capabilities, enabling organizations to build, deploy, and manage applications and services.';
-			case 'skills.skills.7.img': return 'https://img.icons8.com/?size=512&id=VLKafOkk3sBX&format=png';
-			case 'skills.skills.7.name': return 'Azure';
+			case 'skills.skills.7.des': return 'AWS is a comprehensive cloud computing platform provided by Amazon. It offers a wide range of on-demand services, such as computing power, storage, databases, and analytics, allowing businesses to scale and grow their applications and infrastructure.';
+			case 'skills.skills.7.img': return 'https://img.icons8.com/?size=512&id=33039&format=png';
+			case 'skills.skills.7.name': return 'AWS';
 			case 'skills.skills.8.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.8.des': return 'AWS is a comprehensive cloud computing platform provided by Amazon. It offers a wide range of on-demand services, such as computing power, storage, databases, and analytics, allowing businesses to scale and grow their applications and infrastructure.';
-			case 'skills.skills.8.img': return 'https://img.icons8.com/?size=512&id=33039&format=png';
-			case 'skills.skills.8.name': return 'AWS';
+			case 'skills.skills.8.des': return 'Android is an open-source mobile operating system developed by Google. It is designed for smartphones, tablets, and other mobile devices. Android allows developers to create a wide range of applications using Java or Kotlin programming languages';
+			case 'skills.skills.8.img': return 'https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png';
+			case 'skills.skills.8.name': return 'Android';
 			case 'skills.skills.9.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.9.des': return 'Android is an open-source mobile operating system developed by Google. It is designed for smartphones, tablets, and other mobile devices. Android allows developers to create a wide range of applications using Java or Kotlin programming languages';
+			case 'skills.skills.9.des': return ' AOSP (Android Open Source Project) is the open-source project that maintains and develops the Android operating system. It provides the source code, documentation, and tools for building custom Android ROMs and modifying the Android system';
 			case 'skills.skills.9.img': return 'https://img.icons8.com/?size=512&id=17836&format=png';
-			case 'skills.skills.9.name': return 'Android';
-			case 'skills.skills.10.date': return '2022-12-06T15:11:22.396871';
-			case 'skills.skills.10.des': return ' AOSP (Android Open Source Project) is the open-source project that maintains and develops the Android operating system. It provides the source code, documentation, and tools for building custom Android ROMs and modifying the Android system';
-			case 'skills.skills.10.img': return 'https://img.icons8.com/?size=512&id=04OFrkjznvcd&format=png';
-			case 'skills.skills.10.name': return 'AOSP';
+			case 'skills.skills.9.name': return 'AOSP';
 			default: return null;
 		}
 	}

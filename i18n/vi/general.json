@@ -25,5 +25,6 @@
   "introduce_home_section1": "Tôi là Kỹ sư Phát triển Phần mềm cho Dòng sản phẩm Tiêu dùng (Điện thoại, Set-top Box,...) và là một Lập trình viên Flutter.",
   "introduce_home_section2": "Tôi xây dựng các ứng dụng hệ thống cho AOSP, ATV trong Dòng sản phẩm Tiêu dùng và xây dựng các trang web và ứng dụng phần mềm tương tác chạy trên nhiều nền tảng và thiết bị.",
   "browse_projects_home_section": "Các dự án",
-  "required_input_field" : "Trường này là bắt buộc"
+  "required_input_field" : "Trường này là bắt buộc",
+  "copy": "Đã sao chép vào clipboard"
 }

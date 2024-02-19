@@ -1,42 +1,14 @@
 {
   "experiences": [
     {
-      "company": "Omnis Corporation",
-      "country": "Zambia",
-      "created_at": "2022-12-31T14:23:43.877077",
-      "emp_type": "Part - Time",
-      "end_date": "2022-03-07T00:00:00.000",
-      "is_hidden": "false",
-      "position": "UI / UX Designer & Flutter Developer",
-      "start_date": "2021-01-05T00:00:00.000",
-      "state": "Lusaka",
-      "work_done": "Designed clean & Simple yet thoughtful UI/UX design patterns for both mobile and web apps.#Built both mobile and web applications with interactive & responsive layouts.#API integrations throughout a software to keep data in sync and enhance productivity.",
-      "works_here": "false"
-    },
-    {
-      "company": "Lassod Consulting Limited",
-      "country": "UK",
-      "created_at": "2022-12-31T14:28:07.703644",
+      "company": "VNPT Technology",
+      "country": "VietNam",
       "emp_type": "Full - Time",
-      "is_hidden": "false",
       "position": "Software Engineer (Remote)",
-      "site_url": "lassod.com",
-      "start_date": "2022-03-07T00:00:00.000",
-      "state": "England",
-      "work_done": "Write modern, performant, maintainable code for a diverse array of client and internal projects with Flutter & Dart.#Communicate with multi-disciplinary teams of engineers, designers and clients on a daily basis.#Work with a variety of different languages, platforms, frameworks, and content management systems such as Dart, Flutter, Github, Gitlab, Jira and Time Management.",
-      "works_here": "true"
-    },
-    {
-      "company": "Pynch Technology",
-      "country": "Zambia",
-      "created_at": "2023-01-01T14:51:02.923189",
-      "emp_type": "Part - Time",
-      "is_hidden": "false",
-      "position": "Mobile Developer (Remote)",
-      "site_url": "pynch.co.zm",
-      "start_date": "2022-11-07T00:00:00.000",
-      "state": "Lusaka",
-      "work_done": "Designing, developing, testing and implementing mobile applications using the Flutter framework.#Working closely with the backend engineer and UI/UX designer to ensure proper integration in mobile applications.",
+      "site_url": "www.vnpt-technology.vn",
+      "start_date": "2022-08-15T00:00:00.000",
+      "state": "HaNoi",
+      "work_done": "Develop system applications for the SmartBox 2 AOSP, SmartBox 2 ATV and SmartBox 3 ATV product lines including OTA firmware update applications, Security Uboot, Security Setting.# Research and develop solutions for the product line SmartBox product # Build SmartBox terminal management system - TMS (Terminal Management system) # Develop eSOP deployment applications using Flutter & Dart for SmartBox product line",
       "works_here": "true"
     }
   ]

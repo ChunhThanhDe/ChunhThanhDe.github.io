@@ -32,9 +32,7 @@ class ExperienceController {
           state: texts.experience.experiences[i].state,
           startDate: texts.experience.experiences[i].start_date,
           workDone: texts.experience.experiences[i].work_done.toString().split('#').toList(),
-          createdDate: texts.experience.experiences[i].created_at,
-          worksHere: texts.experience.experiences[i].works_here == "true" ? true : false,
-          isHidden: texts.experience.experiences[i].is_hidden == "true" ? true : false,
+          worksHere: texts.experience.experiences[i].works_here == "true" ? true : false
         );
         try {
           experience.endDate = texts.experience.experiences[i].end_date;
