@@ -32,6 +32,9 @@
     <meta name="apple-mobile-web-app-title" content="profile">
     <link rel="apple-touch-icon" href="assets/icons/Icon-192.png">
 
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="image/png" href="assets/avatar.png" />
+
     <title>Software Engineer | Software Developer</title>
     <link rel="manifest" href="web/manifest.json">
     <style>
@@ -45,8 +48,8 @@
     .indicator{
       width: 16vw;
     }
-
     </style>
+
 </head>
 <body style="overflow: hidden">
 <div id="loading_indicator" class="container">
@@ -73,6 +76,7 @@
   
     // Initialize Firebase
     firebase.initializeApp(firebaseConfig);
+
 
 </script>
 <!-- This script installs service_worker.js to provide PWA functionality to
@@ -144,6 +148,7 @@
       loadMainDartJs();
     }
 
+
 </script>
 <script>
   window.onload = function () {
@@ -154,6 +159,7 @@
       }
     }, 10000);
 };
+
 
 </script>
 </body>

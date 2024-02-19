@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
+import 'package:profile/firebase_options.dart';
 import 'package:profile/ui/desktop/desktop_body.dart';
 import 'package:profile/ui/mobile/mobile_body.dart';
 import 'package:profile/ui/tablet/tablet_body.dart';
@@ -17,18 +18,7 @@ Future<void> main() async {
   LocaleSettings.useDeviceLocale();
   Intl.defaultLocale = WidgetsBinding.instance.platformDispatcher.locale.languageCode;
   await initializeDateFormatting('en');
-  await Firebase.initializeApp(
-    options: FirebaseOptions(
-      apiKey: 'AIzaSyBVvURh_Ar9VTVFKndo8jmSb6kvfpcdqrU',
-      appId: '1:1085560411698:web:c68e93989663d01cca0e2b',
-      messagingSenderId: '1085560411698',
-      projectId: 'personal-profile-project-be477',
-      authDomain: 'personal-profile-project-be477.firebaseapp.com',
-      databaseURL: 'https://personal-profile-project-be477-default-rtdb.asia-southeast1.firebasedatabase.app',
-      storageBucket: 'personal-profile-project-be477.appspot.com',
-      measurementId: 'G-YBXX3M3NVY',
-    ),
-  );
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
   await FirebaseAppCheck.instance.activate(
     webProvider: ReCaptchaV3Provider('6LcAWWgpAAAAAGif1NuIexctX-DBevZGz7C7fBjq'),
     androidProvider: AndroidProvider.debug,

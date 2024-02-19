@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:profile/utils/responsive_breakpoints.dart';
+import 'package:profile/widgets/web_title_switcher.dart';
 
 class ResponsiveLayout extends StatefulWidget {
   final Widget mobileBody;
@@ -25,19 +26,20 @@ class _ResponsiveLayoutState extends State<ResponsiveLayout> {
 
   @override
   Widget build(BuildContext context) {
-    return LayoutBuilder(
-      builder: (context, dimension) {
-        if (dimension.maxWidth < kTabletBreakpoint) {
-          return widget.mobileBody;
-        } else if (dimension.maxWidth >= kTabletBreakpoint &&
-            dimension.maxWidth < kCustomSize) {
-          return widget.tabletBody;
-        } else if (dimension.maxWidth >= kCustomSize) {
-          return widget.desktopBody;
-        } else {
-          return widget.desktopBody;
-        }
-      },
+    return WebTitleSwitcher(
+      child: LayoutBuilder(
+        builder: (context, dimension) {
+          if (dimension.maxWidth < kTabletBreakpoint) {
+            return widget.mobileBody;
+          } else if (dimension.maxWidth >= kTabletBreakpoint && dimension.maxWidth < kCustomSize) {
+            return widget.tabletBody;
+          } else if (dimension.maxWidth >= kCustomSize) {
+            return widget.desktopBody;
+          } else {
+            return widget.desktopBody;
+          }
+        },
+      ),
     );
   }
 }

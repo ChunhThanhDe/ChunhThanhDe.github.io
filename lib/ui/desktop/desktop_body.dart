@@ -17,6 +17,7 @@ import 'package:profile/ui/desktop/widgets/animated_text.dart';
 import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
+import 'package:profile/widgets/musicPlayer.dart';
 import 'package:web_smooth_scroll/web_smooth_scroll.dart';
 
 import '../../widgets/app_bar_lang_icon.dart';
@@ -206,6 +207,18 @@ class _DesktopBodyState extends State<DesktopBody> {
                 padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                 borderRadius: const BorderRadius.all(Radius.circular(45)),
               ),
+            ),
+          ),
+
+          // Bottom navigation bar
+          Positioned(
+            bottom: 5,
+            left: 0,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                MusicPlayer(),
+              ],
             ),
           ),
         ],
