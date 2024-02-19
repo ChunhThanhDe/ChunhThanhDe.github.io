@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 2
-/// Strings: 344 (172 per locale)
+/// Strings: 346 (173 per locale)
 ///
-/// Built on 2024-02-19 at 03:11 UTC
+/// Built on 2024-02-19 at 07:05 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -210,8 +210,9 @@ class _TranslationsGeneralVi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
+	String get language => 'Đổi ngôn ngữ';
 	String get vietnam => 'Tiếng Việt';
-	String get english => 'Tiếng Anh';
+	String get english => 'English';
 	String get thank_you => 'Cảm ơn bạn đã liên hệ với tôi';
 	String get get_back => 'Tôi sẽ liên hệ lại với bạn sớm';
 	String get title_introduction_about_section => 'Giới thiệu';
@@ -698,7 +699,8 @@ class _TranslationsGeneralEn implements _TranslationsGeneralVi {
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get vietnam => 'Vietnamese';
+	@override String get language => 'Change language';
+	@override String get vietnam => 'Tiếng Việt';
 	@override String get english => 'English';
 	@override String get thank_you => 'Thank You for contacting me';
 	@override String get get_back => 'I will get back to you shortly';
@@ -1136,8 +1138,9 @@ extension on Translations {
 			case 'about.aboutCard.3.content': return 'Tôi thích xây dựng những ứng dụng có ích cho cộng đồng, khiến cuộc sống của mọi người trở nên đơn giản hơn.';
 			case 'about.aboutCard.3.iconPath': return 'assets/web-development.png';
 			case 'about.aboutCard.3.title': return 'Mobile/Web Development';
+			case 'general.language': return 'Đổi ngôn ngữ';
 			case 'general.vietnam': return 'Tiếng Việt';
-			case 'general.english': return 'Tiếng Anh';
+			case 'general.english': return 'English';
 			case 'general.thank_you': return 'Cảm ơn bạn đã liên hệ với tôi';
 			case 'general.get_back': return 'Tôi sẽ liên hệ lại với bạn sớm';
 			case 'general.title_introduction_about_section': return 'Giới thiệu';
@@ -1316,7 +1319,8 @@ extension on _TranslationsEn {
 			case 'about.aboutCard.3.content': return 'I enjoy building useful applications for the community, making people\'s lives simpler.';
 			case 'about.aboutCard.3.iconPath': return 'assets/web-development.png';
 			case 'about.aboutCard.3.title': return 'Mobile/Web Development';
-			case 'general.vietnam': return 'Vietnamese';
+			case 'general.language': return 'Change language';
+			case 'general.vietnam': return 'Tiếng Việt';
 			case 'general.english': return 'English';
 			case 'general.thank_you': return 'Thank You for contacting me';
 			case 'general.get_back': return 'I will get back to you shortly';

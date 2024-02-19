@@ -17,10 +17,9 @@ import 'package:profile/ui/desktop/widgets/animated_text.dart';
 import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
-import 'package:profile/widgets/musicPlayer.dart';
+import 'package:profile/widgets/app_bar_lang_icon.dart';
+import 'package:profile/widgets/music_player.dart';
 import 'package:web_smooth_scroll/web_smooth_scroll.dart';
-
-import '../../widgets/app_bar_lang_icon.dart';
 
 class DesktopBody extends StatefulWidget {
   const DesktopBody({Key? key}) : super(key: key);

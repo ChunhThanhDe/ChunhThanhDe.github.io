@@ -1,5 +1,6 @@
 {
-  "vietnam" : "Vietnamese",
+  "language": "Language",
+  "vietnam" : "Tiếng Việt",
   "english" : "English",
   "thank_you": "Thank You for contacting me",
   "get_back": "I will get back to you shortly",
