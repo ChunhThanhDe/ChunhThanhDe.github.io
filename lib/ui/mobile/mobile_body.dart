@@ -12,11 +12,12 @@ import 'package:profile/ui/mobile/sections/m_home_section.dart';
 import 'package:profile/ui/mobile/sections/m_project_and_designs.dart';
 import 'package:profile/ui/mobile/sections/m_skill_section.dart';
 import 'package:profile/ui/mobile/sections/m_work_experience.dart';
-import 'package:profile/widgets/app_bar_icon.dart';
 import 'package:profile/ui/mobile/widgets/hover_container.dart';
-import 'package:profile/ui/mobile/widgets/tab_btn_lang.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
+import 'package:profile/widgets/app_bar_icon.dart';
+import 'package:profile/widgets/app_bar_lang_icon.dart';
+import 'package:profile/widgets/music_player.dart';
 
 class MobileBody extends StatefulWidget {
   MobileBody({Key? key}) : super(key: key);
@@ -48,25 +49,16 @@ class _MobileBodyState extends State<MobileBody> {
 
   @override
   Widget build(BuildContext context) {
-    tabs = [
-      TabButtonLang(title: texts.general.vietnam, icon: Image.asset('icons/flags/png100px/vn.png', package: 'country_icons'), isSelected: navigationController.currentLocale == navigationController.vi),
-      TabButtonLang(title: texts.general.english, icon: Image.asset('icons/flags/png100px/us.png', package: 'country_icons'), isSelected: navigationController.currentLocale == navigationController.en),
-    ];
     return Scaffold(
       backgroundColor: kdarkColor,
       floatingActionButton: FloatingActionButton(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(50.0),
         ),
-        onPressed: () async {
-          AppData.goToLink(link_skype);
-        },
-        child: Icon(
-          MdiIcons.skype,
-          size: 30,
-          color: Colors.white,
-        ),
-        backgroundColor: const Color(0xff00aff0),
+        child: MusicPlayer(),
+        backgroundColor: kdarkColor,
+        elevation: 5.0,
+        onPressed: () {},
       ),
       drawer: Drawer(
         child: Container(
@@ -117,31 +109,31 @@ class _MobileBodyState extends State<MobileBody> {
                 height: 10,
               ),
               Padding(
-                padding: EdgeInsetsDirectional.fromSTEB(5, 5, 5, 5),
+                padding: const EdgeInsets.symmetric(vertical: 1, horizontal: 15),
                 child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    TabBtnLang(
-                      tab: tabs[0],
-                      click: () {
-                        setState(() {
-                          navigationController.changeLocale(navigationController.vi);
-                        });
-                      },
+                    AnimatedTexttt(
+                      text: texts.general.language + ": ",
                     ),
-                    TabBtnLang(
-                      tab: tabs[1],
-                      click: () {
-                        setState(() {
-                          navigationController.changeLocale(navigationController.en);
-                        });
-                      },
-                    )
+                    navigationController.currentLocale == navigationController.en
+                        ? AppBarLangIcon(
+                            hint: texts.general.vietnam,
+                            icon: Image.asset('icons/flags/png100px/us.png', package: 'country_icons'),
+                            click: () async {
+                              navigationController.changeLocale(navigationController.vi);
+                            },
+                          )
+                        : AppBarLangIcon(
+                            hint: texts.general.english,
+                            icon: Image.asset('icons/flags/png100px/vn.png', package: 'country_icons'),
+                            click: () async {
+                              navigationController.changeLocale(navigationController.en);
+                            },
+                          ),
                   ],
                 ),
-              ),
-              const SizedBox(
-                height: 10,
               ),
               HoverContainer(
                 child: AnimatedTexttt(

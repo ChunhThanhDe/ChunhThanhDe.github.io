@@ -6,7 +6,7 @@ import 'package:profile/generated/translations.g.dart';
 import 'package:profile/services/send_message.dart';
 import 'package:profile/ui/desktop/sections/experience_section.dart';
 import 'package:profile/ui/desktop/sections/footer_section.dart';
-import 'package:profile/ui/desktop/widgets/animated_text.dart';
+import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/ui/tablet/sections/t_about_section.dart';
 import 'package:profile/ui/tablet/sections/t_contact_section.dart';
 import 'package:profile/ui/tablet/sections/t_home_section.dart';
@@ -15,10 +15,8 @@ import 'package:profile/ui/tablet/sections/t_skill_section.dart';
 import 'package:profile/ui/tablet/widgets/t_popup_menu_Item.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
+import 'package:profile/widgets/app_bar_lang_icon.dart';
 import 'package:web_smooth_scroll/web_smooth_scroll.dart';
-
-import '../../widgets/app_bar_lang_icon.dart';
-import '../desktop/widgets/modern_button.dart';
 
 class TabletBody extends StatefulWidget {
   const TabletBody({Key? key}) : super(key: key);
@@ -148,7 +146,7 @@ class _TabletBodyState extends State<TabletBody> {
                             itemBuilder: (BuildContext context) => <PopupMenuEntry>[
                               PopupMenuItem(
                                 child: PopupMenuItemWidget(
-                                  icon: Icons.menu,
+                                  icon: Icons.home,
                                   onTap: () => scrollToItem(homeKey),
                                   text: navigationController.navigation(0),
                                 ),
@@ -156,7 +154,7 @@ class _TabletBodyState extends State<TabletBody> {
                               PopupMenuItem(
                                 value: navigationController.navigation(1),
                                 child: PopupMenuItemWidget(
-                                  icon: Icons.menu,
+                                  icon: Icons.account_box,
                                   onTap: () => scrollToItem(aboutKey),
                                   text: navigationController.navigation(1),
                                 ),
@@ -164,7 +162,7 @@ class _TabletBodyState extends State<TabletBody> {
                               PopupMenuItem(
                                 value: navigationController.navigation(2),
                                 child: PopupMenuItemWidget(
-                                  icon: Icons.menu,
+                                  icon: Icons.account_tree_sharp,
                                   onTap: () => scrollToItem(skillsKey),
                                   text: navigationController.navigation(2),
                                 ),
@@ -172,7 +170,7 @@ class _TabletBodyState extends State<TabletBody> {
                               PopupMenuItem(
                                 value: navigationController.navigation(3),
                                 child: PopupMenuItemWidget(
-                                  icon: Icons.menu,
+                                  icon: Icons.card_travel,
                                   onTap: () => scrollToItem(experienceKey),
                                   text: navigationController.navigation(3),
                                 ),
@@ -180,7 +178,7 @@ class _TabletBodyState extends State<TabletBody> {
                               PopupMenuItem(
                                 value: navigationController.navigation(4),
                                 child: PopupMenuItemWidget(
-                                  icon: Icons.menu,
+                                  icon: Icons.cloud,
                                   onTap: () => scrollToItem(projectsKey),
                                   text: navigationController.navigation(4),
                                 ),
@@ -188,7 +186,7 @@ class _TabletBodyState extends State<TabletBody> {
                               PopupMenuItem(
                                 value: navigationController.navigation(5),
                                 child: PopupMenuItemWidget(
-                                  icon: Icons.menu,
+                                  icon: Icons.phone,
                                   onTap: () => scrollToItem(contactKey),
                                   text: navigationController.navigation(5),
                                 ),

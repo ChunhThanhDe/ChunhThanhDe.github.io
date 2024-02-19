@@ -509,14 +509,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.8.1"
-  latlng:
-    dependency: transitive
-    description:
-      name: latlng
-      sha256: "8e462ded3f638f2f15f9b0de5f363540092b32aee3893d197fe301b4d865f92b"
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.0.4"
   loading_animation_widget:
     dependency: "direct main"
     description:
@@ -533,14 +525,6 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.0"
-  map:
-    dependency: "direct main"
-    description:
-      name: map
-      sha256: dc1975a42304a91b4ab3fc7f064f554f18be0fbefb5bcd4ae95d1c087508a893
-      url: "https://pub.dev"
-    source: hosted
-    version: "1.4.2"
   matcher:
     dependency: transitive
     description:
