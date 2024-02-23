@@ -147,16 +147,27 @@ class _TProjectCardState extends State<TProjectCard> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.only(top: 10, right: 10),
-                      child: Text(widget.project.type, style: kMiniTitleTextStylePink),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(right: 10),
-                      child: Text(
-                        widget.project.name,
-                        style: kTitleTextStyle.copyWith(
-                          fontSize: 25,
-                          fontWeight: FontWeight.bold,
-                        ),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Text(
+                            widget.project.name,
+                            style: kTitleTextStyle.copyWith(
+                              fontSize: 25,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Padding(
+                            padding: const EdgeInsets.only(top: 10),
+                            child: Text(
+                              widget.project.type,
+                              style: kMiniTitleTextStyleWhite,
+                              softWrap: true,
+                              overflow: TextOverflow.clip,
+                            ),
+
+                          ),
+                        ],
                       ),
                     ),
                     Padding(

@@ -94,10 +94,24 @@ class _ProjectCardState extends State<ProjectCard> {
                         crossAxisAlignment: CrossAxisAlignment.end,
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Text(
-                            widget.project.name,
-                            textAlign: TextAlign.left,
-                            style: kTitleTextStyle.copyWith(fontSize: _screenWidth * .0204),
+                          Column(
+                            crossAxisAlignment: CrossAxisAlignment.end,
+                            children: [
+                              Text(
+                                widget.project.name,
+                                textAlign: TextAlign.left,
+                                style: kTitleTextStyle.copyWith(fontSize: _screenWidth * .0204),
+                              ),
+                              Padding(
+                                padding: const EdgeInsets.only(top: 10),
+                                child: Text(
+                                  widget.project.type,
+                                  style: kMiniTitleTextStyleWhite,
+                                  softWrap: true,
+                                  overflow: TextOverflow.clip,
+                                ),
+                              ),
+                            ],
                           ),
                           const SizedBox(height: 5),
                           Align(

@@ -6,7 +6,7 @@
 /// Locales: 2
 /// Strings: 346 (173 per locale)
 ///
-/// Built on 2024-02-19 at 07:05 UTC
+/// Built on 2024-02-23 at 03:00 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -210,7 +210,7 @@ class _TranslationsGeneralVi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get language => 'Đổi ngôn ngữ';
+	String get language => 'Ngôn ngữ';
 	String get vietnam => 'Tiếng Việt';
 	String get english => 'English';
 	String get thank_you => 'Cảm ơn bạn đã liên hệ với tôi';
@@ -292,7 +292,7 @@ class _TranslationsExperience$experiences$0i0$Vi {
 	String get site_url => 'www.vnpt-technology.vn';
 	String get start_date => '2022-08-15T00:00:00.000';
 	String get state => 'Hà Nội';
-	String get work_done => 'Phát triển ứng dụng hệ thống cho dòng sản phẩm SmartBox 2 AOSP, SmartBox 2 ATV và SmartBox 3 ATV bao gồm các ứng dụng cập nhật firmware OTA, Security Uboot, Security Setting.# Nghiên cứu định hướng các giải pháp phát triển cho dòng sản phẩm SmartBox # Xây dựng hệ thống  Quản lý các thiết bị đầu cuối SmartBox - TMS (Terminal Management system) # Phát triển các ứng dụng triển khai eSOP bằng Flutter & Dart cho dòng sản phẩm SmartBox';
+	String get work_done => ' Phát triển ứng dụng hệ thống cho dòng sản phẩm SmartBox 2 AOSP, SmartBox 2 ATV và SmartBox 3 ATV bao gồm các ứng dụng cập nhật firmware OTA, Security Uboot, Security Setting.# Nghiên cứu định hướng các giải pháp phát triển cho dòng sản phẩm SmartBox # Xây dựng hệ thống  Quản lý các thiết bị đầu cuối SmartBox - TMS (Terminal Management system) # Phát triển các ứng dụng triển khai eSOP bằng Flutter & Dart cho dòng sản phẩm SmartBox';
 	String get works_here => 'true';
 }
 
@@ -351,14 +351,14 @@ class _TranslationsProject$projects$0i0$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get cover_img => 'https://i.ibb.co/3Fv9QRt/port.png';
+	String get cover_img => 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png';
 	String get created_at => '2023-01-28T23:08:58.657311';
 	String get description => 'Personal Portfolio Site showcases some of the projects I\'ve built so far.';
 	String get external_link => 'https://ericknamukolo.com';
 	String get github_link => 'https://github.com/ericknamukolo/ericknamukolo.github.io';
 	List<String> get images => [
-		'https://i.ibb.co/3Fv9QRt/port.png',
-		'https://i.ibb.co/7bFG4jV/about.png',
+		'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png',
+		'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png',
 	];
 	String get is_personal => 'true';
 	String get name => 'Portfolio';
@@ -699,7 +699,7 @@ class _TranslationsGeneralEn implements _TranslationsGeneralVi {
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get language => 'Change language';
+	@override String get language => 'Language';
 	@override String get vietnam => 'Tiếng Việt';
 	@override String get english => 'English';
 	@override String get thank_you => 'Thank You for contacting me';
@@ -781,7 +781,7 @@ class _TranslationsExperience$experiences$0i0$En implements _TranslationsExperie
 	@override String get site_url => 'www.vnpt-technology.vn';
 	@override String get start_date => '2022-08-15T00:00:00.000';
 	@override String get state => 'HaNoi';
-	@override String get work_done => 'Develop system applications for the SmartBox 2 AOSP, SmartBox 2 ATV and SmartBox 3 ATV product lines including OTA firmware update applications, Security Uboot, Security Setting.# Research and develop solutions for the product line SmartBox product # Build SmartBox terminal management system - TMS (Terminal Management system) # Develop eSOP deployment applications using Flutter & Dart for SmartBox product line';
+	@override String get work_done => ' Develop system applications for the SmartBox 2 AOSP, SmartBox 2 ATV and SmartBox 3 ATV product lines including OTA firmware update applications, Security Uboot, Security Setting.# Research and develop solutions for the product line SmartBox product # Build SmartBox terminal management system - TMS (Terminal Management system) # Develop eSOP deployment applications using Flutter & Dart for SmartBox product line';
 	@override String get works_here => 'true';
 }
 
@@ -840,14 +840,14 @@ class _TranslationsProject$projects$0i0$En implements _TranslationsProject$proje
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get cover_img => 'https://i.ibb.co/3Fv9QRt/port.png';
+	@override String get cover_img => 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png';
 	@override String get created_at => '2023-01-28T23:08:58.657311';
 	@override String get description => 'Personal Portfolio Site showcases some of the projects I\'ve built so far.';
 	@override String get external_link => 'https://ericknamukolo.com';
 	@override String get github_link => 'https://github.com/ericknamukolo/ericknamukolo.github.io';
 	@override List<String> get images => [
-		'https://i.ibb.co/3Fv9QRt/port.png',
-		'https://i.ibb.co/7bFG4jV/about.png',
+		'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png',
+		'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png',
 	];
 	@override String get is_personal => 'true';
 	@override String get name => 'Portfolio';
@@ -1115,7 +1115,7 @@ extension on Translations {
 			case 'experience.experiences.0.site_url': return 'www.vnpt-technology.vn';
 			case 'experience.experiences.0.start_date': return '2022-08-15T00:00:00.000';
 			case 'experience.experiences.0.state': return 'Hà Nội';
-			case 'experience.experiences.0.work_done': return 'Phát triển ứng dụng hệ thống cho dòng sản phẩm SmartBox 2 AOSP, SmartBox 2 ATV và SmartBox 3 ATV bao gồm các ứng dụng cập nhật firmware OTA, Security Uboot, Security Setting.# Nghiên cứu định hướng các giải pháp phát triển cho dòng sản phẩm SmartBox # Xây dựng hệ thống  Quản lý các thiết bị đầu cuối SmartBox - TMS (Terminal Management system) # Phát triển các ứng dụng triển khai eSOP bằng Flutter & Dart cho dòng sản phẩm SmartBox';
+			case 'experience.experiences.0.work_done': return ' Phát triển ứng dụng hệ thống cho dòng sản phẩm SmartBox 2 AOSP, SmartBox 2 ATV và SmartBox 3 ATV bao gồm các ứng dụng cập nhật firmware OTA, Security Uboot, Security Setting.# Nghiên cứu định hướng các giải pháp phát triển cho dòng sản phẩm SmartBox # Xây dựng hệ thống  Quản lý các thiết bị đầu cuối SmartBox - TMS (Terminal Management system) # Phát triển các ứng dụng triển khai eSOP bằng Flutter & Dart cho dòng sản phẩm SmartBox';
 			case 'experience.experiences.0.works_here': return 'true';
 			case 'tabs.tabs.0': return 'Trang chủ';
 			case 'tabs.tabs.1': return 'Về tôi';
@@ -1138,7 +1138,7 @@ extension on Translations {
 			case 'about.aboutCard.3.content': return 'Tôi thích xây dựng những ứng dụng có ích cho cộng đồng, khiến cuộc sống của mọi người trở nên đơn giản hơn.';
 			case 'about.aboutCard.3.iconPath': return 'assets/web-development.png';
 			case 'about.aboutCard.3.title': return 'Mobile/Web Development';
-			case 'general.language': return 'Đổi ngôn ngữ';
+			case 'general.language': return 'Ngôn ngữ';
 			case 'general.vietnam': return 'Tiếng Việt';
 			case 'general.english': return 'English';
 			case 'general.thank_you': return 'Cảm ơn bạn đã liên hệ với tôi';
@@ -1167,13 +1167,13 @@ extension on Translations {
 			case 'general.browse_projects_home_section': return 'Các dự án';
 			case 'general.required_input_field': return 'Trường này là bắt buộc';
 			case 'general.copy': return 'Đã sao chép vào clipboard';
-			case 'project.projects.0.cover_img': return 'https://i.ibb.co/3Fv9QRt/port.png';
+			case 'project.projects.0.cover_img': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png';
 			case 'project.projects.0.created_at': return '2023-01-28T23:08:58.657311';
 			case 'project.projects.0.description': return 'Personal Portfolio Site showcases some of the projects I\'ve built so far.';
 			case 'project.projects.0.external_link': return 'https://ericknamukolo.com';
 			case 'project.projects.0.github_link': return 'https://github.com/ericknamukolo/ericknamukolo.github.io';
-			case 'project.projects.0.images.0': return 'https://i.ibb.co/3Fv9QRt/port.png';
-			case 'project.projects.0.images.1': return 'https://i.ibb.co/7bFG4jV/about.png';
+			case 'project.projects.0.images.0': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png';
+			case 'project.projects.0.images.1': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png';
 			case 'project.projects.0.is_personal': return 'true';
 			case 'project.projects.0.name': return 'Portfolio';
 			case 'project.projects.0.playstore_link': return '';
@@ -1296,7 +1296,7 @@ extension on _TranslationsEn {
 			case 'experience.experiences.0.site_url': return 'www.vnpt-technology.vn';
 			case 'experience.experiences.0.start_date': return '2022-08-15T00:00:00.000';
 			case 'experience.experiences.0.state': return 'HaNoi';
-			case 'experience.experiences.0.work_done': return 'Develop system applications for the SmartBox 2 AOSP, SmartBox 2 ATV and SmartBox 3 ATV product lines including OTA firmware update applications, Security Uboot, Security Setting.# Research and develop solutions for the product line SmartBox product # Build SmartBox terminal management system - TMS (Terminal Management system) # Develop eSOP deployment applications using Flutter & Dart for SmartBox product line';
+			case 'experience.experiences.0.work_done': return ' Develop system applications for the SmartBox 2 AOSP, SmartBox 2 ATV and SmartBox 3 ATV product lines including OTA firmware update applications, Security Uboot, Security Setting.# Research and develop solutions for the product line SmartBox product # Build SmartBox terminal management system - TMS (Terminal Management system) # Develop eSOP deployment applications using Flutter & Dart for SmartBox product line';
 			case 'experience.experiences.0.works_here': return 'true';
 			case 'tabs.tabs.0': return 'Home';
 			case 'tabs.tabs.1': return 'About';
@@ -1319,7 +1319,7 @@ extension on _TranslationsEn {
 			case 'about.aboutCard.3.content': return 'I enjoy building useful applications for the community, making people\'s lives simpler.';
 			case 'about.aboutCard.3.iconPath': return 'assets/web-development.png';
 			case 'about.aboutCard.3.title': return 'Mobile/Web Development';
-			case 'general.language': return 'Change language';
+			case 'general.language': return 'Language';
 			case 'general.vietnam': return 'Tiếng Việt';
 			case 'general.english': return 'English';
 			case 'general.thank_you': return 'Thank You for contacting me';
@@ -1348,13 +1348,13 @@ extension on _TranslationsEn {
 			case 'general.browse_projects_home_section': return 'Browse Projects';
 			case 'general.required_input_field': return 'This field is required';
 			case 'general.copy': return 'Copied to clipboard';
-			case 'project.projects.0.cover_img': return 'https://i.ibb.co/3Fv9QRt/port.png';
+			case 'project.projects.0.cover_img': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png';
 			case 'project.projects.0.created_at': return '2023-01-28T23:08:58.657311';
 			case 'project.projects.0.description': return 'Personal Portfolio Site showcases some of the projects I\'ve built so far.';
 			case 'project.projects.0.external_link': return 'https://ericknamukolo.com';
 			case 'project.projects.0.github_link': return 'https://github.com/ericknamukolo/ericknamukolo.github.io';
-			case 'project.projects.0.images.0': return 'https://i.ibb.co/3Fv9QRt/port.png';
-			case 'project.projects.0.images.1': return 'https://i.ibb.co/7bFG4jV/about.png';
+			case 'project.projects.0.images.0': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png';
+			case 'project.projects.0.images.1': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png';
 			case 'project.projects.0.is_personal': return 'true';
 			case 'project.projects.0.name': return 'Portfolio';
 			case 'project.projects.0.playstore_link': return '';

@@ -38,7 +38,6 @@ class ProjectsController {
         Project project = Project(
           name: texts.project.projects[i].name,
           cover: texts.project.projects[i].cover_img,
-          date: texts.project.projects[i].created_at,
           description: texts.project.projects[i].description,
           externalLink: texts.project.projects[i].external_link,
           githubLink: texts.project.projects[i].github_link,

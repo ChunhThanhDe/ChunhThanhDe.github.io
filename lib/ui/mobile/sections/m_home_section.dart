@@ -52,6 +52,15 @@ class MHomeSection extends StatelessWidget {
                 repeatForever: true,
                 animatedTexts: [
                   TypewriterAnimatedText(
+                    'Android',
+                    textStyle: kTitleTextStyle.copyWith(
+                      color: kPrimaryColor,
+                      fontWeight: MediaQuery.of(context).size.width >= 500 ? FontWeight.bold : null,
+                      fontSize: 38,
+                    ),
+                    speed: const Duration(milliseconds: 200),
+                  ),
+                  TypewriterAnimatedText(
                     'Flutter',
                     textStyle: kTitleTextStyle.copyWith(
                       color: kPrimaryColor,
