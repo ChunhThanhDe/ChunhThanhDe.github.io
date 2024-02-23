@@ -47,7 +47,7 @@ class _AboutCardState extends State<AboutCard> {
             children: [
               Text(
                 widget.model.title,
-                style: kMiniTitleTextStylePink,
+                style: kMiniTitleTextStyleGreen,
               ),
               Image.asset(
                 widget.model.iconPath,

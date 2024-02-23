@@ -45,6 +45,15 @@ class HomeSection extends StatelessWidget {
                     AnimatedTextKit(
                       animatedTexts: [
                         TypewriterAnimatedText(
+                          'Android',
+                          textStyle: kTitleTextStyle.copyWith(
+                            color: kPrimaryColor,
+                            fontWeight: FontWeight.bold,
+                            fontSize: _screenWidth * .035,
+                          ),
+                          speed: const Duration(milliseconds: 200),
+                        ),
+                        TypewriterAnimatedText(
                           'Flutter',
                           textStyle: kTitleTextStyle.copyWith(
                             color: kPrimaryColor,

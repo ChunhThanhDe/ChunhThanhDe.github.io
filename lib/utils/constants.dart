@@ -8,13 +8,10 @@ const String gmail = "chunhthanhde.dev@gmail.com";
 const String phone_work = "088 654 9689 / +84 88 654 9689";
 const String location = "Hà Nội, Việt Nam";
 const String skype = "live:.cid.91d8bf7a568e4a2d";
-const String serverToken = 'key=AAAAwDvm_9Q:APA91bEpQxWZzdf1JAA_y1eKbFa1r26V2PO5twPU_RhdpyLEJ12xXdd0QYQYHURPdzh-zVIoe6nC8yE5Eat99WZAlr-R0ucuzTrCs8hDNn3th3wavSpIIcH6Vhah5cp-XmYniTlEDqe8';
 const String link_linkedin = "https://www.linkedin.com/in/chunhthanhde/";
 const String link_github = "https://github.com/chunhthanhde";
 const String link_skype = "https://join.skype.com/invite/rdKrZGo3Mdk1";
 const String link_facebook = "https://www.facebook.com/Changtrainhaycam.Chung/";
-// const String skype = "live:.cid.91d8bf7a568e4a2d";
-// const String serverToken = 'key=AAAAwDvm_9Q:APA91bEpQxWZzdf1JAA_y1eKbFa1r26V2PO5twPU_RhdpyLEJ12xXdd0QYQYHURPdzh-zVIoe6nC8yE5Eat99WZAlr-R0ucuzTrCs8hDNn3th3wavSpIIcH6Vhah5cp-XmYniTlEDqe8';
 
 const kTextStyleWhite = TextStyle(
   fontFamily: 'Poppins',
@@ -34,7 +31,7 @@ const kMiniTitleTextStyleWhite = TextStyle(
   fontSize: 16,
 );
 
-const kMiniTitleTextStylePink = TextStyle(
+const kMiniTitleTextStyleGreen = TextStyle(
   fontFamily: 'Poppins',
   color: kPrimaryColor,
   fontSize: 16,

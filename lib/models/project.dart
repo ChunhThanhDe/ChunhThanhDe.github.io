@@ -6,7 +6,6 @@ class Project {
   String _githubLink;
   String _externalLink;
   String _playstoreLink;
-  String _date;
   List<String> _images;
   List<String> _tech;
   bool _isPersonal;
@@ -32,9 +31,6 @@ class Project {
   String get playstoreLink => _playstoreLink;
   set playstoreLink(String value) => _playstoreLink = value;
 
-  String get date => _date;
-  set date(String value) => _date = value;
-
   List<String> get images => _images;
   set images(List<String> value) => _images = value;
 
@@ -47,7 +43,6 @@ class Project {
   Project({
     required String playstoreLink,
     required String name,
-    required String date,
     required String type,
     required String cover,
     required String githubLink,
@@ -58,7 +53,6 @@ class Project {
     required bool isPersonal,
   })  : _playstoreLink = playstoreLink,
         _name = name,
-        _date = date,
         _type = type,
         _cover = cover,
         _githubLink = githubLink,

@@ -34,7 +34,7 @@ class SingleProjectCard extends StatelessWidget {
                 children: [
                   Text(
                     proj.name,
-                    style: kMiniTitleTextStylePink.copyWith(fontSize: 18),
+                    style: kMiniTitleTextStyleGreen.copyWith(fontSize: 18),
                   ),
                   Text(
                     proj.description,

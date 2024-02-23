@@ -1,51 +1,44 @@
 {
   "projects": [
     {
-      "cover_img": "https://i.ibb.co/3Fv9QRt/port.png",
-      "created_at": "2023-01-28T23:08:58.657311",
-      "description": "Personal Portfolio Site showcases some of the projects I've built so far.",
-      "external_link": "https://ericknamukolo.com",
-      "github_link": "https://github.com/ericknamukolo/ericknamukolo.github.io",
+      "cover_img": "https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png",
+      "description": "Terminal Management System for AOSP and ATV Set-top Box product lines.",
+      "external_link": "",
+      "github_link": "https://github.com/ChunhThanhDe/tms-reactjs",
       "images": [
-        "https://i.ibb.co/3Fv9QRt/port.png",
-        "https://i.ibb.co/7bFG4jV/about.png"
+        "https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_home_dashboard.png",
+        "https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_device_manager.png",
+        "https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_device_detail.png"
       ],
       "is_personal": "true",
-      "name": "Portfolio",
+      "name": "Terminal Management System",
       "playstore_link": "",
       "tech": [
-        "Flutter",
-        "Dart",
-        "Firebase"
+        "Android",
+        "AOSP",
+        "Reactjs",
+        "Spring boot"
       ],
-      "type": "Web/Windows"
+      "type": "Web, Application, Firmware AOSP"
     },
     {
-      "cover_img": "https://i.ibb.co/phdq570/Chill-Poster.png",
-      "created_at": "2023-07-23T10:01:04.233883",
-      "description": "Chill Hub is a windows/mobile application that allows you to browse, search & download high-quality movies.",
-      "external_link": "https://drive.google.com/file/d/14s_CpbkhbfDEdZHKBc5pqBBW9Lzy-8ze/view?usp=sharing",
-      "github_link": "https://github.com/ericknamukolo/chill-hub",
-      "images": [
-        "https://i.ibb.co/HHrCTDp/chill.png",
-        "https://i.ibb.co/syBDzwn/chill1.png",
-        "https://i.ibb.co/Gvg2qgd/chill2.png",
-        "https://i.ibb.co/YtKYZGh/chill3.png",
-        "https://i.ibb.co/pnzsT18/chill4.png"
-      ],
-      "is_personal": "true",
-      "name": "Chill Hub",
+      "cover_img": "https://raw.github.com/ChunhThanhDe/Recording-Webcam/media/Recording_Webcam.png",
+      "description": "Recording Webcam - Camera App by flutter for android TV, Android Phone",
+      "external_link": "https://github.com/ChunhThanhDe/Recording-Webcam/releases/download/v1.0.0/app-release.apk",
+      "github_link": "https://github.com/ericknamukolo/Recording-Webcam",
+      "images": [],
+      "is_personal": "false",
+      "name": "Recording Webcam",
       "playstore_link": "https://play.google.com/store/apps/details?id=com.ericknamukolo.chillhub",
       "tech": [
         "Flutter",
         "Dart",
-        "API"
+        "Spring boot"
       ],
-      "type": "Mobile"
+      "type": "Application"
     },
     {
       "cover_img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FVent%20zm_2023-08-18T18%3A53%3A41.749750?alt=media&token=acca1990-8ad3-4425-9e9f-b40bd2a52ac6",
-      "created_at": "2023-08-18T18:53:52.173068",
       "description": "Vent is a unique platform that lets you express yourself freely without any fear of judgment or repercussion. It's a safe space where you can anonymously share your confessions, thoughts, and vents with a supportive community of like-minded individuals who are ready to lend a listening ear.",
       "external_link": "",
       "github_link": "",
@@ -64,7 +57,6 @@
     },
     {
       "cover_img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FBody%20Touch_2023-09-02T17%3A11%3A23.701593?alt=media&token=248042a5-4500-46a8-bb85-2ef4fbf4440e",
-      "created_at": "2023-09-02T17:11:36.508349",
       "description": "Body Touch là một nền tảng giúp bạn tìm và đặt lịch các thợ mát-xa chuyên nghiệp đã được chứng nhận gần bạn.\n\nTHÀNH VIÊN NHÓM\n~ Erick & Kuda [Frontend]\n~ Eugene [Backend]",
       "external_link": "https://bodyheatmassage.com.au",
       "github_link": "",
@@ -85,7 +77,6 @@
     },
     {
       "cover_img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FAffinity_2023-10-19T07%3A43%3A01.756163?alt=media&token=a0c58166-e23f-4948-8407-45ccff4ecacb",
-      "created_at": "2023-10-19T07:43:13.137047",
       "description": "Affinity là một ứng dụng hẹn hò địa phương vượt xa việc vuốt trên màn hình và kết nối nông cạn.",
       "external_link": "",
       "github_link": "",
