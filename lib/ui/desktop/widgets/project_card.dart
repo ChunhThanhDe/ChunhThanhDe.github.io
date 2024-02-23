@@ -106,7 +106,7 @@ class _ProjectCardState extends State<ProjectCard> {
                                 padding: const EdgeInsets.only(top: 10),
                                 child: Text(
                                   widget.project.type,
-                                  style: kMiniTitleTextStyleWhite,
+                                  style: kMiniTitleTextStyleGreen,
                                   softWrap: true,
                                   overflow: TextOverflow.clip,
                                 ),

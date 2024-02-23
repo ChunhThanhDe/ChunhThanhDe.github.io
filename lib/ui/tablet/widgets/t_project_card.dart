@@ -156,6 +156,9 @@ class _TProjectCardState extends State<TProjectCard> {
                               fontSize: 25,
                               fontWeight: FontWeight.bold,
                             ),
+                            textAlign: TextAlign.right,
+                            softWrap: true,
+                            overflow: TextOverflow.clip,
                           ),
                           Padding(
                             padding: const EdgeInsets.only(top: 10),
@@ -163,6 +166,7 @@ class _TProjectCardState extends State<TProjectCard> {
                               widget.project.type,
                               style: kMiniTitleTextStyleWhite,
                               softWrap: true,
+                              textAlign: TextAlign.right,
                               overflow: TextOverflow.clip,
                             ),
 

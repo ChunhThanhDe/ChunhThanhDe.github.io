@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 2
-/// Strings: 346 (173 per locale)
+/// Strings: 272 (136 per locale)
 ///
-/// Built on 2024-02-23 at 03:00 UTC
+/// Built on 2024-02-23 at 09:58 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -252,8 +252,6 @@ class _TranslationsProjectVi {
 		_TranslationsProject$projects$0i0$Vi._(_root),
 		_TranslationsProject$projects$0i1$Vi._(_root),
 		_TranslationsProject$projects$0i2$Vi._(_root),
-		_TranslationsProject$projects$0i3$Vi._(_root),
-		_TranslationsProject$projects$0i4$Vi._(_root),
 	];
 }
 
@@ -351,24 +349,21 @@ class _TranslationsProject$projects$0i0$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get cover_img => 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png';
-	String get created_at => '2023-01-28T23:08:58.657311';
-	String get description => 'Personal Portfolio Site showcases some of the projects I\'ve built so far.';
-	String get external_link => 'https://ericknamukolo.com';
-	String get github_link => 'https://github.com/ericknamukolo/ericknamukolo.github.io';
+	String get cover_img => 'https://raw.githubusercontent.com/ChunhThanhDe/ChunhThanhDe.github.io/master/media/image/Home_Screen.png';
+	String get description => 'Website cá nhân của ChunhThanhDe.';
+	String get external_link => '';
+	String get github_link => 'https://github.com/ChunhThanhDe/ChunhThanhDe.github.io';
 	List<String> get images => [
-		'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png',
-		'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png',
 	];
 	String get is_personal => 'true';
-	String get name => 'Portfolio';
+	String get name => 'Personal website';
 	String get playstore_link => '';
 	List<String> get tech => [
 		'Flutter',
 		'Dart',
 		'Firebase',
 	];
-	String get type => 'Web/Windows';
+	String get type => 'Web';
 }
 
 // Path: project.projects.1
@@ -378,27 +373,21 @@ class _TranslationsProject$projects$0i1$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get cover_img => 'https://i.ibb.co/phdq570/Chill-Poster.png';
-	String get created_at => '2023-07-23T10:01:04.233883';
-	String get description => 'Chill Hub is a windows/mobile application that allows you to browse, search & download high-quality movies.';
-	String get external_link => 'https://drive.google.com/file/d/14s_CpbkhbfDEdZHKBc5pqBBW9Lzy-8ze/view?usp=sharing';
-	String get github_link => 'https://github.com/ericknamukolo/chill-hub';
+	String get cover_img => 'https://raw.githubusercontent.com/ChunhThanhDe/Recording-Webcam/master/media/Recording_Webcam.png';
+	String get description => 'Recording Webcam là ứng dụng dùng để quay video, chụp ảnh bằng webcam hoặc camera hiện có. Nó cũng có thể tải video và ảnh lên máy chủ thông qua URL Api.';
+	String get external_link => 'https://github.com/ChunhThanhDe/Recording-Webcam/releases/download/v1.0.0/app-release.apk';
+	String get github_link => 'https://github.com/ChunhThanhDe/Recording-Webcam';
 	List<String> get images => [
-		'https://i.ibb.co/HHrCTDp/chill.png',
-		'https://i.ibb.co/syBDzwn/chill1.png',
-		'https://i.ibb.co/Gvg2qgd/chill2.png',
-		'https://i.ibb.co/YtKYZGh/chill3.png',
-		'https://i.ibb.co/pnzsT18/chill4.png',
 	];
 	String get is_personal => 'true';
-	String get name => 'Chill Hub';
-	String get playstore_link => 'https://play.google.com/store/apps/details?id=com.ericknamukolo.chillhub';
+	String get name => 'Recording Webcam';
+	String get playstore_link => '';
 	List<String> get tech => [
 		'Flutter',
 		'Dart',
-		'API',
+		'Spring boot',
 	];
-	String get type => 'Mobile';
+	String get type => 'Application';
 }
 
 // Path: project.projects.2
@@ -408,79 +397,25 @@ class _TranslationsProject$projects$0i2$Vi {
 	final Translations _root; // ignore: unused_field
 
 	// Translations
-	String get cover_img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FVent%20zm_2023-08-18T18%3A53%3A41.749750?alt=media&token=acca1990-8ad3-4425-9e9f-b40bd2a52ac6';
-	String get created_at => '2023-08-18T18:53:52.173068';
-	String get description => 'Vent is a unique platform that lets you express yourself freely without any fear of judgment or repercussion. It\'s a safe space where you can anonymously share your confessions, thoughts, and vents with a supportive community of like-minded individuals who are ready to lend a listening ear.';
+	String get cover_img => 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png';
+	String get description => 'TMS (Terminal Management System) là hệ thống quản lý dành cho dòng sản phẩm AOSP và ATV Set-top Box.';
 	String get external_link => '';
-	String get github_link => '';
+	String get github_link => 'https://github.com/ChunhThanhDe/tms-reactjs';
 	List<String> get images => [
-		'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FVent%20zm_2023-08-18T18%3A53%3A47.120338?alt=media&token=edca8147-1976-4e13-b339-758a2f01aa88',
+		'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_home_dashboard.png',
+		'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_device_manager.png',
+		'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_device_detail.png',
 	];
 	String get is_personal => 'true';
-	String get name => 'Vent';
-	String get playstore_link => 'https://play.google.com/store/apps/details?id=com.ericknamukolo.confessions';
+	String get name => 'TMS';
+	String get playstore_link => '';
 	List<String> get tech => [
-		'Flutter',
-		'Dart',
-		'Firebase',
+		'Android',
+		'AOSP',
+		'Reactjs',
+		'Spring boot',
 	];
-	String get type => 'Mobile';
-}
-
-// Path: project.projects.3
-class _TranslationsProject$projects$0i3$Vi {
-	_TranslationsProject$projects$0i3$Vi._(this._root);
-
-	final Translations _root; // ignore: unused_field
-
-	// Translations
-	String get cover_img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FBody%20Touch_2023-09-02T17%3A11%3A23.701593?alt=media&token=248042a5-4500-46a8-bb85-2ef4fbf4440e';
-	String get created_at => '2023-09-02T17:11:36.508349';
-	String get description => 'Body Touch là một nền tảng giúp bạn tìm và đặt lịch các thợ mát-xa chuyên nghiệp đã được chứng nhận gần bạn.\n\nTHÀNH VIÊN NHÓM\n~ Erick & Kuda [Frontend]\n~ Eugene [Backend]';
-	String get external_link => 'https://bodyheatmassage.com.au';
-	String get github_link => '';
-	List<String> get images => [
-		'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FBody%20Touch_2023-09-02T17%3A11%3A30.493795?alt=media&token=37ac8fb9-dffd-45dc-ab5b-2cb6f8660109',
-	];
-	String get is_personal => 'false';
-	String get name => 'Body Touch';
-	String get playstore_link => 'https://play.google.com/store/apps/details?id=zm.co.pynch.massageapp';
-	List<String> get tech => [
-		'Flutter',
-		'Dart',
-		'Firebase',
-		'Google Maps',
-		'PHP',
-	];
-	String get type => 'Mobile';
-}
-
-// Path: project.projects.4
-class _TranslationsProject$projects$0i4$Vi {
-	_TranslationsProject$projects$0i4$Vi._(this._root);
-
-	final Translations _root; // ignore: unused_field
-
-	// Translations
-	String get cover_img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FAffinity_2023-10-19T07%3A43%3A01.756163?alt=media&token=a0c58166-e23f-4948-8407-45ccff4ecacb';
-	String get created_at => '2023-10-19T07:43:13.137047';
-	String get description => 'Affinity là một ứng dụng hẹn hò địa phương vượt xa việc vuốt trên màn hình và kết nối nông cạn.';
-	String get external_link => '';
-	String get github_link => '';
-	List<String> get images => [
-		'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FAffinity_2023-10-19T07%3A43%3A07.404722?alt=media&token=37a58e93-7d40-46f0-b182-c1d766d9a015',
-	];
-	String get is_personal => 'true';
-	String get name => 'Affinity';
-	String get playstore_link => 'https://play.google.com/store/apps/details?id=com.sleepingpanda.affinity';
-	List<String> get tech => [
-		'Flutter',
-		'Dart',
-		'Firebase',
-		'Adobe XD',
-		'Codemagic (CI/CD)',
-	];
-	String get type => 'Mobile';
+	String get type => 'Web, Application, Firmware AOSP';
 }
 
 // Path: skills.skills.0
@@ -741,8 +676,6 @@ class _TranslationsProjectEn implements _TranslationsProjectVi {
 		_TranslationsProject$projects$0i0$En._(_root),
 		_TranslationsProject$projects$0i1$En._(_root),
 		_TranslationsProject$projects$0i2$En._(_root),
-		_TranslationsProject$projects$0i3$En._(_root),
-		_TranslationsProject$projects$0i4$En._(_root),
 	];
 }
 
@@ -840,24 +773,21 @@ class _TranslationsProject$projects$0i0$En implements _TranslationsProject$proje
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get cover_img => 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png';
-	@override String get created_at => '2023-01-28T23:08:58.657311';
-	@override String get description => 'Personal Portfolio Site showcases some of the projects I\'ve built so far.';
-	@override String get external_link => 'https://ericknamukolo.com';
-	@override String get github_link => 'https://github.com/ericknamukolo/ericknamukolo.github.io';
+	@override String get cover_img => 'https://raw.githubusercontent.com/ChunhThanhDe/ChunhThanhDe.github.io/master/media/image/Home_Screen.png';
+	@override String get description => 'ChunhThanhDe\'s personal website.';
+	@override String get external_link => '';
+	@override String get github_link => 'https://github.com/ChunhThanhDe/ChunhThanhDe.github.io';
 	@override List<String> get images => [
-		'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png',
-		'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png',
 	];
 	@override String get is_personal => 'true';
-	@override String get name => 'Portfolio';
+	@override String get name => 'Personal website';
 	@override String get playstore_link => '';
 	@override List<String> get tech => [
 		'Flutter',
 		'Dart',
 		'Firebase',
 	];
-	@override String get type => 'Web/Windows';
+	@override String get type => 'Web';
 }
 
 // Path: project.projects.1
@@ -867,27 +797,21 @@ class _TranslationsProject$projects$0i1$En implements _TranslationsProject$proje
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get cover_img => 'https://i.ibb.co/phdq570/Chill-Poster.png';
-	@override String get created_at => '2023-07-23T10:01:04.233883';
-	@override String get description => 'Chill Hub is a windows/mobile application that allows you to browse, search & download high-quality movies.';
-	@override String get external_link => 'https://drive.google.com/file/d/14s_CpbkhbfDEdZHKBc5pqBBW9Lzy-8ze/view?usp=sharing';
-	@override String get github_link => 'https://github.com/ericknamukolo/chill-hub';
+	@override String get cover_img => 'https://raw.githubusercontent.com/ChunhThanhDe/Recording-Webcam/master/media/Recording_Webcam.png';
+	@override String get description => 'Recording Webcam is an application used to record videos and take photos using a webcam or existing camera. It can also upload videos and photos to the server via URL Api.';
+	@override String get external_link => 'https://github.com/ChunhThanhDe/Recording-Webcam/releases/download/v1.0.0/app-release.apk';
+	@override String get github_link => 'https://github.com/ChunhThanhDe/Recording-Webcam';
 	@override List<String> get images => [
-		'https://i.ibb.co/HHrCTDp/chill.png',
-		'https://i.ibb.co/syBDzwn/chill1.png',
-		'https://i.ibb.co/Gvg2qgd/chill2.png',
-		'https://i.ibb.co/YtKYZGh/chill3.png',
-		'https://i.ibb.co/pnzsT18/chill4.png',
 	];
 	@override String get is_personal => 'true';
-	@override String get name => 'Chill Hub';
-	@override String get playstore_link => 'https://play.google.com/store/apps/details?id=com.ericknamukolo.chillhub';
+	@override String get name => 'Recording Webcam';
+	@override String get playstore_link => '';
 	@override List<String> get tech => [
 		'Flutter',
 		'Dart',
-		'API',
+		'Spring boot',
 	];
-	@override String get type => 'Mobile';
+	@override String get type => 'Application';
 }
 
 // Path: project.projects.2
@@ -897,79 +821,25 @@ class _TranslationsProject$projects$0i2$En implements _TranslationsProject$proje
 	@override final _TranslationsEn _root; // ignore: unused_field
 
 	// Translations
-	@override String get cover_img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FVent%20zm_2023-08-18T18%3A53%3A41.749750?alt=media&token=acca1990-8ad3-4425-9e9f-b40bd2a52ac6';
-	@override String get created_at => '2023-08-18T18:53:52.173068';
-	@override String get description => 'Vent is a unique platform that lets you express yourself freely without any fear of judgment or repercussion. It\'s a safe space where you can anonymously share your confessions, thoughts, and vents with a supportive community of like-minded individuals who are ready to lend a listening ear.';
+	@override String get cover_img => 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png';
+	@override String get description => 'TMS (Terminal Management System) is a management system for AOSP and ATV Set-top Box product lines.';
 	@override String get external_link => '';
-	@override String get github_link => '';
+	@override String get github_link => 'https://github.com/ChunhThanhDe/tms-reactjs';
 	@override List<String> get images => [
-		'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FVent%20zm_2023-08-18T18%3A53%3A47.120338?alt=media&token=edca8147-1976-4e13-b339-758a2f01aa88',
+		'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_home_dashboard.png',
+		'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_device_manager.png',
+		'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_device_detail.png',
 	];
 	@override String get is_personal => 'true';
-	@override String get name => 'Vent';
-	@override String get playstore_link => 'https://play.google.com/store/apps/details?id=com.ericknamukolo.confessions';
+	@override String get name => 'TMS';
+	@override String get playstore_link => '';
 	@override List<String> get tech => [
-		'Flutter',
-		'Dart',
-		'Firebase',
+		'Android',
+		'AOSP',
+		'Reactjs',
+		'Spring boot',
 	];
-	@override String get type => 'Mobile';
-}
-
-// Path: project.projects.3
-class _TranslationsProject$projects$0i3$En implements _TranslationsProject$projects$0i3$Vi {
-	_TranslationsProject$projects$0i3$En._(this._root);
-
-	@override final _TranslationsEn _root; // ignore: unused_field
-
-	// Translations
-	@override String get cover_img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FBody%20Touch_2023-09-02T17%3A11%3A23.701593?alt=media&token=248042a5-4500-46a8-bb85-2ef4fbf4440e';
-	@override String get created_at => '2023-09-02T17:11:36.508349';
-	@override String get description => 'Body Touch là một nền tảng giúp bạn tìm và đặt lịch các thợ mát-xa chuyên nghiệp đã được chứng nhận gần bạn.\n\nTHÀNH VIÊN NHÓM\n~ Erick & Kuda [Frontend]\n~ Eugene [Backend]';
-	@override String get external_link => 'https://bodyheatmassage.com.au';
-	@override String get github_link => '';
-	@override List<String> get images => [
-		'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FBody%20Touch_2023-09-02T17%3A11%3A30.493795?alt=media&token=37ac8fb9-dffd-45dc-ab5b-2cb6f8660109',
-	];
-	@override String get is_personal => 'false';
-	@override String get name => 'Body Touch';
-	@override String get playstore_link => 'https://play.google.com/store/apps/details?id=zm.co.pynch.massageapp';
-	@override List<String> get tech => [
-		'Flutter',
-		'Dart',
-		'Firebase',
-		'Google Maps',
-		'PHP',
-	];
-	@override String get type => 'Mobile';
-}
-
-// Path: project.projects.4
-class _TranslationsProject$projects$0i4$En implements _TranslationsProject$projects$0i4$Vi {
-	_TranslationsProject$projects$0i4$En._(this._root);
-
-	@override final _TranslationsEn _root; // ignore: unused_field
-
-	// Translations
-	@override String get cover_img => 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FAffinity_2023-10-19T07%3A43%3A01.756163?alt=media&token=a0c58166-e23f-4948-8407-45ccff4ecacb';
-	@override String get created_at => '2023-10-19T07:43:13.137047';
-	@override String get description => 'Affinity là một ứng dụng hẹn hò địa phương vượt xa việc vuốt trên màn hình và kết nối nông cạn.';
-	@override String get external_link => '';
-	@override String get github_link => '';
-	@override List<String> get images => [
-		'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FAffinity_2023-10-19T07%3A43%3A07.404722?alt=media&token=37a58e93-7d40-46f0-b182-c1d766d9a015',
-	];
-	@override String get is_personal => 'true';
-	@override String get name => 'Affinity';
-	@override String get playstore_link => 'https://play.google.com/store/apps/details?id=com.sleepingpanda.affinity';
-	@override List<String> get tech => [
-		'Flutter',
-		'Dart',
-		'Firebase',
-		'Adobe XD',
-		'Codemagic (CI/CD)',
-	];
-	@override String get type => 'Mobile';
+	@override String get type => 'Web, Application, Firmware AOSP';
 }
 
 // Path: skills.skills.0
@@ -1167,80 +1037,43 @@ extension on Translations {
 			case 'general.browse_projects_home_section': return 'Các dự án';
 			case 'general.required_input_field': return 'Trường này là bắt buộc';
 			case 'general.copy': return 'Đã sao chép vào clipboard';
-			case 'project.projects.0.cover_img': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png';
-			case 'project.projects.0.created_at': return '2023-01-28T23:08:58.657311';
-			case 'project.projects.0.description': return 'Personal Portfolio Site showcases some of the projects I\'ve built so far.';
-			case 'project.projects.0.external_link': return 'https://ericknamukolo.com';
-			case 'project.projects.0.github_link': return 'https://github.com/ericknamukolo/ericknamukolo.github.io';
-			case 'project.projects.0.images.0': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png';
-			case 'project.projects.0.images.1': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png';
+			case 'project.projects.0.cover_img': return 'https://raw.githubusercontent.com/ChunhThanhDe/ChunhThanhDe.github.io/master/media/image/Home_Screen.png';
+			case 'project.projects.0.description': return 'Website cá nhân của ChunhThanhDe.';
+			case 'project.projects.0.external_link': return '';
+			case 'project.projects.0.github_link': return 'https://github.com/ChunhThanhDe/ChunhThanhDe.github.io';
 			case 'project.projects.0.is_personal': return 'true';
-			case 'project.projects.0.name': return 'Portfolio';
+			case 'project.projects.0.name': return 'Personal website';
 			case 'project.projects.0.playstore_link': return '';
 			case 'project.projects.0.tech.0': return 'Flutter';
 			case 'project.projects.0.tech.1': return 'Dart';
 			case 'project.projects.0.tech.2': return 'Firebase';
-			case 'project.projects.0.type': return 'Web/Windows';
-			case 'project.projects.1.cover_img': return 'https://i.ibb.co/phdq570/Chill-Poster.png';
-			case 'project.projects.1.created_at': return '2023-07-23T10:01:04.233883';
-			case 'project.projects.1.description': return 'Chill Hub is a windows/mobile application that allows you to browse, search & download high-quality movies.';
-			case 'project.projects.1.external_link': return 'https://drive.google.com/file/d/14s_CpbkhbfDEdZHKBc5pqBBW9Lzy-8ze/view?usp=sharing';
-			case 'project.projects.1.github_link': return 'https://github.com/ericknamukolo/chill-hub';
-			case 'project.projects.1.images.0': return 'https://i.ibb.co/HHrCTDp/chill.png';
-			case 'project.projects.1.images.1': return 'https://i.ibb.co/syBDzwn/chill1.png';
-			case 'project.projects.1.images.2': return 'https://i.ibb.co/Gvg2qgd/chill2.png';
-			case 'project.projects.1.images.3': return 'https://i.ibb.co/YtKYZGh/chill3.png';
-			case 'project.projects.1.images.4': return 'https://i.ibb.co/pnzsT18/chill4.png';
+			case 'project.projects.0.type': return 'Web';
+			case 'project.projects.1.cover_img': return 'https://raw.githubusercontent.com/ChunhThanhDe/Recording-Webcam/master/media/Recording_Webcam.png';
+			case 'project.projects.1.description': return 'Recording Webcam là ứng dụng dùng để quay video, chụp ảnh bằng webcam hoặc camera hiện có. Nó cũng có thể tải video và ảnh lên máy chủ thông qua URL Api.';
+			case 'project.projects.1.external_link': return 'https://github.com/ChunhThanhDe/Recording-Webcam/releases/download/v1.0.0/app-release.apk';
+			case 'project.projects.1.github_link': return 'https://github.com/ChunhThanhDe/Recording-Webcam';
 			case 'project.projects.1.is_personal': return 'true';
-			case 'project.projects.1.name': return 'Chill Hub';
-			case 'project.projects.1.playstore_link': return 'https://play.google.com/store/apps/details?id=com.ericknamukolo.chillhub';
+			case 'project.projects.1.name': return 'Recording Webcam';
+			case 'project.projects.1.playstore_link': return '';
 			case 'project.projects.1.tech.0': return 'Flutter';
 			case 'project.projects.1.tech.1': return 'Dart';
-			case 'project.projects.1.tech.2': return 'API';
-			case 'project.projects.1.type': return 'Mobile';
-			case 'project.projects.2.cover_img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FVent%20zm_2023-08-18T18%3A53%3A41.749750?alt=media&token=acca1990-8ad3-4425-9e9f-b40bd2a52ac6';
-			case 'project.projects.2.created_at': return '2023-08-18T18:53:52.173068';
-			case 'project.projects.2.description': return 'Vent is a unique platform that lets you express yourself freely without any fear of judgment or repercussion. It\'s a safe space where you can anonymously share your confessions, thoughts, and vents with a supportive community of like-minded individuals who are ready to lend a listening ear.';
+			case 'project.projects.1.tech.2': return 'Spring boot';
+			case 'project.projects.1.type': return 'Application';
+			case 'project.projects.2.cover_img': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png';
+			case 'project.projects.2.description': return 'TMS (Terminal Management System) là hệ thống quản lý dành cho dòng sản phẩm AOSP và ATV Set-top Box.';
 			case 'project.projects.2.external_link': return '';
-			case 'project.projects.2.github_link': return '';
-			case 'project.projects.2.images.0': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FVent%20zm_2023-08-18T18%3A53%3A47.120338?alt=media&token=edca8147-1976-4e13-b339-758a2f01aa88';
+			case 'project.projects.2.github_link': return 'https://github.com/ChunhThanhDe/tms-reactjs';
+			case 'project.projects.2.images.0': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_home_dashboard.png';
+			case 'project.projects.2.images.1': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_device_manager.png';
+			case 'project.projects.2.images.2': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_device_detail.png';
 			case 'project.projects.2.is_personal': return 'true';
-			case 'project.projects.2.name': return 'Vent';
-			case 'project.projects.2.playstore_link': return 'https://play.google.com/store/apps/details?id=com.ericknamukolo.confessions';
-			case 'project.projects.2.tech.0': return 'Flutter';
-			case 'project.projects.2.tech.1': return 'Dart';
-			case 'project.projects.2.tech.2': return 'Firebase';
-			case 'project.projects.2.type': return 'Mobile';
-			case 'project.projects.3.cover_img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FBody%20Touch_2023-09-02T17%3A11%3A23.701593?alt=media&token=248042a5-4500-46a8-bb85-2ef4fbf4440e';
-			case 'project.projects.3.created_at': return '2023-09-02T17:11:36.508349';
-			case 'project.projects.3.description': return 'Body Touch là một nền tảng giúp bạn tìm và đặt lịch các thợ mát-xa chuyên nghiệp đã được chứng nhận gần bạn.\n\nTHÀNH VIÊN NHÓM\n~ Erick & Kuda [Frontend]\n~ Eugene [Backend]';
-			case 'project.projects.3.external_link': return 'https://bodyheatmassage.com.au';
-			case 'project.projects.3.github_link': return '';
-			case 'project.projects.3.images.0': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FBody%20Touch_2023-09-02T17%3A11%3A30.493795?alt=media&token=37ac8fb9-dffd-45dc-ab5b-2cb6f8660109';
-			case 'project.projects.3.is_personal': return 'false';
-			case 'project.projects.3.name': return 'Body Touch';
-			case 'project.projects.3.playstore_link': return 'https://play.google.com/store/apps/details?id=zm.co.pynch.massageapp';
-			case 'project.projects.3.tech.0': return 'Flutter';
-			case 'project.projects.3.tech.1': return 'Dart';
-			case 'project.projects.3.tech.2': return 'Firebase';
-			case 'project.projects.3.tech.3': return 'Google Maps';
-			case 'project.projects.3.tech.4': return 'PHP';
-			case 'project.projects.3.type': return 'Mobile';
-			case 'project.projects.4.cover_img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FAffinity_2023-10-19T07%3A43%3A01.756163?alt=media&token=a0c58166-e23f-4948-8407-45ccff4ecacb';
-			case 'project.projects.4.created_at': return '2023-10-19T07:43:13.137047';
-			case 'project.projects.4.description': return 'Affinity là một ứng dụng hẹn hò địa phương vượt xa việc vuốt trên màn hình và kết nối nông cạn.';
-			case 'project.projects.4.external_link': return '';
-			case 'project.projects.4.github_link': return '';
-			case 'project.projects.4.images.0': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FAffinity_2023-10-19T07%3A43%3A07.404722?alt=media&token=37a58e93-7d40-46f0-b182-c1d766d9a015';
-			case 'project.projects.4.is_personal': return 'true';
-			case 'project.projects.4.name': return 'Affinity';
-			case 'project.projects.4.playstore_link': return 'https://play.google.com/store/apps/details?id=com.sleepingpanda.affinity';
-			case 'project.projects.4.tech.0': return 'Flutter';
-			case 'project.projects.4.tech.1': return 'Dart';
-			case 'project.projects.4.tech.2': return 'Firebase';
-			case 'project.projects.4.tech.3': return 'Adobe XD';
-			case 'project.projects.4.tech.4': return 'Codemagic (CI/CD)';
-			case 'project.projects.4.type': return 'Mobile';
+			case 'project.projects.2.name': return 'TMS';
+			case 'project.projects.2.playstore_link': return '';
+			case 'project.projects.2.tech.0': return 'Android';
+			case 'project.projects.2.tech.1': return 'AOSP';
+			case 'project.projects.2.tech.2': return 'Reactjs';
+			case 'project.projects.2.tech.3': return 'Spring boot';
+			case 'project.projects.2.type': return 'Web, Application, Firmware AOSP';
 			case 'skills.skills.0.date': return '2022-12-06T15:07:31.798027';
 			case 'skills.skills.0.des': return 'Git là một hệ thống quản lý phiên bản phân tán miễn phí và mã nguồn mở, được thiết kế để xử lý từ dự án nhỏ đến rất lớn với tốc độ và hiệu suất cao';
 			case 'skills.skills.0.img': return 'https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_git-512.png';
@@ -1348,80 +1181,43 @@ extension on _TranslationsEn {
 			case 'general.browse_projects_home_section': return 'Browse Projects';
 			case 'general.required_input_field': return 'This field is required';
 			case 'general.copy': return 'Copied to clipboard';
-			case 'project.projects.0.cover_img': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png';
-			case 'project.projects.0.created_at': return '2023-01-28T23:08:58.657311';
-			case 'project.projects.0.description': return 'Personal Portfolio Site showcases some of the projects I\'ve built so far.';
-			case 'project.projects.0.external_link': return 'https://ericknamukolo.com';
-			case 'project.projects.0.github_link': return 'https://github.com/ericknamukolo/ericknamukolo.github.io';
-			case 'project.projects.0.images.0': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png';
-			case 'project.projects.0.images.1': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System.png';
+			case 'project.projects.0.cover_img': return 'https://raw.githubusercontent.com/ChunhThanhDe/ChunhThanhDe.github.io/master/media/image/Home_Screen.png';
+			case 'project.projects.0.description': return 'ChunhThanhDe\'s personal website.';
+			case 'project.projects.0.external_link': return '';
+			case 'project.projects.0.github_link': return 'https://github.com/ChunhThanhDe/ChunhThanhDe.github.io';
 			case 'project.projects.0.is_personal': return 'true';
-			case 'project.projects.0.name': return 'Portfolio';
+			case 'project.projects.0.name': return 'Personal website';
 			case 'project.projects.0.playstore_link': return '';
 			case 'project.projects.0.tech.0': return 'Flutter';
 			case 'project.projects.0.tech.1': return 'Dart';
 			case 'project.projects.0.tech.2': return 'Firebase';
-			case 'project.projects.0.type': return 'Web/Windows';
-			case 'project.projects.1.cover_img': return 'https://i.ibb.co/phdq570/Chill-Poster.png';
-			case 'project.projects.1.created_at': return '2023-07-23T10:01:04.233883';
-			case 'project.projects.1.description': return 'Chill Hub is a windows/mobile application that allows you to browse, search & download high-quality movies.';
-			case 'project.projects.1.external_link': return 'https://drive.google.com/file/d/14s_CpbkhbfDEdZHKBc5pqBBW9Lzy-8ze/view?usp=sharing';
-			case 'project.projects.1.github_link': return 'https://github.com/ericknamukolo/chill-hub';
-			case 'project.projects.1.images.0': return 'https://i.ibb.co/HHrCTDp/chill.png';
-			case 'project.projects.1.images.1': return 'https://i.ibb.co/syBDzwn/chill1.png';
-			case 'project.projects.1.images.2': return 'https://i.ibb.co/Gvg2qgd/chill2.png';
-			case 'project.projects.1.images.3': return 'https://i.ibb.co/YtKYZGh/chill3.png';
-			case 'project.projects.1.images.4': return 'https://i.ibb.co/pnzsT18/chill4.png';
+			case 'project.projects.0.type': return 'Web';
+			case 'project.projects.1.cover_img': return 'https://raw.githubusercontent.com/ChunhThanhDe/Recording-Webcam/master/media/Recording_Webcam.png';
+			case 'project.projects.1.description': return 'Recording Webcam is an application used to record videos and take photos using a webcam or existing camera. It can also upload videos and photos to the server via URL Api.';
+			case 'project.projects.1.external_link': return 'https://github.com/ChunhThanhDe/Recording-Webcam/releases/download/v1.0.0/app-release.apk';
+			case 'project.projects.1.github_link': return 'https://github.com/ChunhThanhDe/Recording-Webcam';
 			case 'project.projects.1.is_personal': return 'true';
-			case 'project.projects.1.name': return 'Chill Hub';
-			case 'project.projects.1.playstore_link': return 'https://play.google.com/store/apps/details?id=com.ericknamukolo.chillhub';
+			case 'project.projects.1.name': return 'Recording Webcam';
+			case 'project.projects.1.playstore_link': return '';
 			case 'project.projects.1.tech.0': return 'Flutter';
 			case 'project.projects.1.tech.1': return 'Dart';
-			case 'project.projects.1.tech.2': return 'API';
-			case 'project.projects.1.type': return 'Mobile';
-			case 'project.projects.2.cover_img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FVent%20zm_2023-08-18T18%3A53%3A41.749750?alt=media&token=acca1990-8ad3-4425-9e9f-b40bd2a52ac6';
-			case 'project.projects.2.created_at': return '2023-08-18T18:53:52.173068';
-			case 'project.projects.2.description': return 'Vent is a unique platform that lets you express yourself freely without any fear of judgment or repercussion. It\'s a safe space where you can anonymously share your confessions, thoughts, and vents with a supportive community of like-minded individuals who are ready to lend a listening ear.';
+			case 'project.projects.1.tech.2': return 'Spring boot';
+			case 'project.projects.1.type': return 'Application';
+			case 'project.projects.2.cover_img': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png';
+			case 'project.projects.2.description': return 'TMS (Terminal Management System) is a management system for AOSP and ATV Set-top Box product lines.';
 			case 'project.projects.2.external_link': return '';
-			case 'project.projects.2.github_link': return '';
-			case 'project.projects.2.images.0': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FVent%20zm_2023-08-18T18%3A53%3A47.120338?alt=media&token=edca8147-1976-4e13-b339-758a2f01aa88';
+			case 'project.projects.2.github_link': return 'https://github.com/ChunhThanhDe/tms-reactjs';
+			case 'project.projects.2.images.0': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_home_dashboard.png';
+			case 'project.projects.2.images.1': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_device_manager.png';
+			case 'project.projects.2.images.2': return 'https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_device_detail.png';
 			case 'project.projects.2.is_personal': return 'true';
-			case 'project.projects.2.name': return 'Vent';
-			case 'project.projects.2.playstore_link': return 'https://play.google.com/store/apps/details?id=com.ericknamukolo.confessions';
-			case 'project.projects.2.tech.0': return 'Flutter';
-			case 'project.projects.2.tech.1': return 'Dart';
-			case 'project.projects.2.tech.2': return 'Firebase';
-			case 'project.projects.2.type': return 'Mobile';
-			case 'project.projects.3.cover_img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FBody%20Touch_2023-09-02T17%3A11%3A23.701593?alt=media&token=248042a5-4500-46a8-bb85-2ef4fbf4440e';
-			case 'project.projects.3.created_at': return '2023-09-02T17:11:36.508349';
-			case 'project.projects.3.description': return 'Body Touch là một nền tảng giúp bạn tìm và đặt lịch các thợ mát-xa chuyên nghiệp đã được chứng nhận gần bạn.\n\nTHÀNH VIÊN NHÓM\n~ Erick & Kuda [Frontend]\n~ Eugene [Backend]';
-			case 'project.projects.3.external_link': return 'https://bodyheatmassage.com.au';
-			case 'project.projects.3.github_link': return '';
-			case 'project.projects.3.images.0': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FBody%20Touch_2023-09-02T17%3A11%3A30.493795?alt=media&token=37ac8fb9-dffd-45dc-ab5b-2cb6f8660109';
-			case 'project.projects.3.is_personal': return 'false';
-			case 'project.projects.3.name': return 'Body Touch';
-			case 'project.projects.3.playstore_link': return 'https://play.google.com/store/apps/details?id=zm.co.pynch.massageapp';
-			case 'project.projects.3.tech.0': return 'Flutter';
-			case 'project.projects.3.tech.1': return 'Dart';
-			case 'project.projects.3.tech.2': return 'Firebase';
-			case 'project.projects.3.tech.3': return 'Google Maps';
-			case 'project.projects.3.tech.4': return 'PHP';
-			case 'project.projects.3.type': return 'Mobile';
-			case 'project.projects.4.cover_img': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FAffinity_2023-10-19T07%3A43%3A01.756163?alt=media&token=a0c58166-e23f-4948-8407-45ccff4ecacb';
-			case 'project.projects.4.created_at': return '2023-10-19T07:43:13.137047';
-			case 'project.projects.4.description': return 'Affinity là một ứng dụng hẹn hò địa phương vượt xa việc vuốt trên màn hình và kết nối nông cạn.';
-			case 'project.projects.4.external_link': return '';
-			case 'project.projects.4.github_link': return '';
-			case 'project.projects.4.images.0': return 'https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FAffinity_2023-10-19T07%3A43%3A07.404722?alt=media&token=37a58e93-7d40-46f0-b182-c1d766d9a015';
-			case 'project.projects.4.is_personal': return 'true';
-			case 'project.projects.4.name': return 'Affinity';
-			case 'project.projects.4.playstore_link': return 'https://play.google.com/store/apps/details?id=com.sleepingpanda.affinity';
-			case 'project.projects.4.tech.0': return 'Flutter';
-			case 'project.projects.4.tech.1': return 'Dart';
-			case 'project.projects.4.tech.2': return 'Firebase';
-			case 'project.projects.4.tech.3': return 'Adobe XD';
-			case 'project.projects.4.tech.4': return 'Codemagic (CI/CD)';
-			case 'project.projects.4.type': return 'Mobile';
+			case 'project.projects.2.name': return 'TMS';
+			case 'project.projects.2.playstore_link': return '';
+			case 'project.projects.2.tech.0': return 'Android';
+			case 'project.projects.2.tech.1': return 'AOSP';
+			case 'project.projects.2.tech.2': return 'Reactjs';
+			case 'project.projects.2.tech.3': return 'Spring boot';
+			case 'project.projects.2.type': return 'Web, Application, Firmware AOSP';
 			case 'skills.skills.0.date': return '2022-12-06T15:07:31.798027';
 			case 'skills.skills.0.des': return 'Git is a free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.';
 			case 'skills.skills.0.img': return 'https://cdn3.iconfinder.com/data/icons/social-media-2169/24/social_media_social_media_logo_git-512.png';

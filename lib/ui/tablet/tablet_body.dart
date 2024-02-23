@@ -16,6 +16,7 @@ import 'package:profile/ui/tablet/widgets/t_popup_menu_Item.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
 import 'package:profile/widgets/app_bar_lang_icon.dart';
+import 'package:profile/widgets/music_player.dart';
 import 'package:web_smooth_scroll/web_smooth_scroll.dart';
 
 class TabletBody extends StatefulWidget {
@@ -231,6 +232,18 @@ class _TabletBodyState extends State<TabletBody> {
                 padding: const EdgeInsets.symmetric(horizontal: 15, vertical: 10),
                 borderRadius: const BorderRadius.all(Radius.circular(45)),
               ),
+            ),
+          ),
+
+          // Bottom navigation bar
+          Positioned(
+            bottom: 5,
+            left: 0,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                MusicPlayer(),
+              ],
             ),
           ),
         ],
