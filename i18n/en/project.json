@@ -1,35 +1,30 @@
 {
   "projects": [
     {
-      "cover_img": "https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png",
-      "description": "Terminal Management System for AOSP and ATV Set-top Box product lines.",
+      "cover_img": "https://raw.githubusercontent.com/ChunhThanhDe/ChunhThanhDe.github.io/master/media/image/Home_Screen.png",
+      "description": "ChunhThanhDe's personal website.",
       "external_link": "",
-      "github_link": "https://github.com/ChunhThanhDe/tms-reactjs",
-      "images": [
-        "https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_home_dashboard.png",
-        "https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_device_manager.png",
-        "https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_device_detail.png"
-      ],
+      "github_link": "https://github.com/ChunhThanhDe/ChunhThanhDe.github.io",
+      "images": [],
       "is_personal": "true",
-      "name": "Terminal Management System",
+      "name": "Personal website",
       "playstore_link": "",
       "tech": [
-        "Android",
-        "AOSP",
-        "Reactjs",
-        "Spring boot"
+        "Flutter",
+        "Dart",
+        "Firebase"
       ],
-      "type": "Web, Application, Firmware AOSP"
+      "type": "Web"
     },
     {
-      "cover_img": "https://raw.github.com/ChunhThanhDe/Recording-Webcam/media/Recording_Webcam.png",
-      "description": "Recording Webcam - Camera App by flutter for android TV, Android Phone",
+      "cover_img": "https://raw.githubusercontent.com/ChunhThanhDe/Recording-Webcam/master/media/Recording_Webcam.png",
+      "description": "Recording Webcam is an application used to record videos and take photos using a webcam or existing camera. It can also upload videos and photos to the server via URL Api.",
       "external_link": "https://github.com/ChunhThanhDe/Recording-Webcam/releases/download/v1.0.0/app-release.apk",
-      "github_link": "https://github.com/ericknamukolo/Recording-Webcam",
+      "github_link": "https://github.com/ChunhThanhDe/Recording-Webcam",
       "images": [],
-      "is_personal": "false",
+      "is_personal": "true",
       "name": "Recording Webcam",
-      "playstore_link": "https://play.google.com/store/apps/details?id=com.ericknamukolo.chillhub",
+      "playstore_link": "",
       "tech": [
         "Flutter",
         "Dart",
@@ -38,62 +33,25 @@
       "type": "Application"
     },
     {
-      "cover_img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FVent%20zm_2023-08-18T18%3A53%3A41.749750?alt=media&token=acca1990-8ad3-4425-9e9f-b40bd2a52ac6",
-      "description": "Vent is a unique platform that lets you express yourself freely without any fear of judgment or repercussion. It's a safe space where you can anonymously share your confessions, thoughts, and vents with a supportive community of like-minded individuals who are ready to lend a listening ear.",
+      "cover_img": "https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/img/Terminal_Management_System1280.png",
+      "description": "TMS (Terminal Management System) is a management system for AOSP and ATV Set-top Box product lines.",
       "external_link": "",
-      "github_link": "",
+      "github_link": "https://github.com/ChunhThanhDe/tms-reactjs",
       "images": [
-        "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FVent%20zm_2023-08-18T18%3A53%3A47.120338?alt=media&token=edca8147-1976-4e13-b339-758a2f01aa88"
+        "https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_home_dashboard.png",
+        "https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_device_manager.png",
+        "https://raw.githubusercontent.com/ChunhThanhDe/tms-reactjs/main/media/screenshots/screen_device_detail.png"
       ],
       "is_personal": "true",
-      "name": "Vent",
-      "playstore_link": "https://play.google.com/store/apps/details?id=com.ericknamukolo.confessions",
+      "name": "TMS",
+      "playstore_link": "",
       "tech": [
-        "Flutter",
-        "Dart",
-        "Firebase"
+        "Android",
+        "AOSP",
+        "Reactjs",
+        "Spring boot"
       ],
-      "type": "Mobile"
-    },
-    {
-      "cover_img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FBody%20Touch_2023-09-02T17%3A11%3A23.701593?alt=media&token=248042a5-4500-46a8-bb85-2ef4fbf4440e",
-      "description": "Body Touch là một nền tảng giúp bạn tìm và đặt lịch các thợ mát-xa chuyên nghiệp đã được chứng nhận gần bạn.\n\nTHÀNH VIÊN NHÓM\n~ Erick & Kuda [Frontend]\n~ Eugene [Backend]",
-      "external_link": "https://bodyheatmassage.com.au",
-      "github_link": "",
-      "images": [
-        "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FBody%20Touch_2023-09-02T17%3A11%3A30.493795?alt=media&token=37ac8fb9-dffd-45dc-ab5b-2cb6f8660109"
-      ],
-      "is_personal": "false",
-      "name": "Body Touch",
-      "playstore_link": "https://play.google.com/store/apps/details?id=zm.co.pynch.massageapp",
-      "tech": [
-        "Flutter",
-        "Dart",
-        "Firebase",
-        "Google Maps",
-        "PHP"
-      ],
-      "type": "Mobile"
-    },
-    {
-      "cover_img": "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FAffinity_2023-10-19T07%3A43%3A01.756163?alt=media&token=a0c58166-e23f-4948-8407-45ccff4ecacb",
-      "description": "Affinity là một ứng dụng hẹn hò địa phương vượt xa việc vuốt trên màn hình và kết nối nông cạn.",
-      "external_link": "",
-      "github_link": "",
-      "images": [
-        "https://firebasestorage.googleapis.com/v0/b/portfolio-28840.appspot.com/o/project-images%2FAffinity_2023-10-19T07%3A43%3A07.404722?alt=media&token=37a58e93-7d40-46f0-b182-c1d766d9a015"
-      ],
-      "is_personal": "true",
-      "name": "Affinity",
-      "playstore_link": "https://play.google.com/store/apps/details?id=com.sleepingpanda.affinity",
-      "tech": [
-        "Flutter",
-        "Dart",
-        "Firebase",
-        "Adobe XD",
-        "Codemagic (CI/CD)"
-      ],
-      "type": "Mobile"
+      "type": "Web, Application, Firmware AOSP"
     }
   ]
 }

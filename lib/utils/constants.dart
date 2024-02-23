@@ -27,6 +27,7 @@ const kNormalTextStyleWhite = TextStyle(
 
 const kMiniTitleTextStyleWhite = TextStyle(
   fontFamily: 'Poppins',
+  fontWeight: FontWeight.w700,
   color: Colors.white,
   fontSize: 16,
 );

@@ -17,6 +17,7 @@ class _MusicPlayerState extends State<MusicPlayer> with TickerProviderStateMixin
   //music widget anim
   late AnimationController controller;
   late Animation<Offset> animation;
+  late Animation<Offset> animationBack;
   int _count = 0;
 
   //audio
@@ -25,10 +26,11 @@ class _MusicPlayerState extends State<MusicPlayer> with TickerProviderStateMixin
 
   void animInit() {
     controller = AnimationController(
-      duration: const Duration(seconds: 2),
+      duration: const Duration(milliseconds: 1500),
       vsync: this,
     );
-    animation = Tween(begin: const Offset(-0.67, 0), end: Offset.zero).animate(controller);
+    animation = Tween(begin: const Offset(-0.82, 0), end: Offset(0.02, 0)).animate(controller);
+    animationBack = Tween(begin:  Offset.zero, end: Offset(-0.4, 0)).animate(controller);
   }
 
   void musicPlayerInit() {
@@ -145,7 +147,6 @@ class _MusicPlayerState extends State<MusicPlayer> with TickerProviderStateMixin
               isPlaying = !isPlaying;
             });
           },
-
         );
       }
       return MouseRegion(
@@ -170,10 +171,36 @@ class _MusicPlayerState extends State<MusicPlayer> with TickerProviderStateMixin
         opaque: false,
         child: SlideTransition(
           position: animation,
-          child: BlurGlass(
-            marginValue: 6.0,
-            paddingValue: 8.0,
-            child: returnButtonList(),
+          child: Container(
+            height: 150,
+            width: 250,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10.0),
+              image: DecorationImage(
+                image: AssetImage('assets/play_music.jpg'),
+                fit: BoxFit.cover,
+              ),
+            ),
+            child: Align(
+              alignment: Alignment.bottomRight,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Spacer(),
+                  Padding(
+                    padding: EdgeInsets.all(5.0),
+                    child: SlideTransition(
+                      position: animationBack,
+                      child: BlurGlass(
+                        marginValue: 3.0,
+                        paddingValue: 4.0,
+                        child: returnButtonList(),
+                      ),
+                    ),
+                  ),
+                ],
+              ),
+            ),
           ),
         ),
       );
