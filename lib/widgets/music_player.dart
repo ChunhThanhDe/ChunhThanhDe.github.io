@@ -36,10 +36,10 @@ class _MusicPlayerState extends State<MusicPlayer> with TickerProviderStateMixin
   void musicPlayerInit() {
     assetsAudioPlayer.open(
         Playlist(audios: [
-          Audio("assets/assets/music/KoheiTanaka_BeyondtheHappyEnd.mp3"),
-          Audio("assets/assets/music/KoheiTanaka_FleetingFragmentofMemory.mp3"),
-          Audio("assets/assets/music/KoheiTanaka_Ifyouarewithyou.mp3"),
-          Audio("assets/assets/music/KoheiTanaka_Smallguide.mp3"),
+          Audio("assets/music/KoheiTanaka_BeyondtheHappyEnd.mp3"),
+          Audio("assets/music/KoheiTanaka_FleetingFragmentofMemory.mp3"),
+          Audio("assets/music/KoheiTanaka_Ifyouarewithyou.mp3"),
+          Audio("assets/music/KoheiTanaka_Smallguide.mp3"),
         ]),
         loopMode: LoopMode.playlist //loop the full playlist
         );
