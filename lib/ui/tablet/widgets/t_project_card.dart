@@ -35,7 +35,7 @@ class _TProjectCardState extends State<TProjectCard> {
                   });
                 },
                 child: Container(
-                  margin: const EdgeInsets.symmetric(vertical: 10),
+                  margin: const EdgeInsets.symmetric(vertical: 15),
                   height: 300,
                   width: double.infinity,
                   child: Stack(

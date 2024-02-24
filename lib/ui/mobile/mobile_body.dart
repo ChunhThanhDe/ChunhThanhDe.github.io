@@ -249,7 +249,7 @@ class _MobileBodyState extends State<MobileBody> {
                         child: const Padding(
                           padding: EdgeInsets.symmetric(horizontal: 10.0),
                           child: CircleAvatar(
-                            foregroundImage: AssetImage('assets/avatar.png'),
+                            foregroundImage: AssetImage('./assets/avatar.png'),
                             backgroundColor: klightDarkColor,
                           ),
                         ),
