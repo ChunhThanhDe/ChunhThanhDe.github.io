@@ -116,7 +116,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                                 scrollToItem(homeKey);
                               },
                               child: const CircleAvatar(
-                                foregroundImage: AssetImage('./assets/avatar.png'),
+                                foregroundImage: AssetImage('assets/avatar.png'),
                                 backgroundColor: klightDarkColor,
                                 radius: 23,
                               ),

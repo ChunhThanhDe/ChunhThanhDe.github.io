@@ -33,7 +33,7 @@ class MHomeSection extends StatelessWidget {
               duration: Duration(milliseconds: 2000),
               // repeatPauseDuration: Duration(milliseconds: 30),
               child: CircleAvatar(
-                foregroundImage: AssetImage('./assets/avatar.png'),
+                foregroundImage: AssetImage('assets/avatar.png'),
                 backgroundColor: klightDarkColor,
                 radius: 90,
               ),
