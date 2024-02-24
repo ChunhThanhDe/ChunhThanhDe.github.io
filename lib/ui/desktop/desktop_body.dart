@@ -103,12 +103,12 @@ class _DesktopBodyState extends State<DesktopBody> {
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    Expanded(
-                      flex: _screenWidth > 1700 ? 8 : 4,
-                      child: Row(
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        mainAxisAlignment: MainAxisAlignment.start,
-                        children: [
+                    // Expanded(
+                    //   flex: _screenWidth > 1700 ? 8 : 4,
+                    //   child: Row(
+                    //     crossAxisAlignment: CrossAxisAlignment.center,
+                    //     mainAxisAlignment: MainAxisAlignment.start,
+                    //     children: [
                           MouseRegion(
                             cursor: SystemMouseCursors.click,
                             child: GestureDetector(
@@ -116,7 +116,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                                 scrollToItem(homeKey);
                               },
                               child: const CircleAvatar(
-                                foregroundImage: AssetImage('assets/avatar.png'),
+                                foregroundImage: AssetImage('./assets/avatar.png'),
                                 backgroundColor: klightDarkColor,
                                 radius: 23,
                               ),
@@ -136,15 +136,15 @@ class _DesktopBodyState extends State<DesktopBody> {
                             MdiIcons.chevronRight,
                             color: kPrimaryColor,
                           ),
-                        ],
-                      ),
-                    ),
-                    Expanded(
-                      flex: 5,
-                      child: Row(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        crossAxisAlignment: CrossAxisAlignment.center,
-                        children: [
+                    //     ],
+                    //   ),
+                    // ),
+                    // Expanded(
+                    //   flex: 5,
+                    //   child: Row(
+                    //     mainAxisAlignment: MainAxisAlignment.end,
+                    //     crossAxisAlignment: CrossAxisAlignment.center,
+                    //     children: [
                           Spacer(),
                           AnimatedTexttt(
                             text: navigationController.navigation(0),
@@ -203,9 +203,9 @@ class _DesktopBodyState extends State<DesktopBody> {
                                     navigationController.changeLocale(navigationController.en);
                                   },
                                 ),
-                        ],
-                      ),
-                    ),
+                    //     ],ø
+                    //   ),
+                    // ),
                   ],
                 ),
                 blur: 1.5,

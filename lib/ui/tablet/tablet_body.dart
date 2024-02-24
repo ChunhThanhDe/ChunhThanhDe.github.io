@@ -114,7 +114,7 @@ class _TabletBodyState extends State<TabletBody> {
                                 scrollToItem(homeKey);
                               },
                               child: const CircleAvatar(
-                                foregroundImage: AssetImage('assets/avatar.png'),
+                                foregroundImage: AssetImage('./assets/avatar.png'),
                                 backgroundColor: klightDarkColor,
                                 radius: 23,
                               ),
