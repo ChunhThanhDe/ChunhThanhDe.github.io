@@ -1,3 +1,4 @@
+import 'package:assets_audio_player/assets_audio_player.dart';
 import 'package:bot_toast/bot_toast.dart';
 import 'package:firebase_app_check/firebase_app_check.dart';
 import 'package:firebase_core/firebase_core.dart';
@@ -24,6 +25,10 @@ Future<void> main() async {
     androidProvider: AndroidProvider.debug,
     appleProvider: AppleProvider.appAttest,
   );
+
+  AssetsAudioPlayer.setupNotificationsOpenAction((notification) {
+    return true;
+  });
 
   setPathUrlStrategy();
   runApp(TranslationProvider(child: const profile()));
