@@ -51,6 +51,7 @@ class _MobileBodyState extends State<MobileBody> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: kdarkColor,
+      floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
       floatingActionButton: FloatingActionButton(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(50.0),
