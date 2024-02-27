@@ -70,7 +70,8 @@ dart run slang build --delete-conflicting-outputs
 
 ### How to deploy with Github-page
 
-I use Peanut via https://github.com/kevmoo/peanut.dart
+I use Peanut via https://github.com/kevmoo/peanut.dart.
+
 It's a tool that makes the application build and updates/create a gh-pages branch.
 
 In my case, I had to follow these steps
