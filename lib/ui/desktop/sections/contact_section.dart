@@ -61,7 +61,7 @@ class _ContactSectionState extends State<ContactSection> {
             margin: const EdgeInsets.symmetric(vertical: 40),
             child: Column(
               children: [
-                SectionTitle(title: texts.general.title_contact_section),
+                SectionTitle(title: texts.general.title_contact_section, isDesktop: true),
                 Row(
                   children: [
                     Expanded(

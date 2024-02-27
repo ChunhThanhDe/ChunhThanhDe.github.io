@@ -22,7 +22,10 @@ class AboutSection extends StatelessWidget {
       width: double.infinity,
       child: Column(
         children: [
-          SectionTitle(title: texts.general.title_about_section),
+          SectionTitle(
+            title: texts.general.title_about_section,
+            isDesktop: true,
+          ),
           const SizedBox(
             width: 10,
           ),
@@ -36,6 +39,7 @@ class AboutSection extends StatelessWidget {
                     AboutCard(model: aboutController.aboutCard(1)),
                     AboutCard(model: aboutController.aboutCard(2)),
                     AboutCard(model: aboutController.aboutCard(3)),
+                    AboutCard(model: aboutController.aboutCard(4)),
                   ],
                 ),
               ),

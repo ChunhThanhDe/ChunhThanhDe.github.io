@@ -16,7 +16,7 @@ class _FooterSectionState extends State<FooterSection> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 100,
+      height: 80,
       width: double.infinity,
       color: const Color(0xff15202B),
       child: Column(
@@ -42,19 +42,13 @@ class _FooterSectionState extends State<FooterSection> {
                 'Designed & Built by ChunhThanhDe',
                 style: kNormalTextStyleGrey.copyWith(
                   color: _isHovered ? kPrimaryColor : const Color(0xffB3A595),
-                  fontWeight: _isHovered ? FontWeight.bold : null,
+                  fontWeight: FontWeight.bold,
                 ),
               ),
             ),
           ),
           Text(
-            '© 2023 - ${DateTime.now().year} Chung Nguyen Thanh.',
-            style: kNormalTextStyleGrey.copyWith(
-              fontSize: 13,
-            ),
-          ),
-          Text(
-            'All rights reserved.',
+            '© 2023 - ${DateTime.now().year} Chung Nguyen Thanh. All rights reserved.',
             style: kNormalTextStyleGrey.copyWith(
               fontSize: 13,
             ),

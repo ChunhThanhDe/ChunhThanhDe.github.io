@@ -49,20 +49,26 @@ class SingleProjectCard extends StatelessWidget {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
-                  Text(
-                    project.name,
-                    style: kMiniTitleTextStyleWhite.copyWith(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      letterSpacing: 1,
+                  Expanded(
+                    child: Text(
+                      project.name,
+                      style: kMiniTitleTextStyleWhite.copyWith(
+                        fontSize: 20,
+                        fontWeight: FontWeight.bold,
+                        letterSpacing: 1,
+                      ),
                     ),
                   ),
-                  Row(
-                    children: [
-                      ProjectIconBtn(icon: MdiIcons.github, link: project.githubLink, padding: 4),
-                      ProjectIconBtn(icon: MdiIcons.link, link: project.externalLink, padding: 4),
-                      ProjectIconBtn(icon: MdiIcons.googlePlay, link: project.playstoreLink, padding: 4),
-                    ],
+                  Expanded(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        ProjectIconBtn(icon: MdiIcons.github, link: project.githubLink, padding: 4),
+                        ProjectIconBtn(icon: MdiIcons.link, link: project.externalLink, padding: 4),
+                        ProjectIconBtn(icon: MdiIcons.googlePlay, link: project.playstoreLink, padding: 4),
+                      ],
+                    ),
                   ),
                 ],
               ),

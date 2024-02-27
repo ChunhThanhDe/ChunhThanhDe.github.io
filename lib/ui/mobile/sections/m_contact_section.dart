@@ -194,7 +194,6 @@ class _MContactSectionState extends State<MContactSection> {
               ),
             ],
           ),
-
         ],
       ),
     );

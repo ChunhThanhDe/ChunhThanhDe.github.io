@@ -39,45 +39,54 @@ class _WebTitleSwitcherState extends State<WebTitleSwitcher> {
   }
 
   void _handleBlurEvent(html.Event event) {
-    setState(() {
-      _isTabActive = false;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        setState(() {
+          _isTabActive = false;
+        });
+        _updateTabTitle();
+      }
     });
-    _updateTabTitle();
   }
 
   void _handleFocusEvent(html.Event event) {
-    setState(() {
-      _isTabActive = true;
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        setState(() {
+          _isTabActive = true;
+        });
+        _updateTabTitle();
+      }
     });
-    _updateTabTitle();
   }
 
   void _updateTabTitle() {
     final String title = _isTabActive ? "Hi, I'm Chung" : "Contact to cooperate";
     html.document.title = title;
   }
-void listenToBeforeInstallPromptEvent() {
-  html.window.on['beforeinstallprompt'].listen((event) {
-    // Prevent the mini-infobar from appearing on mobile
-    event.preventDefault();
 
-    // Create an install button that, when triggered, prompts the user to install the app
-    html.ButtonElement installButton = html.ButtonElement()
-      ..text = "Add to Home Screen"
-      ..style.position = "fixed"
-      ..style.bottom = "10px"
-      ..style.left = "10px";
+  void listenToBeforeInstallPromptEvent() {
+    html.window.on['beforeinstallprompt'].listen((event) {
+      // Prevent the mini-infobar from appearing on mobile
+      event.preventDefault();
 
-    // Add the button to the body
-    html.document.body?.append(installButton);
+      // Create an install button that, when triggered, prompts the user to install the app
+      html.ButtonElement installButton = html.ButtonElement()
+        ..text = "Add to Home Screen"
+        ..style.position = "fixed"
+        ..style.bottom = "10px"
+        ..style.left = "10px";
 
-    // When the button is clicked, trigger the prompt
-    installButton.onClick.listen((_) {
-      // Cast the event to JsObject to invoke the prompt method
-      js.JsObject.fromBrowserObject(event).callMethod('prompt');
+      // Add the button to the body
+      html.document.body?.append(installButton);
+
+      // When the button is clicked, trigger the prompt
+      installButton.onClick.listen((_) {
+        // Cast the event to JsObject to invoke the prompt method
+        js.JsObject.fromBrowserObject(event).callMethod('prompt');
+      });
     });
-  });
-}
+  }
 
   @override
   Widget build(BuildContext context) {

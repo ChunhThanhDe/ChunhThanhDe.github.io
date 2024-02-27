@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:profile/utils/colors.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -11,6 +10,7 @@ const String skype = "live:.cid.91d8bf7a568e4a2d";
 const String link_linkedin = "https://www.linkedin.com/in/chunhthanhde/";
 const String link_github = "https://github.com/chunhthanhde";
 const String link_skype = "https://join.skype.com/invite/rdKrZGo3Mdk1";
+const String link_mess = "https://www.facebook.com/messages/t/changtrainhaycam.chung";
 const String link_facebook = "https://www.facebook.com/Changtrainhaycam.Chung/";
 
 const kTextStyleWhite = TextStyle(
@@ -28,6 +28,14 @@ const kNormalTextStyleWhite = TextStyle(
 const kMiniTitleTextStyleWhite = TextStyle(
   fontFamily: 'Poppins',
   fontWeight: FontWeight.w700,
+  color: Colors.white,
+  fontSize: 16,
+);
+
+const kMiniTitleMusicStyleWhite = TextStyle(
+  fontFamily: 'Poppins',
+  fontWeight: FontWeight.w600,
+  fontStyle: FontStyle.italic,
   color: Colors.white,
   fontSize: 16,
 );

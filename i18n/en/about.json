@@ -21,6 +21,11 @@
       "content": "I enjoy building useful applications for the community, making people's lives simpler.",
       "iconPath": "assets/web-development.png",
       "title": "Mobile/Web Development"
+    },
+    {
+      "content": "I develop firmware for consumer products such as Android TV and AOSP.",
+      "iconPath": "assets/android.png",
+      "title": "Software Engineer"
     }
   ]
 }

@@ -104,6 +104,7 @@ class MAboutSection extends StatelessWidget {
                     AboutCard(model: aboutController.aboutCard(1)),
                     AboutCard(model: aboutController.aboutCard(2)),
                     AboutCard(model: aboutController.aboutCard(3)),
+                    AboutCard(model: aboutController.aboutCard(4)),
                   ],
                 ),
         ],

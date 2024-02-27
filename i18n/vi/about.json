@@ -21,6 +21,11 @@
       "content": "Tôi thích xây dựng những ứng dụng có ích cho cộng đồng, khiến cuộc sống của mọi người trở nên đơn giản hơn.",
       "iconPath": "assets/web-development.png",
       "title": "Mobile/Web Development"
+    },
+    {
+      "content": "Tôi phát triển firmware dành cho dòng sản phẩm tiêu dùng như Android TV và AOSP",
+      "iconPath": "assets/android.png",
+      "title": "Software Engineer"
     }
   ]
 }

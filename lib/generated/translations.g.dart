@@ -4,9 +4,9 @@
 /// To regenerate, run: `dart run slang`
 ///
 /// Locales: 2
-/// Strings: 272 (136 per locale)
+/// Strings: 278 (139 per locale)
 ///
-/// Built on 2024-02-23 at 09:58 UTC
+/// Built on 2024-02-27 at 02:16 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -200,6 +200,7 @@ class _TranslationsAboutVi {
 		_TranslationsAbout$aboutCard$0i1$Vi._(_root),
 		_TranslationsAbout$aboutCard$0i2$Vi._(_root),
 		_TranslationsAbout$aboutCard$0i3$Vi._(_root),
+		_TranslationsAbout$aboutCard$0i4$Vi._(_root),
 	];
 }
 
@@ -340,6 +341,18 @@ class _TranslationsAbout$aboutCard$0i3$Vi {
 	String get content => 'Tôi thích xây dựng những ứng dụng có ích cho cộng đồng, khiến cuộc sống của mọi người trở nên đơn giản hơn.';
 	String get iconPath => 'assets/web-development.png';
 	String get title => 'Mobile/Web Development';
+}
+
+// Path: about.aboutCard.4
+class _TranslationsAbout$aboutCard$0i4$Vi {
+	_TranslationsAbout$aboutCard$0i4$Vi._(this._root);
+
+	final Translations _root; // ignore: unused_field
+
+	// Translations
+	String get content => 'Tôi phát triển firmware dành cho dòng sản phẩm tiêu dùng như Android TV và AOSP';
+	String get iconPath => 'assets/android.png';
+	String get title => 'Software Engineer';
 }
 
 // Path: project.projects.0
@@ -624,6 +637,7 @@ class _TranslationsAboutEn implements _TranslationsAboutVi {
 		_TranslationsAbout$aboutCard$0i1$En._(_root),
 		_TranslationsAbout$aboutCard$0i2$En._(_root),
 		_TranslationsAbout$aboutCard$0i3$En._(_root),
+		_TranslationsAbout$aboutCard$0i4$En._(_root),
 	];
 }
 
@@ -764,6 +778,18 @@ class _TranslationsAbout$aboutCard$0i3$En implements _TranslationsAbout$aboutCar
 	@override String get content => 'I enjoy building useful applications for the community, making people\'s lives simpler.';
 	@override String get iconPath => 'assets/web-development.png';
 	@override String get title => 'Mobile/Web Development';
+}
+
+// Path: about.aboutCard.4
+class _TranslationsAbout$aboutCard$0i4$En implements _TranslationsAbout$aboutCard$0i4$Vi {
+	_TranslationsAbout$aboutCard$0i4$En._(this._root);
+
+	@override final _TranslationsEn _root; // ignore: unused_field
+
+	// Translations
+	@override String get content => 'I develop firmware for consumer products such as Android TV and AOSP.';
+	@override String get iconPath => 'assets/android.png';
+	@override String get title => 'Software Engineer';
 }
 
 // Path: project.projects.0
@@ -1008,6 +1034,9 @@ extension on Translations {
 			case 'about.aboutCard.3.content': return 'Tôi thích xây dựng những ứng dụng có ích cho cộng đồng, khiến cuộc sống của mọi người trở nên đơn giản hơn.';
 			case 'about.aboutCard.3.iconPath': return 'assets/web-development.png';
 			case 'about.aboutCard.3.title': return 'Mobile/Web Development';
+			case 'about.aboutCard.4.content': return 'Tôi phát triển firmware dành cho dòng sản phẩm tiêu dùng như Android TV và AOSP';
+			case 'about.aboutCard.4.iconPath': return 'assets/android.png';
+			case 'about.aboutCard.4.title': return 'Software Engineer';
 			case 'general.language': return 'Ngôn ngữ';
 			case 'general.vietnam': return 'Tiếng Việt';
 			case 'general.english': return 'English';
@@ -1152,6 +1181,9 @@ extension on _TranslationsEn {
 			case 'about.aboutCard.3.content': return 'I enjoy building useful applications for the community, making people\'s lives simpler.';
 			case 'about.aboutCard.3.iconPath': return 'assets/web-development.png';
 			case 'about.aboutCard.3.title': return 'Mobile/Web Development';
+			case 'about.aboutCard.4.content': return 'I develop firmware for consumer products such as Android TV and AOSP.';
+			case 'about.aboutCard.4.iconPath': return 'assets/android.png';
+			case 'about.aboutCard.4.title': return 'Software Engineer';
 			case 'general.language': return 'Language';
 			case 'general.vietnam': return 'Tiếng Việt';
 			case 'general.english': return 'English';

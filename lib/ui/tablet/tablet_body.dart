@@ -40,9 +40,9 @@ class _TabletBodyState extends State<TabletBody> {
   double projectsWidth = 0;
   double contactWidth = 0;
 
-  Future scrollToItem(var sectionKey) async {
+  Future scrollToItem(var sectionKey, bool pop) async {
     final context = sectionKey.currentContext!;
-    Navigator.pop(context);
+    if (pop) Navigator.pop(context);
     await Scrollable.ensureVisible(
       context,
       duration: const Duration(seconds: 2),
@@ -80,7 +80,7 @@ class _TabletBodyState extends State<TabletBody> {
                   THomeSection(
                     key: homeKey,
                     scrollToProjects: () {
-                      scrollToItem(projectsKey);
+                      scrollToItem(projectsKey, false);
                     },
                   ),
                   TAboutSection(key: aboutKey),
@@ -111,7 +111,7 @@ class _TabletBodyState extends State<TabletBody> {
                             cursor: SystemMouseCursors.click,
                             child: GestureDetector(
                               onTap: () {
-                                scrollToItem(homeKey);
+                                scrollToItem(homeKey, false);
                               },
                               child: const CircleAvatar(
                                 foregroundImage: AssetImage('assets/avatar.png'),
@@ -148,7 +148,7 @@ class _TabletBodyState extends State<TabletBody> {
                               PopupMenuItem(
                                 child: PopupMenuItemWidget(
                                   icon: Icons.home,
-                                  onTap: () => scrollToItem(homeKey),
+                                  onTap: () => scrollToItem(homeKey, true),
                                   text: navigationController.navigation(0),
                                 ),
                               ),
@@ -156,7 +156,7 @@ class _TabletBodyState extends State<TabletBody> {
                                 value: navigationController.navigation(1),
                                 child: PopupMenuItemWidget(
                                   icon: Icons.account_box,
-                                  onTap: () => scrollToItem(aboutKey),
+                                  onTap: () => scrollToItem(aboutKey, true),
                                   text: navigationController.navigation(1),
                                 ),
                               ),
@@ -164,7 +164,7 @@ class _TabletBodyState extends State<TabletBody> {
                                 value: navigationController.navigation(2),
                                 child: PopupMenuItemWidget(
                                   icon: Icons.account_tree_sharp,
-                                  onTap: () => scrollToItem(skillsKey),
+                                  onTap: () => scrollToItem(skillsKey, true),
                                   text: navigationController.navigation(2),
                                 ),
                               ),
@@ -172,7 +172,7 @@ class _TabletBodyState extends State<TabletBody> {
                                 value: navigationController.navigation(3),
                                 child: PopupMenuItemWidget(
                                   icon: Icons.card_travel,
-                                  onTap: () => scrollToItem(experienceKey),
+                                  onTap: () => scrollToItem(experienceKey, true),
                                   text: navigationController.navigation(3),
                                 ),
                               ),
@@ -180,7 +180,7 @@ class _TabletBodyState extends State<TabletBody> {
                                 value: navigationController.navigation(4),
                                 child: PopupMenuItemWidget(
                                   icon: Icons.cloud,
-                                  onTap: () => scrollToItem(projectsKey),
+                                  onTap: () => scrollToItem(projectsKey, true),
                                   text: navigationController.navigation(4),
                                 ),
                               ),
@@ -188,7 +188,7 @@ class _TabletBodyState extends State<TabletBody> {
                                 value: navigationController.navigation(5),
                                 child: PopupMenuItemWidget(
                                   icon: Icons.phone,
-                                  onTap: () => scrollToItem(contactKey),
+                                  onTap: () => scrollToItem(contactKey, true),
                                   text: navigationController.navigation(5),
                                 ),
                               ),

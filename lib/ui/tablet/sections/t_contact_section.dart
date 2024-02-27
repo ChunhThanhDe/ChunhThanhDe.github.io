@@ -8,9 +8,9 @@ import 'package:profile/services/send_message.dart';
 import 'package:profile/ui/desktop/widgets/contact_card.dart';
 import 'package:profile/ui/desktop/widgets/home_icon_hover.dart';
 import 'package:profile/ui/desktop/widgets/input_field.dart';
+import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
-import 'package:profile/widgets/basic_button.dart';
 import 'package:profile/widgets/section_title.dart';
 
 class TContactSection extends StatefulWidget {
@@ -192,11 +192,17 @@ class _TContactSectionState extends State<TContactSection> {
                                         message = value!;
                                       },
                                     ),
-                                    BasicButton(
+                                    modernButton(
+                                      icon: Icons.send,
+                                      click: _isSending ? () {} : send,
                                       text: texts.general.btn_send_contact_section,
-                                      click: send,
-                                      isSending: _isSending,
+                                      isLoading: _isSending,
                                     ),
+                                    // BasicButton(
+                                    //   text: texts.general.btn_send_contact_section,
+                                    //   click: send,
+                                    //   isSending: _isSending,
+                                    // ),
                                   ],
                                 ),
                               ),
@@ -208,7 +214,7 @@ class _TContactSectionState extends State<TContactSection> {
                         children: [
                           Container(
                             width: double.infinity,
-                            margin: const EdgeInsets.symmetric(vertical: 40),
+                            // margin: const EdgeInsets.symmetric(vertical: 40),
                             height: 500,
                             decoration: BoxDecoration(
                               color: kdarkColor,
@@ -323,10 +329,17 @@ class _TContactSectionState extends State<TContactSection> {
                                       message = value;
                                     },
                                   ),
-                                  BasicButton(
+                                  // BasicButton(
+                                  //   text: texts.general.btn_send_contact_section,
+                                  //   click: send,
+                                  //   isSending: _isSending,
+                                  // ),
+
+                                  modernButton(
+                                    icon: Icons.send,
+                                    click: _isSending ? () {} : send,
                                     text: texts.general.btn_send_contact_section,
-                                    click: send,
-                                    isSending: _isSending,
+                                    isLoading: _isSending,
                                   ),
                                 ],
                               ),

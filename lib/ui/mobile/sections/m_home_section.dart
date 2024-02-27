@@ -1,7 +1,6 @@
 // ignore_for_file: sized_box_for_whitespace
 
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:profile/generated/translations.g.dart';
@@ -10,6 +9,7 @@ import 'package:profile/ui/desktop/widgets/home_icon_hover.dart';
 import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
+import 'package:profile/widgets/custom_avatar_glow.dart';
 
 class MHomeSection extends StatelessWidget {
   const MHomeSection({Key? key}) : super(key: key);
@@ -25,19 +25,7 @@ class MHomeSection extends StatelessWidget {
         children: [
           Container(
             padding: const EdgeInsets.all(10),
-            child: const AvatarGlow(
-              endRadius: 160.0,
-              animate: true,
-              glowColor: kPrimaryColor,
-              repeat: true,
-              duration: Duration(milliseconds: 2000),
-              // repeatPauseDuration: Duration(milliseconds: 30),
-              child: CircleAvatar(
-                foregroundImage: AssetImage('assets/avatar.png'),
-                backgroundColor: klightDarkColor,
-                radius: 90,
-              ),
-            ),
+            child: CustomAnimatedAvatarGlowSwitcher(screenWidth: 0, isDevice: 2),
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
