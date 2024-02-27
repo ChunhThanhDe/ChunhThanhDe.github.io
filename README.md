@@ -82,7 +82,7 @@ flutter pub global activate peanut
 ```
 
 2. Run the peanut command line with one extra parameter, because my repository will be available
-   at https://castrors.github.io/flutter_web/, that is different than the default that is /, that's
+   at https://ChunhThanhDe.github.io/flutter_web/, that is different than the default that is /, that's
    why I needed to give this base-href extra parameter too
 
 ```sh
