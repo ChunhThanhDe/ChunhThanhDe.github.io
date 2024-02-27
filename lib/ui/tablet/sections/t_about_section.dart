@@ -43,7 +43,7 @@ class TAboutSection extends StatelessWidget {
                         children: [
                           Text(
                             texts.general.title_introduction_about_section,
-                            style: kNormalTextStyleGrey,
+                            style: kMiniTitleTextStyleWhite,
                           ),
                           RichText(
                             text: TextSpan(
@@ -105,6 +105,7 @@ class TAboutSection extends StatelessWidget {
                     AboutCard(model: aboutController.aboutCard(1)),
                     AboutCard(model: aboutController.aboutCard(2)),
                     AboutCard(model: aboutController.aboutCard(3)),
+                    AboutCard(model: aboutController.aboutCard(4)),
                   ],
                 ),
         ],

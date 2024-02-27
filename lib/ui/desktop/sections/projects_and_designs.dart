@@ -38,7 +38,7 @@ class _ProjectsAndDesignsState extends State<ProjectsAndDesigns> {
       color: kdarkColor,
       child: Column(
         children: [
-          SectionTitle(title: texts.general.title_project_section),
+          SectionTitle(title: texts.general.title_project_section, isDesktop: true),
           Container(
             padding: EdgeInsets.all(12),
             width: _screenWidth * .45,

@@ -2,13 +2,13 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:profile/generated/translations.g.dart';
+import 'package:profile/ui/desktop/widgets/home_icon_hover.dart';
 import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
-import 'package:profile/ui/desktop/widgets/home_icon_hover.dart';
-import 'package:avatar_glow/avatar_glow.dart';
+import 'package:profile/widgets/custom_avatar_glow.dart';
 
-class HomeSection extends StatelessWidget {
+class HomeSection extends StatefulWidget {
   final Function() scrollToProjects;
 
   const HomeSection({
@@ -16,6 +16,11 @@ class HomeSection extends StatelessWidget {
     required this.scrollToProjects,
   }) : super(key: key);
 
+  @override
+  _HomeSectionState createState() => _HomeSectionState();
+}
+
+class _HomeSectionState extends State<HomeSection> {
   @override
   Widget build(BuildContext context) {
     double _screenWidth = MediaQuery.of(context).size.width;
@@ -129,7 +134,7 @@ class HomeSection extends StatelessWidget {
                 ),
                 modernButton(
                   icon: MdiIcons.folder,
-                  click: scrollToProjects,
+                  click: widget.scrollToProjects,
                   text: texts.general.browse_projects_home_section,
                 ),
                 const SizedBox(
@@ -169,19 +174,7 @@ class HomeSection extends StatelessWidget {
           Expanded(
             child: Container(
               padding: const EdgeInsets.all(10),
-              child: AvatarGlow(
-                endRadius: _screenWidth < 1700 ? _screenWidth * .15 : 340,
-                animate: true,
-                glowColor: kPrimaryColor,
-                repeat: true,
-                duration: Duration(seconds: 3),
-                // repeatPauseDuration: Duration(milliseconds: 30),
-                child: CircleAvatar(
-                  foregroundImage: AssetImage('assets/avatar.png'),
-                  backgroundColor: klightDarkColor,
-                  radius: _screenWidth * .099,
-                ),
-              ),
+              child: CustomAnimatedAvatarGlowSwitcher(screenWidth: _screenWidth, isDevice: 0),
             ),
           ),
         ],

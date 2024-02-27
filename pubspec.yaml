@@ -58,8 +58,6 @@ dependencies:
   assets_audio_player: ^3.1.1
   assets_audio_player_web: ^3.1.1
   responsive_builder: ^0.4.2
-#  g_recaptcha_v3: ^0.0.5
-#  platform_device_id: ^1.0.1
 
 dev_dependencies:
   flutter_launcher_icons_maker: ^0.10.2

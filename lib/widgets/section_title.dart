@@ -5,10 +5,12 @@ import '../utils/colors.dart';
 
 class SectionTitle extends StatelessWidget {
   final String title;
+  final bool isDesktop;
 
   const SectionTitle({
     Key? key,
     required this.title,
+    this.isDesktop = false,
   }) : super(key: key);
 
   @override
@@ -21,7 +23,7 @@ class SectionTitle extends StatelessWidget {
             title,
             style: kMiniTitleTextStyleWhite.copyWith(
               fontWeight: FontWeight.bold,
-              fontSize: 20,
+              fontSize: isDesktop ? 25 : 20,
             ),
           ),
           SizedBox(height: 5.0),

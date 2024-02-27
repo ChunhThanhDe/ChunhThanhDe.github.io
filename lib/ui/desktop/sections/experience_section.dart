@@ -1,14 +1,14 @@
+import 'package:collection/collection.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:profile/controller/experience_controller.dart';
 import 'package:profile/generated/translations.g.dart';
+import 'package:profile/ui/desktop/widgets/work_title_text.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
-import 'package:profile/ui/desktop/widgets/work_title_text.dart';
 import 'package:profile/widgets/custom_loading_widget.dart';
 import 'package:profile/widgets/section_title.dart';
-import 'package:collection/collection.dart';
 import 'package:time_machine/time_machine.dart';
 
 class ExperienceSection extends StatelessWidget {
@@ -33,7 +33,7 @@ class ExperienceSection extends StatelessWidget {
       color: klightDarkColor,
       child: Column(
         children: [
-          SectionTitle(title: texts.general.title_experience_section),
+          SectionTitle(title: texts.general.title_experience_section, isDesktop: true),
           experienceController.workExperience.isEmpty
               ? CustomLoadingWidget()
               : ExpansionPanelList.radio(

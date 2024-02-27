@@ -21,7 +21,7 @@ class SkillsSection extends StatelessWidget {
       color: kdarkColor,
       child: Column(
         children: [
-          SectionTitle(title: texts.general.title_skill_section),
+          SectionTitle(title: texts.general.title_skill_section, isDesktop: true),
           GridView.builder(
             padding: EdgeInsets.zero,
             gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

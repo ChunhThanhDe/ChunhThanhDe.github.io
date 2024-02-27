@@ -28,13 +28,13 @@ class ContactCard extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 30),
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Flexible(
-              child: Icon(
-                icon,
-                color: const Color(0xffB3A595),
-                size: 35,
-              ),
+            Icon(
+              icon,
+              color: const Color(0xffB3A595),
+              size: 35,
             ),
             const SizedBox(width: 30),
             Flexible(

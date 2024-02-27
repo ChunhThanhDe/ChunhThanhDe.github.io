@@ -49,17 +49,22 @@ class _MobileBodyState extends State<MobileBody> {
 
   @override
   Widget build(BuildContext context) {
+    double ScreenWidth = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: kdarkColor,
-      floatingActionButtonLocation: FloatingActionButtonLocation.startFloat,
       floatingActionButton: FloatingActionButton(
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(50.0),
         ),
-        child: MusicPlayer(),
-        backgroundColor: kdarkColor,
-        elevation: 5.0,
-        onPressed: () {},
+        onPressed: () async {
+          AppData.goToLink(link_mess);
+        },
+        child: Icon(
+          MdiIcons.facebookMessenger,
+          size: 30,
+          color: Colors.white,
+        ),
+        backgroundColor: kPrimaryColor,
       ),
       drawer: Drawer(
         child: Container(
@@ -68,21 +73,20 @@ class _MobileBodyState extends State<MobileBody> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Expanded(
-                child: Container(
-                  margin: EdgeInsets.all(30.0),
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    color: klightDarkColor,
-                    border: Border.all(color: kPrimaryColor, width: 2.0),
-                    borderRadius: BorderRadius.circular(15.0),
-                  ),
-                  child: ClipRRect(
-                    borderRadius: BorderRadius.circular(15.0),
-                    child: Image.network(
-                      'https://media.licdn.com/dms/image/D5603AQE94bklZfqiEQ/profile-displayphoto-shrink_800_800/0/1692931978549?e=1712793600&v=beta&t=sqt0zfsGgZ9MiTZGNSzqWVlYycgr6s-TXkQ_eOuIc94',
-                      fit: BoxFit.cover,
-                    ),
+              Container(
+                margin: EdgeInsets.all(30.0),
+                width: ScreenWidth * 3 / 6,
+                height: ScreenWidth * 4 / 6,
+                decoration: BoxDecoration(
+                  color: klightDarkColor,
+                  border: Border.all(color: kPrimaryColor, width: 2.0),
+                  borderRadius: BorderRadius.circular(15.0),
+                ),
+                child: ClipRRect(
+                  borderRadius: BorderRadius.circular(15.0),
+                  child: Image.network(
+                    'https://media.licdn.com/dms/image/D5603AQE94bklZfqiEQ/profile-displayphoto-shrink_800_800/0/1692931978549?e=1712793600&v=beta&t=sqt0zfsGgZ9MiTZGNSzqWVlYycgr6s-TXkQ_eOuIc94',
+                    fit: BoxFit.cover,
                   ),
                 ),
               ),
@@ -95,9 +99,9 @@ class _MobileBodyState extends State<MobileBody> {
                   ),
                   Text(
                     'ChunhThanhDe',
-                    style: kTextStyleWhite.copyWith(
+                    style: kMiniTitleTextStyleWhite.copyWith(
                       fontSize: 15,
-                      fontWeight: FontWeight.normal,
+                      // fontWeight: FontWeight.normal,
                     ),
                   ),
                   Icon(
@@ -136,61 +140,67 @@ class _MobileBodyState extends State<MobileBody> {
                   ],
                 ),
               ),
-              HoverContainer(
-                child: AnimatedTexttt(
-                  text: texts.tabs.tabs[0],
+              SingleChildScrollView(
+                child: Column(
+                  children: [
+                    HoverContainer(
+                      child: AnimatedTexttt(
+                        text: texts.tabs.tabs[0],
+                      ),
+                      click: () {
+                        scrollToItem(homeKey);
+                        Navigator.pop(context);
+                      },
+                    ),
+                    HoverContainer(
+                      child: AnimatedTexttt(
+                        text: texts.tabs.tabs[1],
+                      ),
+                      click: () {
+                        scrollToItem(aboutKey);
+                        Navigator.pop(context);
+                      },
+                    ),
+                    HoverContainer(
+                      child: AnimatedTexttt(
+                        text: texts.tabs.tabs[2],
+                      ),
+                      click: () {
+                        scrollToItem(skillsKey);
+                        Navigator.pop(context);
+                      },
+                    ),
+                    HoverContainer(
+                      child: AnimatedTexttt(
+                        text: texts.tabs.tabs[3],
+                      ),
+                      click: () {
+                        scrollToItem(expKey);
+                        Navigator.pop(context);
+                      },
+                    ),
+                    HoverContainer(
+                      child: AnimatedTexttt(
+                        text: texts.tabs.tabs[4],
+                      ),
+                      click: () {
+                        scrollToItem(projectsKey);
+                        Navigator.pop(context);
+                      },
+                    ),
+                    HoverContainer(
+                      child: AnimatedTexttt(
+                        text: texts.tabs.tabs[5],
+                      ),
+                      click: () {
+                        scrollToItem(contactKey);
+                        Navigator.pop(context);
+                      },
+                    ),
+                  ],
                 ),
-                click: () {
-                  scrollToItem(homeKey);
-                  Navigator.pop(context);
-                },
               ),
-              HoverContainer(
-                child: AnimatedTexttt(
-                  text: texts.tabs.tabs[1],
-                ),
-                click: () {
-                  scrollToItem(aboutKey);
-                  Navigator.pop(context);
-                },
-              ),
-              HoverContainer(
-                child: AnimatedTexttt(
-                  text: texts.tabs.tabs[2],
-                ),
-                click: () {
-                  scrollToItem(skillsKey);
-                  Navigator.pop(context);
-                },
-              ),
-              HoverContainer(
-                child: AnimatedTexttt(
-                  text: texts.tabs.tabs[3],
-                ),
-                click: () {
-                  scrollToItem(expKey);
-                  Navigator.pop(context);
-                },
-              ),
-              HoverContainer(
-                child: AnimatedTexttt(
-                  text: texts.tabs.tabs[4],
-                ),
-                click: () {
-                  scrollToItem(projectsKey);
-                  Navigator.pop(context);
-                },
-              ),
-              HoverContainer(
-                child: AnimatedTexttt(
-                  text: texts.tabs.tabs[5],
-                ),
-                click: () {
-                  scrollToItem(contactKey);
-                  Navigator.pop(context);
-                },
-              ),
-              const SizedBox(height: 30),
+              Spacer(),
               Center(
                 child: MouseRegion(
                   cursor: SystemMouseCursors.click,
@@ -272,6 +282,16 @@ class _MobileBodyState extends State<MobileBody> {
                 padding: const EdgeInsets.all(8),
                 borderRadius: const BorderRadius.all(Radius.circular(45)),
               ),
+            ),
+          ),
+          Positioned(
+            top: 100,
+            left: 0,
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                MusicPlayer(),
+              ],
             ),
           ),
         ],

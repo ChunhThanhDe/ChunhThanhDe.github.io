@@ -3,7 +3,6 @@ import 'package:profile/controller/project_controller.dart';
 import 'package:profile/generated/translations.g.dart';
 import 'package:profile/ui/tablet/widgets/t_project_card.dart';
 import 'package:profile/utils/colors.dart';
-import 'package:profile/widgets/basic_button.dart';
 import 'package:profile/widgets/section_title.dart';
 
 class TProjectsAndDesigns extends StatelessWidget {
@@ -29,10 +28,11 @@ class TProjectsAndDesigns extends StatelessWidget {
           const SizedBox(
             height: 20,
           ),
-          BasicButton(
-            text: 'Browse All Projects',
-            click: () {},
-          ),
+          // todo: update in future
+          // BasicButton(
+          //   text: 'Browse All Projects',
+          //   click: () {},
+          // ),
         ],
       ),
     );

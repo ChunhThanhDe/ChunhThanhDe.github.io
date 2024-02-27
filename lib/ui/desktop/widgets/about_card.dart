@@ -45,9 +45,11 @@ class _AboutCardState extends State<AboutCard> {
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Text(
-                widget.model.title,
-                style: kMiniTitleTextStyleGreen,
+              Expanded(
+                child: Text(
+                  widget.model.title,
+                  style: kMiniTitleTextStyleGreen,
+                ),
               ),
               Image.asset(
                 widget.model.iconPath,

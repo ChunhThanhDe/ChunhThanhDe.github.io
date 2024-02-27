@@ -103,109 +103,91 @@ class _DesktopBodyState extends State<DesktopBody> {
                 child: Row(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    // Expanded(
-                    //   flex: _screenWidth > 1700 ? 8 : 4,
-                    //   child: Row(
-                    //     crossAxisAlignment: CrossAxisAlignment.center,
-                    //     mainAxisAlignment: MainAxisAlignment.start,
-                    //     children: [
-                          MouseRegion(
-                            cursor: SystemMouseCursors.click,
-                            child: GestureDetector(
-                              onTap: () {
-                                scrollToItem(homeKey);
-                              },
-                              child: const CircleAvatar(
-                                foregroundImage: AssetImage('assets/avatar.png'),
-                                backgroundColor: klightDarkColor,
-                                radius: 23,
-                              ),
-                            ),
+                    MouseRegion(
+                      cursor: SystemMouseCursors.click,
+                      child: GestureDetector(
+                        onTap: () {
+                          scrollToItem(homeKey);
+                        },
+                        child: const CircleAvatar(
+                          foregroundImage: AssetImage('assets/avatar.png'),
+                          backgroundColor: klightDarkColor,
+                          radius: 23,
+                        ),
+                      ),
+                    ),
+                    Icon(
+                      MdiIcons.chevronLeft,
+                      color: kPrimaryColor,
+                    ),
+                    Text(
+                      'ChunhThanhDe',
+                      style: kTextStyleWhite.copyWith(
+                        fontSize: 15,
+                      ),
+                    ),
+                    Icon(
+                      MdiIcons.chevronRight,
+                      color: kPrimaryColor,
+                    ),
+                    Spacer(),
+                    AnimatedTexttt(
+                      text: navigationController.navigation(0),
+                      click: () => scrollToItem(homeKey),
+                      width: homeWidth,
+                    ),
+                    SizedBox(width: 18),
+                    AnimatedTexttt(
+                      text: navigationController.navigation(1),
+                      click: () => scrollToItem(aboutKey),
+                      width: aboutWidth,
+                    ),
+                    SizedBox(width: 18),
+                    AnimatedTexttt(
+                      text: navigationController.navigation(2),
+                      click: () => scrollToItem(skillsKey),
+                      width: skillsWidth,
+                    ),
+                    SizedBox(width: 18),
+                    AnimatedTexttt(
+                      text: navigationController.navigation(3),
+                      click: () => scrollToItem(experienceKey),
+                      width: experienceWidth,
+                    ),
+                    SizedBox(width: 18),
+                    AnimatedTexttt(
+                      text: navigationController.navigation(4),
+                      click: () => scrollToItem(projectsKey),
+                      width: projectsWidth,
+                    ),
+                    SizedBox(width: 18),
+                    AnimatedTexttt(
+                      text: navigationController.navigation(5),
+                      click: () => scrollToItem(contactKey),
+                      width: contactWidth,
+                    ),
+                    SizedBox(width: 18),
+                    modernButton(
+                      icon: Icons.download_rounded,
+                      click: () => downloadCV(),
+                      text: navigationController.navigation(6),
+                    ),
+                    SizedBox(width: 10),
+                    navigationController.currentLocale == navigationController.en
+                        ? AppBarLangIcon(
+                            hint: texts.general.vietnam,
+                            icon: Image.asset('icons/flags/png100px/vn.png', package: 'country_icons'),
+                            click: () async {
+                              navigationController.changeLocale(navigationController.vi);
+                            },
+                          )
+                        : AppBarLangIcon(
+                            hint: texts.general.english,
+                            icon: Image.asset('icons/flags/png100px/us.png', package: 'country_icons'),
+                            click: () async {
+                              navigationController.changeLocale(navigationController.en);
+                            },
                           ),
-                          Icon(
-                            MdiIcons.chevronLeft,
-                            color: kPrimaryColor,
-                          ),
-                          Text(
-                            'ChunhThanhDe',
-                            style: kTextStyleWhite.copyWith(
-                              fontSize: 15,
-                            ),
-                          ),
-                          Icon(
-                            MdiIcons.chevronRight,
-                            color: kPrimaryColor,
-                          ),
-                    //     ],
-                    //   ),
-                    // ),
-                    // Expanded(
-                    //   flex: 5,
-                    //   child: Row(
-                    //     mainAxisAlignment: MainAxisAlignment.end,
-                    //     crossAxisAlignment: CrossAxisAlignment.center,
-                    //     children: [
-                          Spacer(),
-                          AnimatedTexttt(
-                            text: navigationController.navigation(0),
-                            click: () => scrollToItem(homeKey),
-                            width: homeWidth,
-                          ),
-                          SizedBox(width: 18),
-                          AnimatedTexttt(
-                            text: navigationController.navigation(1),
-                            click: () => scrollToItem(aboutKey),
-                            width: aboutWidth,
-                          ),
-                          SizedBox(width: 18),
-                          AnimatedTexttt(
-                            text: navigationController.navigation(2),
-                            click: () => scrollToItem(skillsKey),
-                            width: skillsWidth,
-                          ),
-                          SizedBox(width: 18),
-                          AnimatedTexttt(
-                            text: navigationController.navigation(3),
-                            click: () => scrollToItem(experienceKey),
-                            width: experienceWidth,
-                          ),
-                          SizedBox(width: 18),
-                          AnimatedTexttt(
-                            text: navigationController.navigation(4),
-                            click: () => scrollToItem(projectsKey),
-                            width: projectsWidth,
-                          ),
-                          SizedBox(width: 18),
-                          AnimatedTexttt(
-                            text: navigationController.navigation(5),
-                            click: () => scrollToItem(contactKey),
-                            width: contactWidth,
-                          ),
-                          SizedBox(width: 18),
-                          modernButton(
-                            icon: Icons.download_rounded,
-                            click: () => downloadCV(),
-                            text: navigationController.navigation(6),
-                          ),
-                          SizedBox(width: 16),
-                          navigationController.currentLocale == navigationController.en
-                              ? AppBarLangIcon(
-                                  hint: texts.general.vietnam,
-                                  icon: Image.asset('icons/flags/png100px/vn.png', package: 'country_icons'),
-                                  click: () async {
-                                    navigationController.changeLocale(navigationController.vi);
-                                  },
-                                )
-                              : AppBarLangIcon(
-                                  hint: texts.general.english,
-                                  icon: Image.asset('icons/flags/png100px/us.png', package: 'country_icons'),
-                                  click: () async {
-                                    navigationController.changeLocale(navigationController.en);
-                                  },
-                                ),
-                    //     ],ø
-                    //   ),
-                    // ),
                   ],
                 ),
                 blur: 1.5,

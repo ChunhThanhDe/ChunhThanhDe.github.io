@@ -1,15 +1,14 @@
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
 import 'package:profile/generated/translations.g.dart';
+import 'package:profile/ui/desktop/widgets/home_icon_hover.dart';
+import 'package:profile/ui/desktop/widgets/modern_button.dart';
 import 'package:profile/utils/colors.dart';
 import 'package:profile/utils/constants.dart';
-import 'package:profile/widgets/basic_button.dart';
+import 'package:profile/widgets/custom_avatar_glow.dart';
 
-import '../../desktop/widgets/home_icon_hover.dart';
-
-class THomeSection extends StatelessWidget {
+class THomeSection extends StatefulWidget {
   final Function() scrollToProjects;
 
   const THomeSection({
@@ -17,6 +16,11 @@ class THomeSection extends StatelessWidget {
     required this.scrollToProjects,
   }) : super(key: key);
 
+  @override
+  _THomeSectionState createState() => _THomeSectionState();
+}
+
+class _THomeSectionState extends State<THomeSection> {
   @override
   Widget build(BuildContext context) {
     double _screenHeight = MediaQuery.of(context).size.height;
@@ -31,19 +35,7 @@ class THomeSection extends StatelessWidget {
               ? const Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    AvatarGlow(
-                      endRadius: 120.0 * 1.3,
-                      animate: true,
-                      glowColor: kPrimaryColor,
-                      repeat: true,
-                      duration: Duration(milliseconds: 2000),
-                      // repeatPauseDuration: Duration(milliseconds: 30),
-                      child: CircleAvatar(
-                        foregroundImage: AssetImage('assets/avatar.png'),
-                        backgroundColor: klightDarkColor,
-                        radius: 90 * 1.3,
-                      ),
-                    ),
+                    CustomAnimatedAvatarGlowSwitcher(screenWidth: 0, isDevice: 1),
                   ],
                 )
               : const Text(''),
@@ -116,10 +108,15 @@ class THomeSection extends StatelessWidget {
                     const SizedBox(
                       height: 30,
                     ),
-                    BasicButton(
+                    modernButton(
+                      icon: MdiIcons.folder,
+                      click: widget.scrollToProjects,
                       text: texts.general.browse_projects_home_section,
-                      click: scrollToProjects,
                     ),
+                    // BasicButton(
+                    //   text: texts.general.browse_projects_home_section,
+                    //   click: widget.scrollToProjects,
+                    // ),
                     const SizedBox(
                       height: 20,
                     ),
@@ -156,19 +153,7 @@ class THomeSection extends StatelessWidget {
               ),
               MediaQuery.of(context).size.width >= 860
                   ? const Expanded(
-                      child: AvatarGlow(
-                        endRadius: 120.0 * 1.3,
-                        animate: true,
-                        glowColor: kPrimaryColor,
-                        repeat: true,
-                        duration: Duration(milliseconds: 2000),
-                        // repeatPauseDuration: Duration(milliseconds: 30),
-                        child: CircleAvatar(
-                          foregroundImage: AssetImage('assets/avatar.png'),
-                          backgroundColor: klightDarkColor,
-                          radius: 90 * 1.3,
-                        ),
-                      ),
+                      child: CustomAnimatedAvatarGlowSwitcher(screenWidth: 0, isDevice: 1),
                     )
                   : const Text(''),
             ],
