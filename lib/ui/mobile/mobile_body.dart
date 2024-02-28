@@ -59,10 +59,12 @@ class _MobileBodyState extends State<MobileBody> {
         onPressed: () async {
           AppData.goToLink(link_mess);
         },
-        child: Icon(
-          MdiIcons.facebookMessenger,
-          size: 30,
-          color: Colors.white,
+        child: Center(
+          child: Icon(
+            MdiIcons.facebookMessenger,
+            size: 30,
+            color: Colors.white,
+          ),
         ),
         backgroundColor: kPrimaryColor,
       ),

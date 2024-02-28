@@ -99,7 +99,7 @@ class _MContactSectionState extends State<MContactSection> {
                           content: phone_work,
                         ),
                         ContactCard(
-                          icon: MdiIcons.linkedin,
+                          icon: MdiIcons.skype,
                           content: skype,
                         ),
                       ],

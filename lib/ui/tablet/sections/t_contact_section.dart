@@ -104,7 +104,7 @@ class _TContactSectionState extends State<TContactSection> {
                                         content: phone_work,
                                       ),
                                       ContactCard(
-                                        icon: MdiIcons.linkedin,
+                                        icon: MdiIcons.skype,
                                         content: skype,
                                       ),
                                     ],
@@ -251,7 +251,7 @@ class _TContactSectionState extends State<TContactSection> {
                                       content: phone_work,
                                     ),
                                     ContactCard(
-                                      icon: MdiIcons.linkedin,
+                                      icon: MdiIcons.skype,
                                       content: skype,
                                     ),
                                   ],
