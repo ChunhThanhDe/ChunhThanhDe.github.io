@@ -104,7 +104,7 @@ class _ContactSectionState extends State<ContactSection> {
                                   content: phone_work,
                                 ),
                                 ContactCard(
-                                  icon: MdiIcons.linkedin,
+                                  icon: MdiIcons.skype,
                                   content: skype,
                                 ),
                               ],
