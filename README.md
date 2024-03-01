@@ -4,7 +4,7 @@
 
 ###### contact for work, mail: chunhthanhde.dev@gmail.com
 
-<img src="assets/avatar.png" height="100px" />
+<img src="media/logo/logo.jpg" height="100px"  alt="logo"/>
 
 ### Welcome
 
@@ -17,7 +17,7 @@
 
 ### Screenshots
 
-<img src="media/image/Home_Screen.png" />
+<img src="media/image/Home_Screen.png"  alt="HomeScreen"/>
 
 ### Run Project
 
@@ -100,7 +100,7 @@ git push origin --set-upstream gh-pages
 4. Go into your repository -> Settings -> Pages and select the branch you want to build your GitHub
    page
 
-<img src="media/setup.jpeg" />
+<img src="media/setup.jpeg"  alt="Set_up"/>
 
 See details here: https://dev.to/rodrigocastro_o/publishing-your-flutter-apps-into-github-pages-1l61
 
