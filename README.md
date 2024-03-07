@@ -25,7 +25,7 @@ Alternatively, run `flutter run` and code generation will take place automatical
 
 ### Generating Translations
 
-To use the latest translations changes, you will need to generate them:
+To use the latest translation changes, you will need to generate them:
 
 1. For each supported locale, add a new Folder in `i18n`.
 
@@ -42,7 +42,7 @@ To use the latest translations changes, you will need to generate them:
 ```json
 {
   "name": "Chung Nguyen Thanh",
-  "aboutMe": "As a skilled software develope ..."
+  "aboutMe": "As a skilled software developer..."
 }
 ```
 
@@ -62,7 +62,7 @@ namespaces: true
 
 4. Generate localizations for the current project:
 
-To use the latest translations changes, you will need to generate them:
+To use the latest translation changes, you will need to generate them:
 
 ```sh
 dart run slang build --delete-conflicting-outputs
@@ -72,7 +72,7 @@ dart run slang build --delete-conflicting-outputs
 
 I use Peanut via https://github.com/kevmoo/peanut.dart.
 
-It's a tool that makes the application build and updates/create a gh-pages branch.
+It's a tool that makes the application build and update/create a gh-pages branch.
 
 In my case, I had to follow these steps
 
@@ -84,7 +84,7 @@ flutter pub global activate peanut
 
 2. Run the peanut command line with one extra parameter, because my repository will be available
    at https://ChunhThanhDe.github.io/flutter_web/, that is different than the default that is /, that's
-   why I needed to give this base-href extra parameter too
+   why do I need to give this base-href extra parameter too
 
 ```sh
 flutter pub global run peanut --extra-args "--base-href=/flutter_web/"
@@ -105,4 +105,4 @@ git push origin --set-upstream gh-pages
 See details here: https://dev.to/rodrigocastro_o/publishing-your-flutter-apps-into-github-pages-1l61
 
 ### Reference
-Project is developed and referenced from the source: https://github.com/ericknamukolo/ericknamukolo.github.io
+The project is developed and referenced from the source: https://github.com/ericknamukolo/ericknamukolo.github.io
