@@ -173,7 +173,7 @@ class _DesktopBodyState extends State<DesktopBody> {
                       text: navigationController.navigation(6),
                     ),
                     SizedBox(width: 10),
-                    navigationController.currentLocale == navigationController.en
+                    navigationController.currentLocale == navigationController.vi
                         ? AppBarLangIcon(
                             hint: texts.general.vietnam,
                             icon: Image.asset('icons/flags/png100px/vn.png', package: 'country_icons'),

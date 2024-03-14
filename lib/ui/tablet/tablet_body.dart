@@ -204,7 +204,7 @@ class _TabletBodyState extends State<TabletBody> {
                             click: () => downloadCV(),
                             text: navigationController.navigation(6),
                           ),
-                          navigationController.currentLocale == navigationController.en
+                          navigationController.currentLocale == navigationController.vi
                               ? AppBarLangIcon(
                                   hint: texts.general.vietnam,
                                   icon: Image.asset('icons/flags/png100px/vn.png', package: 'country_icons'),

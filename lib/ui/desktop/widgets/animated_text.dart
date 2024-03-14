@@ -43,7 +43,7 @@ class _AnimatedTextttState extends State<AnimatedTexttt> {
         onTap: widget.click,
         child: Text(
           widget.text,
-          style: kNormalTextStyleWhite.copyWith(
+          style: kMiniTitleTextStyleWhite.copyWith(
             color: color,
             fontWeight: bold,
           ),
