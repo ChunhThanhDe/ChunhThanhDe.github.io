@@ -178,14 +178,14 @@ class _DesktopBodyState extends State<DesktopBody> {
                             hint: texts.general.vietnam,
                             icon: Image.asset('icons/flags/png100px/vn.png', package: 'country_icons'),
                             click: () async {
-                              navigationController.changeLocale(navigationController.vi);
+                              navigationController.changeLocale(navigationController.en);
                             },
                           )
                         : AppBarLangIcon(
                             hint: texts.general.english,
                             icon: Image.asset('icons/flags/png100px/us.png', package: 'country_icons'),
                             click: () async {
-                              navigationController.changeLocale(navigationController.en);
+                              navigationController.changeLocale(navigationController.vi);
                             },
                           ),
                   ],
