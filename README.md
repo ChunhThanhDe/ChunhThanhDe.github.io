@@ -83,7 +83,8 @@ flutter pub global activate peanut
 ```
 
 2. Run the peanut command line with one extra parameter, because my repository will be available
-   at https://ChunhThanhDe.github.io/flutter_web/, that is different than the default that is /, that's
+   at https://ChunhThanhDe.github.io/flutter_web/, that is different than the default that is /,
+   that's
    why do I need to give this base-href extra parameter too
 
 ```sh
@@ -105,4 +106,6 @@ git push origin --set-upstream gh-pages
 See details here: https://dev.to/rodrigocastro_o/publishing-your-flutter-apps-into-github-pages-1l61
 
 ### Reference
-The project is developed and referenced from the source: https://github.com/ericknamukolo/ericknamukolo.github.io
+
+The project is developed and referenced from the
+source: https://github.com/ericknamukolo/ericknamukolo.github.io
