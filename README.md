@@ -1,4 +1,4 @@
-# Profhilo - ChunhThanhDe's personal website
+# Portfolio - ChunhThanhDe's personal website
 
 ##### Personal profile website developed by ChunhThanhDe - a software engineer, flutter developer
 
@@ -27,7 +27,7 @@ Alternatively, run `flutter run` and code generation will take place automatical
 
 To use the latest translation changes, you will need to generate them:
 
-1. For each supported locale, add a new Folder in `i18n`.
+1. add a new Folder in `i18n` for each supported locale.
 
 ```
 ├── 1i8n
@@ -83,7 +83,7 @@ flutter pub global activate peanut
 ```
 
 2. Run the peanut command line with one extra parameter, because my repository will be available
-   at https://ChunhThanhDe.github.io/flutter_web/, that is different than the default that is /,
+   at https://ChunhThanhDe.github.io/flutter_web/, which is different than the default that is /,
    that's
    why do I need to give this base-href extra parameter too
 
