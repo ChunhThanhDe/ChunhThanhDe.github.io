@@ -23,7 +23,7 @@ class THomeSection extends StatefulWidget {
 class _THomeSectionState extends State<THomeSection> {
   @override
   Widget build(BuildContext context) {
-    double _screenHeight = MediaQuery.of(context).size.height;
+    // double _screenHeight = MediaQuery.of(context).size.height;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 90, vertical: 70),
       margin: const EdgeInsets.only(top: 50),

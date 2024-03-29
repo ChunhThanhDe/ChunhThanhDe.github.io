@@ -6,7 +6,7 @@ import 'package:profile/utils/constants.dart';
 class HomeIconHover extends StatefulWidget {
   final IconData icon;
   final Color color;
-  bool isMobile;
+  final bool isMobile;
 
   HomeIconHover({
     Key? key,
