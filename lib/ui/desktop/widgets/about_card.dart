@@ -22,10 +22,7 @@ class _AboutCardState extends State<AboutCard> {
   Widget build(BuildContext context) {
     return Container(
       margin: const EdgeInsets.only(bottom: 25),
-      padding: const EdgeInsets.symmetric(
-        horizontal: 20,
-        vertical: 15,
-      ),
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
       height: 140,
       width: double.infinity,
       decoration: BoxDecoration(
@@ -60,18 +57,14 @@ class _AboutCardState extends State<AboutCard> {
               ),
             ],
           ),
-          const SizedBox(
-            height: 10,
-          ),
-          Flexible(
-            child: Container(
-              child: Text(
-                widget.model.content,
-                overflow: TextOverflow.ellipsis,
-                softWrap: true,
-                maxLines: 10,
-                style: kNormalTextStyleGrey,
-              ),
+          const SizedBox(height: 10),
+          Expanded(
+            child: Text(
+              widget.model.content,
+              overflow: TextOverflow.ellipsis,
+              softWrap: true,
+              maxLines: 10,
+              style: kNormalTextStyleGrey,
             ),
           ),
         ],

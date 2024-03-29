@@ -38,7 +38,7 @@ class _CustomAnimatedAvatarGlowSwitcherState extends State<CustomAnimatedAvatarG
   }
 
   void _startTimer() {
-    _timerchange = Timer.periodic(Duration(seconds: 9), (Timer timer) {
+    _timerchange = Timer.periodic(Duration(seconds: 6), (Timer timer) {
       setState(() {
         _showAvatar = !_showAvatar;
       });

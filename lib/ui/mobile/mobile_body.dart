@@ -75,153 +75,165 @@ class _MobileBodyState extends State<MobileBody> {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              Container(
-                margin: EdgeInsets.all(30.0),
-                width: ScreenWidth * 3 / 6,
-                height: ScreenWidth * 4 / 6,
-                decoration: BoxDecoration(
-                  color: klightDarkColor,
-                  border: Border.all(color: kPrimaryColor, width: 2.0),
-                  borderRadius: BorderRadius.circular(15.0),
-                ),
-                child: ClipRRect(
-                  borderRadius: BorderRadius.circular(15.0),
-                  child: Image.network(
-                    'https://media.licdn.com/dms/image/D5603AQE94bklZfqiEQ/profile-displayphoto-shrink_800_800/0/1692931978549?e=1712793600&v=beta&t=sqt0zfsGgZ9MiTZGNSzqWVlYycgr6s-TXkQ_eOuIc94',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  Icon(
-                    MdiIcons.chevronLeft,
-                    color: kPrimaryColor,
-                  ),
-                  Text(
-                    'ChunhThanhDe',
-                    style: kMiniTitleTextStyleWhite.copyWith(
-                      fontSize: 15,
-                      // fontWeight: FontWeight.normal,
-                    ),
-                  ),
-                  Icon(
-                    MdiIcons.chevronRight,
-                    color: kPrimaryColor,
-                  ),
-                ],
-              ),
-              const SizedBox(
-                height: 10,
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(vertical: 1, horizontal: 15),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.center,
-                  mainAxisAlignment: MainAxisAlignment.start,
-                  children: [
-                    AnimatedTexttt(
-                      text: texts.general.language + ": ",
-                    ),
-                    navigationController.currentLocale == navigationController.en
-                        ? AppBarLangIcon(
-                            hint: texts.general.vietnam,
-                            icon: Image.asset('icons/flags/png100px/us.png', package: 'country_icons'),
-                            click: () async {
-                              navigationController.changeLocale(navigationController.vi);
-                            },
-                          )
-                        : AppBarLangIcon(
-                            hint: texts.general.english,
-                            icon: Image.asset('icons/flags/png100px/vn.png', package: 'country_icons'),
-                            click: () async {
-                              navigationController.changeLocale(navigationController.en);
-                            },
-                          ),
-                  ],
-                ),
-              ),
-              SingleChildScrollView(
+              Expanded(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
-                    HoverContainer(
-                      child: AnimatedTexttt(
-                        text: texts.tabs.tabs[0],
+                    Container(
+                      margin: EdgeInsets.all(30.0),
+                      width: ScreenWidth * 3 / 6,
+                      height: ScreenWidth * 4 / 6,
+                      decoration: BoxDecoration(
+                        color: klightDarkColor,
+                        border: Border.all(color: kPrimaryColor, width: 2.0),
+                        borderRadius: BorderRadius.circular(15.0),
                       ),
-                      click: () {
-                        scrollToItem(homeKey);
-                        Navigator.pop(context);
-                      },
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(15.0),
+                        child: Image.network(
+                          'https://media.licdn.com/dms/image/D5603AQE94bklZfqiEQ/profile-displayphoto-shrink_800_800/0/1692931978549?e=1712793600&v=beta&t=sqt0zfsGgZ9MiTZGNSzqWVlYycgr6s-TXkQ_eOuIc94',
+                          fit: BoxFit.cover,
+                        ),
+                      ),
                     ),
-                    HoverContainer(
-                      child: AnimatedTexttt(
-                        text: texts.tabs.tabs[1],
-                      ),
-                      click: () {
-                        scrollToItem(aboutKey);
-                        Navigator.pop(context);
-                      },
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Icon(
+                          MdiIcons.chevronLeft,
+                          color: kPrimaryColor,
+                        ),
+                        Text(
+                          'ChunhThanhDe',
+                          style: kMiniTitleTextStyleWhite.copyWith(
+                            fontSize: 15,
+                            // fontWeight: FontWeight.normal,
+                          ),
+                        ),
+                        Icon(
+                          MdiIcons.chevronRight,
+                          color: kPrimaryColor,
+                        ),
+                      ],
                     ),
-                    HoverContainer(
-                      child: AnimatedTexttt(
-                        text: texts.tabs.tabs[2],
-                      ),
-                      click: () {
-                        scrollToItem(skillsKey);
-                        Navigator.pop(context);
-                      },
+                    const SizedBox(
+                      height: 10,
                     ),
-                    HoverContainer(
-                      child: AnimatedTexttt(
-                        text: texts.tabs.tabs[3],
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 1, horizontal: 15),
+                      child: Row(
+                        crossAxisAlignment: CrossAxisAlignment.center,
+                        mainAxisAlignment: MainAxisAlignment.start,
+                        children: [
+                          AnimatedTexttt(
+                            text: texts.general.language + ": ",
+                          ),
+                          navigationController.currentLocale == navigationController.en
+                              ? AppBarLangIcon(
+                                  hint: texts.general.vietnam,
+                                  icon: Image.asset('icons/flags/png100px/us.png', package: 'country_icons'),
+                                  click: () async {
+                                    navigationController.changeLocale(navigationController.vi);
+                                  },
+                                )
+                              : AppBarLangIcon(
+                                  hint: texts.general.english,
+                                  icon: Image.asset('icons/flags/png100px/vn.png', package: 'country_icons'),
+                                  click: () async {
+                                    navigationController.changeLocale(navigationController.en);
+                                  },
+                                ),
+                        ],
                       ),
-                      click: () {
-                        scrollToItem(expKey);
-                        Navigator.pop(context);
-                      },
                     ),
-                    HoverContainer(
-                      child: AnimatedTexttt(
-                        text: texts.tabs.tabs[4],
+                    Expanded(
+                      child: SingleChildScrollView(
+                        child: Column(
+                          children: [
+                            HoverContainer(
+                              child: AnimatedTexttt(
+                                text: texts.tabs.tabs[0],
+                              ),
+                              click: () {
+                                scrollToItem(homeKey);
+                                Navigator.pop(context);
+                              },
+                            ),
+                            HoverContainer(
+                              child: AnimatedTexttt(
+                                text: texts.tabs.tabs[1],
+                              ),
+                              click: () {
+                                scrollToItem(aboutKey);
+                                Navigator.pop(context);
+                              },
+                            ),
+                            HoverContainer(
+                              child: AnimatedTexttt(
+                                text: texts.tabs.tabs[2],
+                              ),
+                              click: () {
+                                scrollToItem(skillsKey);
+                                Navigator.pop(context);
+                              },
+                            ),
+                            HoverContainer(
+                              child: AnimatedTexttt(
+                                text: texts.tabs.tabs[3],
+                              ),
+                              click: () {
+                                scrollToItem(expKey);
+                                Navigator.pop(context);
+                              },
+                            ),
+                            HoverContainer(
+                              child: AnimatedTexttt(
+                                text: texts.tabs.tabs[4],
+                              ),
+                              click: () {
+                                scrollToItem(projectsKey);
+                                Navigator.pop(context);
+                              },
+                            ),
+                            HoverContainer(
+                              child: AnimatedTexttt(
+                                text: texts.tabs.tabs[5],
+                              ),
+                              click: () {
+                                scrollToItem(contactKey);
+                                Navigator.pop(context);
+                              },
+                            ),
+                          ],
+                        ),
                       ),
-                      click: () {
-                        scrollToItem(projectsKey);
-                        Navigator.pop(context);
-                      },
-                    ),
-                    HoverContainer(
-                      child: AnimatedTexttt(
-                        text: texts.tabs.tabs[5],
-                      ),
-                      click: () {
-                        scrollToItem(contactKey);
-                        Navigator.pop(context);
-                      },
                     ),
                   ],
                 ),
               ),
-              Spacer(),
-              Center(
-                child: MouseRegion(
-                  cursor: SystemMouseCursors.click,
-                  child: GestureDetector(
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                    child: const CircleAvatar(
-                      backgroundColor: klightDarkColor,
-                      radius: 30,
-                      child: const Icon(
-                        Icons.close,
-                        color: Colors.white,
-                        size: 30,
+              Align(
+                alignment: Alignment.bottomCenter,
+                child: Center(
+                  child: MouseRegion(
+                    cursor: SystemMouseCursors.click,
+                    child: GestureDetector(
+                      onTap: () {
+                        Navigator.pop(context);
+                      },
+                      child: CircleAvatar(
+                        backgroundColor: klightDarkColor,
+                        radius: 30,
+                        child: Icon(
+                          Icons.close,
+                          color: Colors.white,
+                          size: 30,
+                        ),
                       ),
                     ),
                   ),
                 ),
               ),
+              // Spacer(),
             ],
           ),
         ),
