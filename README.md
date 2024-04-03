@@ -95,7 +95,7 @@ flutter pub global run peanut --extra-args "--base-href=/flutter_web/"
    need to sync it in git.
 
 ```sh
-git push origin --set-upstream gh-pages
+git push -f origin --set-upstream gh-pages
 ```
 
 4. Go into your repository -> Settings -> Pages and select the branch you want to build your GitHub
