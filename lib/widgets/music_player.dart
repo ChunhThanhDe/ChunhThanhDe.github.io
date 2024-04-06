@@ -277,7 +277,7 @@ class _MusicPlayerState extends State<MusicPlayer> with TickerProviderStateMixin
         onHover: (isHovered) {
           if (isHovered) {
             if (controller.isDismissed) {
-              Timer.periodic(const Duration(milliseconds: 1000), (t) {
+              Timer.periodic(const Duration(milliseconds: 200), (t) {
                 _count++;
                 if (_count == 1) {
                   controller.forward();

@@ -71,16 +71,6 @@ class _CustomAnimatedAvatarGlowSwitcherState extends State<CustomAnimatedAvatarG
         },
         child: _showAvatar
             ? CircleAvatar(
-                foregroundImage: AssetImage('assets/avatar.png'),
-                backgroundColor: klightDarkColor,
-                radius: widget.isDevice == 0
-                    ? (widget.screenWidth * .099)
-                    : widget.isDevice == 2
-                        ? 90
-                        : 90 * 1.3,
-                key: ValueKey<bool>(true),
-              )
-            : CircleAvatar(
                 backgroundImage: NetworkImage(
                   'https://media.licdn.com/dms/image/D5603AQE94bklZfqiEQ/profile-displayphoto-shrink_800_800/0/1692931978549?e=1712793600&v=beta&t=sqt0zfsGgZ9MiTZGNSzqWVlYycgr6s-TXkQ_eOuIc94',
                 ),
@@ -91,6 +81,16 @@ class _CustomAnimatedAvatarGlowSwitcherState extends State<CustomAnimatedAvatarG
                         ? 90
                         : 90 * 1.3,
                 key: ValueKey<bool>(false),
+              )
+            : CircleAvatar(
+                foregroundImage: AssetImage('assets/avatar.png'),
+                backgroundColor: klightDarkColor,
+                radius: widget.isDevice == 0
+                    ? (widget.screenWidth * .099)
+                    : widget.isDevice == 2
+                        ? 90
+                        : 90 * 1.3,
+                key: ValueKey<bool>(true),
               ),
       ),
     );
