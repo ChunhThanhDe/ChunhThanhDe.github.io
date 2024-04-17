@@ -27637,11 +27637,13 @@ this.c=null},
 q9:function q9(a,b,c){this.c=a
 this.d=b
 this.a=c},
-VM:function VM(a){var _=this
+VM:function VM(a,b,c){var _=this
 _.d=!0
 _.e=$
+_.f=a
+_.r=b
 _.a=null
-_.b=a
+_.b=c
 _.c=null},
 auA:function auA(a){this.a=a},
 auz:function auz(a){this.a=a},
@@ -92278,7 +92280,8 @@ A.UQ.prototype={
 E(a){var s=null,r=A.cD(20),q=$.af().Am(10,10,B.dW),p=this.a,o=p.d,n=p.e,m=A.W(51,0,0,0),l=A.cD(30)
 return A.M0(r,A.aGj(A.au(s,p.c,B.i,s,s,new A.bt(m,s,s,l,s,s,s,B.K),s,s,new A.a3(o,o,o,o),new A.a3(n,n,n,n),s,s,s),q))}}
 A.q9.prototype={
-a3(){return new A.VM(B.k)}}
+a3(){var s=null
+return new A.VM(new A.lH("assets/me.png",s,s),new A.lH("assets/avatar.png",s,s),B.k)}}
 A.VM.prototype={
 az(){this.aM()
 this.ahJ()},
@@ -92287,16 +92290,16 @@ s===$&&A.b()
 s.aE(0)
 this.aD()},
 ahJ(){this.e=A.Fn(A.cb(0,0,0,6),new A.auA(this))},
-E(a){var s,r,q,p=null,o=this.a,n=o.d,m=n===0
-if(m){s=o.c
-s=s<1700?s*0.15:340}else s=n===2?160:156
+E(a){var s,r,q,p=this,o=null,n=p.a,m=n.d,l=m===0
+if(l){s=n.c
+s=s<1700?s*0.15:340}else s=m===2?160:156
 r=A.cb(0,0,0,3)
 q=A.cb(0,1000,0,0)
-if(this.d){if(m)o=o.c*0.099
-else o=n===2?90:117
-o=A.aGr(B.ad,p,new A.lH("assets/me.png",p,p),new A.dz(!1,t.lY),o)}else{if(m)o=o.c*0.099
-else o=n===2?90:117
-o=A.aGr(B.ad,p,new A.lH("assets/avatar.png",p,p),new A.dz(!0,t.lY),o)}return new A.ze(new A.z_(o,q,new A.auB(),p),s,r,!0,!0,B.B,p)}}
+if(p.d){if(l)n=n.c*0.099
+else n=m===2?90:117
+n=A.aGr(B.ad,o,p.f,new A.dz(!1,t.lY),n)}else{if(l)n=n.c*0.099
+else n=m===2?90:117
+n=A.aGr(B.ad,o,p.r,new A.dz(!0,t.lY),n)}return new A.ze(new A.z_(n,q,new A.auB(),o),s,r,!0,!0,B.B,o)}}
 A.auA.prototype={
 $1(a){var s=this.a
 s.Z(new A.auz(s))},
