@@ -24,10 +24,13 @@ class CustomAnimatedAvatarGlowSwitcher extends StatefulWidget {
 class _CustomAnimatedAvatarGlowSwitcherState extends State<CustomAnimatedAvatarGlowSwitcher> {
   bool _showAvatar = true;
   late Timer _timerchange;
+  ImageProvider<Object> me = AssetImage('assets/me.png');
+  ImageProvider<Object> avatar = AssetImage('assets/avatar.png');
 
   @override
   void initState() {
     super.initState();
+
     _startTimer();
   }
 
@@ -74,7 +77,7 @@ class _CustomAnimatedAvatarGlowSwitcherState extends State<CustomAnimatedAvatarG
                 // backgroundImage: NetworkImage(
                 //   'https://media.licdn.com/dms/image/D5603AQE94bklZfqiEQ/profile-displayphoto-shrink_800_800/0/1692931978549?e=1712793600&v=beta&t=sqt0zfsGgZ9MiTZGNSzqWVlYycgr6s-TXkQ_eOuIc94',
                 // ),
-                foregroundImage: AssetImage('assets/me.png'),
+                foregroundImage: me,
                 backgroundColor: klightDarkColor,
                 radius: widget.isDevice == 0
                     ? (widget.screenWidth * .099)
@@ -84,7 +87,7 @@ class _CustomAnimatedAvatarGlowSwitcherState extends State<CustomAnimatedAvatarG
                 key: ValueKey<bool>(false),
               )
             : CircleAvatar(
-                foregroundImage: AssetImage('assets/avatar.png'),
+                foregroundImage: avatar,
                 backgroundColor: klightDarkColor,
                 radius: widget.isDevice == 0
                     ? (widget.screenWidth * .099)
