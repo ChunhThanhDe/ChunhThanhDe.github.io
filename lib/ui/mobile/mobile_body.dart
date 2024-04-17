@@ -91,7 +91,7 @@ class _MobileBodyState extends State<MobileBody> {
                       child: ClipRRect(
                         borderRadius: BorderRadius.circular(15.0),
                         child: Image.network(
-                          'https://media.licdn.com/dms/image/D5603AQE94bklZfqiEQ/profile-displayphoto-shrink_800_800/0/1692931978549?e=1712793600&v=beta&t=sqt0zfsGgZ9MiTZGNSzqWVlYycgr6s-TXkQ_eOuIc94',
+                          'https://media.licdn.com/dms/image/D5603AQE94bklZfqiEQ/profile-displayphoto-shrink_800_800/0/1692931978549?e=1718841600&v=beta&t=KbMr4hpwt6gMHyG6lMYw4LCg5cYqeK6IeDkcNMmQ9cY',
                           fit: BoxFit.cover,
                         ),
                       ),

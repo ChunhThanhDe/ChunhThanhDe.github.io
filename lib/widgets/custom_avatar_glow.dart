@@ -71,9 +71,10 @@ class _CustomAnimatedAvatarGlowSwitcherState extends State<CustomAnimatedAvatarG
         },
         child: _showAvatar
             ? CircleAvatar(
-                backgroundImage: NetworkImage(
-                  'https://media.licdn.com/dms/image/D5603AQE94bklZfqiEQ/profile-displayphoto-shrink_800_800/0/1692931978549?e=1712793600&v=beta&t=sqt0zfsGgZ9MiTZGNSzqWVlYycgr6s-TXkQ_eOuIc94',
-                ),
+                // backgroundImage: NetworkImage(
+                //   'https://media.licdn.com/dms/image/D5603AQE94bklZfqiEQ/profile-displayphoto-shrink_800_800/0/1692931978549?e=1712793600&v=beta&t=sqt0zfsGgZ9MiTZGNSzqWVlYycgr6s-TXkQ_eOuIc94',
+                // ),
+                foregroundImage: AssetImage('assets/me.png'),
                 backgroundColor: klightDarkColor,
                 radius: widget.isDevice == 0
                     ? (widget.screenWidth * .099)

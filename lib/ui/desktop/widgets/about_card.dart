@@ -21,8 +21,8 @@ class _AboutCardState extends State<AboutCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.only(bottom: 25),
-      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 15),
+      margin: EdgeInsets.only(bottom: 25),
+      padding: EdgeInsets.symmetric(horizontal: 20, vertical: 15),
       height: 140,
       width: double.infinity,
       decoration: BoxDecoration(
@@ -63,7 +63,7 @@ class _AboutCardState extends State<AboutCard> {
               widget.model.content,
               overflow: TextOverflow.ellipsis,
               softWrap: true,
-              maxLines: 10,
+              maxLines: 3,
               style: kNormalTextStyleGrey,
             ),
           ),
