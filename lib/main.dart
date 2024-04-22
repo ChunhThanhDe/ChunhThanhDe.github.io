@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:intl/date_symbol_data_local.dart';
 import 'package:intl/intl.dart';
 import 'package:profile/firebase_options.dart';
+import 'package:profile/services/check_location.dart';
 import 'package:profile/ui/desktop/desktop_body.dart';
 import 'package:profile/ui/mobile/mobile_body.dart';
 import 'package:profile/ui/tablet/tablet_body.dart';
@@ -29,6 +30,8 @@ Future<void> main() async {
   AssetsAudioPlayer.setupNotificationsOpenAction((notification) {
     return true;
   });
+
+  getCurrentLocation();
 
   setPathUrlStrategy();
   runApp(TranslationProvider(child: const profile()));

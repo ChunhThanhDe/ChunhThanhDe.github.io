@@ -18,7 +18,7 @@ class Message {
           'email': email.trim(),
           'message': message.trim(),
           'createdAt': FieldValue.serverTimestamp(),
-          'token': appCheckToken,
+          // 'token': appCheckToken,
         });
         return true;
       }
@@ -26,6 +26,16 @@ class Message {
       print("get AppCheck error: " + e.toString());
     }
     return false;
+  }
+
+  static sendNotification() {
+    try {
+      FirebaseFirestore.instance.collection('notification').add({
+        'createdAt': FieldValue.serverTimestamp(),
+      });
+    } catch (e) {
+      print("get AppCheck error: " + e.toString());
+    }
   }
 }
 
