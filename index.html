@@ -48,6 +48,20 @@
     .indicator{
       width: 16vw;
     }
+
+    /* Điều kiện: Màn hình điện thoại */
+    @media (max-width: 600px) {
+        .indicator {
+            width: 32vw;
+        }
+    }
+
+    /* Điều kiện: Màn hình máy tính ngang */
+    @media (min-width: 601px) {
+        .indicator {
+            width: 16vw;
+        }
+    }
     </style>
 
 </head>
@@ -85,7 +99,7 @@
 
 <!--  <script src="https://www.google.com/recaptcha/api.js?render=6LcAWWgpAAAAAGif1NuIexctX-DBevZGz7C7fBjq"></script>-->
 <script>
-    const serviceWorkerVersion = "1321683866";
+    const serviceWorkerVersion = "2104022485";
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
