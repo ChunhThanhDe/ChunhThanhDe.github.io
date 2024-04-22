@@ -17,7 +17,7 @@ class Message {
           'sender': sender.trim(),
           'email': email.trim(),
           'message': message.trim(),
-          'createdAt': fetchServerTime.toString(),
+          'SendAt': FieldValue.serverTimestamp(),
           // 'token': appCheckToken,
         });
         return true;
@@ -32,7 +32,7 @@ class Message {
     try {
       FirebaseFirestore.instance.collection('notification').add({
         'address': ip,
-        'createdAt': fetchServerTime.toString(),
+        'SendAt': FieldValue.serverTimestamp(),
       });
     } catch (e) {
       print("error: " + e.toString());
@@ -55,25 +55,6 @@ Future<bool> isRecaptchaSuccess(String recaptchaToken) async {
   } else {
     return false;
   }
-}
-
-Future<DateTime> fetchServerTime() async {
-  // Gọi API hoặc truy vấn thời gian từ máy chủ
-  // Trong ví dụ này, chúng ta sẽ sử dụng thời gian hiện tại của máy tính làm giả
-  final DateTime currentTime = DateTime.now();
-  DateTime? serverTime;
-
-  // Kiểm tra múi giờ của máy chủ
-  final serverTimeZoneOffset = currentTime.timeZoneOffset;
-  if (serverTimeZoneOffset == Duration(hours: 7)) {
-    // Máy chủ có múi giờ +7
-    serverTime = currentTime;
-  } else {
-    // Máy chủ không có múi giờ +7, tính toán và đưa thời gian về múi giờ +7
-    final adjustedTime = currentTime.add(Duration(hours: 7 - serverTimeZoneOffset.inHours));
-    serverTime = adjustedTime;
-  }
-  return serverTime;
 }
 
 downloadCV() {
