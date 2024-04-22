@@ -31,9 +31,10 @@ Future<void> main() async {
     return true;
   });
 
+  setPathUrlStrategy();
+
   getCurrentLocation();
 
-  setPathUrlStrategy();
   runApp(TranslationProvider(child: const profile()));
 }
 

@@ -18,7 +18,7 @@ class Message {
           'email': email.trim(),
           'message': message.trim(),
           'SendAt': FieldValue.serverTimestamp(),
-          // 'token': appCheckToken,
+          'token': appCheckToken,
         });
         return true;
       }
@@ -28,14 +28,18 @@ class Message {
     return false;
   }
 
-  static sendNotification(String ip) {
+  static sendNotification(String ip) async {
     try {
-      FirebaseFirestore.instance.collection('notification').add({
-        'address': ip,
-        'SendAt': FieldValue.serverTimestamp(),
-      });
+      String? appCheckToken = await FirebaseAppCheck.instance.getToken();
+      if (appCheckToken != null) {
+        FirebaseFirestore.instance.collection('notification').add({
+          'address': ip,
+          'SendAt': FieldValue.serverTimestamp(),
+          'token': appCheckToken,
+        });
+      }
     } catch (e) {
-      print("error: " + e.toString());
+      print("get AppCheck error: " + e.toString());
     }
   }
 }
