@@ -27239,7 +27239,7 @@ b90(a,b){var s="true",r="Projects",q="Flutter",p="Firebase",o="Spring boot",n="2
 switch(b){case"experience.experiences.0.company":return"VNPT Technology"
 case"experience.experiences.0.country":return"VietNam"
 case"experience.experiences.0.emp_type":return"Full - Time"
-case"experience.experiences.0.position":return"Software Engineer (Remote)"
+case"experience.experiences.0.position":return"Software Engineer (Onsite)"
 case"experience.experiences.0.site_url":return"www.vnpt-technology.vn"
 case"experience.experiences.0.start_date":return"2022-08-15T00:00:00.000"
 case"experience.experiences.0.state":return"HaNoi"
@@ -92200,7 +92200,7 @@ A.aDU.prototype={
 gIl(){return"VNPT Technology"},
 gVL(a){return"VietNam"},
 gWx(){return"Full - Time"},
-gbv(a){return"Software Engineer (Remote)"},
+gbv(a){return"Software Engineer (Onsite)"},
 gMJ(){return"www.vnpt-technology.vn"},
 gMO(){return"2022-08-15T00:00:00.000"},
 gE0(a){return"HaNoi"},
