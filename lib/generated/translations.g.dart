@@ -6,7 +6,7 @@
 /// Locales: 2
 /// Strings: 278 (139 per locale)
 ///
-/// Built on 2024-02-28 at 02:10 UTC
+/// Built on 2024-04-23 at 07:55 UTC
 
 // coverage:ignore-file
 // ignore_for_file: type=lint
@@ -724,7 +724,7 @@ class _TranslationsExperience$experiences$0i0$En implements _TranslationsExperie
 	@override String get company => 'VNPT Technology';
 	@override String get country => 'VietNam';
 	@override String get emp_type => 'Full - Time';
-	@override String get position => 'Software Engineer (Remote)';
+	@override String get position => 'Software Engineer (Onsite)';
 	@override String get site_url => 'www.vnpt-technology.vn';
 	@override String get start_date => '2022-08-15T00:00:00.000';
 	@override String get state => 'HaNoi';
@@ -1154,7 +1154,7 @@ extension on _TranslationsEn {
 			case 'experience.experiences.0.company': return 'VNPT Technology';
 			case 'experience.experiences.0.country': return 'VietNam';
 			case 'experience.experiences.0.emp_type': return 'Full - Time';
-			case 'experience.experiences.0.position': return 'Software Engineer (Remote)';
+			case 'experience.experiences.0.position': return 'Software Engineer (Onsite)';
 			case 'experience.experiences.0.site_url': return 'www.vnpt-technology.vn';
 			case 'experience.experiences.0.start_date': return '2022-08-15T00:00:00.000';
 			case 'experience.experiences.0.state': return 'HaNoi';
