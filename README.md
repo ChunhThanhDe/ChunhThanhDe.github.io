@@ -104,8 +104,3 @@ git push -f origin --set-upstream gh-pages
 <img src="media/setup.jpeg"  alt="Set_up"/>
 
 See details here: https://dev.to/rodrigocastro_o/publishing-your-flutter-apps-into-github-pages-1l61
-
-### Reference
-
-The project is developed and referenced from the
-source: https://github.com/ericknamukolo/ericknamukolo.github.io
